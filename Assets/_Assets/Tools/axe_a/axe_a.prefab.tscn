@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://q6wmfuow0orv"]
+
+[ext_resource type="PackedScene" uid="uid://50yv7yilloac" path="res://Assets/_Assets/Tools/axe_a/axe_a.gltf" id="1_6u38e"]
+[ext_resource type="Material" uid="uid://c1mtgqnso2h1c" path="res://Assets/_Assets/Tools/axe_a/Materials/axe_a.mat.tres" id="2_x5x08"]
+
+[node name="axe_a" instance=ExtResource("1_6u38e")]
+
+[node name="axe02_low" parent="axe_a" index="0"]
+material_override = ExtResource("2_x5x08")
+
+[node name="axe03_low" parent="axe_a" index="1"]
+material_override = ExtResource("2_x5x08")
+
+[node name="axe01_low" parent="axe_a" index="2"]
+material_override = ExtResource("2_x5x08")
+
+[node name="axe00_low" parent="axe_a" index="3"]
+material_override = ExtResource("2_x5x08")

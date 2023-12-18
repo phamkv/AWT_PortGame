@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://c4exaj3uwlhb1"]
+
+[ext_resource type="Texture2D" uid="uid://dlif8oxj8cpr8" path="res://Assets/_Assets/Terrain/Environment/Terrain/Textures/Cliff_2/Cliff_2_Normal.png" id="1_dqlmf"]
+
+[resource]
+normal_enabled = true
+normal_texture = ExtResource("1_dqlmf")
+uv1_scale = Vector3(0.00666667, 0.00666667, 0)

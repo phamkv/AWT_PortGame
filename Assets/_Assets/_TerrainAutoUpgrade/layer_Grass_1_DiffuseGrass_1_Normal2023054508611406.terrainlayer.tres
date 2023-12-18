@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bp1884l6535vn"]
+
+[ext_resource type="Texture2D" uid="uid://bffxuilteuii" path="res://Assets/_Assets/Terrain/Environment/Terrain/Textures/Grass_1/Grass_1_Normal.png" id="1_sr5es"]
+
+[resource]
+normal_enabled = true
+normal_texture = ExtResource("1_sr5es")
+uv1_scale = Vector3(0.2, 0.2, 0)

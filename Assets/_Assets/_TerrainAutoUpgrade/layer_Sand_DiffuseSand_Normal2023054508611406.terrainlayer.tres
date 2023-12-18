@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://clevr8wnhkudl"]
+
+[ext_resource type="Texture2D" uid="uid://0kt17cdnui7v" path="res://Assets/_Assets/Terrain/Environment/Terrain/Textures/Sand/Sand_Normal.png" id="1_m5v1y"]
+
+[resource]
+normal_enabled = true
+normal_texture = ExtResource("1_m5v1y")
+uv1_scale = Vector3(0.2, 0.2, 0)

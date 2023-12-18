@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cojj6me11cquq"]
+
+[ext_resource type="Texture2D" uid="uid://cpffsmdsdpdw" path="res://Assets/_Assets/Terrain/Environment/Terrain/Textures/Mossy_Rock/Mossy_Rock_Normal.png" id="1_b0kt2"]
+
+[resource]
+normal_enabled = true
+normal_texture = ExtResource("1_b0kt2")
+uv1_scale = Vector3(0.2, 0.2, 0)
