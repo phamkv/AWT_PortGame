@@ -8,7 +8,7 @@ const JUMP_VELOCITY = 7.5
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 var look_dir: Vector2
-@onready var camera = $Camera3D
+@onready var camera = $PlayerCamera
 var camera_sens = 20
 
 var capMouse = false
