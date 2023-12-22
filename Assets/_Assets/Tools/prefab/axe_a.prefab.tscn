@@ -1,0 +1,211 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0mcyarwsq4tm"]
+
+[ext_resource type="Script" path="res://addons/unidot_importer/runtime/anim_tree.gd" id="1_bqhov"]
+[ext_resource type="ArrayMesh" uid="uid://cl0l8habkwvg2" path="res://Assets/_Assets/Tools/axe_a/extracted/axe_a.axe00_low.mesh" id="2_oqbgt"]
+[ext_resource type="ArrayMesh" uid="uid://bhe3qpw22dsgx" path="res://Assets/_Assets/Tools/axe_a/extracted/axe_a.axe01_low.mesh" id="3_omwxx"]
+[ext_resource type="ArrayMesh" uid="uid://ds2637pe1k338" path="res://Assets/_Assets/Tools/axe_a/extracted/axe_a.axe02_low.mesh" id="4_0rfqa"]
+[ext_resource type="ArrayMesh" uid="uid://l52igdpf218f" path="res://Assets/_Assets/Tools/axe_a/extracted/axe_a.axe03_low.mesh" id="5_ilcfb"]
+
+[node name="axe_a" type="Node3D"]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 6.79)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+deterministic = false
+root_motion_track = NodePath("%GeneralSkeleton:Root")
+anim_player = NodePath("../AnimationPlayer")
+script = ExtResource("1_bqhov")
+
+[node name="axe_a" type="Node3D" parent="."]
+
+[node name="axe00_low" type="Node3D" parent="axe_a"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="axe_a/axe00_low"]
+editor_description = "[MeshRenderer 23::02d0b7988b4a41d4b88afd9f27a43108:23287316154113010]"
+gi_mode = 2
+mesh = ExtResource("2_oqbgt")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1260329176599350, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "7ef353377a54faccd61cdf5f619daca0", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default" type="Node3D" parent="axe_a/axe00_low"]
+
+[node name="axe01_low" type="Node3D" parent="axe_a"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="axe_a/axe01_low"]
+editor_description = "[MeshRenderer 23::02d0b7988b4a41d4b88afd9f27a43108:23450906500809186]"
+gi_mode = 2
+mesh = ExtResource("3_omwxx")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1153199435205642, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "7ef353377a54faccd61cdf5f619daca0", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 1" type="Node3D" parent="axe_a/axe01_low"]
+
+[node name="axe02_low" type="Node3D" parent="axe_a"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="axe_a/axe02_low"]
+editor_description = "[MeshRenderer 23::02d0b7988b4a41d4b88afd9f27a43108:23047412454357980]"
+gi_mode = 2
+mesh = ExtResource("4_0rfqa")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1907485297084978, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "7ef353377a54faccd61cdf5f619daca0", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 2" type="Node3D" parent="axe_a/axe02_low"]
+
+[node name="axe03_low" type="Node3D" parent="axe_a"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="axe_a/axe03_low"]
+editor_description = "[MeshRenderer 23::02d0b7988b4a41d4b88afd9f27a43108:23812259953000598]"
+gi_mode = 2
+mesh = ExtResource("5_ilcfb")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1532659784865848, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "7ef353377a54faccd61cdf5f619daca0", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 3" type="Node3D" parent="axe_a/axe03_low"]
+
+[node name="Main Camera" type="Node3D" parent="."]
+transform = Transform3D(-0.586088, -0.241142, 0.773532, 0, 0.954686, 0.297616, -0.810247, 0.174429, -0.55953, 38.3645, 18.8521, -30.5234)
+
+[node name="Render" type="Node3D" parent="."]
+
+[node name="Sky" type="Node3D" parent="."]

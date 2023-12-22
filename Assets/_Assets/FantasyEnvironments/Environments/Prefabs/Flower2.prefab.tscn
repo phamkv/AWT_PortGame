@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://6xgqj8objvo1"]
+
+[ext_resource type="ArrayMesh" uid="uid://wcdvabejyn13" path="res://Assets/_Assets/FantasyEnvironments/Environments/FBX/extracted/Flower2.Flower2.mesh" id="1_6kcmo"]
+[ext_resource type="Material" uid="uid://cj6s6d3ivbio1" path="res://Assets/_Assets/FantasyEnvironments/Environments/Materials/Plant.mat.tres" id="2_6shg0"]
+
+[node name="Flower2" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, 0, 0, 0)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::9c47d3ce2208e9440ab03e7fe3e32bcf:23862144876871240]"
+gi_mode = 2
+mesh = ExtResource("1_6kcmo")
+surface_material_override/0 = ExtResource("2_6shg0")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1370357002708338, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "7805f02cde847fa488989988fbc3d7eb", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1,
+"m_TagString": "Untagged"
+}

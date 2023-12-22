@@ -1,0 +1,213 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://bsa7qwuiecnxw"]
+
+[ext_resource type="Script" path="res://addons/unidot_importer/asset_meta.gd" id="1_jtpdw"]
+[ext_resource type="Script" path="res://addons/unidot_importer/raw_parsed_asset.gd" id="2_03t1c"]
+
+[sub_resource type="Resource" id="Resource_mnj6u"]
+resource_name = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Stream_Straight_02_Convex 4.asset"
+script = ExtResource("1_jtpdw")
+path = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Stream_Straight_02_Convex 4.res"
+orig_path = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Stream_Straight_02_Convex 4.asset"
+guid = "4e1aa19bd5176f242954eab6ee4874f4"
+importer_keys = {
+"mainObjectFileID": 11400000
+}
+importer_type = "NativeFormatImporter"
+internal_data = {}
+prefab_id_to_guid = {}
+prefab_gameobject_name_to_fileid_and_children = {}
+prefab_main_gameobject_id = 0
+prefab_main_transform_id = 0
+prefab_source_id_pair_to_stripped_id = {}
+transform_fileid_to_rotation_delta = {}
+transform_fileid_to_parent_fileid = {}
+transform_fileid_to_scale_signs = {}
+fileid_to_nodepath = {}
+fileid_to_skeleton_bone = {}
+fileid_to_utype = {
+11400000: 114,
+43058706174527384: 43
+}
+fileid_to_gameobject_fileid = {}
+type_to_fileids = {
+"Mesh": PackedInt64Array(43058706174527384, 43058706174527384),
+"MonoBehaviour": PackedInt64Array(11400000)
+}
+godot_resources = {}
+main_object_id = 11400000
+gameobject_name_to_fileid_and_children = {}
+transform_fileid_to_children = {}
+gameobject_fileid_to_components = {}
+transform_fileid_to_prefab_ids = {}
+gameobject_fileid_to_rename = {}
+dependency_guids = {
+"5b71ad40e238046238f9b0c6f33c3791": 11500000
+}
+prefab_dependency_guids = {}
+meta_dependency_guids = {}
+autodetected_bone_map_dict = {}
+humanoid_bone_map_dict = {}
+humanoid_bone_map_crc32_dict = {}
+humanoid_skeleton_hip_position = Vector3(0, 1, 0)
+imported_animation_paths = {}
+imported_mesh_paths = {}
+imported_material_paths = {}
+
+[resource]
+script = ExtResource("2_03t1c")
+path = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Env_Stream_Straight_02_Convex 4.res"
+guid = "4e1aa19bd5176f242954eab6ee4874f4"
+objects = {
+"11400000:MonoBehaviour": {
+"ConvexMeshes": [[null, 43058706174527384, null, null]],
+"HashOfSourceMeshes": [],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 0, null, null],
+"m_Name": "SM_Env_Stream_Straight_02_Convex 4",
+"m_ObjectHideFlags": 0,
+"m_PrefabInternal": [null, 0, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_Script": [null, 11500000, "5b71ad40e238046238f9b0c6f33c3791", 3]
+},
+"43058706174527384:Mesh": {
+"m_BindPose": [],
+"m_CompressedMesh": {
+"m_BoneIndices": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_FloatColors": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_NormalSigns": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_Normals": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_TangentSigns": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_Tangents": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_Triangles": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_UV": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_UVInfo": 0,
+"m_Vertices": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_Weights": {
+"m_BitSize": 0,
+"m_NumItems": 0
+}
+},
+"m_IndexBuffer": "140008001700010003000400040003000700030005000700040007000b00020001000c000c0008000d0008000a000d00090004000e0004000b000e000b0000000e00010004000f00040009000f000700050010000b00070010000e000000110006000e00110001000200120003000100120002000c0012000c000100130006000c0013000e000600130009000e00130001000f0013000f00090013000a000800140011000a0014000600110014000500030015000c000d0015000d000500150003001200150012000c00150000000b00160005000d0016000d000a0016001000050016000b00100016001100000016000a00110016000c000600170008000c001700060014001700",
+"m_IsReadable": 1,
+"m_KeepIndices": 1,
+"m_KeepVertices": 1,
+"m_LocalAABB": {
+"m_Center": Vector3(-4.82758, -0.181072, 7.71555),
+"m_Extent": Vector3(6.36783, 0.750082, 8.29338)
+},
+"m_MeshCompression": 0,
+"m_MeshOptimized": 0,
+"m_MeshUsageFlags": 0,
+"m_Name": "Generated convex submesh 1",
+"m_ObjectHideFlags": 0,
+"m_PrefabInternal": [null, 0, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_RootBoneNameHash": 0,
+"m_Shapes": {
+"channels": [],
+"fullWeights": [],
+"shapes": [],
+"vertices": []
+},
+"m_Skin": [],
+"m_SubMeshes": [{
+"firstByte": 0,
+"firstVertex": 0,
+"indexCount": 132,
+"localAABB": {
+"m_Center": Vector3(-4.82758, -0.181072, 7.71555),
+"m_Extent": Vector3(6.36783, 0.750082, 8.29338)
+},
+"serializedVersion": 2,
+"topology": 0,
+"vertexCount": 24
+}],
+"m_VertexData": {
+"_typelessdata": "b76426c1b03b5d3eb07cf43eef26c53fd761113d19443541e5c3983f8657f93de3d44541abc328c022606ebfc8987041b1bb17c022606ebf80154abd0e2d22c1e20b47bd1c68734180c3c9bf9aaa113ff463d03f9843c5c022606ebfeaedb540cbdd77c02c1df63e30305e41c07ccc3de20b47bd80ce50bd47be20c186f9c83e80821041c4742dc1e20b47bd00f3c73e58900a3f7fc19b3e8a6a6241cb0714c1b03b5d3e83787a41200ad9c074645d3e90ec13bff92aa03fe22e183d100ff13f5e2033c1e20b47bda52b0f410feb1dc186f9c83ee8ff543fc07ccc3de20b47bd1092704100763d3c24e5c83ee01b6c3f02857ec0e143103fb8b7c44040bdcdc0e20b47bd4e128041fc4730c1b03b5d3e0118274100909cbf2c1df63e6e0c4941",
+"m_Channels": [{
+"dimension": 3,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}],
+"m_CurrentChannels": 1,
+"m_DataSize": 288,
+"m_VertexCount": 24
+},
+"serializedVersion": 8
+}
+}
+meta = SubResource("Resource_mnj6u")

@@ -1,0 +1,69 @@
+[gd_scene load_steps=5 format=3 uid="uid://cenve13xrqk2o"]
+
+[ext_resource type="ArrayMesh" uid="uid://dx5aqglnl4sf7" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/boards.board02.mesh" id="1_bhk6l"]
+[ext_resource type="Material" uid="uid://cgpti7rxdujw0" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/Wood_planks_08.mat.tres" id="2_3rk6p"]
+[ext_resource type="Material" uid="uid://cmv7if42ejm72" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/WoodBark03.mat.tres" id="3_bq3ul"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pvm8r"]
+size = Vector3(0.22545, 2.68641, 0.032712)
+
+[node name="board02" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.428905, -0.00707474, -0.0130763)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::1dbae9f558b649643974112dad15bec4:2395546]"
+gi_mode = 2
+mesh = ExtResource("1_bhk6l")
+surface_material_override/0 = ExtResource("2_3rk6p")
+surface_material_override/1 = ExtResource("3_bq3ul")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 173806, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "097e4ddd87bd543439051a86fe6e8f66", 2], [null, 2100000, "014150c6ade3b1340b696255604095ad", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1,
+"m_TagString": "Untagged"
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00359356, 0.016356)
+shape = SubResource("BoxShape3D_pvm8r")

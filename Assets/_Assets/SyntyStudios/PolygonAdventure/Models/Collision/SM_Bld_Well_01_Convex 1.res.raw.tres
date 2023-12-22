@@ -1,0 +1,353 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://byhb7ijxbvyve"]
+
+[ext_resource type="Script" path="res://addons/unidot_importer/asset_meta.gd" id="1_fk7lu"]
+[ext_resource type="Script" path="res://addons/unidot_importer/raw_parsed_asset.gd" id="2_wvfc7"]
+
+[sub_resource type="Resource" id="Resource_63yeb"]
+resource_name = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Well_01_Convex 1.asset"
+script = ExtResource("1_fk7lu")
+path = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Well_01_Convex 1.res"
+orig_path = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Well_01_Convex 1.asset"
+guid = "5ad67ff3fd7030142ba7ee25a8df769d"
+importer_keys = {
+"mainObjectFileID": 11400000
+}
+importer_type = "NativeFormatImporter"
+internal_data = {}
+prefab_id_to_guid = {}
+prefab_gameobject_name_to_fileid_and_children = {}
+prefab_main_gameobject_id = 0
+prefab_main_transform_id = 0
+prefab_source_id_pair_to_stripped_id = {}
+transform_fileid_to_rotation_delta = {}
+transform_fileid_to_parent_fileid = {}
+transform_fileid_to_scale_signs = {}
+fileid_to_nodepath = {}
+fileid_to_skeleton_bone = {}
+fileid_to_utype = {
+11400000: 114,
+43245694291277164: 43,
+43723018295655630: 43
+}
+fileid_to_gameobject_fileid = {}
+type_to_fileids = {
+"Mesh": PackedInt64Array(43245694291277164, 43723018295655630, 43723018295655630),
+"MonoBehaviour": PackedInt64Array(11400000)
+}
+godot_resources = {}
+main_object_id = 11400000
+gameobject_name_to_fileid_and_children = {}
+transform_fileid_to_children = {}
+gameobject_fileid_to_components = {}
+transform_fileid_to_prefab_ids = {}
+gameobject_fileid_to_rename = {}
+dependency_guids = {
+"5b71ad40e238046238f9b0c6f33c3791": 11500000
+}
+prefab_dependency_guids = {}
+meta_dependency_guids = {}
+autodetected_bone_map_dict = {}
+humanoid_bone_map_dict = {}
+humanoid_bone_map_crc32_dict = {}
+humanoid_skeleton_hip_position = Vector3(0, 1, 0)
+imported_animation_paths = {}
+imported_mesh_paths = {}
+imported_material_paths = {}
+
+[resource]
+script = ExtResource("2_wvfc7")
+path = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Bld_Well_01_Convex 1.res"
+guid = "5ad67ff3fd7030142ba7ee25a8df769d"
+objects = {
+"11400000:MonoBehaviour": {
+"ConvexMeshes": [[null, 43723018295655630, null, null], [null, 43245694291277164, null, null]],
+"HashOfSourceMeshes": [],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 0, null, null],
+"m_Name": "SM_Bld_Well_01_Convex 1",
+"m_ObjectHideFlags": 0,
+"m_PrefabInternal": [null, 0, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_Script": [null, 11500000, "5b71ad40e238046238f9b0c6f33c3791", 3]
+},
+"43245694291277164:Mesh": {
+"m_BindPose": [],
+"m_CompressedMesh": {
+"m_BoneIndices": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_FloatColors": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_NormalSigns": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_Normals": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_TangentSigns": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_Tangents": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_Triangles": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_UV": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_UVInfo": 0,
+"m_Vertices": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_Weights": {
+"m_BitSize": 0,
+"m_NumItems": 0
+}
+},
+"m_IndexBuffer": "090000000f00020001000500030005000600050001000600070000000900040000000a00000007000a00030006000b0004000a000b000a0003000b00060001000c00010008000c00080004000c000b0006000c0004000b000c00020005000d00090002000d00070009000d00050003000e0003000a000e000a0007000e000d0005000e0007000d000e00010002000f00000004000f00080001000f00040008000f00020009000f00",
+"m_IsReadable": 1,
+"m_KeepIndices": 1,
+"m_KeepVertices": 1,
+"m_LocalAABB": {
+"m_Center": Vector3(-0.0458364, 1.68226, 0.0898586),
+"m_Extent": Vector3(0.865195, 1.31822, 1.06441)
+},
+"m_MeshCompression": 0,
+"m_MeshOptimized": 0,
+"m_MeshUsageFlags": 0,
+"m_Name": "Generated convex submesh 2",
+"m_ObjectHideFlags": 0,
+"m_PrefabInternal": [null, 0, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_RootBoneNameHash": 0,
+"m_Shapes": {
+"channels": [],
+"fullWeights": [],
+"shapes": [],
+"vertices": []
+},
+"m_Skin": [],
+"m_SubMeshes": [{
+"firstByte": 0,
+"firstVertex": 0,
+"indexCount": 84,
+"localAABB": {
+"m_Center": Vector3(-0.0458364, 1.68226, 0.0898586),
+"m_Extent": Vector3(0.865195, 1.31822, 1.06441)
+},
+"serializedVersion": 2,
+"topology": 0,
+"vertexCount": 16
+}],
+"m_VertexData": {
+"_typelessdata": "deed59bfccbcbe3e3f2683bea6169f3ddf8ca23f36bf933f326f8fbddf8ca23f36bf933f6486f73dfe573940cc8861bfda9c373fcf6dbe3e138b08bf2655f5bdec0740404233423f1935503fc62ac93fc85c1f3f63db34bf0b93bd3f59464dbfa29d833ede5ebb3e0be24e3f5b3969bf1e3a533fba83ec3ef3d283beb67c133f7a7c79bfbce74e3f9c38c93fe30e4fbf7dc1513f24eb133fad8d0f3f8ba940bf43f2d43f276d1d3ffda2a2be125c20406f755fbf196499be7963ba3e2a2b4f3f",
+"m_Channels": [{
+"dimension": 3,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}],
+"m_CurrentChannels": 1,
+"m_DataSize": 192,
+"m_VertexCount": 16
+},
+"serializedVersion": 8
+},
+"43723018295655630:Mesh": {
+"m_BindPose": [],
+"m_CompressedMesh": {
+"m_BoneIndices": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_FloatColors": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_NormalSigns": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_Normals": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_TangentSigns": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_Tangents": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_Triangles": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_UV": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_UVInfo": 0,
+"m_Vertices": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_Weights": {
+"m_BitSize": 0,
+"m_NumItems": 0
+}
+},
+"m_IndexBuffer": "040009000f00000004000500000005000600020005000800050004000800060001000900050002000a00010006000a00060005000a00030001000b00070003000b0001000a000b000a0002000b00040000000c00000006000c00090004000c00060009000c00040003000d00030007000d00080004000d00070008000d00020008000e00080007000e000b0002000e0007000b000e00010003000f00030004000f00090001000f00",
+"m_IsReadable": 1,
+"m_KeepIndices": 1,
+"m_KeepVertices": 1,
+"m_LocalAABB": {
+"m_Center": Vector3(0.0283654, 0.053061, -0.0145394),
+"m_Extent": Vector3(1.53252, 0.21703, 1.50068)
+},
+"m_MeshCompression": 0,
+"m_MeshOptimized": 0,
+"m_MeshUsageFlags": 0,
+"m_Name": "Generated convex submesh 1",
+"m_ObjectHideFlags": 0,
+"m_PrefabInternal": [null, 0, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_RootBoneNameHash": 0,
+"m_Shapes": {
+"channels": [],
+"fullWeights": [],
+"shapes": [],
+"vertices": []
+},
+"m_Skin": [],
+"m_SubMeshes": [{
+"firstByte": 0,
+"firstVertex": 0,
+"indexCount": 84,
+"localAABB": {
+"m_Center": Vector3(0.0283654, 0.053061, -0.0145394),
+"m_Extent": Vector3(1.53252, 0.21703, 1.50068)
+},
+"serializedVersion": 2,
+"topology": 0,
+"vertexCount": 16
+}],
+"m_VertexData": {
+"_typelessdata": "ae4c023ff2a10ebef9549f3f4ea39abe54498a3ee7a1503ffb2da83fb4703a3e367339bf3488c0bfb4703a3e88bdc1be3488c0bf69e727beaedc023f29cbc73f69e727becf26d33ea9cb053fb4703a3e0d56b33f8763eebeb4703a3eb1f2c1bf8c645e3f69e727be6aa9a8bf612543bfb4703a3e6ab1a63f8678c13fb4703a3ecf26d33ee2179d3e277d893ef7f45ebf1cb683be470bdcbdd739be3fe8835cbf69e727be0d4eb5bf46bf513fb4703a3e6aa9a8bf3488c0bfb4703a3eaedc023f",
+"m_Channels": [{
+"dimension": 3,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}],
+"m_CurrentChannels": 1,
+"m_DataSize": 192,
+"m_VertexCount": 16
+},
+"serializedVersion": 8
+}
+}
+meta = SubResource("Resource_63yeb")

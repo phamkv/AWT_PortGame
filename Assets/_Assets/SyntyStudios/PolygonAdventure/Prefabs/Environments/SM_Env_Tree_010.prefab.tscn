@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://hn50mjs4pva3"]
+
+[ext_resource type="ArrayMesh" uid="uid://dixpvp6mdvdcu" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/extracted/SM_Env_Tree_010.SM_Env_Tree_010.mesh" id="1_xya5k"]
+[ext_resource type="Material" uid="uid://ciwmhcp0p0al" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Materials/PolyAdventureMaterial_01.mat.tres" id="2_xtn2q"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ghfvh"]
+points = PackedVector3Array(0.0305375, 4.28064, 0.953032, -0.731864, 4.02757, 0.628586, 0.292554, 2.7207, 0.816866, 0.537557, 4.19751, 0.794265, 0.229772, 6.11828, -0.0554227, -0.217698, 4.52818, 0.777454, -0.348196, 5.92554, -0.151804, -0.89622, 3.94445, -0.0494456, -0.0592968, 2.3606, 0.233348, 0.841939, 2.66773, 0.217097, 0.781709, 4.53112, 0.201221, 0.712972, 4.02647, -0.7314, 0.0300271, 4.19824, -0.955169, -0.563254, 3.94224, -0.814146, 0.11833, 3.41883, -0.914636, 0.743768, 2.77403, -0.584586)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1ixdb"]
+points = PackedVector3Array(-0.155536, -0.0481755, 0.426251, -0.0591092, -0.0481755, -0.248055, 0.518855, -0.0481755, 0.522677, 0.0372323, 0.0481943, 0.522677, 0.0372323, 1.20439, 0.329909, -0.155536, 0.240934, -0.151713, 0.0372323, 1.10802, -0.151713, 0.229915, 0.144564, -0.344481, 0.422513, -0.0481755, -0.344481, 0.711623, -0.0481755, 0.233568, 0.422513, 1.20439, 0.329909, 0.326172, 0.337304, 0.522677, 0.326172, 1.20439, -0.151713, 0.422513, 0.722538, -0.248055, 0.711623, -0.0481755, 0.0410545, 0.518855, 1.10802, 0.0410545)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xq4kb"]
+points = PackedVector3Array(-0.0591847, 1.97501, 0.233672, 0.0372417, 1.20439, -0.0553529, 0.0372417, 1.20439, 0.329928, 0.0372417, 1.68618, 0.42627, -0.0591847, 2.3606, 0.233672, -0.0591847, 2.3606, -0.151779, 0.422523, 1.20439, -0.0553529, 0.326266, 1.20439, 0.42627, 0.133583, 1.3007, 0.42627, 0.615206, 2.07154, 0.715379, 0.807974, 2.16786, 0.618953, 0.422523, 2.3606, -0.0553529, 0.326266, 2.3606, -0.151779, 0.422523, 1.20439, 0.329928, 0.807974, 1.97501, 0.42627, 0.807974, 1.97501, 0.618953)
+
+[node name="SM_Env_Tree_010" type="Node3D"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::d556d30cab334dd449000218c87322ef:2311056]"
+gi_mode = 2
+mesh = ExtResource("1_xya5k")
+surface_material_override/0 = ExtResource("2_xtn2q")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 135026, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "fa8eda4ec55ee1a4e99ca991c5828dbf", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MeshCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider"]
+shape = SubResource("ConvexPolygonShape3D_ghfvh")
+
+[node name="MeshCollider2" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider2"]
+shape = SubResource("ConvexPolygonShape3D_1ixdb")
+
+[node name="MeshCollider3" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider3"]
+shape = SubResource("ConvexPolygonShape3D_xq4kb")

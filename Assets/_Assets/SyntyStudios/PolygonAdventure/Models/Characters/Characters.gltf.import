@@ -1,0 +1,202 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cgf550vfx6m4s"
+path="res://.godot/imported/Characters.gltf-db527fb6ef678f9eb74eeceb3828875f.scn"
+
+[deps]
+
+source_file="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/Characters.gltf"
+dest_files=["res://.godot/imported/Characters.gltf-db527fb6ef678f9eb74eeceb3828875f.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name="Root Scene"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=30.0
+animation/trimming=false
+animation/remove_immutable_tracks=false
+import_script/path=""
+_subresources={
+"animations": {},
+"materials": {},
+"meshes": {
+"Character_Knight": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Knight.mesh"
+},
+"Character_Peasant": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Peasant.mesh"
+},
+"Character_Shopkeeper": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Shopkeeper.mesh"
+},
+"Character_Viking": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Viking.mesh"
+},
+"Character_Warrior": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Warrior.mesh"
+},
+"Item_CoinBag": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_CoinBag.mesh"
+},
+"Item_Dagger": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_Dagger.mesh"
+},
+"Item_Pouch": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_Pouch.mesh"
+},
+"Item_Sword": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_Sword.mesh"
+},
+"Item_SwordHolder": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_SwordHolder.mesh"
+},
+"Item_SwordSheath": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_SwordSheath.mesh"
+},
+"Item_WarriorSholderArmor": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WarriorSholderArmor.mesh"
+},
+"Item_WarriorSholderArmor 1": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WarriorSholderArmor 1.mesh"
+},
+"Item_WaterBladder_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WaterBladder_01.mesh"
+},
+"Item_WaterCanteen": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WaterCanteen.mesh"
+},
+"Root Scene_Character_Knight": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Knight.mesh"
+},
+"Root Scene_Character_Peasant": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Peasant.mesh"
+},
+"Root Scene_Character_Shopkeeper": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Shopkeeper.mesh"
+},
+"Root Scene_Character_Viking": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Viking.mesh"
+},
+"Root Scene_Character_Warrior": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Warrior.mesh"
+},
+"Root Scene_Item_CoinBag": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_CoinBag.mesh"
+},
+"Root Scene_Item_Dagger": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_Dagger.mesh"
+},
+"Root Scene_Item_Pouch": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_Pouch.mesh"
+},
+"Root Scene_Item_Sword": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_Sword.mesh"
+},
+"Root Scene_Item_SwordHolder": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_SwordHolder.mesh"
+},
+"Root Scene_Item_SwordSheath": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_SwordSheath.mesh"
+},
+"Root Scene_Item_WarriorSholderArmor": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WarriorSholderArmor.mesh"
+},
+"Root Scene_Item_WarriorSholderArmor 1": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WarriorSholderArmor 1.mesh"
+},
+"Root Scene_Item_WaterBladder_01": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WaterBladder_01.mesh"
+},
+"Root Scene_Item_WaterCanteen": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WaterCanteen.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+},
+"PATH:Skeleton3D": {
+"retarget/bone_map": Object(BoneMap,"resource_local_to_scene":false,"resource_name":"","profile":Object(SkeletonProfileHumanoid,"resource_local_to_scene":false,"resource_name":"","root_bone":&"Root","scale_base_bone":&"Hips","group_size":4,"bone_size":56,"script":null)
+,"bonemap":null,"bone_map/Root":&"Root","bone_map/Hips":&"Hips","bone_map/Spine":&"Spine_01","bone_map/Chest":&"Spine_02","bone_map/UpperChest":&"","bone_map/Neck":&"Neck","bone_map/Head":&"Head","bone_map/LeftEye":&"","bone_map/RightEye":&"","bone_map/Jaw":&"","bone_map/LeftShoulder":&"Clavicle_L","bone_map/LeftUpperArm":&"Shoulder_L","bone_map/LeftLowerArm":&"Elbow_L","bone_map/LeftHand":&"Hand_L","bone_map/LeftThumbMetacarpal":&"Thumb_01","bone_map/LeftThumbProximal":&"Thumb_02","bone_map/LeftThumbDistal":&"Thumb_03","bone_map/LeftIndexProximal":&"IndexFinger_01","bone_map/LeftIndexIntermediate":&"IndexFinger_02","bone_map/LeftIndexDistal":&"IndexFinger_03","bone_map/LeftMiddleProximal":&"","bone_map/LeftMiddleIntermediate":&"","bone_map/LeftMiddleDistal":&"","bone_map/LeftRingProximal":&"","bone_map/LeftRingIntermediate":&"","bone_map/LeftRingDistal":&"","bone_map/LeftLittleProximal":&"Finger_01","bone_map/LeftLittleIntermediate":&"Finger_02","bone_map/LeftLittleDistal":&"Finger_03","bone_map/RightShoulder":&"Clavicle_R","bone_map/RightUpperArm":&"Shoulder_R","bone_map/RightLowerArm":&"Elbow_R","bone_map/RightHand":&"Hand_R","bone_map/RightThumbMetacarpal":&"Thumb_01 1","bone_map/RightThumbProximal":&"Thumb_02 1","bone_map/RightThumbDistal":&"Thumb_03 1","bone_map/RightIndexProximal":&"IndexFinger_01 1","bone_map/RightIndexIntermediate":&"IndexFinger_02 1","bone_map/RightIndexDistal":&"IndexFinger_03 1","bone_map/RightMiddleProximal":&"","bone_map/RightMiddleIntermediate":&"","bone_map/RightMiddleDistal":&"","bone_map/RightRingProximal":&"","bone_map/RightRingIntermediate":&"","bone_map/RightRingDistal":&"","bone_map/RightLittleProximal":&"Finger_01 1","bone_map/RightLittleIntermediate":&"Finger_02 1","bone_map/RightLittleDistal":&"Finger_03 1","bone_map/LeftUpperLeg":&"UpperLeg_L","bone_map/LeftLowerLeg":&"LowerLeg_L","bone_map/LeftFoot":&"Ankle_L","bone_map/LeftToes":&"Ball_L","bone_map/RightUpperLeg":&"UpperLeg_R","bone_map/RightLowerLeg":&"LowerLeg_R","bone_map/RightFoot":&"Ankle_R","bone_map/RightToes":&"Ball_R","script":null)
+,
+"retarget/rest_fixer/fix_silhouette/enable": false
+}
+}
+}
+gltf/naming_version=0
+gltf/embedded_image_handling=1

@@ -1,0 +1,106 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://jd6wnmqljyru"
+path="res://.godot/imported/Wrata01Wood.gltf-9fec00994322bb794a5004626b368609.scn"
+
+[deps]
+
+source_file="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/Wrata01Wood.gltf"
+dest_files=["res://.godot/imported/Wrata01Wood.gltf-9fec00994322bb794a5004626b368609.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name="Root Scene"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=false
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=30.0
+animation/trimming=false
+animation/remove_immutable_tracks=false
+import_script/path=""
+_subresources={
+"animations": {},
+"materials": {},
+"meshes": {
+"Root Scene_Wrata01Detail": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01Detail.mesh"
+},
+"Root Scene_Wrata01Door01LOD0": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01Door01LOD0.mesh"
+},
+"Root Scene_Wrata01Door01_LOD02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01Door01_LOD02.mesh"
+},
+"Root Scene_Wrata01Door01_LOD1": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01Door01_LOD1.mesh"
+},
+"Root Scene_Wrata01LOD02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01LOD02.mesh"
+},
+"Root Scene_Wrata01LOD1": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01LOD1.mesh"
+},
+"Wrata01Detail": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01Detail.mesh"
+},
+"Wrata01Door01LOD0": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01Door01LOD0.mesh"
+},
+"Wrata01Door01_LOD02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01Door01_LOD02.mesh"
+},
+"Wrata01Door01_LOD1": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01Door01_LOD1.mesh"
+},
+"Wrata01LOD02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01LOD02.mesh"
+},
+"Wrata01LOD1": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Wrata01Wood.Wrata01LOD1.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+gltf/naming_version=0
+gltf/embedded_image_handling=1

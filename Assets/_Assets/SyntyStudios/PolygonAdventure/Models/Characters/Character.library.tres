@@ -1,0 +1,5 @@
+[gd_resource type="AnimationLibrary" format=3 uid="uid://bcti231xbsu1y"]
+
+[resource]
+resource_name = "Character"
+metadata/guid_fileid_to_animation_name = {}

@@ -1,0 +1,459 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://84ipfudpep4f"]
+
+[ext_resource type="Script" path="res://addons/unidot_importer/asset_meta.gd" id="1_dttmh"]
+[ext_resource type="Script" path="res://addons/unidot_importer/raw_parsed_asset.gd" id="2_kxvq0"]
+
+[sub_resource type="Resource" id="Resource_5lt8w"]
+resource_name = "Assets/_Assets/Terrain/Post Processing/Terrain Image Effects.asset"
+script = ExtResource("1_dttmh")
+path = "Assets/_Assets/Terrain/Post Processing/Terrain Image Effects.res"
+orig_path = "Assets/_Assets/Terrain/Post Processing/Terrain Image Effects.asset"
+guid = "798da62f5f5e64f4991acae91a65b1d6"
+importer_keys = {
+"mainObjectFileID": -1
+}
+importer_type = "NativeFormatImporter"
+internal_data = {}
+prefab_id_to_guid = {}
+prefab_gameobject_name_to_fileid_and_children = {}
+prefab_main_gameobject_id = 0
+prefab_main_transform_id = 0
+prefab_source_id_pair_to_stripped_id = {}
+transform_fileid_to_rotation_delta = {}
+transform_fileid_to_parent_fileid = {}
+transform_fileid_to_scale_signs = {}
+fileid_to_nodepath = {}
+fileid_to_skeleton_bone = {}
+fileid_to_utype = {
+11400000: 114
+}
+fileid_to_gameobject_fileid = {}
+type_to_fileids = {
+"MonoBehaviour": PackedInt64Array(11400000, 11400000)
+}
+godot_resources = {}
+main_object_id = 11400000
+gameobject_name_to_fileid_and_children = {}
+transform_fileid_to_children = {}
+gameobject_fileid_to_components = {}
+transform_fileid_to_prefab_ids = {}
+gameobject_fileid_to_rename = {}
+dependency_guids = {
+"8a3bdb2cd68f901469e7cc149151eb49": 11500000
+}
+prefab_dependency_guids = {}
+meta_dependency_guids = {}
+autodetected_bone_map_dict = {}
+humanoid_bone_map_dict = {}
+humanoid_bone_map_crc32_dict = {}
+humanoid_skeleton_hip_position = Vector3(0, 1, 0)
+imported_animation_paths = {}
+imported_mesh_paths = {}
+imported_material_paths = {}
+
+[resource]
+script = ExtResource("2_kxvq0")
+path = "Assets/_Assets/Terrain/Post Processing/Terrain Image Effects.res"
+guid = "798da62f5f5e64f4991acae91a65b1d6"
+objects = {
+"11400000:MonoBehaviour": {
+"ambientOcclusion": {
+"m_Enabled": 1,
+"m_Settings": {
+"ambientOnly": 1,
+"downsampling": 1,
+"forceForwardCompatibility": 1,
+"highPrecision": 1,
+"intensity": 1.4,
+"radius": 0.3,
+"sampleCount": 3
+}
+},
+"antialiasing": {
+"m_Enabled": 1,
+"m_Settings": {
+"fxaaSettings": {
+"preset": 4
+},
+"method": 1,
+"taaSettings": {
+"jitterSpread": 0.75,
+"motionBlending": 0.85,
+"sharpen": 0.3,
+"stationaryBlending": 0.95
+}
+}
+},
+"bloom": {
+"m_Enabled": 1,
+"m_Settings": {
+"bloom": {
+"antiFlicker": 1,
+"intensity": 0.1,
+"radius": 6.64,
+"softKnee": 0.619,
+"threshold": 1
+},
+"lensDirt": null
+}
+},
+"chromaticAberration": {
+"m_Enabled": 1,
+"m_Settings": null
+},
+"colorGrading": {
+"m_Enabled": 1,
+"m_Settings": {
+"basic": {
+"contrast": 1.4,
+"hueShift": 0,
+"postExposure": 1,
+"saturation": 1,
+"temperature": 0,
+"tint": 0
+},
+"channelMixer": {
+"blue": Vector3(0, 0, 1.25),
+"currentEditingChannel": 2,
+"green": Vector3(0, 1, 0),
+"red": Vector3(1, 0, 0)
+},
+"colorWheels": {
+"linear": {
+"gain": {
+"a": 0,
+"b": 1,
+"g": 1,
+"r": 1
+},
+"gamma": {
+"a": 0,
+"b": 1,
+"g": 1,
+"r": 1
+},
+"lift": {
+"a": 0,
+"b": 1,
+"g": 1,
+"r": 1
+}
+},
+"log": {
+"offset": {
+"a": 0,
+"b": 1,
+"g": 1,
+"r": 1
+},
+"power": {
+"a": 0,
+"b": 1,
+"g": 1,
+"r": 1
+},
+"slope": {
+"a": 0,
+"b": 1,
+"g": 1,
+"r": 1
+}
+},
+"mode": 1
+},
+"curves": {
+"blue": {
+"curve": {
+"m_Curve": [{
+"inSlope": 1,
+"outSlope": 1,
+"tangentMode": 0,
+"time": 0,
+"value": "0"
+}, {
+"inSlope": 1,
+"outSlope": 1,
+"tangentMode": 0,
+"time": 1,
+"value": "1"
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4
+},
+"m_Loop": 0,
+"m_Range": 1,
+"m_ZeroValue": 0
+},
+"e_CurrentEditingCurve": 0,
+"e_CurveB": 0,
+"e_CurveG": 0,
+"e_CurveR": 0,
+"e_CurveY": 1,
+"green": {
+"curve": {
+"m_Curve": [{
+"inSlope": 1,
+"outSlope": 1,
+"tangentMode": 0,
+"time": 0,
+"value": "0"
+}, {
+"inSlope": 1,
+"outSlope": 1,
+"tangentMode": 0,
+"time": 1,
+"value": "1"
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4
+},
+"m_Loop": 0,
+"m_Range": 1,
+"m_ZeroValue": 0
+},
+"hueVShue": {
+"curve": {
+"m_Curve": [],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4
+},
+"m_Loop": 1,
+"m_Range": 1,
+"m_ZeroValue": 0.5
+},
+"hueVSsat": {
+"curve": {
+"m_Curve": [],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4
+},
+"m_Loop": 1,
+"m_Range": 1,
+"m_ZeroValue": 0.5
+},
+"lumVSsat": {
+"curve": {
+"m_Curve": [],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4
+},
+"m_Loop": 0,
+"m_Range": 1,
+"m_ZeroValue": 0.5
+},
+"master": {
+"curve": {
+"m_Curve": [{
+"inSlope": 1,
+"outSlope": 1,
+"tangentMode": 0,
+"time": 0,
+"value": "0"
+}, {
+"inSlope": 1,
+"outSlope": 1,
+"tangentMode": 0,
+"time": 1,
+"value": "1"
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 0
+},
+"m_Loop": 0,
+"m_Range": 1,
+"m_ZeroValue": 0
+},
+"red": {
+"curve": {
+"m_Curve": [{
+"inSlope": 1,
+"outSlope": 1,
+"tangentMode": 0,
+"time": 0,
+"value": "0"
+}, {
+"inSlope": 1,
+"outSlope": 1,
+"tangentMode": 0,
+"time": 1,
+"value": "1"
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4
+},
+"m_Loop": 0,
+"m_Range": 1,
+"m_ZeroValue": 0
+},
+"satVSsat": {
+"curve": {
+"m_Curve": [],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4
+},
+"m_Loop": 0,
+"m_Range": 1,
+"m_ZeroValue": 0.5
+}
+},
+"tonemapping": {
+"neutralBlackIn": 0.02,
+"neutralBlackOut": 0,
+"neutralWhiteClip": 10,
+"neutralWhiteIn": 10,
+"neutralWhiteLevel": 5.3,
+"neutralWhiteOut": 10,
+"tonemapper": 1
+}
+}
+},
+"debugViews": {
+"m_Enabled": 1,
+"m_Settings": {
+"depth": {
+"scale": 1
+},
+"mode": 0,
+"motionVectors": {
+"motionImageAmplitude": 16,
+"motionImageOpacity": 0,
+"motionVectorsAmplitude": 64,
+"motionVectorsOpacity": 1,
+"motionVectorsResolution": 24,
+"sourceOpacity": 1
+}
+}
+},
+"depthOfField": {
+"m_Enabled": 0,
+"m_Settings": {
+"aperture": 0.9,
+"focalLength": 32,
+"focusDistance": 4.63,
+"kernelSize": 0,
+"useCameraFov": 0
+}
+},
+"dithering": {
+"m_Enabled": 0,
+"m_Settings": []
+},
+"eyeAdaptation": {
+"m_Enabled": 1,
+"m_Settings": {
+"adaptationType": 0,
+"dynamicKeyValue": 1,
+"highPercent": 97.9697,
+"keyValue": 0.25,
+"logMax": 4,
+"logMin": -8,
+"lowPercent": 1,
+"maxLuminance": 1,
+"minLuminance": -7,
+"speedDown": 3,
+"speedUp": 7
+}
+},
+"fog": {
+"m_Enabled": 1,
+"m_Settings": {
+"excludeSkybox": 1
+}
+},
+"grain": {
+"m_Enabled": 0,
+"m_Settings": {
+"colored": 1,
+"intensity": 0.534,
+"luminanceContribution": 0.8,
+"size": 1
+}
+},
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 0, null, null],
+"m_Name": "Terrain Image Effects",
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "8a3bdb2cd68f901469e7cc149151eb49", 3],
+"monitors": {
+"currentMonitorID": 0,
+"histogramMode": 3,
+"paradeExposure": 0.12,
+"refreshOnPlay": 0,
+"vectorscopeExposure": 0.12,
+"vectorscopeShowBackground": 1,
+"waveformB": 1,
+"waveformExposure": 0.12,
+"waveformG": 1,
+"waveformR": 1,
+"waveformY": 0
+},
+"motionBlur": {
+"m_Enabled": 0,
+"m_Settings": {
+"frameBlending": 0,
+"sampleCount": 10,
+"shutterAngle": 270
+}
+},
+"screenSpaceReflection": {
+"m_Enabled": 0,
+"m_Settings": {
+"intensity": {
+"fadeDistance": 100,
+"fresnelFade": 1,
+"fresnelFadePower": 1,
+"reflectionMultiplier": 1.25
+},
+"reflection": {
+"blendType": 0,
+"iterationCount": 256,
+"maxDistance": 100,
+"reflectBackfaces": 0,
+"reflectionBlur": 1,
+"reflectionQuality": 2,
+"stepSize": 3,
+"widthModifier": 0.5
+},
+"screenEdgeMask": {
+"intensity": 0.03
+}
+}
+},
+"userLut": {
+"m_Enabled": 0,
+"m_Settings": null
+},
+"vignette": {
+"m_Enabled": 1,
+"m_Settings": {
+"center": Vector2(0.5, 0.5),
+"color": {
+"a": 1,
+"b": 0,
+"g": 0,
+"r": 0
+},
+"intensity": 0.3,
+"mask": [null, 0, null, null],
+"mode": 0,
+"opacity": 1,
+"rounded": 0,
+"roundness": 1,
+"smoothness": 0.2
+}
+}
+}
+}
+meta = SubResource("Resource_5lt8w")

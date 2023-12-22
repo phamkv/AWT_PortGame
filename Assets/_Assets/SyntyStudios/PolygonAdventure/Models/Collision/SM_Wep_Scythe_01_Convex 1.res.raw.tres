@@ -1,0 +1,213 @@
+[gd_resource type="Resource" load_steps=4 format=3 uid="uid://btl4mrmx16tjb"]
+
+[ext_resource type="Script" path="res://addons/unidot_importer/asset_meta.gd" id="1_23weu"]
+[ext_resource type="Script" path="res://addons/unidot_importer/raw_parsed_asset.gd" id="2_jp53h"]
+
+[sub_resource type="Resource" id="Resource_tkqbk"]
+resource_name = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Wep_Scythe_01_Convex 1.asset"
+script = ExtResource("1_23weu")
+path = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Wep_Scythe_01_Convex 1.res"
+orig_path = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Wep_Scythe_01_Convex 1.asset"
+guid = "4fa4c12bceccad84dac577dff75b9425"
+importer_keys = {
+"mainObjectFileID": 11400000
+}
+importer_type = "NativeFormatImporter"
+internal_data = {}
+prefab_id_to_guid = {}
+prefab_gameobject_name_to_fileid_and_children = {}
+prefab_main_gameobject_id = 0
+prefab_main_transform_id = 0
+prefab_source_id_pair_to_stripped_id = {}
+transform_fileid_to_rotation_delta = {}
+transform_fileid_to_parent_fileid = {}
+transform_fileid_to_scale_signs = {}
+fileid_to_nodepath = {}
+fileid_to_skeleton_bone = {}
+fileid_to_utype = {
+11400000: 114,
+43082229437327848: 43
+}
+fileid_to_gameobject_fileid = {}
+type_to_fileids = {
+"Mesh": PackedInt64Array(43082229437327848, 43082229437327848),
+"MonoBehaviour": PackedInt64Array(11400000)
+}
+godot_resources = {}
+main_object_id = 11400000
+gameobject_name_to_fileid_and_children = {}
+transform_fileid_to_children = {}
+gameobject_fileid_to_components = {}
+transform_fileid_to_prefab_ids = {}
+gameobject_fileid_to_rename = {}
+dependency_guids = {
+"5b71ad40e238046238f9b0c6f33c3791": 11500000
+}
+prefab_dependency_guids = {}
+meta_dependency_guids = {}
+autodetected_bone_map_dict = {}
+humanoid_bone_map_dict = {}
+humanoid_bone_map_crc32_dict = {}
+humanoid_skeleton_hip_position = Vector3(0, 1, 0)
+imported_animation_paths = {}
+imported_mesh_paths = {}
+imported_material_paths = {}
+
+[resource]
+script = ExtResource("2_jp53h")
+path = "Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/SM_Wep_Scythe_01_Convex 1.res"
+guid = "4fa4c12bceccad84dac577dff75b9425"
+objects = {
+"11400000:MonoBehaviour": {
+"ConvexMeshes": [[null, 43082229437327848, null, null]],
+"HashOfSourceMeshes": [],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 0, null, null],
+"m_Name": "SM_Wep_Scythe_01_Convex 1",
+"m_ObjectHideFlags": 0,
+"m_PrefabInternal": [null, 0, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_Script": [null, 11500000, "5b71ad40e238046238f9b0c6f33c3791", 3]
+},
+"43082229437327848:Mesh": {
+"m_BindPose": [],
+"m_CompressedMesh": {
+"m_BoneIndices": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_FloatColors": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_NormalSigns": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_Normals": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_TangentSigns": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_Tangents": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_Triangles": {
+"m_BitSize": 0,
+"m_NumItems": 0
+},
+"m_UV": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_UVInfo": 0,
+"m_Vertices": {
+"m_BitSize": 0,
+"m_NumItems": 0,
+"m_Range": 0,
+"m_Start": 0
+},
+"m_Weights": {
+"m_BitSize": 0,
+"m_NumItems": 0
+}
+},
+"m_IndexBuffer": "0c000b001700040001000800040003000a00010004000a00030004000b00000005000c00090000000c0005000b000c00080001000d00050006000e00070003000e0003000b000e000b0005000e000f000d00100006000f0010000500000011000600050011000000090011000f00060011000f001100120008000d0012000d000f0012000300070013000a00030013000a001300140002000100140007000200140001000a0014001300070014000900080015001100090015001200110015000800120015000100020016000200070016000d00010016000e000600160007000e00160010000d0016000600100016000400080017000800090017000b000400170009000c001700",
+"m_IsReadable": 1,
+"m_KeepIndices": 1,
+"m_KeepVertices": 1,
+"m_LocalAABB": {
+"m_Center": Vector3(0.161522, 0.957741, 0.00911599),
+"m_Extent": Vector3(0.466603, 0.954132, 0.0626815)
+},
+"m_MeshCompression": 0,
+"m_MeshOptimized": 0,
+"m_MeshUsageFlags": 0,
+"m_Name": "Generated convex submesh 1",
+"m_ObjectHideFlags": 0,
+"m_PrefabInternal": [null, 0, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_RootBoneNameHash": 0,
+"m_Shapes": {
+"channels": [],
+"fullWeights": [],
+"shapes": [],
+"vertices": []
+},
+"m_Skin": [],
+"m_SubMeshes": [{
+"firstByte": 0,
+"firstVertex": 0,
+"indexCount": 132,
+"localAABB": {
+"m_Center": Vector3(0.161522, 0.957741, 0.00911599),
+"m_Extent": Vector3(0.466603, 0.954132, 0.0626815)
+},
+"serializedVersion": 2,
+"topology": 0,
+"vertexCount": 24
+}],
+"m_VertexData": {
+"_typelessdata": "117f043f8bc0cf3f3fdc34bcae339cbe08ccc23f8a675bbdae339cbe08ccc23f94e2333dec03febd00886c3b72ef333d8ce58bbde054903cac5a5bbdd8381d3f08ccc23f2fad833c4894e1bd1f92ed3f94e2333dcb0b95bee23a963f950a933da024c5bd10c7eb3f8a675bbd2acd073f067ccd3fa483d2bc8e891bbe508c013dac5a5bbdcceb5ebd30ee3a3d72ef333dcacc203ff900c13f94d540bc92d062be1f92ed3f8a675bbd582071bed2ff973f950a933da024c5bd3db8f43f0ac6f53c2a587fbe02dce23f94e2333d4063cf3e22c2db3f2fad833ca024c5bd3db8f43fe869d2bc8e891bbe508c013d72ef333dcb0b95bee3aa923f94e2333ddc97a43e2252df3fa483d2bcae339cbe07ecc93fdffb6c3dcceb5ebd30ee3a3dac5a5bbd",
+"m_Channels": [{
+"dimension": 3,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}, {
+"dimension": 0,
+"format": 0,
+"offset": 0,
+"stream": 0
+}],
+"m_CurrentChannels": 1,
+"m_DataSize": 288,
+"m_VertexCount": 24
+},
+"serializedVersion": 8
+}
+}
+meta = SubResource("Resource_tkqbk")

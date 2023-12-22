@@ -1,0 +1,99 @@
+[gd_resource type="AnimationLibrary" load_steps=31 format=3 uid="uid://qh28tl2j1srg"]
+
+[ext_resource type="Animation" uid="uid://b3kwr13w5ryls" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Attack_Paws.animation.tres" id="1_vq7fp"]
+[ext_resource type="Animation" uid="uid://cpjxkbhw35ftu" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Attack_Tail.animation.tres" id="2_rpd1v"]
+[ext_resource type="Animation" uid="uid://chqclycu4qcdq" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Falling.animation.tres" id="3_71koh"]
+[ext_resource type="Animation" uid="uid://bjpt3t8avyejv" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Falling_Left.animation.tres" id="4_a4cc0"]
+[ext_resource type="Animation" uid="uid://d4k2y3s2ij7b1" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Idle.animation.tres" id="5_pntks"]
+[ext_resource type="Animation" uid="uid://tcf2uevcxbyx" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Jump.animation.tres" id="6_7455r"]
+[ext_resource type="Animation" uid="uid://coh046yk0buwo" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Jump_InAir.animation.tres" id="7_y26oa"]
+[ext_resource type="Animation" uid="uid://jmeepnr0ge4g" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Jump_Pivot_InPlace.animation.tres" id="8_wdj4o"]
+[ext_resource type="Animation" uid="uid://d0kfvyhwl2da3" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Run.animation.tres" id="9_gwowr"]
+[ext_resource type="Animation" uid="uid://c1frmqvx4h7rm" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Run_InPlace.animation.tres" id="10_r1pei"]
+[ext_resource type="Animation" uid="uid://caoas37low07" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Run_Left.animation.tres" id="11_bdycs"]
+[ext_resource type="Animation" uid="uid://bmq7ruks2p6gx" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Run_Left_InPlace.animation.tres" id="12_mjgrk"]
+[ext_resource type="Animation" uid="uid://bl26uvrdvunyt" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Run_Right.animation.tres" id="13_6skii"]
+[ext_resource type="Animation" uid="uid://bt8drjd0aqyax" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Run_Right_InPlace.animation.tres" id="14_qe48l"]
+[ext_resource type="Animation" uid="uid://brvoqvc5vsg70" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Sit1.animation.tres" id="15_6lqwy"]
+[ext_resource type="Animation" uid="uid://bbrxaxblgnsgi" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Sit2_Idle.animation.tres" id="16_d456c"]
+[ext_resource type="Animation" uid="uid://cg2fwy058ny2r" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Sit3_StandUp.animation.tres" id="17_tfrs1"]
+[ext_resource type="Animation" uid="uid://b8afnyeafv7th" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Sit_Idle_Break.animation.tres" id="18_lip75"]
+[ext_resource type="Animation" uid="uid://wu152n31yck0" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Sit_No.animation.tres" id="19_jtqfc"]
+[ext_resource type="Animation" uid="uid://bvra6bqonphr0" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Sit_Yes.animation.tres" id="20_sn30g"]
+[ext_resource type="Animation" uid="uid://dw6mjxuqggauw" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Somersault.animation.tres" id="21_11yf1"]
+[ext_resource type="Animation" uid="uid://du4mfka8rlbr5" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Somersault_InPlace.animation.tres" id="22_3v77m"]
+[ext_resource type="Animation" uid="uid://djqjq5c478isj" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Walk.animation.tres" id="23_shary"]
+[ext_resource type="Animation" uid="uid://cqv5e7yqt03hv" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Walk_Back.animation.tres" id="24_2rp5e"]
+[ext_resource type="Animation" uid="uid://br6qul88merpr" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Walk_Back_InPlace.animation.tres" id="25_47q57"]
+[ext_resource type="Animation" uid="uid://bv3pwno66oypn" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Walk_InPlace.animation.tres" id="26_brytb"]
+[ext_resource type="Animation" uid="uid://esenorbsa8ge" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Walk_Left.animation.tres" id="27_fxell"]
+[ext_resource type="Animation" uid="uid://cqrnt16hbmelw" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Walk_Left_InPlace.animation.tres" id="28_1c3km"]
+[ext_resource type="Animation" uid="uid://dullhme2jyj3y" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Walk_Right.animation.tres" id="29_116h5"]
+[ext_resource type="Animation" uid="uid://demvv2m1hm46f" path="res://Assets/_Assets/Fox/Animations/extracted/Fox_Walk_Right_InPlace.animation.tres" id="30_ggn3g"]
+
+[resource]
+resource_name = "Fox_ Animator_Controller"
+_data = {
+"Fox_Attack_Paws": ExtResource("1_vq7fp"),
+"Fox_Attack_Tail": ExtResource("2_rpd1v"),
+"Fox_Falling": ExtResource("3_71koh"),
+"Fox_Falling_Left": ExtResource("4_a4cc0"),
+"Fox_Idle": ExtResource("5_pntks"),
+"Fox_Jump": ExtResource("6_7455r"),
+"Fox_Jump_InAir": ExtResource("7_y26oa"),
+"Fox_Jump_Pivot_InPlace": ExtResource("8_wdj4o"),
+"Fox_Run": ExtResource("9_gwowr"),
+"Fox_Run_InPlace": ExtResource("10_r1pei"),
+"Fox_Run_Left": ExtResource("11_bdycs"),
+"Fox_Run_Left_InPlace": ExtResource("12_mjgrk"),
+"Fox_Run_Right": ExtResource("13_6skii"),
+"Fox_Run_Right_InPlace": ExtResource("14_qe48l"),
+"Fox_Sit1": ExtResource("15_6lqwy"),
+"Fox_Sit2_Idle": ExtResource("16_d456c"),
+"Fox_Sit3_StandUp": ExtResource("17_tfrs1"),
+"Fox_Sit_Idle_Break": ExtResource("18_lip75"),
+"Fox_Sit_No": ExtResource("19_jtqfc"),
+"Fox_Sit_Yes": ExtResource("20_sn30g"),
+"Fox_Somersault": ExtResource("21_11yf1"),
+"Fox_Somersault_InPlace": ExtResource("22_3v77m"),
+"Fox_Walk": ExtResource("23_shary"),
+"Fox_Walk_Back": ExtResource("24_2rp5e"),
+"Fox_Walk_Back_InPlace": ExtResource("25_47q57"),
+"Fox_Walk_InPlace": ExtResource("26_brytb"),
+"Fox_Walk_Left": ExtResource("27_fxell"),
+"Fox_Walk_Left_InPlace": ExtResource("28_1c3km"),
+"Fox_Walk_Right": ExtResource("29_116h5"),
+"Fox_Walk_Right_InPlace": ExtResource("30_ggn3g")
+}
+metadata/guid_fileid_to_animation_name = {
+"02d99976b4a0880419ef0381cb525dfe:1827226128182048838": &"Fox_Sit3_StandUp",
+"0473e26d90c4a994ead38f256c99c5b9:1827226128182048838": &"Fox_Somersault_InPlace",
+"09884bf878afb4549bea8fb4f77e5ea0:1827226128182048838": &"Fox_Idle",
+"13236cf41befc77498c6245c317911ae:1827226128182048838": &"Fox_Sit_No",
+"236b1614aa86e0f4db0792352a73d455:1827226128182048838": &"Fox_Walk_InPlace",
+"2d694cd30f631174093a1111c4ed8895:1827226128182048838": &"Fox_Jump_Pivot_InPlace",
+"34bb4f81661abcd4fae58c9a9d6bdbe3:1827226128182048838": &"Fox_Walk_Back",
+"490c9560e31fae748af6de79fbaecb10:1827226128182048838": &"Fox_Run_Right_InPlace",
+"5ae8ff9eadf8f554688979fee65f0aef:1827226128182048838": &"Fox_Run_Left",
+"70c4ef9204c08ce429fd08a494bb1033:1827226128182048838": &"Fox_Run",
+"8ca578f25a346e248800bad0f5224350:1827226128182048838": &"Fox_Jump",
+"8f0cf4218cd736142a75f73f2ce615ba:1827226128182048838": &"Fox_Walk_Right",
+"90c44eee7e281954292e37471017ab8e:1827226128182048838": &"Fox_Walk_Back_InPlace",
+"93da703632b047d43b8f3a2b0f902424:1827226128182048838": &"Fox_Run_InPlace",
+"9eb4afe5321a98247a4a1b7f9e0e5ee6:1827226128182048838": &"Fox_Falling_Left",
+"a07c42bf9096a064880415fc6125d716:1827226128182048838": &"Fox_Falling",
+"a2e546d7d9c06c5438e2982ef4737ce3:1827226128182048838": &"Fox_Sit2_Idle",
+"b19a75272a0f3534fb0ab2cc67456a74:1827226128182048838": &"Fox_Attack_Tail",
+"b2adcf57d666f76469d4ca24956e82b7:1827226128182048838": &"Fox_Walk_Left_InPlace",
+"ba2500356de6e014d9477dc115771f94:1827226128182048838": &"Fox_Run_Left_InPlace",
+"baae981a03a70004b9188fe1ac277200:1827226128182048838": &"Fox_Attack_Paws",
+"bc0cfd164a2579d41851505ba8332e40:1827226128182048838": &"Fox_Walk_Left",
+"bdbaf568193ceb44eb952bb2af5f3837:1827226128182048838": &"Fox_Walk_Right_InPlace",
+"c59a20e486f80ba4e859d4ef9574f9bb:1827226128182048838": &"Fox_Sit1",
+"cc3accffe68d76c4fba0db9dc9cf4a4a:1827226128182048838": &"Fox_Run_Right",
+"ce33bd1fdecb0de4dba1419f7763a5b0:1827226128182048838": &"Fox_Somersault",
+"d606362d2cd19554aaf474b16d557924:1827226128182048838": &"Fox_Sit_Idle_Break",
+"e004cd5a03acf764d911027f6ca2b528:1827226128182048838": &"Fox_Jump_InAir",
+"e73c2dbc3de029f41bbdd4fd33d9fef8:1827226128182048838": &"Fox_Sit_Yes",
+"f56a614af49e8f74fb38d336d6b77e35:1827226128182048838": &"Fox_Walk"
+}

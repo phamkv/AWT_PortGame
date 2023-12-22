@@ -1,0 +1,134 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://cmv7if42ejm72"]
+
+[ext_resource type="Texture2D" uid="uid://klodx1si5vai" path="res://Assets/_Assets/VillageProps/PBR_Tiled/Textures/Wood/WoodBark03/plane_3_3_DefaultMaterial_AlbedoTransparency.tga" id="1_hr1rc"]
+[ext_resource type="Texture2D" uid="uid://4bkcpc1trgd1" path="res://Assets/_Assets/VillageProps/PBR_Tiled/Textures/Wood/WoodBark03/plane_3_3_DefaultMaterial_MetallicSmoothness.roughness.png" id="2_5akfr"]
+[ext_resource type="Texture2D" uid="uid://dqxksdfm4vtxq" path="res://Assets/_Assets/VillageProps/PBR_Tiled/Textures/Wood/WoodBark03/plane_3_3_DefaultMaterial_Normal.tga" id="3_rfhiw"]
+
+[resource]
+resource_name = "WoodBark03"
+depth_draw_mode = 1
+albedo_color = Color(0.772059, 0.772059, 0.772059, 1)
+albedo_texture = ExtResource("1_hr1rc")
+metallic_texture = ExtResource("2_5akfr")
+roughness_texture = ExtResource("2_5akfr")
+roughness_texture_channel = 3
+normal_enabled = true
+normal_texture = ExtResource("3_rfhiw")
+uv1_scale = Vector3(1, 1, 0)
+metadata/unidot_keys = {
+"disabledShaderPasses": [],
+"m_BuildTextureStacks": [],
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CustomRenderQueue": -1,
+"m_DoubleSidedGI": 0,
+"m_EnableInstancingVariants": 0,
+"m_InvalidKeywords": [],
+"m_LightmapFlags": 4,
+"m_ModifiedSerializedProperties": 0,
+"m_Name": "WoodBark03",
+"m_ObjectHideFlags": 0,
+"m_Parent": [null, 0, null, null],
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_SavedProperties": {
+"m_Colors": [{
+"_Color": Color(0.772059, 0.772059, 0.772059, 1)
+}, {
+"_EmissionColor": Color(0, 0, 0, 1)
+}],
+"m_Floats": [{
+"_BumpScale": 1
+}, {
+"_Cutoff": 0.5
+}, {
+"_DetailNormalMapScale": 1
+}, {
+"_DstBlend": 0
+}, {
+"_GlossMapScale": 0.5
+}, {
+"_Glossiness": 0.5
+}, {
+"_GlossyReflections": 1
+}, {
+"_Metallic": 0
+}, {
+"_Mode": 0
+}, {
+"_OcclusionStrength": 1
+}, {
+"_Parallax": 0.02
+}, {
+"_SmoothnessTextureChannel": 0
+}, {
+"_SpecularHighlights": 1
+}, {
+"_SrcBlend": 1
+}, {
+"_UVSec": 0
+}, {
+"_ZWrite": 1
+}],
+"m_Ints": [],
+"m_TexEnvs": [{
+"_BumpMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 2800000, "ba7dec347a9d09d40abb8833143c181e", 3]
+}
+}, {
+"_DetailAlbedoMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}, {
+"_DetailMask": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}, {
+"_DetailNormalMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}, {
+"_EmissionMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}, {
+"_MainTex": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 2800000, "5b20b5f9341db89498da0b4a731111f1", 3]
+}
+}, {
+"_MetallicGlossMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, -2800000, "bd45d195a2be5014f95c48e01e0fe8b5", 3]
+}
+}, {
+"_OcclusionMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}, {
+"_ParallaxMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}],
+"serializedVersion": 3
+},
+"m_Shader": [null, 46, "0000000000000000f000000000000000", 0],
+"m_ValidKeywords": ["_METALLICGLOSSMAP", "_NORMALMAP"],
+"serializedVersion": 8,
+"stringTagMap": []
+}

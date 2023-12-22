@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c1joxet7tchnb"
+path="res://.godot/imported/Snow1 20-Audio.wav-b83fbe6e294634de1550a0a14a511a44.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Footstep(Snow and Grass)/Stepssingle sound/snow/Snow1 20-Audio.wav"
+dest_files=["res://.godot/imported/Snow1 20-Audio.wav-b83fbe6e294634de1550a0a14a511a44.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

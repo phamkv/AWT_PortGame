@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bysawyk3yr0io"
+path="res://.godot/imported/walking-4.wav-059e56a7e6b318020effe9c25b03514d.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/walking/walking-4.wav"
+dest_files=["res://.godot/imported/walking-4.wav-059e56a7e6b318020effe9c25b03514d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://coxwoyd8umnxy"
+path="res://.godot/imported/JumpyGame.wav-10b415f68f58eca7e06366ec2cd2b61f.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Music Tracks/JumpyGame.wav"
+dest_files=["res://.godot/imported/JumpyGame.wav-10b415f68f58eca7e06366ec2cd2b61f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

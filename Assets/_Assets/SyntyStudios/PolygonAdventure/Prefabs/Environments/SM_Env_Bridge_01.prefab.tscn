@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://duftw8681gb1h"]
+
+[ext_resource type="ArrayMesh" uid="uid://8rnn6d7w78tr" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/extracted/SM_Env_Bridge_01.SM_Env_Bridge_01.mesh" id="1_kxqmw"]
+[ext_resource type="Material" uid="uid://ciwmhcp0p0al" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Materials/PolyAdventureMaterial_01.mat.tres" id="2_81tlg"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_jdf6j"]
+points = PackedVector3Array(1.10705, -0.0471585, -2.82938, 1.3898, -0.0471585, -2.82938, 1.3898, -0.0469462, 2.82798, 1.01272, 0.0475334, 2.64013, 1.01272, 0.707404, -2.16874, 1.10705, 1.17832, -2.92301, 1.57857, 0.895938, -2.92301, 1.48419, 0.236068, 2.07428, 1.10705, 1.17874, 3.01815, 1.57857, 1.46154, 2.26271, 1.01272, 0.990418, 1.32001, 1.10705, 2.02757, -1.41504, 1.57857, 1.55602, -2.54617, 1.48419, 2.12184, 1.03679, 1.10705, 2.12184, 1.03679, 1.57857, 2.02757, -1.41504)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vg4vn"]
+points = PackedVector3Array(-1.34525, -0.0471585, 2.64058, -1.06237, -0.0471585, 2.64058, -1.53385, 0.990524, 3.01815, -1.53379, 0.236097, -1.98058, -1.34514, -0.0469461, -2.82966, -1.06237, 0.518715, 2.82907, -1.06237, -0.0469461, -2.82966, -0.967992, 0.047543, -2.54663, -0.967992, 1.08459, -0.849073, -1.1567, 1.74453, 2.26302, -1.51141, 1.25807, 2.77825, -1.53385, 2.12206, -0.282433, -1.53379, 0.896247, -2.92301, -1.06237, 1.17865, -3.01814, -1.06237, 2.12163, -0.565457, -1.53379, 1.8388, -1.88604)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2drid"]
+points = PackedVector3Array(1.13717, 1.14721, -0.422903, 1.01233, 0.707321, -2.16871, -1.13731, 1.12218, -0.303667, -1.13731, 1.12218, -0.000301123, -1.13731, 1.02098, 1.21369, 1.01211, 0.990264, 1.31974, 1.01211, 0.895875, 1.69697, 1.01211, 0.0470479, 2.6403, 1.01233, 0.0470479, -2.54647, 0.97705, 0.246995, -2.64196, -0.968038, 0.518767, -2.35811, -0.968038, 0.0470479, -2.54647, -1.14424, 0.00605314, 2.74793, -1.13731, 0.818577, 1.92067, 0.933503, 0.347974, 2.5274, -0.983447, 0.347974, 2.5274)
+
+[node name="SM_Env_Bridge_01" type="Node3D"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::53df91a386bb7b541a0c24d10af51a54:2309648]"
+gi_mode = 2
+mesh = ExtResource("1_kxqmw")
+surface_material_override/0 = ExtResource("2_81tlg")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 183838, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "fa8eda4ec55ee1a4e99ca991c5828dbf", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MeshCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider"]
+shape = SubResource("ConvexPolygonShape3D_jdf6j")
+
+[node name="MeshCollider2" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider2"]
+shape = SubResource("ConvexPolygonShape3D_vg4vn")
+
+[node name="MeshCollider3" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider3"]
+shape = SubResource("ConvexPolygonShape3D_2drid")

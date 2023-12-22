@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://ktnas1kj50"]
+
+[ext_resource type="Script" path="res://Assets/_Assets/Player/Player.gd" id="1_q4buu"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_xvrqd"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1l6dm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vutp8"]
+
+[node name="FirstPerson" type="Node3D"]
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.699102, 0)
+script = ExtResource("1_q4buu")
+
+[node name="PlayerMesh" type="MeshInstance3D" parent="Player"]
+mesh = SubResource("CapsuleMesh_xvrqd")
+
+[node name="PlayerCollisionShape" type="CollisionShape3D" parent="Player"]
+shape = SubResource("CapsuleShape3D_1l6dm")
+
+[node name="PlayerCamera" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.642203, 0)
+
+[node name="RightArmMesh" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 1, 0.540088, 0, -0.559133)
+mesh = SubResource("BoxMesh_vutp8")
+
+[node name="LeftArmMesh" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 1, -0.573034, 0, -0.559133)
+mesh = SubResource("BoxMesh_vutp8")

@@ -1,0 +1,100 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4t7wwtm5t5hc"]
+
+[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Drova/Wood.prefab.tscn" id="1_b3tqy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2q1sc"]
+size = Vector3(1.3, 1.1, 0.7)
+
+[node name="Drove02Pile" type="Node3D"]
+
+[node name="MonoBehaviour" type="Node" parent="."]
+editor_description = "[MonoBehaviour 114::20540db286ca29e49a31f0e63c4aec75:-4926453571258160603]"
+metadata/unidot_keys = {
+"breakCount": 10,
+"canBePickedUp": 1,
+"displayName": "Wood Pile",
+"dropItemsOnDestroy": 0,
+"droppedInventoryIcon": [null, 0, null, null],
+"droppedName": "Wood",
+"droppedPrefab": [null, 0, null, null],
+"initialObject": 0,
+"interactionDistance": 5,
+"interactionSound": [null, 8300000, "19f89c6e740e7447f9e12a8310d3e973", 3],
+"inventoryIcon": [null, 21300000, "7d45e9ca7622fa4469e3fcfbe9355028", 3],
+"itemcount": 5,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 8830229297879083243, null, null],
+"m_Layer": 3,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "146e9fe48b2f3df40b914fb573c52a5b", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"useRigidbody": 0
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52, 0.4, 0.25)
+shape = SubResource("BoxShape3D_2q1sc")
+
+[node name="Drova02Pile" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26, 0, 0)
+
+[node name="Drova02Pile (7)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Drova02Pile (1)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.085, 0.281, 0)
+
+[node name="Drova02Pile (2)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.345, 0.281, 0)
+
+[node name="Drova02Pile (3)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.605, 0.281, 0)
+
+[node name="Drova02Pile (4)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.865, 0.281, 0)
+
+[node name="Drova02Pile (5)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.194, 0.564, 0)
+
+[node name="Drova02Pile (6)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.454, 0.564, 0)
+
+[node name="Drova02Pile (07)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.714, 0.564, 0)
+
+[node name="Drova02Pile (08)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.309, 0.844, 0)
+
+[node name="Drova02Pile (09)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.569, 0.844, 0)
+
+[node name="Drova02Pile (10)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52, 0, 0)
+
+[node name="Drova02Pile (11)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.78, 0, 0)
+
+[node name="Drova02Pile (12)" parent="." instance=ExtResource("1_b3tqy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.04, 0, 0)
+
+[editable path="Drova02Pile"]
+[editable path="Drova02Pile (7)"]
+[editable path="Drova02Pile (1)"]
+[editable path="Drova02Pile (2)"]
+[editable path="Drova02Pile (3)"]
+[editable path="Drova02Pile (4)"]
+[editable path="Drova02Pile (5)"]
+[editable path="Drova02Pile (6)"]
+[editable path="Drova02Pile (07)"]
+[editable path="Drova02Pile (08)"]
+[editable path="Drova02Pile (09)"]
+[editable path="Drova02Pile (10)"]
+[editable path="Drova02Pile (11)"]
+[editable path="Drova02Pile (12)"]

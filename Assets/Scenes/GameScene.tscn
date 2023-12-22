@@ -1,0 +1,2842 @@
+[gd_scene load_steps=19 format=3 uid="uid://dubn7u8ja2gke"]
+
+[ext_resource type="PackedScene" uid="uid://e75k5beerk7g" path="res://Assets/Prefabs/InventorySlotUI.prefab.tscn" id="2_erjgu"]
+[ext_resource type="AudioStream" uid="uid://brming4bs4fe6" path="res://Assets/Audio/Music Tracks/Zephyr.wav" id="3_dteuw"]
+[ext_resource type="PackedScene" uid="uid://cmrhbqoxo6fop" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Mushroom.prefab.tscn" id="9_wkacr"]
+[ext_resource type="PackedScene" uid="uid://b1jfi6ctc20if" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Rock1.prefab.tscn" id="14_e8uwc"]
+[ext_resource type="PackedScene" uid="uid://b3xcrw8iv6po2" path="res://Assets/_Assets/Terrain/Environment/Terrain/Terrains/terrainGodot.tscn" id="14_mx62s"]
+[ext_resource type="PackedScene" uid="uid://cabjv0lowv2gn" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Grass1.prefab.tscn" id="15_xs6fk"]
+[ext_resource type="PackedScene" uid="uid://6xgqj8objvo1" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Flower2.prefab.tscn" id="16_b5k7r"]
+[ext_resource type="PackedScene" uid="uid://h7a2kwcb2vq3" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Flower1.prefab.tscn" id="17_iaugm"]
+[ext_resource type="PackedScene" uid="uid://qhrmt5b303gj" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree2.prefab.tscn" id="18_dhxs3"]
+[ext_resource type="PackedScene" uid="uid://ktnas1kj50" path="res://Assets/_Assets/Player/player.tscn" id="19_7xedu"]
+[ext_resource type="PackedScene" uid="uid://dqoolq5xt4jdu" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree1.prefab.tscn" id="19_yhdff"]
+[ext_resource type="PackedScene" uid="uid://c5ry72yumh6ow" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Deciduous_tree1.prefab.tscn" id="20_lupru"]
+[ext_resource type="PackedScene" uid="uid://deiko1p27il0k" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Oak_tree1.prefab.tscn" id="21_8hftc"]
+[ext_resource type="PackedScene" uid="uid://c6635b7gwv822" path="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/PA_Warrior.prefab.tscn" id="22_j20d7"]
+[ext_resource type="AudioStream" uid="uid://fsnn7bqgv8sa" path="res://Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/walking/walking-3.wav" id="23_kvkxj"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nwpca"]
+sky_top_color = Color(0.407843, 0.611765, 0.792157, 1)
+sky_horizon_color = Color(0.772549, 0.611765, 0.572549, 1)
+sky_curve = 0.219613
+sky_energy_multiplier = 2.58
+ground_bottom_color = Color(0.360784, 0.337255, 0.188235, 1)
+ground_horizon_color = Color(0.772549, 0.611765, 0.572549, 1)
+ground_curve = 0.0273208
+ground_energy_multiplier = 4.95
+
+[sub_resource type="Sky" id="Sky_x3sy0"]
+sky_material = SubResource("ProceduralSkyMaterial_nwpca")
+
+[sub_resource type="Environment" id="Environment_7lud0"]
+background_mode = 2
+background_energy_multiplier = 0.37
+sky = SubResource("Sky_x3sy0")
+fog_light_color = Color(0.47451, 0.560784, 0.823529, 1)
+fog_density = 0.0205
+fog_height = 64.68
+
+[node name="RootNode3D" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.937182, 0.21483, -0.27484, 0.347826, -0.515449, 0.783153, 0.026579, -0.829554, -0.557793, 0, 124.078, -55.8813)
+light_energy = 1.37
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7lud0")
+
+[node name="UI" type="Node3D" parent="."]
+transform = Transform3D(1e-07, 0, 0, 0, 1e-07, 0, 0, 0, 1e-07, 0, 0, 0)
+
+[node name="Canvas" type="Node" parent="UI"]
+metadata/unidot_keys = {
+"m_AdditionalShaderChannelsFlag": 25,
+"m_Camera": [null, 0, null, null],
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_Enabled": 1,
+"m_GameObject": [null, 507040162, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_OverridePixelPerfect": 0,
+"m_OverrideSorting": 0,
+"m_PixelPerfect": 0,
+"m_PlaneDistance": 100,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_ReceivesEvents": 1,
+"m_RenderMode": 0,
+"m_SortingBucketNormalizedSize": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_TargetDisplay": 0,
+"m_UpdateRectTransformForStandalone": 0,
+"m_VertexColorAlwaysGammaSpace": 0,
+"serializedVersion": 3
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:507040164]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DefaultSpriteDPI": 96,
+"m_DynamicPixelsPerUnit": 1,
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_FallbackScreenDPI": 96,
+"m_GameObject": [null, 507040162, null, null],
+"m_Layer": 5,
+"m_MatchWidthOrHeight": 1,
+"m_ObjectHideFlags": 0,
+"m_PhysicalUnit": 3,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PresetInfoIsWorld": 0,
+"m_ReferencePixelsPerUnit": 100,
+"m_ReferenceResolution": Vector2(1920, 1080),
+"m_ScaleFactor": 1,
+"m_ScreenMatchMode": 0,
+"m_Script": [null, 11500000, "0cd44c1031e13a943bb63640046fad76", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_UiScaleMode": 1
+}
+
+[node name="MonoBehaviour2" type="Node" parent="UI"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:507040163]"
+metadata/unidot_keys = {
+"m_BlockingMask": {
+"m_Bits": 4294967295,
+"serializedVersion": 2
+},
+"m_BlockingObjects": 0,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 507040162, null, null],
+"m_IgnoreReversedGraphics": 1,
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "dc42784cf147c0c48a680349fa168899", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="PlayerDeathUI" type="Node3D" parent="UI"]
+
+[node name="MonoBehaviour" type="Node" parent="UI/PlayerDeathUI"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:478012741]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 478012739, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "eb6daba6011510d4cb93cf5780867e21", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"mainMenuButton": [null, 1276550640, null, null],
+"resumeButton": [null, 249678405, null, null]
+}
+
+[node name="Background" type="Node3D" parent="UI/PlayerDeathUI"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/PlayerDeathUI/Background"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 328785858, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/PlayerDeathUI/Background"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:328785860]"
+metadata/unidot_keys = {
+"m_Color": Color(0, 0, 0, 0.921569),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_FillAmount": 1,
+"m_FillCenter": 1,
+"m_FillClockwise": 1,
+"m_FillMethod": 4,
+"m_FillOrigin": 0,
+"m_GameObject": [null, 328785858, null, null],
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PixelsPerUnitMultiplier": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveAspect": 0,
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "fe87c0e1cc204ed48ad3b37840f39efc", 3],
+"m_Sprite": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Type": 0,
+"m_UseSpriteMesh": 0
+}
+
+[node name="PausedText" type="Node3D" parent="UI/PlayerDeathUI"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/PlayerDeathUI/PausedText"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 1796855472, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/PlayerDeathUI/PausedText"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1796855474]"
+metadata/unidot_keys = {
+"checkPaddingRequired": 0,
+"m_Color": Color(1, 1, 1, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 1796855472, null, null],
+"m_HorizontalAlignment": 2,
+"m_IsTextObjectScaleStatic": 0,
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "f4688fdb7df04437aeb418b961361dc5", 3],
+"m_StaticEditorFlags": 0,
+"m_StyleSheet": [null, 0, null, null],
+"m_TagString": "Untagged",
+"m_TextStyleHashCode": -1183493901,
+"m_VertexBufferAutoSizeReduction": 0,
+"m_VerticalAlignment": 512,
+"m_baseMaterial": [null, 0, null, null],
+"m_charWidthMaxAdj": 0,
+"m_characterSpacing": 0,
+"m_colorMode": 3,
+"m_enableAutoSizing": 0,
+"m_enableExtraPadding": 0,
+"m_enableKerning": 1,
+"m_enableVertexGradient": 0,
+"m_enableWordWrapping": 0,
+"m_faceColor": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontAsset": [null, 11400000, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_fontColor": Color(1, 1, 1, 1),
+"m_fontColor32": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontColorGradient": {
+"bottomLeft": Color(1, 1, 1, 1),
+"bottomRight": Color(1, 1, 1, 1),
+"topLeft": Color(1, 1, 1, 1),
+"topRight": Color(1, 1, 1, 1)
+},
+"m_fontColorGradientPreset": [null, 0, null, null],
+"m_fontMaterial": [null, 0, null, null],
+"m_fontMaterials": [],
+"m_fontSharedMaterials": [],
+"m_fontSize": 160,
+"m_fontSizeBase": 160,
+"m_fontSizeMax": 72,
+"m_fontSizeMin": 18,
+"m_fontStyle": 1,
+"m_fontWeight": 400,
+"m_geometrySortingOrder": 0,
+"m_hasFontAssetChanged": 0,
+"m_horizontalMapping": 0,
+"m_isCullingEnabled": 0,
+"m_isOrthographic": 1,
+"m_isRichText": 1,
+"m_isRightToLeft": 0,
+"m_isUsingLegacyAnimationComponent": 0,
+"m_isVolumetricText": 0,
+"m_lineSpacing": 0,
+"m_lineSpacingMax": 0,
+"m_linkedTextComponent": [null, 0, null, null],
+"m_margin": Quaternion(0, 0, 0, 0),
+"m_maskOffset": Quaternion(0, 0, 0, 0),
+"m_overflowMode": 0,
+"m_overrideHtmlColors": 0,
+"m_pageToDisplay": 1,
+"m_paragraphSpacing": 0,
+"m_parseCtrlCharacters": 1,
+"m_sharedMaterial": [null, 2180264, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_spriteAsset": [null, 0, null, null],
+"m_text": "You Died",
+"m_textAlignment": 65535,
+"m_tintAllSprites": 0,
+"m_useMaxVisibleDescender": 1,
+"m_uvLineOffset": 0,
+"m_verticalMapping": 0,
+"m_wordSpacing": 0,
+"m_wordWrappingRatios": 0.4,
+"parentLinkedComponent": [null, 0, null, null]
+}
+
+[node name="ResumeButton" type="Node3D" parent="UI/PlayerDeathUI"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/PlayerDeathUI/ResumeButton"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 249678401, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/PlayerDeathUI/ResumeButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:249678406]"
+metadata/unidot_keys = {
+"m_Color": Color(0.235294, 0.235294, 0.235294, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_FillAmount": 1,
+"m_FillCenter": 1,
+"m_FillClockwise": 1,
+"m_FillMethod": 4,
+"m_FillOrigin": 0,
+"m_GameObject": [null, 249678401, null, null],
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PixelsPerUnitMultiplier": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveAspect": 0,
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "fe87c0e1cc204ed48ad3b37840f39efc", 3],
+"m_Sprite": [null, 10905, "0000000000000000f000000000000000", 0],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Type": 1,
+"m_UseSpriteMesh": 0
+}
+
+[node name="MonoBehaviour2" type="Node" parent="UI/PlayerDeathUI/ResumeButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:249678405]"
+metadata/unidot_keys = {
+"m_AnimationTriggers": {
+"m_DisabledTrigger": "Disabled",
+"m_HighlightedTrigger": "Highlighted",
+"m_NormalTrigger": "Normal",
+"m_PressedTrigger": "Pressed",
+"m_SelectedTrigger": "Selected"
+},
+"m_Colors": {
+"m_ColorMultiplier": 1,
+"m_DisabledColor": Color(0.784314, 0.784314, 0.784314, 0.501961),
+"m_FadeDuration": 0.1,
+"m_HighlightedColor": Color(0.960784, 0.960784, 0.960784, 1),
+"m_NormalColor": Color(1, 1, 1, 1),
+"m_PressedColor": Color(0.784314, 0.784314, 0.784314, 1),
+"m_SelectedColor": Color(0.960784, 0.960784, 0.960784, 1)
+},
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 249678401, null, null],
+"m_Interactable": 1,
+"m_Layer": 5,
+"m_Navigation": {
+"m_Mode": 3,
+"m_SelectOnDown": [null, 0, null, null],
+"m_SelectOnLeft": [null, 0, null, null],
+"m_SelectOnRight": [null, 0, null, null],
+"m_SelectOnUp": [null, 0, null, null],
+"m_WrapAround": 0
+},
+"m_ObjectHideFlags": 0,
+"m_OnClick": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "4e29b1a8efbd4b44bb3f3716e73f07ff", 3],
+"m_SpriteState": {
+"m_DisabledSprite": [null, 0, null, null],
+"m_HighlightedSprite": [null, 0, null, null],
+"m_PressedSprite": [null, 0, null, null],
+"m_SelectedSprite": [null, 0, null, null]
+},
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_TargetGraphic": [null, 249678406, null, null],
+"m_Transition": 1
+}
+
+[node name="MonoBehaviour3" type="Node" parent="UI/PlayerDeathUI/ResumeButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:249678404]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_EffectColor": Color(0, 0, 0, 0.5),
+"m_EffectDistance": Vector2(5, -5),
+"m_Enabled": 1,
+"m_GameObject": [null, 249678401, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "cfabb0440166ab443bba8876756fdfa9", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_UseGraphicAlpha": 1
+}
+
+[node name="MonoBehaviour4" type="Node" parent="UI/PlayerDeathUI/ResumeButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:249678403]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_EffectColor": Color(0, 0, 0, 1),
+"m_EffectDistance": Vector2(3, 3),
+"m_Enabled": 1,
+"m_GameObject": [null, 249678401, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "e19747de3f5aca642ab2be37e372fb86", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_UseGraphicAlpha": 1
+}
+
+[node name="Text (TMP)" type="Node3D" parent="UI/PlayerDeathUI/ResumeButton"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/PlayerDeathUI/ResumeButton/Text (TMP)"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 1367069216, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/PlayerDeathUI/ResumeButton/Text (TMP)"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1367069218]"
+metadata/unidot_keys = {
+"checkPaddingRequired": 0,
+"m_Color": Color(1, 1, 1, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 1367069216, null, null],
+"m_HorizontalAlignment": 2,
+"m_IsTextObjectScaleStatic": 0,
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "f4688fdb7df04437aeb418b961361dc5", 3],
+"m_StaticEditorFlags": 0,
+"m_StyleSheet": [null, 0, null, null],
+"m_TagString": "Untagged",
+"m_TextStyleHashCode": -1183493901,
+"m_VertexBufferAutoSizeReduction": 0,
+"m_VerticalAlignment": 512,
+"m_baseMaterial": [null, 0, null, null],
+"m_charWidthMaxAdj": 0,
+"m_characterSpacing": 0,
+"m_colorMode": 3,
+"m_enableAutoSizing": 0,
+"m_enableExtraPadding": 0,
+"m_enableKerning": 1,
+"m_enableVertexGradient": 0,
+"m_enableWordWrapping": 1,
+"m_faceColor": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontAsset": [null, 11400000, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_fontColor": Color(1, 1, 1, 1),
+"m_fontColor32": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontColorGradient": {
+"bottomLeft": Color(1, 1, 1, 1),
+"bottomRight": Color(1, 1, 1, 1),
+"topLeft": Color(1, 1, 1, 1),
+"topRight": Color(1, 1, 1, 1)
+},
+"m_fontColorGradientPreset": [null, 0, null, null],
+"m_fontMaterial": [null, 0, null, null],
+"m_fontMaterials": [],
+"m_fontSharedMaterials": [],
+"m_fontSize": 60,
+"m_fontSizeBase": 60,
+"m_fontSizeMax": 72,
+"m_fontSizeMin": 18,
+"m_fontStyle": 1,
+"m_fontWeight": 400,
+"m_geometrySortingOrder": 0,
+"m_hasFontAssetChanged": 0,
+"m_horizontalMapping": 0,
+"m_isCullingEnabled": 0,
+"m_isOrthographic": 1,
+"m_isRichText": 1,
+"m_isRightToLeft": 0,
+"m_isUsingLegacyAnimationComponent": 0,
+"m_isVolumetricText": 0,
+"m_lineSpacing": 0,
+"m_lineSpacingMax": 0,
+"m_linkedTextComponent": [null, 0, null, null],
+"m_margin": Quaternion(0, 0, 0, 0),
+"m_maskOffset": Quaternion(0, 0, 0, 0),
+"m_overflowMode": 0,
+"m_overrideHtmlColors": 0,
+"m_pageToDisplay": 1,
+"m_paragraphSpacing": 0,
+"m_parseCtrlCharacters": 1,
+"m_sharedMaterial": [null, 2180264, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_spriteAsset": [null, 0, null, null],
+"m_text": "Try Again!",
+"m_textAlignment": 65535,
+"m_tintAllSprites": 0,
+"m_useMaxVisibleDescender": 1,
+"m_uvLineOffset": 0,
+"m_verticalMapping": 0,
+"m_wordSpacing": 0,
+"m_wordWrappingRatios": 0.4,
+"parentLinkedComponent": [null, 0, null, null]
+}
+
+[node name="MainMenuButton" type="Node3D" parent="UI/PlayerDeathUI"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/PlayerDeathUI/MainMenuButton"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 1276550636, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/PlayerDeathUI/MainMenuButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1276550641]"
+metadata/unidot_keys = {
+"m_Color": Color(0.235849, 0.235849, 0.235849, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_FillAmount": 1,
+"m_FillCenter": 1,
+"m_FillClockwise": 1,
+"m_FillMethod": 4,
+"m_FillOrigin": 0,
+"m_GameObject": [null, 1276550636, null, null],
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PixelsPerUnitMultiplier": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveAspect": 0,
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "fe87c0e1cc204ed48ad3b37840f39efc", 3],
+"m_Sprite": [null, 10905, "0000000000000000f000000000000000", 0],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Type": 1,
+"m_UseSpriteMesh": 0
+}
+
+[node name="MonoBehaviour2" type="Node" parent="UI/PlayerDeathUI/MainMenuButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1276550640]"
+metadata/unidot_keys = {
+"m_AnimationTriggers": {
+"m_DisabledTrigger": "Disabled",
+"m_HighlightedTrigger": "Highlighted",
+"m_NormalTrigger": "Normal",
+"m_PressedTrigger": "Pressed",
+"m_SelectedTrigger": "Selected"
+},
+"m_Colors": {
+"m_ColorMultiplier": 1,
+"m_DisabledColor": Color(0.784314, 0.784314, 0.784314, 0.501961),
+"m_FadeDuration": 0.1,
+"m_HighlightedColor": Color(0.960784, 0.960784, 0.960784, 1),
+"m_NormalColor": Color(1, 1, 1, 1),
+"m_PressedColor": Color(0.784314, 0.784314, 0.784314, 1),
+"m_SelectedColor": Color(0.960784, 0.960784, 0.960784, 1)
+},
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 1276550636, null, null],
+"m_Interactable": 1,
+"m_Layer": 5,
+"m_Navigation": {
+"m_Mode": 3,
+"m_SelectOnDown": [null, 0, null, null],
+"m_SelectOnLeft": [null, 0, null, null],
+"m_SelectOnRight": [null, 0, null, null],
+"m_SelectOnUp": [null, 0, null, null],
+"m_WrapAround": 0
+},
+"m_ObjectHideFlags": 0,
+"m_OnClick": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "4e29b1a8efbd4b44bb3f3716e73f07ff", 3],
+"m_SpriteState": {
+"m_DisabledSprite": [null, 0, null, null],
+"m_HighlightedSprite": [null, 0, null, null],
+"m_PressedSprite": [null, 0, null, null],
+"m_SelectedSprite": [null, 0, null, null]
+},
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_TargetGraphic": [null, 1276550641, null, null],
+"m_Transition": 1
+}
+
+[node name="MonoBehaviour3" type="Node" parent="UI/PlayerDeathUI/MainMenuButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1276550639]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_EffectColor": Color(0, 0, 0, 1),
+"m_EffectDistance": Vector2(3, 3),
+"m_Enabled": 1,
+"m_GameObject": [null, 1276550636, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "cfabb0440166ab443bba8876756fdfa9", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_UseGraphicAlpha": 1
+}
+
+[node name="MonoBehaviour4" type="Node" parent="UI/PlayerDeathUI/MainMenuButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1276550638]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_EffectColor": Color(0, 0, 0, 0.5),
+"m_EffectDistance": Vector2(1, -1),
+"m_Enabled": 1,
+"m_GameObject": [null, 1276550636, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "e19747de3f5aca642ab2be37e372fb86", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_UseGraphicAlpha": 1
+}
+
+[node name="Text (TMP)" type="Node3D" parent="UI/PlayerDeathUI/MainMenuButton"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/PlayerDeathUI/MainMenuButton/Text (TMP)"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 584640685, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/PlayerDeathUI/MainMenuButton/Text (TMP)"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:584640687]"
+metadata/unidot_keys = {
+"checkPaddingRequired": 0,
+"m_Color": Color(1, 1, 1, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 584640685, null, null],
+"m_HorizontalAlignment": 2,
+"m_IsTextObjectScaleStatic": 0,
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "f4688fdb7df04437aeb418b961361dc5", 3],
+"m_StaticEditorFlags": 0,
+"m_StyleSheet": [null, 0, null, null],
+"m_TagString": "Untagged",
+"m_TextStyleHashCode": -1183493901,
+"m_VertexBufferAutoSizeReduction": 0,
+"m_VerticalAlignment": 512,
+"m_baseMaterial": [null, 0, null, null],
+"m_charWidthMaxAdj": 0,
+"m_characterSpacing": 0,
+"m_colorMode": 3,
+"m_enableAutoSizing": 0,
+"m_enableExtraPadding": 0,
+"m_enableKerning": 1,
+"m_enableVertexGradient": 0,
+"m_enableWordWrapping": 1,
+"m_faceColor": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontAsset": [null, 11400000, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_fontColor": Color(1, 1, 1, 1),
+"m_fontColor32": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontColorGradient": {
+"bottomLeft": Color(1, 1, 1, 1),
+"bottomRight": Color(1, 1, 1, 1),
+"topLeft": Color(1, 1, 1, 1),
+"topRight": Color(1, 1, 1, 1)
+},
+"m_fontColorGradientPreset": [null, 0, null, null],
+"m_fontMaterial": [null, 0, null, null],
+"m_fontMaterials": [],
+"m_fontSharedMaterials": [],
+"m_fontSize": 60,
+"m_fontSizeBase": 60,
+"m_fontSizeMax": 72,
+"m_fontSizeMin": 18,
+"m_fontStyle": 1,
+"m_fontWeight": 400,
+"m_geometrySortingOrder": 0,
+"m_hasFontAssetChanged": 0,
+"m_horizontalMapping": 0,
+"m_isCullingEnabled": 0,
+"m_isOrthographic": 1,
+"m_isRichText": 1,
+"m_isRightToLeft": 0,
+"m_isUsingLegacyAnimationComponent": 0,
+"m_isVolumetricText": 0,
+"m_lineSpacing": 0,
+"m_lineSpacingMax": 0,
+"m_linkedTextComponent": [null, 0, null, null],
+"m_margin": Quaternion(0, 0, 0, 0),
+"m_maskOffset": Quaternion(0, 0, 0, 0),
+"m_overflowMode": 0,
+"m_overrideHtmlColors": 0,
+"m_pageToDisplay": 1,
+"m_paragraphSpacing": 0,
+"m_parseCtrlCharacters": 1,
+"m_sharedMaterial": [null, 2180264, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_spriteAsset": [null, 0, null, null],
+"m_text": "Main Menu",
+"m_textAlignment": 65535,
+"m_tintAllSprites": 0,
+"m_useMaxVisibleDescender": 1,
+"m_uvLineOffset": 0,
+"m_verticalMapping": 0,
+"m_wordSpacing": 0,
+"m_wordWrappingRatios": 0.4,
+"parentLinkedComponent": [null, 0, null, null]
+}
+
+[node name="GamePauseUI" type="Node3D" parent="UI"]
+
+[node name="MonoBehaviour" type="Node" parent="UI/GamePauseUI"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:17462027]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 17462025, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "6b2da637be6aad041929dcf2aeec7f34", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"mainMenuButton": [null, 1630717488, null, null],
+"optionsButton": [null, 175876206, null, null],
+"resumeButton": [null, 1802104052, null, null]
+}
+
+[node name="Background" type="Node3D" parent="UI/GamePauseUI"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/GamePauseUI/Background"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 956581265, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/GamePauseUI/Background"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:956581267]"
+metadata/unidot_keys = {
+"m_Color": Color(0, 0, 0, 0.921569),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_FillAmount": 1,
+"m_FillCenter": 1,
+"m_FillClockwise": 1,
+"m_FillMethod": 4,
+"m_FillOrigin": 0,
+"m_GameObject": [null, 956581265, null, null],
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PixelsPerUnitMultiplier": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveAspect": 0,
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "fe87c0e1cc204ed48ad3b37840f39efc", 3],
+"m_Sprite": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Type": 0,
+"m_UseSpriteMesh": 0
+}
+
+[node name="PausedText" type="Node3D" parent="UI/GamePauseUI"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/GamePauseUI/PausedText"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 712433846, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/GamePauseUI/PausedText"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:712433848]"
+metadata/unidot_keys = {
+"checkPaddingRequired": 0,
+"m_Color": Color(1, 1, 1, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 712433846, null, null],
+"m_HorizontalAlignment": 2,
+"m_IsTextObjectScaleStatic": 0,
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "f4688fdb7df04437aeb418b961361dc5", 3],
+"m_StaticEditorFlags": 0,
+"m_StyleSheet": [null, 0, null, null],
+"m_TagString": "Untagged",
+"m_TextStyleHashCode": -1183493901,
+"m_VertexBufferAutoSizeReduction": 0,
+"m_VerticalAlignment": 512,
+"m_baseMaterial": [null, 0, null, null],
+"m_charWidthMaxAdj": 0,
+"m_characterSpacing": 0,
+"m_colorMode": 3,
+"m_enableAutoSizing": 0,
+"m_enableExtraPadding": 0,
+"m_enableKerning": 1,
+"m_enableVertexGradient": 0,
+"m_enableWordWrapping": 0,
+"m_faceColor": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontAsset": [null, 11400000, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_fontColor": Color(1, 1, 1, 1),
+"m_fontColor32": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontColorGradient": {
+"bottomLeft": Color(1, 1, 1, 1),
+"bottomRight": Color(1, 1, 1, 1),
+"topLeft": Color(1, 1, 1, 1),
+"topRight": Color(1, 1, 1, 1)
+},
+"m_fontColorGradientPreset": [null, 0, null, null],
+"m_fontMaterial": [null, 0, null, null],
+"m_fontMaterials": [],
+"m_fontSharedMaterials": [],
+"m_fontSize": 160,
+"m_fontSizeBase": 160,
+"m_fontSizeMax": 72,
+"m_fontSizeMin": 18,
+"m_fontStyle": 1,
+"m_fontWeight": 400,
+"m_geometrySortingOrder": 0,
+"m_hasFontAssetChanged": 0,
+"m_horizontalMapping": 0,
+"m_isCullingEnabled": 0,
+"m_isOrthographic": 1,
+"m_isRichText": 1,
+"m_isRightToLeft": 0,
+"m_isUsingLegacyAnimationComponent": 0,
+"m_isVolumetricText": 0,
+"m_lineSpacing": 0,
+"m_lineSpacingMax": 0,
+"m_linkedTextComponent": [null, 0, null, null],
+"m_margin": Quaternion(0, 0, 0, 0),
+"m_maskOffset": Quaternion(0, 0, 0, 0),
+"m_overflowMode": 0,
+"m_overrideHtmlColors": 0,
+"m_pageToDisplay": 1,
+"m_paragraphSpacing": 0,
+"m_parseCtrlCharacters": 1,
+"m_sharedMaterial": [null, 2180264, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_spriteAsset": [null, 0, null, null],
+"m_text": "PAUSED",
+"m_textAlignment": 65535,
+"m_tintAllSprites": 0,
+"m_useMaxVisibleDescender": 1,
+"m_uvLineOffset": 0,
+"m_verticalMapping": 0,
+"m_wordSpacing": 0,
+"m_wordWrappingRatios": 0.4,
+"parentLinkedComponent": [null, 0, null, null]
+}
+
+[node name="ResumeButton" type="Node3D" parent="UI/GamePauseUI"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/GamePauseUI/ResumeButton"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 1802104050, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/GamePauseUI/ResumeButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1802104053]"
+metadata/unidot_keys = {
+"m_Color": Color(0.235294, 0.235294, 0.235294, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_FillAmount": 1,
+"m_FillCenter": 1,
+"m_FillClockwise": 1,
+"m_FillMethod": 4,
+"m_FillOrigin": 0,
+"m_GameObject": [null, 1802104050, null, null],
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PixelsPerUnitMultiplier": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveAspect": 0,
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "fe87c0e1cc204ed48ad3b37840f39efc", 3],
+"m_Sprite": [null, 10905, "0000000000000000f000000000000000", 0],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Type": 1,
+"m_UseSpriteMesh": 0
+}
+
+[node name="MonoBehaviour2" type="Node" parent="UI/GamePauseUI/ResumeButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1802104052]"
+metadata/unidot_keys = {
+"m_AnimationTriggers": {
+"m_DisabledTrigger": "Disabled",
+"m_HighlightedTrigger": "Highlighted",
+"m_NormalTrigger": "Normal",
+"m_PressedTrigger": "Pressed",
+"m_SelectedTrigger": "Selected"
+},
+"m_Colors": {
+"m_ColorMultiplier": 1,
+"m_DisabledColor": Color(0.784314, 0.784314, 0.784314, 0.501961),
+"m_FadeDuration": 0.1,
+"m_HighlightedColor": Color(0.960784, 0.960784, 0.960784, 1),
+"m_NormalColor": Color(1, 1, 1, 1),
+"m_PressedColor": Color(0.784314, 0.784314, 0.784314, 1),
+"m_SelectedColor": Color(0.960784, 0.960784, 0.960784, 1)
+},
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 1802104050, null, null],
+"m_Interactable": 1,
+"m_Layer": 5,
+"m_Navigation": {
+"m_Mode": 3,
+"m_SelectOnDown": [null, 0, null, null],
+"m_SelectOnLeft": [null, 0, null, null],
+"m_SelectOnRight": [null, 0, null, null],
+"m_SelectOnUp": [null, 0, null, null],
+"m_WrapAround": 0
+},
+"m_ObjectHideFlags": 0,
+"m_OnClick": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "4e29b1a8efbd4b44bb3f3716e73f07ff", 3],
+"m_SpriteState": {
+"m_DisabledSprite": [null, 0, null, null],
+"m_HighlightedSprite": [null, 0, null, null],
+"m_PressedSprite": [null, 0, null, null],
+"m_SelectedSprite": [null, 0, null, null]
+},
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_TargetGraphic": [null, 1802104053, null, null],
+"m_Transition": 1
+}
+
+[node name="MonoBehaviour3" type="Node" parent="UI/GamePauseUI/ResumeButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1802104056]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_EffectColor": Color(0, 0, 0, 0.5),
+"m_EffectDistance": Vector2(5, -5),
+"m_Enabled": 1,
+"m_GameObject": [null, 1802104050, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "cfabb0440166ab443bba8876756fdfa9", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_UseGraphicAlpha": 1
+}
+
+[node name="MonoBehaviour4" type="Node" parent="UI/GamePauseUI/ResumeButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1802104055]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_EffectColor": Color(0, 0, 0, 1),
+"m_EffectDistance": Vector2(3, 3),
+"m_Enabled": 1,
+"m_GameObject": [null, 1802104050, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "e19747de3f5aca642ab2be37e372fb86", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_UseGraphicAlpha": 1
+}
+
+[node name="Text (TMP)" type="Node3D" parent="UI/GamePauseUI/ResumeButton"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/GamePauseUI/ResumeButton/Text (TMP)"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 402625225, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/GamePauseUI/ResumeButton/Text (TMP)"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:402625227]"
+metadata/unidot_keys = {
+"checkPaddingRequired": 0,
+"m_Color": Color(1, 1, 1, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 402625225, null, null],
+"m_HorizontalAlignment": 2,
+"m_IsTextObjectScaleStatic": 0,
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "f4688fdb7df04437aeb418b961361dc5", 3],
+"m_StaticEditorFlags": 0,
+"m_StyleSheet": [null, 0, null, null],
+"m_TagString": "Untagged",
+"m_TextStyleHashCode": -1183493901,
+"m_VertexBufferAutoSizeReduction": 0,
+"m_VerticalAlignment": 512,
+"m_baseMaterial": [null, 0, null, null],
+"m_charWidthMaxAdj": 0,
+"m_characterSpacing": 0,
+"m_colorMode": 3,
+"m_enableAutoSizing": 0,
+"m_enableExtraPadding": 0,
+"m_enableKerning": 1,
+"m_enableVertexGradient": 0,
+"m_enableWordWrapping": 1,
+"m_faceColor": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontAsset": [null, 11400000, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_fontColor": Color(1, 1, 1, 1),
+"m_fontColor32": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontColorGradient": {
+"bottomLeft": Color(1, 1, 1, 1),
+"bottomRight": Color(1, 1, 1, 1),
+"topLeft": Color(1, 1, 1, 1),
+"topRight": Color(1, 1, 1, 1)
+},
+"m_fontColorGradientPreset": [null, 0, null, null],
+"m_fontMaterial": [null, 0, null, null],
+"m_fontMaterials": [],
+"m_fontSharedMaterials": [],
+"m_fontSize": 60,
+"m_fontSizeBase": 60,
+"m_fontSizeMax": 72,
+"m_fontSizeMin": 18,
+"m_fontStyle": 1,
+"m_fontWeight": 400,
+"m_geometrySortingOrder": 0,
+"m_hasFontAssetChanged": 0,
+"m_horizontalMapping": 0,
+"m_isCullingEnabled": 0,
+"m_isOrthographic": 1,
+"m_isRichText": 1,
+"m_isRightToLeft": 0,
+"m_isUsingLegacyAnimationComponent": 0,
+"m_isVolumetricText": 0,
+"m_lineSpacing": 0,
+"m_lineSpacingMax": 0,
+"m_linkedTextComponent": [null, 0, null, null],
+"m_margin": Quaternion(0, 0, 0, 0),
+"m_maskOffset": Quaternion(0, 0, 0, 0),
+"m_overflowMode": 0,
+"m_overrideHtmlColors": 0,
+"m_pageToDisplay": 1,
+"m_paragraphSpacing": 0,
+"m_parseCtrlCharacters": 1,
+"m_sharedMaterial": [null, 2180264, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_spriteAsset": [null, 0, null, null],
+"m_text": "Resume",
+"m_textAlignment": 65535,
+"m_tintAllSprites": 0,
+"m_useMaxVisibleDescender": 1,
+"m_uvLineOffset": 0,
+"m_verticalMapping": 0,
+"m_wordSpacing": 0,
+"m_wordWrappingRatios": 0.4,
+"parentLinkedComponent": [null, 0, null, null]
+}
+
+[node name="OptionsButton" type="Node3D" parent="UI/GamePauseUI"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/GamePauseUI/OptionsButton"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 175876202, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/GamePauseUI/OptionsButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:175876207]"
+metadata/unidot_keys = {
+"m_Color": Color(0.235849, 0.235849, 0.235849, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_FillAmount": 1,
+"m_FillCenter": 1,
+"m_FillClockwise": 1,
+"m_FillMethod": 4,
+"m_FillOrigin": 0,
+"m_GameObject": [null, 175876202, null, null],
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PixelsPerUnitMultiplier": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveAspect": 0,
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "fe87c0e1cc204ed48ad3b37840f39efc", 3],
+"m_Sprite": [null, 10905, "0000000000000000f000000000000000", 0],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Type": 1,
+"m_UseSpriteMesh": 0
+}
+
+[node name="MonoBehaviour2" type="Node" parent="UI/GamePauseUI/OptionsButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:175876206]"
+metadata/unidot_keys = {
+"m_AnimationTriggers": {
+"m_DisabledTrigger": "Disabled",
+"m_HighlightedTrigger": "Highlighted",
+"m_NormalTrigger": "Normal",
+"m_PressedTrigger": "Pressed",
+"m_SelectedTrigger": "Selected"
+},
+"m_Colors": {
+"m_ColorMultiplier": 1,
+"m_DisabledColor": Color(0.784314, 0.784314, 0.784314, 0.501961),
+"m_FadeDuration": 0.1,
+"m_HighlightedColor": Color(0.960784, 0.960784, 0.960784, 1),
+"m_NormalColor": Color(1, 1, 1, 1),
+"m_PressedColor": Color(0.784314, 0.784314, 0.784314, 1),
+"m_SelectedColor": Color(0.960784, 0.960784, 0.960784, 1)
+},
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 175876202, null, null],
+"m_Interactable": 1,
+"m_Layer": 5,
+"m_Navigation": {
+"m_Mode": 3,
+"m_SelectOnDown": [null, 0, null, null],
+"m_SelectOnLeft": [null, 0, null, null],
+"m_SelectOnRight": [null, 0, null, null],
+"m_SelectOnUp": [null, 0, null, null],
+"m_WrapAround": 0
+},
+"m_ObjectHideFlags": 0,
+"m_OnClick": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "4e29b1a8efbd4b44bb3f3716e73f07ff", 3],
+"m_SpriteState": {
+"m_DisabledSprite": [null, 0, null, null],
+"m_HighlightedSprite": [null, 0, null, null],
+"m_PressedSprite": [null, 0, null, null],
+"m_SelectedSprite": [null, 0, null, null]
+},
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_TargetGraphic": [null, 175876207, null, null],
+"m_Transition": 1
+}
+
+[node name="MonoBehaviour3" type="Node" parent="UI/GamePauseUI/OptionsButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:175876205]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_EffectColor": Color(0, 0, 0, 1),
+"m_EffectDistance": Vector2(3, 3),
+"m_Enabled": 1,
+"m_GameObject": [null, 175876202, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "cfabb0440166ab443bba8876756fdfa9", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_UseGraphicAlpha": 1
+}
+
+[node name="MonoBehaviour4" type="Node" parent="UI/GamePauseUI/OptionsButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:175876204]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_EffectColor": Color(0, 0, 0, 0.5),
+"m_EffectDistance": Vector2(1, -1),
+"m_Enabled": 1,
+"m_GameObject": [null, 175876202, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "e19747de3f5aca642ab2be37e372fb86", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_UseGraphicAlpha": 1
+}
+
+[node name="Text (TMP)" type="Node3D" parent="UI/GamePauseUI/OptionsButton"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/GamePauseUI/OptionsButton/Text (TMP)"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 601045164, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/GamePauseUI/OptionsButton/Text (TMP)"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:601045166]"
+metadata/unidot_keys = {
+"checkPaddingRequired": 0,
+"m_Color": Color(1, 1, 1, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 601045164, null, null],
+"m_HorizontalAlignment": 2,
+"m_IsTextObjectScaleStatic": 0,
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "f4688fdb7df04437aeb418b961361dc5", 3],
+"m_StaticEditorFlags": 0,
+"m_StyleSheet": [null, 0, null, null],
+"m_TagString": "Untagged",
+"m_TextStyleHashCode": -1183493901,
+"m_VertexBufferAutoSizeReduction": 0,
+"m_VerticalAlignment": 512,
+"m_baseMaterial": [null, 0, null, null],
+"m_charWidthMaxAdj": 0,
+"m_characterSpacing": 0,
+"m_colorMode": 3,
+"m_enableAutoSizing": 0,
+"m_enableExtraPadding": 0,
+"m_enableKerning": 1,
+"m_enableVertexGradient": 0,
+"m_enableWordWrapping": 1,
+"m_faceColor": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontAsset": [null, 11400000, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_fontColor": Color(1, 1, 1, 1),
+"m_fontColor32": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontColorGradient": {
+"bottomLeft": Color(1, 1, 1, 1),
+"bottomRight": Color(1, 1, 1, 1),
+"topLeft": Color(1, 1, 1, 1),
+"topRight": Color(1, 1, 1, 1)
+},
+"m_fontColorGradientPreset": [null, 0, null, null],
+"m_fontMaterial": [null, 0, null, null],
+"m_fontMaterials": [],
+"m_fontSharedMaterials": [],
+"m_fontSize": 60,
+"m_fontSizeBase": 60,
+"m_fontSizeMax": 72,
+"m_fontSizeMin": 18,
+"m_fontStyle": 1,
+"m_fontWeight": 400,
+"m_geometrySortingOrder": 0,
+"m_hasFontAssetChanged": 0,
+"m_horizontalMapping": 0,
+"m_isCullingEnabled": 0,
+"m_isOrthographic": 1,
+"m_isRichText": 1,
+"m_isRightToLeft": 0,
+"m_isUsingLegacyAnimationComponent": 0,
+"m_isVolumetricText": 0,
+"m_lineSpacing": 0,
+"m_lineSpacingMax": 0,
+"m_linkedTextComponent": [null, 0, null, null],
+"m_margin": Quaternion(0, 0, 0, 0),
+"m_maskOffset": Quaternion(0, 0, 0, 0),
+"m_overflowMode": 0,
+"m_overrideHtmlColors": 0,
+"m_pageToDisplay": 1,
+"m_paragraphSpacing": 0,
+"m_parseCtrlCharacters": 1,
+"m_sharedMaterial": [null, 2180264, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_spriteAsset": [null, 0, null, null],
+"m_text": "Options
+'",
+"m_textAlignment": 65535,
+"m_tintAllSprites": 0,
+"m_useMaxVisibleDescender": 1,
+"m_uvLineOffset": 0,
+"m_verticalMapping": 0,
+"m_wordSpacing": 0,
+"m_wordWrappingRatios": 0.4,
+"parentLinkedComponent": [null, 0, null, null]
+}
+
+[node name="MainMenuButton" type="Node3D" parent="UI/GamePauseUI"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/GamePauseUI/MainMenuButton"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 1630717486, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/GamePauseUI/MainMenuButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1630717489]"
+metadata/unidot_keys = {
+"m_Color": Color(0.235849, 0.235849, 0.235849, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_FillAmount": 1,
+"m_FillCenter": 1,
+"m_FillClockwise": 1,
+"m_FillMethod": 4,
+"m_FillOrigin": 0,
+"m_GameObject": [null, 1630717486, null, null],
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PixelsPerUnitMultiplier": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveAspect": 0,
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "fe87c0e1cc204ed48ad3b37840f39efc", 3],
+"m_Sprite": [null, 10905, "0000000000000000f000000000000000", 0],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Type": 1,
+"m_UseSpriteMesh": 0
+}
+
+[node name="MonoBehaviour2" type="Node" parent="UI/GamePauseUI/MainMenuButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1630717488]"
+metadata/unidot_keys = {
+"m_AnimationTriggers": {
+"m_DisabledTrigger": "Disabled",
+"m_HighlightedTrigger": "Highlighted",
+"m_NormalTrigger": "Normal",
+"m_PressedTrigger": "Pressed",
+"m_SelectedTrigger": "Selected"
+},
+"m_Colors": {
+"m_ColorMultiplier": 1,
+"m_DisabledColor": Color(0.784314, 0.784314, 0.784314, 0.501961),
+"m_FadeDuration": 0.1,
+"m_HighlightedColor": Color(0.960784, 0.960784, 0.960784, 1),
+"m_NormalColor": Color(1, 1, 1, 1),
+"m_PressedColor": Color(0.784314, 0.784314, 0.784314, 1),
+"m_SelectedColor": Color(0.960784, 0.960784, 0.960784, 1)
+},
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 1630717486, null, null],
+"m_Interactable": 1,
+"m_Layer": 5,
+"m_Navigation": {
+"m_Mode": 3,
+"m_SelectOnDown": [null, 0, null, null],
+"m_SelectOnLeft": [null, 0, null, null],
+"m_SelectOnRight": [null, 0, null, null],
+"m_SelectOnUp": [null, 0, null, null],
+"m_WrapAround": 0
+},
+"m_ObjectHideFlags": 0,
+"m_OnClick": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "4e29b1a8efbd4b44bb3f3716e73f07ff", 3],
+"m_SpriteState": {
+"m_DisabledSprite": [null, 0, null, null],
+"m_HighlightedSprite": [null, 0, null, null],
+"m_PressedSprite": [null, 0, null, null],
+"m_SelectedSprite": [null, 0, null, null]
+},
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_TargetGraphic": [null, 1630717489, null, null],
+"m_Transition": 1
+}
+
+[node name="MonoBehaviour3" type="Node" parent="UI/GamePauseUI/MainMenuButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1630717492]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_EffectColor": Color(0, 0, 0, 1),
+"m_EffectDistance": Vector2(3, 3),
+"m_Enabled": 1,
+"m_GameObject": [null, 1630717486, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "cfabb0440166ab443bba8876756fdfa9", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_UseGraphicAlpha": 1
+}
+
+[node name="MonoBehaviour4" type="Node" parent="UI/GamePauseUI/MainMenuButton"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1630717491]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_EffectColor": Color(0, 0, 0, 0.5),
+"m_EffectDistance": Vector2(1, -1),
+"m_Enabled": 1,
+"m_GameObject": [null, 1630717486, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "e19747de3f5aca642ab2be37e372fb86", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_UseGraphicAlpha": 1
+}
+
+[node name="Text (TMP)" type="Node3D" parent="UI/GamePauseUI/MainMenuButton"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/GamePauseUI/MainMenuButton/Text (TMP)"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 1204809519, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/GamePauseUI/MainMenuButton/Text (TMP)"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1204809521]"
+metadata/unidot_keys = {
+"checkPaddingRequired": 0,
+"m_Color": Color(1, 1, 1, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 1204809519, null, null],
+"m_HorizontalAlignment": 2,
+"m_IsTextObjectScaleStatic": 0,
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "f4688fdb7df04437aeb418b961361dc5", 3],
+"m_StaticEditorFlags": 0,
+"m_StyleSheet": [null, 0, null, null],
+"m_TagString": "Untagged",
+"m_TextStyleHashCode": -1183493901,
+"m_VertexBufferAutoSizeReduction": 0,
+"m_VerticalAlignment": 512,
+"m_baseMaterial": [null, 0, null, null],
+"m_charWidthMaxAdj": 0,
+"m_characterSpacing": 0,
+"m_colorMode": 3,
+"m_enableAutoSizing": 0,
+"m_enableExtraPadding": 0,
+"m_enableKerning": 1,
+"m_enableVertexGradient": 0,
+"m_enableWordWrapping": 1,
+"m_faceColor": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontAsset": [null, 11400000, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_fontColor": Color(1, 1, 1, 1),
+"m_fontColor32": {
+"rgba": 4294967295,
+"serializedVersion": 2
+},
+"m_fontColorGradient": {
+"bottomLeft": Color(1, 1, 1, 1),
+"bottomRight": Color(1, 1, 1, 1),
+"topLeft": Color(1, 1, 1, 1),
+"topRight": Color(1, 1, 1, 1)
+},
+"m_fontColorGradientPreset": [null, 0, null, null],
+"m_fontMaterial": [null, 0, null, null],
+"m_fontMaterials": [],
+"m_fontSharedMaterials": [],
+"m_fontSize": 60,
+"m_fontSizeBase": 60,
+"m_fontSizeMax": 72,
+"m_fontSizeMin": 18,
+"m_fontStyle": 1,
+"m_fontWeight": 400,
+"m_geometrySortingOrder": 0,
+"m_hasFontAssetChanged": 0,
+"m_horizontalMapping": 0,
+"m_isCullingEnabled": 0,
+"m_isOrthographic": 1,
+"m_isRichText": 1,
+"m_isRightToLeft": 0,
+"m_isUsingLegacyAnimationComponent": 0,
+"m_isVolumetricText": 0,
+"m_lineSpacing": 0,
+"m_lineSpacingMax": 0,
+"m_linkedTextComponent": [null, 0, null, null],
+"m_margin": Quaternion(0, 0, 0, 0),
+"m_maskOffset": Quaternion(0, 0, 0, 0),
+"m_overflowMode": 0,
+"m_overrideHtmlColors": 0,
+"m_pageToDisplay": 1,
+"m_paragraphSpacing": 0,
+"m_parseCtrlCharacters": 1,
+"m_sharedMaterial": [null, 2180264, "8f586378b4e144a9851e7b34d9b748ee", 2],
+"m_spriteAsset": [null, 0, null, null],
+"m_text": "Main Menu",
+"m_textAlignment": 65535,
+"m_tintAllSprites": 0,
+"m_useMaxVisibleDescender": 1,
+"m_uvLineOffset": 0,
+"m_verticalMapping": 0,
+"m_wordSpacing": 0,
+"m_wordWrappingRatios": 0.4,
+"parentLinkedComponent": [null, 0, null, null]
+}
+
+[node name="PlayerInventoryUI" type="Node3D" parent="UI"]
+
+[node name="MonoBehaviour" type="Node" parent="UI/PlayerInventoryUI"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1240776749]"
+metadata/unidot_keys = {
+"axeSprite": [null, 21300000, "e00d6ab017a0fbb4db0768d1a1712bc9", 3],
+"craftingResultSlot": [null, 670480553, null, null],
+"craftingSlots": [[null, 1215636753, null, null], [null, 1433074756, null, null], [null, 712272220, null, null], [null, 1394660177, null, null]],
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 1240776745, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "db26cbacab1e30d46925bab503142e90", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"mainHandSlot": [null, 1847572601, null, null],
+"storageSlots": [[null, 2118346113, null, null], [null, 1298113043, null, null], [null, 1036587511, null, null], [null, 301984407, null, null], [null, 1641078608, null, null], [null, 1756069548, null, null], [null, 1974114999, null, null], [null, 1633877857, null, null], [null, 1793306586, null, null], [null, 2088668678, null, null], [null, 2127861724, null, null], [null, 1943160510, null, null], [null, 1320837334, null, null], [null, 1747471977, null, null], [null, 981069193, null, null], [null, 1272502244, null, null], [null, 1375886726, null, null], [null, 1821322338, null, null], [null, 1307958663, null, null], [null, 1418774118, null, null], [null, 1771631086, null, null], [null, 932710965, null, null], [null, 855035494, null, null], [null, 1191144185, null, null], [null, 1380930304, null, null], [null, 1804595312, null, null], [null, 1881757626, null, null], [null, 1950043371, null, null], [null, 807124724, null, null], [null, 637100107, null, null], [null, 1852241088, null, null], [null, 1830442181, null, null], [null, 1669283767, null, null], [null, 731767207, null, null], [null, 2014924957, null, null], [null, 1442327397, null, null], [null, 1117950983, null, null], [null, 823797573, null, null], [null, 1920811656, null, null], [null, 1199157828, null, null]],
+"swordSprite": [null, 21300000, "cedf6bdbfad620949b419268974208e2", 3]
+}
+
+[node name="Storage" type="Node3D" parent="UI/PlayerInventoryUI"]
+
+[node name="MonoBehaviour" type="Node" parent="UI/PlayerInventoryUI/Storage"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:66511015]"
+metadata/unidot_keys = {
+"m_CellSize": Vector2(100, 100),
+"m_ChildAlignment": 4,
+"m_Constraint": 1,
+"m_ConstraintCount": 10,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 66511012, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_Padding": {
+"m_Bottom": 0,
+"m_Left": 0,
+"m_Right": 0,
+"m_Top": 0
+},
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "8a8695521f0d02e499659fee002a26c2", 3],
+"m_Spacing": Vector2(5, 5),
+"m_StartAxis": 0,
+"m_StartCorner": 0,
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour2" type="Node" parent="UI/PlayerInventoryUI/Storage"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:66511014]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 66511012, null, null],
+"m_HorizontalFit": 2,
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "3245ec927659c4140ac4f8d17403cc18", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_VerticalFit": 2
+}
+
+[node name="InventorySlotUI" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (1)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (2)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (3)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (4)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (5)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (6)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (07)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (08)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (09)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (10)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (11)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (12)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (13)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (14)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (15)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (16)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (17)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (18)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (19)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (20)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (21)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (22)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (23)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (24)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (25)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (26)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (27)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (28)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (29)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (30)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (31)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (32)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (33)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (34)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (35)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (36)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (37)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (38)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (39)" parent="UI/PlayerInventoryUI/Storage" instance=ExtResource("2_erjgu")]
+
+[node name="MainHand" type="Node3D" parent="UI/PlayerInventoryUI"]
+
+[node name="InventorySlotUI" parent="UI/PlayerInventoryUI/MainHand" instance=ExtResource("2_erjgu")]
+
+[node name="Crafting" type="Node3D" parent="UI/PlayerInventoryUI"]
+
+[node name="InventorySlotUI" parent="UI/PlayerInventoryUI/Crafting" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (1)" parent="UI/PlayerInventoryUI/Crafting" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (2)" parent="UI/PlayerInventoryUI/Crafting" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (3)" parent="UI/PlayerInventoryUI/Crafting" instance=ExtResource("2_erjgu")]
+
+[node name="InventorySlotUI (4)" parent="UI/PlayerInventoryUI/Crafting" instance=ExtResource("2_erjgu")]
+
+[node name="PlayerHealthBar" type="Node3D" parent="UI"]
+
+[node name="HealthBarBackground" type="Node3D" parent="UI/PlayerHealthBar"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/PlayerHealthBar/HealthBarBackground"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 969371184, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/PlayerHealthBar/HealthBarBackground"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:969371186]"
+metadata/unidot_keys = {
+"m_Color": Color(0.396226, 0.396226, 0.396226, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_FillAmount": 1,
+"m_FillCenter": 1,
+"m_FillClockwise": 1,
+"m_FillMethod": 4,
+"m_FillOrigin": 0,
+"m_GameObject": [null, 969371184, null, null],
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PixelsPerUnitMultiplier": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveAspect": 0,
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "fe87c0e1cc204ed48ad3b37840f39efc", 3],
+"m_Sprite": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Type": 0,
+"m_UseSpriteMesh": 0
+}
+
+[node name="HealthBar" type="Node3D" parent="UI/PlayerHealthBar"]
+
+[node name="CanvasRenderer" type="Node" parent="UI/PlayerHealthBar/HealthBar"]
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CullTransparentMesh": 1,
+"m_GameObject": [null, 483301199, null, null],
+"m_Layer": 5,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="UI/PlayerHealthBar/HealthBar"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:483301201]"
+metadata/unidot_keys = {
+"m_Color": Color(0.811321, 0.110983, 0.110983, 1),
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_FillAmount": 1,
+"m_FillCenter": 1,
+"m_FillClockwise": 1,
+"m_FillMethod": 4,
+"m_FillOrigin": 0,
+"m_GameObject": [null, 483301199, null, null],
+"m_Layer": 5,
+"m_Maskable": 1,
+"m_Material": [null, 0, null, null],
+"m_ObjectHideFlags": 0,
+"m_OnCullStateChanged": {
+"m_PersistentCalls": {
+"m_Calls": []
+}
+},
+"m_PixelsPerUnitMultiplier": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveAspect": 0,
+"m_RaycastPadding": Quaternion(0, 0, 0, 0),
+"m_RaycastTarget": 1,
+"m_Script": [null, 11500000, "fe87c0e1cc204ed48ad3b37840f39efc", 3],
+"m_Sprite": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Type": 0,
+"m_UseSpriteMesh": 0
+}
+
+[node name="BackgroundMusic" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -703.326, 100.033, 683.463)
+
+[node name="AudioSource" type="AudioStreamPlayer" parent="BackgroundMusic"]
+stream = ExtResource("3_dteuw")
+volume_db = -12.0
+pitch_scale = 1.2
+autoplay = true
+metadata/unidot_keys = {
+"BypassEffects": 0,
+"BypassListenerEffects": 0,
+"BypassReverbZones": 0,
+"DopplerLevel": 1,
+"Loop": 1,
+"MaxDistance": 500,
+"MinDistance": 1,
+"Mute": 0,
+"OutputAudioMixerGroup": [null, 0, null, null],
+"Pan2D": 0,
+"Priority": 128,
+"Spatialize": 0,
+"SpatializePostEffects": 0,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_Enabled": 1,
+"m_GameObject": [null, 759819033, null, null],
+"m_Layer": 0,
+"m_ObjectHideFlags": 0,
+"m_Pitch": 1,
+"m_PlayOnAwake": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Volume": 1,
+"m_audioClip": [null, 8300000, "07f391589664f4e85904fa28802b4aa8", 3],
+"panLevelCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"reverbZoneMixCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "1",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"rolloffCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "1",
+"weightedMode": 0
+}, {
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 1,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"rolloffMode": 0,
+"serializedVersion": 4,
+"spreadCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+}
+}
+
+[node name="Directional Light" type="Node3D" parent="."]
+transform = Transform3D(0.610261, 0.418998, 0.672326, 0.029086, 0.836259, -0.547563, -0.791666, 0.353712, 0.498149, -584.8, 262.1, 25.6)
+
+[node name="Light" type="DirectionalLight3D" parent="Directional Light"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+light_color = Color(1, 0.93002, 0.779412, 1)
+light_bake_mode = 0
+shadow_enabled = true
+shadow_bias = 0.05
+shadow_normal_bias = 0.4
+
+[node name="Terrain" type="Node3D" parent="."]
+
+[node name="TerrainGodot" parent="Terrain" instance=ExtResource("14_mx62s")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -732.551, -243.99, 899.544)
+
+[node name="Rocks" type="Node3D" parent="Terrain"]
+
+[node name="Rock1" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -699.528, 93.128, 674.231)
+
+[node name="Rock1 (1)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -728.856, 95.6241, 652.957)
+
+[node name="Rock1 (4)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -679, 86.4387, 609.741)
+
+[node name="Rock1 (5)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -651.189, 92.9155, 664.625)
+
+[node name="Rock1 (6)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -626.084, 80.1028, 603.934)
+
+[node name="Rock2" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -649.841, 75.3691, 573.199)
+
+[node name="Rock1 (1)2" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -720.861, 85.3362, 600.198)
+
+[node name="Rock1 (2)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -622.942, 87.3687, 628.05)
+
+[node name="Rock1 (5)2" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -735.066, 91.2283, 631.793)
+
+[node name="Rock1 (3)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -699.437, 74.9069, 533.524)
+
+[node name="Rock1 (4)2" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -777.138, 85.631, 535.55)
+
+[node name="Rock1 (6)2" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -822.009, 95.4343, 570.407)
+
+[node name="Rock1 (7)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -840.403, 97.1521, 629.762)
+
+[node name="Rock1 (8)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -816.435, 111.776, 696.773)
+
+[node name="Rock1 (9)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -776.313, 118.845, 752.249)
+
+[node name="Rock1 (10)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -700.27, 111.231, 779.372)
+
+[node name="Rock1 (11)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -613.07, 86.8781, 765.896)
+
+[node name="Rock1 (12)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -532.62, 74.2214, 714.825)
+
+[node name="Rock1 (13)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -483.441, 88.2289, 641.043)
+
+[node name="Rock1 (14)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -483.662, 69.4754, 555.309)
+
+[node name="Rock1 (15)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -528.856, 85.1169, 475.178)
+
+[node name="Rock1 (16)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584.264, 83.1539, 412.096)
+
+[node name="Rock1 (17)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -678.574, 75.7802, 378.177)
+
+[node name="Rock1 (18)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -807.577, 95.6425, 423.403)
+
+[node name="Rock1 (19)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -927.27, 107.564, 518.561)
+
+[node name="Rock1 (20)" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -960.829, 131.559, 644.794)
+
+[node name="Rock3" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -898.069, 155.541, 822.048)
+
+[node name="Rock1 (1)3" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -751.015, 163.275, 901.706)
+
+[node name="Rock1 (2)2" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -644.539, 131.03, 913.714)
+
+[node name="Rock1 (3)2" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -512.573, 79.3906, 859.893)
+
+[node name="Rock1 (4)3" parent="Terrain/Rocks" instance=ExtResource("14_e8uwc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -422.089, 62.0221, 725.341)
+
+[node name="Plants" type="Node3D" parent="Terrain"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.46513, 0)
+
+[node name="Mushroom1" parent="Terrain/Plants" instance=ExtResource("9_wkacr")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -693.343, 90.5808, 653.608)
+
+[node name="Mushroom1 (1)" parent="Terrain/Plants" instance=ExtResource("9_wkacr")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -686.167, 90.5076, 652.181)
+
+[node name="Mushroom1 (2)" parent="Terrain/Plants" instance=ExtResource("9_wkacr")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -686.965, 90.1281, 646.581)
+
+[node name="Mushroom1 (3)" parent="Terrain/Plants" instance=ExtResource("9_wkacr")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -697.378, 91.0129, 647.247)
+
+[node name="Mushroom1 (4)" parent="Terrain/Plants" instance=ExtResource("9_wkacr")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -698.071, 90.8535, 641.386)
+
+[node name="Mushroom1 (5)" parent="Terrain/Plants" instance=ExtResource("9_wkacr")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -694.435, 89.7717, 634.48)
+
+[node name="Mushroom1 (6)" parent="Terrain/Plants" instance=ExtResource("9_wkacr")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -684.806, 89.3603, 637.087)
+
+[node name="Mushroom1 (7)" parent="Terrain/Plants" instance=ExtResource("9_wkacr")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -678.583, 90.2745, 642.947)
+
+[node name="Mushroom1 (8)" parent="Terrain/Plants" instance=ExtResource("9_wkacr")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -690.383, 90.4255, 643.808)
+
+[node name="Grass1" parent="Terrain/Plants" instance=ExtResource("15_xs6fk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -683.293, 90.7372, 651.684)
+
+[node name="Grass1 (1)" parent="Terrain/Plants" instance=ExtResource("15_xs6fk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -684.12, 90.1027, 645.699)
+
+[node name="Grass1 (2)" parent="Terrain/Plants" instance=ExtResource("15_xs6fk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -693.362, 90.3641, 650.687)
+
+[node name="Grass1 (3)" parent="Terrain/Plants" instance=ExtResource("15_xs6fk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -698.534, 91.0257, 643.563)
+
+[node name="Flower2" parent="Terrain/Plants" instance=ExtResource("16_b5k7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -687.286, 90.4507, 652.97)
+
+[node name="Flower2 (1)" parent="Terrain/Plants" instance=ExtResource("16_b5k7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -683.513, 90.2373, 647.361)
+
+[node name="Flower2 (2)" parent="Terrain/Plants" instance=ExtResource("16_b5k7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -695.689, 90.6765, 651.095)
+
+[node name="Flower2 (3)" parent="Terrain/Plants" instance=ExtResource("16_b5k7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -686.675, 90.1246, 642.29)
+
+[node name="Flower1" parent="Terrain/Plants" instance=ExtResource("17_iaugm")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -685.527, 90.6585, 654.105)
+
+[node name="Flower1 (1)" parent="Terrain/Plants" instance=ExtResource("17_iaugm")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -685.733, 90.2887, 649.34)
+
+[node name="Flower1 (2)" parent="Terrain/Plants" instance=ExtResource("17_iaugm")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -695.929, 90.7167, 649.653)
+
+[node name="Flower1 (3)" parent="Terrain/Plants" instance=ExtResource("17_iaugm")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -682.392, 89.6807, 640.123)
+
+[node name="Grass1 (4)" parent="Terrain/Plants" instance=ExtResource("15_xs6fk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -679.103, 91.3542, 651.916)
+
+[node name="Flower2 (4)" parent="Terrain/Plants" instance=ExtResource("16_b5k7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -676.653, 90.9806, 647.511)
+
+[node name="Grass1 (5)" parent="Terrain/Plants" instance=ExtResource("15_xs6fk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -680.993, 90.2213, 644.614)
+
+[node name="Flower2 (5)" parent="Terrain/Plants" instance=ExtResource("16_b5k7r")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -679.579, 89.2578, 634.333)
+
+[node name="Trees" type="Node3D" parent="Terrain"]
+
+[node name="Birch_tree2 (2)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -703.172, 95.3509, 685.773)
+
+[node name="Birch_tree2 (3)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -717.651, 96.6413, 668.377)
+
+[node name="Birch_tree2 (4)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -752.1, 96.406, 660.284)
+
+[node name="Birch_tree2 (5)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -779.992, 95.5434, 591.69)
+
+[node name="Birch_tree2 (6)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -739.669, 81.6602, 567.169)
+
+[node name="Birch_tree2 (7)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -593.345, 71.0219, 584.98)
+
+[node name="Birch_tree2 (8)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -618.375, 68.6049, 555.778)
+
+[node name="Birch_tree2 (9)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -670.137, 91.645, 662.913)
+
+[node name="Birch_tree2 (10)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -644.447, 69.1882, 498.415)
+
+[node name="Birch_tree2 (11)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -744.029, 80.5508, 522.917)
+
+[node name="Birch_tree2 (12)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -615.983, 70.8108, 467.483)
+
+[node name="Birch_tree2 (13)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -580.625, 69.4124, 484.246)
+
+[node name="Birch_tree1 (1)" parent="Terrain/Trees" instance=ExtResource("19_yhdff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -715.828, 94.9218, 653.877)
+
+[node name="Birch_tree1 (2)" parent="Terrain/Trees" instance=ExtResource("19_yhdff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -681.793, 92.3924, 679.054)
+
+[node name="Birch_tree1 (3)" parent="Terrain/Trees" instance=ExtResource("19_yhdff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -685.444, 89.8127, 627.025)
+
+[node name="Birch_tree1 (4)" parent="Terrain/Trees" instance=ExtResource("19_yhdff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -735.422, 88.1922, 607.993)
+
+[node name="Birch_tree1 (5)" parent="Terrain/Trees" instance=ExtResource("19_yhdff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -766.846, 90.6575, 584.387)
+
+[node name="Birch_tree1 (6)" parent="Terrain/Trees" instance=ExtResource("19_yhdff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -615.451, 79.2338, 606.312)
+
+[node name="Birch_tree1 (7)" parent="Terrain/Trees" instance=ExtResource("19_yhdff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -684.539, 76.7489, 564.252)
+
+[node name="Birch_tree1 (8)" parent="Terrain/Trees" instance=ExtResource("19_yhdff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -603.132, 68.1369, 494.851)
+
+[node name="Birch_tree1 (9)" parent="Terrain/Trees" instance=ExtResource("19_yhdff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -695.463, 76.1193, 459.39)
+
+[node name="Birch_tree1 (10)" parent="Terrain/Trees" instance=ExtResource("19_yhdff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -802.413, 87.3193, 527.367)
+
+[node name="Deciduous_tree1 (2)" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -648.003, 86.2252, 621.358)
+
+[node name="Deciduous_tree1 (3)" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -708.906, 96.3483, 701.781)
+
+[node name="Deciduous_tree1 (4)" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -774.145, 97.6059, 653.646)
+
+[node name="Deciduous_tree1 (5)" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -666.349, 91.5878, 682.163)
+
+[node name="Deciduous_tree1 (6)" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -618.645, 89.3276, 643.269)
+
+[node name="Deciduous_tree1 (7)" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -639.602, 89.1183, 642.017)
+
+[node name="Deciduous_tree1 (8)" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -815.977, 97.4594, 608.889)
+
+[node name="Deciduous_tree1 (9)" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -745.181, 91.538, 621.176)
+
+[node name="Deciduous_tree1 (10)" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -631.82, 68.7428, 550.98)
+
+[node name="Deciduous_tree1 (11)" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -697.622, 86.6716, 601.869)
+
+[node name="Oak_tree1 (2)" parent="Terrain/Trees" instance=ExtResource("21_8hftc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -726.54, 98.3858, 685.405)
+
+[node name="Oak_tree1 (3)" parent="Terrain/Trees" instance=ExtResource("21_8hftc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -762.153, 94.7446, 628.904)
+
+[node name="Oak_tree1 (4)" parent="Terrain/Trees" instance=ExtResource("21_8hftc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -772.672, 84.569, 528.658)
+
+[node name="Oak_tree1 (5)" parent="Terrain/Trees" instance=ExtResource("21_8hftc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -682.126, 94.4366, 696.481)
+
+[node name="Oak_tree1 (6)" parent="Terrain/Trees" instance=ExtResource("21_8hftc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -636.578, 92.1987, 667.863)
+
+[node name="Oak_tree1 (7)" parent="Terrain/Trees" instance=ExtResource("21_8hftc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -597.613, 66.1468, 544.173)
+
+[node name="Oak_tree1 (9)" parent="Terrain/Trees" instance=ExtResource("21_8hftc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -744.835, 85.4698, 483.435)
+
+[node name="Oak_tree1" parent="Terrain/Trees" instance=ExtResource("21_8hftc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -707.275, 89.3933, 626.48)
+
+[node name="Birch_tree1" parent="Terrain/Trees" instance=ExtResource("19_yhdff")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -664.398, 89.1895, 626.227)
+
+[node name="Birch_tree2" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -665.941, 90.9983, 646.677)
+
+[node name="Birch_tree2 (1)" parent="Terrain/Trees" instance=ExtResource("18_dhxs3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -714.781, 76.9585, 553.837)
+
+[node name="Deciduous_tree1" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -656.779, 73.6251, 560.341)
+
+[node name="Oak_tree1 (1)" parent="Terrain/Trees" instance=ExtResource("21_8hftc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -684.424, 72.7985, 527.325)
+
+[node name="Deciduous_tree1 (1)" parent="Terrain/Trees" instance=ExtResource("20_lupru")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -701.665, 92.1962, 653.679)
+
+[node name="Enemies" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -766.798, 93.6851, 606.369)
+
+[node name="PA_Warrior" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 44.02, -7.9774, 0.78418)
+
+[node name="PA_Warrior (1)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 57.8907, -10.2556, -18.2109)
+
+[node name="PA_Warrior (2)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 63.4481, -13.5878, -37.262)
+
+[node name="PA_Warrior (3)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 42.7751, -11.6784, -29.3899)
+
+[node name="PA_Warrior (4)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 17.8186, -7.09834, -23.5707)
+
+[node name="PA_Warrior (5)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -14.7717, 2.71753, 5.10681)
+
+[node name="PA_Warrior (6)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 32.2983, -8.50723, -18.608)
+
+[node name="PA_Warrior (7)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 21.0642, -4.48669, -6.17004)
+
+[node name="PA_Warrior (8)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -2.34454, -0.134071, 3.67395)
+
+[node name="PA_Warrior (9)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 11.5922, -1.03833, 8.3335)
+
+[node name="PA_Warrior (10)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 87.4538, -20.3868, -55.9011)
+
+[node name="PA_Warrior (11)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 45.6374, -17.905, -67.8503)
+
+[node name="PA_Warrior (12)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 18.4575, -11.7508, -49.3493)
+
+[node name="PA_Warrior (13)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -10.1872, -2.79218, -31.0677)
+
+[node name="PA_Warrior (14)" parent="Enemies" instance=ExtResource("22_j20d7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -33.2231, 5.13923, -11.4861)
+
+[node name="StepSounds" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -703.326, 100.033, 683.463)
+
+[node name="AudioSource" type="AudioStreamPlayer" parent="StepSounds"]
+stream = ExtResource("23_kvkxj")
+metadata/unidot_keys = {
+"BypassEffects": 0,
+"BypassListenerEffects": 0,
+"BypassReverbZones": 0,
+"DopplerLevel": 1,
+"Loop": 1,
+"MaxDistance": 500,
+"MinDistance": 1,
+"Mute": 0,
+"OutputAudioMixerGroup": [null, 0, null, null],
+"Pan2D": 0,
+"Priority": 128,
+"Spatialize": 0,
+"SpatializePostEffects": 0,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_Enabled": 1,
+"m_GameObject": [null, 1705449572, null, null],
+"m_Layer": 0,
+"m_ObjectHideFlags": 0,
+"m_Pitch": 1,
+"m_PlayOnAwake": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Volume": 1,
+"m_audioClip": [null, 8300000, "d848f6efc7d8df1469775a21c5a7846a", 3],
+"panLevelCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"reverbZoneMixCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "1",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"rolloffCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "1",
+"weightedMode": 0
+}, {
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 1,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"rolloffMode": 0,
+"serializedVersion": 4,
+"spreadCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+}
+}
+
+[node name="MonoBehaviour" type="Node" parent="StepSounds"]
+editor_description = "[MonoBehaviour 114::565db450102e511409619c0e510f2f11:1705449573]"
+metadata/unidot_keys = {
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 1705449572, null, null],
+"m_Layer": 0,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "2f9db2aa77879824a93d474f9c00d822", 3],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"soundClip": [null, 8300000, "d848f6efc7d8df1469775a21c5a7846a", 3]
+}
+
+[node name="FirstPerson" parent="." instance=ExtResource("19_7xedu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -688.87, 93, 650.013)
+
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (1)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (2)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (3)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (4)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (5)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (6)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (07)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (08)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (09)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (10)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (11)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (12)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (13)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (14)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (15)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (16)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (17)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (18)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (19)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (20)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (21)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (22)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (23)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (24)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (25)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (26)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (27)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (28)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (29)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (30)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (31)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (32)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (33)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (34)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (35)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (36)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (37)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (38)"]
+[editable path="UI/PlayerInventoryUI/Storage/InventorySlotUI (39)"]
+[editable path="UI/PlayerInventoryUI/MainHand/InventorySlotUI"]
+[editable path="UI/PlayerInventoryUI/Crafting/InventorySlotUI"]
+[editable path="UI/PlayerInventoryUI/Crafting/InventorySlotUI (1)"]
+[editable path="UI/PlayerInventoryUI/Crafting/InventorySlotUI (2)"]
+[editable path="UI/PlayerInventoryUI/Crafting/InventorySlotUI (3)"]
+[editable path="UI/PlayerInventoryUI/Crafting/InventorySlotUI (4)"]
+[editable path="Terrain/Rocks/Rock1"]
+[editable path="Terrain/Rocks/Rock1 (1)"]
+[editable path="Terrain/Rocks/Rock1 (4)"]
+[editable path="Terrain/Rocks/Rock1 (5)"]
+[editable path="Terrain/Rocks/Rock1 (6)"]
+[editable path="Terrain/Rocks/Rock2"]
+[editable path="Terrain/Rocks/Rock1 (1)2"]
+[editable path="Terrain/Rocks/Rock1 (2)"]
+[editable path="Terrain/Rocks/Rock1 (5)2"]
+[editable path="Terrain/Rocks/Rock1 (3)"]
+[editable path="Terrain/Rocks/Rock1 (4)2"]
+[editable path="Terrain/Rocks/Rock1 (6)2"]
+[editable path="Terrain/Rocks/Rock1 (7)"]
+[editable path="Terrain/Rocks/Rock1 (8)"]
+[editable path="Terrain/Rocks/Rock1 (9)"]
+[editable path="Terrain/Rocks/Rock1 (10)"]
+[editable path="Terrain/Rocks/Rock1 (11)"]
+[editable path="Terrain/Rocks/Rock1 (12)"]
+[editable path="Terrain/Rocks/Rock1 (13)"]
+[editable path="Terrain/Rocks/Rock1 (14)"]
+[editable path="Terrain/Rocks/Rock1 (15)"]
+[editable path="Terrain/Rocks/Rock1 (16)"]
+[editable path="Terrain/Rocks/Rock1 (17)"]
+[editable path="Terrain/Rocks/Rock1 (18)"]
+[editable path="Terrain/Rocks/Rock1 (19)"]
+[editable path="Terrain/Rocks/Rock1 (20)"]
+[editable path="Terrain/Rocks/Rock3"]
+[editable path="Terrain/Rocks/Rock1 (1)3"]
+[editable path="Terrain/Rocks/Rock1 (2)2"]
+[editable path="Terrain/Rocks/Rock1 (3)2"]
+[editable path="Terrain/Rocks/Rock1 (4)3"]
+[editable path="Terrain/Plants/Mushroom1"]
+[editable path="Terrain/Plants/Mushroom1 (1)"]
+[editable path="Terrain/Plants/Mushroom1 (2)"]
+[editable path="Terrain/Plants/Mushroom1 (3)"]
+[editable path="Terrain/Plants/Mushroom1 (4)"]
+[editable path="Terrain/Plants/Mushroom1 (5)"]
+[editable path="Terrain/Plants/Mushroom1 (6)"]
+[editable path="Terrain/Plants/Mushroom1 (7)"]
+[editable path="Terrain/Plants/Mushroom1 (8)"]
+[editable path="Terrain/Plants/Grass1"]
+[editable path="Terrain/Plants/Grass1 (1)"]
+[editable path="Terrain/Plants/Grass1 (2)"]
+[editable path="Terrain/Plants/Grass1 (3)"]
+[editable path="Terrain/Plants/Flower2"]
+[editable path="Terrain/Plants/Flower2 (1)"]
+[editable path="Terrain/Plants/Flower2 (2)"]
+[editable path="Terrain/Plants/Flower2 (3)"]
+[editable path="Terrain/Plants/Flower1"]
+[editable path="Terrain/Plants/Flower1 (1)"]
+[editable path="Terrain/Plants/Flower1 (2)"]
+[editable path="Terrain/Plants/Flower1 (3)"]
+[editable path="Terrain/Plants/Grass1 (4)"]
+[editable path="Terrain/Plants/Flower2 (4)"]
+[editable path="Terrain/Plants/Grass1 (5)"]
+[editable path="Terrain/Plants/Flower2 (5)"]
+[editable path="Terrain/Trees/Birch_tree2 (2)"]
+[editable path="Terrain/Trees/Birch_tree2 (3)"]
+[editable path="Terrain/Trees/Birch_tree2 (4)"]
+[editable path="Terrain/Trees/Birch_tree2 (5)"]
+[editable path="Terrain/Trees/Birch_tree2 (6)"]
+[editable path="Terrain/Trees/Birch_tree2 (7)"]
+[editable path="Terrain/Trees/Birch_tree2 (8)"]
+[editable path="Terrain/Trees/Birch_tree2 (9)"]
+[editable path="Terrain/Trees/Birch_tree2 (10)"]
+[editable path="Terrain/Trees/Birch_tree2 (11)"]
+[editable path="Terrain/Trees/Birch_tree2 (12)"]
+[editable path="Terrain/Trees/Birch_tree2 (13)"]
+[editable path="Terrain/Trees/Birch_tree1 (1)"]
+[editable path="Terrain/Trees/Birch_tree1 (2)"]
+[editable path="Terrain/Trees/Birch_tree1 (3)"]
+[editable path="Terrain/Trees/Birch_tree1 (4)"]
+[editable path="Terrain/Trees/Birch_tree1 (5)"]
+[editable path="Terrain/Trees/Birch_tree1 (6)"]
+[editable path="Terrain/Trees/Birch_tree1 (7)"]
+[editable path="Terrain/Trees/Birch_tree1 (8)"]
+[editable path="Terrain/Trees/Birch_tree1 (9)"]
+[editable path="Terrain/Trees/Birch_tree1 (10)"]
+[editable path="Terrain/Trees/Deciduous_tree1 (2)"]
+[editable path="Terrain/Trees/Deciduous_tree1 (3)"]
+[editable path="Terrain/Trees/Deciduous_tree1 (4)"]
+[editable path="Terrain/Trees/Deciduous_tree1 (5)"]
+[editable path="Terrain/Trees/Deciduous_tree1 (6)"]
+[editable path="Terrain/Trees/Deciduous_tree1 (7)"]
+[editable path="Terrain/Trees/Deciduous_tree1 (8)"]
+[editable path="Terrain/Trees/Deciduous_tree1 (9)"]
+[editable path="Terrain/Trees/Deciduous_tree1 (10)"]
+[editable path="Terrain/Trees/Deciduous_tree1 (11)"]
+[editable path="Terrain/Trees/Oak_tree1 (2)"]
+[editable path="Terrain/Trees/Oak_tree1 (3)"]
+[editable path="Terrain/Trees/Oak_tree1 (4)"]
+[editable path="Terrain/Trees/Oak_tree1 (5)"]
+[editable path="Terrain/Trees/Oak_tree1 (6)"]
+[editable path="Terrain/Trees/Oak_tree1 (7)"]
+[editable path="Terrain/Trees/Oak_tree1 (9)"]
+[editable path="Terrain/Trees/Oak_tree1"]
+[editable path="Terrain/Trees/Birch_tree1"]
+[editable path="Terrain/Trees/Birch_tree2"]
+[editable path="Terrain/Trees/Birch_tree2 (1)"]
+[editable path="Terrain/Trees/Deciduous_tree1"]
+[editable path="Terrain/Trees/Oak_tree1 (1)"]
+[editable path="Terrain/Trees/Deciduous_tree1 (1)"]
+[editable path="Enemies/PA_Warrior"]
+[editable path="Enemies/PA_Warrior (1)"]
+[editable path="Enemies/PA_Warrior (2)"]
+[editable path="Enemies/PA_Warrior (3)"]
+[editable path="Enemies/PA_Warrior (4)"]
+[editable path="Enemies/PA_Warrior (5)"]
+[editable path="Enemies/PA_Warrior (6)"]
+[editable path="Enemies/PA_Warrior (7)"]
+[editable path="Enemies/PA_Warrior (8)"]
+[editable path="Enemies/PA_Warrior (9)"]
+[editable path="Enemies/PA_Warrior (10)"]
+[editable path="Enemies/PA_Warrior (11)"]
+[editable path="Enemies/PA_Warrior (12)"]
+[editable path="Enemies/PA_Warrior (13)"]
+[editable path="Enemies/PA_Warrior (14)"]

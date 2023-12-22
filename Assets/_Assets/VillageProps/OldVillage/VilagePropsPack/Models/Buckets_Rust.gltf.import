@@ -1,0 +1,76 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bsynb8koio0dm"
+path="res://.godot/imported/Buckets_Rust.gltf-0a51f8b121db3d2c1cfd1924c0732917.scn"
+
+[deps]
+
+source_file="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/Buckets_Rust.gltf"
+dest_files=["res://.godot/imported/Buckets_Rust.gltf-0a51f8b121db3d2c1cfd1924c0732917.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name="Root Scene"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=30.0
+animation/trimming=false
+animation/remove_immutable_tracks=false
+import_script/path=""
+_subresources={
+"animations": {},
+"materials": {},
+"meshes": {
+"Root Scene_bucket": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Buckets_Rust.bucket.mesh"
+},
+"Root Scene_bucket02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Buckets_Rust.bucket02.mesh"
+},
+"Root Scene_bucket03": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Buckets_Rust.bucket03.mesh"
+},
+"bucket": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Buckets_Rust.bucket.mesh"
+},
+"bucket02": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Buckets_Rust.bucket02.mesh"
+},
+"bucket03": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Buckets_Rust.bucket03.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+gltf/naming_version=0
+gltf/embedded_image_handling=1

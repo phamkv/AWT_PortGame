@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://nkkk06gbmkh6"]
+
+[ext_resource type="ArrayMesh" uid="uid://bff6vvqpcyklc" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/extracted/SM_Env_Tree_010_Snow.SM_Env_Tree_010_Snow.mesh" id="1_31gdi"]
+[ext_resource type="Material" uid="uid://ciwmhcp0p0al" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Materials/PolyAdventureMaterial_01.mat.tres" id="2_8juln"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_rss3k"]
+points = PackedVector3Array(0.00377977, 4.22818, 1.0401, 0.173699, 4.22973, 1.02169, -0.287283, 6.29917, 0.0968931, -0.699488, 4.05106, 0.789794, 0.192855, 2.64153, 0.834414, 0.601158, 4.31518, 0.766784, 0.208463, 6.29917, -0.101193, -0.0811799, 4.23167, -1.00399, -0.706051, 4.04835, -0.802098, -0.970153, 4.13807, 0.0862885, -0.529746, 2.88895, 0.175927, 0.00998771, 2.33119, -0.200436, 0.841848, 2.64502, -0.00215006, 0.786686, 4.83681, 0.0846877, 0.61517, 4.05301, -0.788092, 0.268414, 2.9942, -0.794494)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fx4tk"]
+points = PackedVector3Array(0.406825, 0.148644, 0.593122, 0.307703, 0.148644, 0.593122, 0.406825, -0.0495998, 0.593122, 0.704501, -0.0495998, 0.196187, 0.406825, 1.53759, 0.295377, 0.0100263, 1.53759, 0.394655, -0.0890956, -0.0495998, 0.394655, 0.505947, -0.0495998, -0.299675, 0.704501, 0.247921, -0.00201756, 0.406825, 1.53759, -0.00201756, 0.0100263, 1.53759, -0.00201756, -0.0890956, 0.545598, -0.200397, -0.0890956, -0.0495998, -0.200397, 0.208425, 0.545598, -0.299675, 0.406825, 0.942396, -0.200397, 0.109304, 1.43832, -0.101207)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sugnu"]
+points = PackedVector3Array(0.803623, 2.13269, 0.692321, 0.704433, 1.93443, 0.692321, 0.704433, 1.73609, 0.295474, 0.803623, 2.13269, 0.493854, 0.406863, 2.33111, 0.196459, 0.0101816, 2.33111, 0.295474, 0.605243, 2.13269, 0.692321, 0.0101816, 1.53775, 0.394577, 0.406863, 1.53775, 0.493854, 0.605243, 1.63692, 0.196459, 0.307751, 2.33111, -0.200475, 0.0101816, 1.83526, 0.394577, 0.0101816, 2.33111, -0.101198, 0.0101816, 1.53775, -0.00200784, 0.307751, 1.53775, -0.00200784, 0.109371, 2.23186, -0.200475)
+
+[node name="SM_Env_Tree_010_Snow" type="Node3D"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::b2751436e06708b48927332ec278312a:2325738]"
+gi_mode = 2
+mesh = ExtResource("1_31gdi")
+surface_material_override/0 = ExtResource("2_8juln")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 149056, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "fa8eda4ec55ee1a4e99ca991c5828dbf", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MeshCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider"]
+shape = SubResource("ConvexPolygonShape3D_rss3k")
+
+[node name="MeshCollider2" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider2"]
+shape = SubResource("ConvexPolygonShape3D_fx4tk")
+
+[node name="MeshCollider3" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider3"]
+shape = SubResource("ConvexPolygonShape3D_sugnu")

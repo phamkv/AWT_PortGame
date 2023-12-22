@@ -1,0 +1,134 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3 uid="uid://4np7ehxdqutr"]
+
+[ext_resource type="Texture2D" uid="uid://cov2lhqddmohg" path="res://Assets/_Assets/VillageProps/PBR_Tiled/Textures/Roof/Roof_metall01/plane_3_3_DefaultMaterial_AlbedoTransparency.tga" id="1_p6ve1"]
+[ext_resource type="Texture2D" uid="uid://nh511ppbwbaa" path="res://Assets/_Assets/VillageProps/PBR_Tiled/Textures/Roof/Roof_metall01/plane_3_3_DefaultMaterial_MetallicSmoothness.roughness.png" id="2_g1xte"]
+[ext_resource type="Texture2D" uid="uid://dmnjtm3wfe431" path="res://Assets/_Assets/VillageProps/PBR_Tiled/Textures/Roof/Roof_metall01/plane_3_3_DefaultMaterial_Normal.tga" id="3_kcf2k"]
+
+[resource]
+resource_name = "Roof_metall01"
+depth_draw_mode = 1
+albedo_color = Color(0.772059, 0.772059, 0.772059, 1)
+albedo_texture = ExtResource("1_p6ve1")
+metallic_texture = ExtResource("2_g1xte")
+roughness_texture = ExtResource("2_g1xte")
+roughness_texture_channel = 3
+normal_enabled = true
+normal_texture = ExtResource("3_kcf2k")
+uv1_scale = Vector3(1, 1, 0)
+metadata/unidot_keys = {
+"disabledShaderPasses": [],
+"m_BuildTextureStacks": [],
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_CustomRenderQueue": -1,
+"m_DoubleSidedGI": 0,
+"m_EnableInstancingVariants": 0,
+"m_InvalidKeywords": [],
+"m_LightmapFlags": 4,
+"m_ModifiedSerializedProperties": 0,
+"m_Name": "Roof_metall01",
+"m_ObjectHideFlags": 0,
+"m_Parent": [null, 0, null, null],
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_SavedProperties": {
+"m_Colors": [{
+"_Color": Color(0.772059, 0.772059, 0.772059, 1)
+}, {
+"_EmissionColor": Color(0, 0, 0, 1)
+}],
+"m_Floats": [{
+"_BumpScale": 1
+}, {
+"_Cutoff": 0.5
+}, {
+"_DetailNormalMapScale": 1
+}, {
+"_DstBlend": 0
+}, {
+"_GlossMapScale": 0.5
+}, {
+"_Glossiness": 0.5
+}, {
+"_GlossyReflections": 1
+}, {
+"_Metallic": 0
+}, {
+"_Mode": 0
+}, {
+"_OcclusionStrength": 1
+}, {
+"_Parallax": 0.02
+}, {
+"_SmoothnessTextureChannel": 0
+}, {
+"_SpecularHighlights": 1
+}, {
+"_SrcBlend": 1
+}, {
+"_UVSec": 0
+}, {
+"_ZWrite": 1
+}],
+"m_Ints": [],
+"m_TexEnvs": [{
+"_BumpMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 2800000, "557441bc4a1efcc408c07d2cad051cfa", 3]
+}
+}, {
+"_DetailAlbedoMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}, {
+"_DetailMask": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}, {
+"_DetailNormalMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}, {
+"_EmissionMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}, {
+"_MainTex": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 2800000, "9a8ee21412832824a850a02fca2f754a", 3]
+}
+}, {
+"_MetallicGlossMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, -2800000, "377de81c7d34eaa49875b28dde915719", 3]
+}
+}, {
+"_OcclusionMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}, {
+"_ParallaxMap": {
+"m_Offset": Vector2(0, 0),
+"m_Scale": Vector2(1, 1),
+"m_Texture": [null, 0, null, null]
+}
+}],
+"serializedVersion": 3
+},
+"m_Shader": [null, 46, "0000000000000000f000000000000000", 0],
+"m_ValidKeywords": ["_METALLICGLOSSMAP", "_NORMALMAP"],
+"serializedVersion": 8,
+"stringTagMap": []
+}

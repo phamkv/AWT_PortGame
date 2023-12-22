@@ -1,0 +1,343 @@
+[gd_resource type="AnimationNodeBlendTree" load_steps=62 format=3 uid="uid://bf5m3xq37k5mg"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_avii8"]
+animation = &"Fox_Attack_Paws"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3kppk"]
+animation = &"Fox_Attack_Tail"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0vdla"]
+animation = &"Fox_Falling"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1c5wh"]
+animation = &"Fox_Falling_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_fuplg"]
+animation = &"Fox_Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_hugmu"]
+animation = &"Fox_Jump"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cw4fb"]
+animation = &"Fox_Jump_InAir"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xf55u"]
+animation = &"Fox_Jump_Pivot_InPlace"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_kgiql"]
+animation = &"Fox_Run"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xhe7s"]
+animation = &"Fox_Run_InPlace"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_32ggd"]
+animation = &"Fox_Run_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cbte3"]
+animation = &"Fox_Run_Left_InPlace"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_enurt"]
+animation = &"Fox_Run_Right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ibq3t"]
+animation = &"Fox_Run_Right_InPlace"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_t7ag6"]
+animation = &"Fox_Sit1"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_gtbrl"]
+animation = &"Fox_Sit2_Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_o6auf"]
+animation = &"Fox_Sit3_StandUp"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_adn5g"]
+animation = &"Fox_Sit_Idle_Break"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_wstee"]
+animation = &"Fox_Sit_No"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_c7w6n"]
+animation = &"Fox_Sit_Yes"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_xdmd7"]
+animation = &"Fox_Somersault"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_x1akm"]
+animation = &"Fox_Somersault_InPlace"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_n7vs6"]
+animation = &"Fox_Walk"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_q6rcq"]
+animation = &"Fox_Walk_Back"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_yvvd2"]
+animation = &"Fox_Walk_Back_InPlace"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_oo0vc"]
+animation = &"Fox_Walk_InPlace"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_swbko"]
+animation = &"Fox_Walk_Left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_40ihm"]
+animation = &"Fox_Walk_Left_InPlace"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ouu6t"]
+animation = &"Fox_Walk_Right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_8o3bw"]
+animation = &"Fox_Walk_Right_InPlace"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_h2bvo"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gqt0n"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_relqt"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_bukeb"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_4mfq1"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_lqota"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_spi4x"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_6dr4v"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_esrr5"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_jqlob"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_c8b14"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7ecch"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_70iu8"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_bnu5l"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7w0c8"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_o5cfd"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7b78m"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gikyl"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_odewm"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_dgw77"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_v84ql"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_hk3bm"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_pdyul"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_hvwpl"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_cbrp5"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_yoryn"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_cphp7"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_botpg"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7b78o"]
+xfade_time = 0.25
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_8wjj7"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_nb15k"]
+resource_name = "Fox_ Animator_Controller"
+states/End/position = Vector2(300, 100)
+states/Fox_Attack_Paws/node = SubResource("AnimationNodeAnimation_avii8")
+states/Fox_Attack_Paws/position = Vector2(0, 170)
+states/Fox_Attack_Tail/node = SubResource("AnimationNodeAnimation_3kppk")
+states/Fox_Attack_Tail/position = Vector2(0, 230)
+states/Fox_Falling/node = SubResource("AnimationNodeAnimation_0vdla")
+states/Fox_Falling/position = Vector2(0, 290)
+states/Fox_Falling_Left/node = SubResource("AnimationNodeAnimation_1c5wh")
+states/Fox_Falling_Left/position = Vector2(0, 350)
+states/Fox_Idle/node = SubResource("AnimationNodeAnimation_fuplg")
+states/Fox_Idle/position = Vector2(0, 410)
+states/Fox_Jump/node = SubResource("AnimationNodeAnimation_hugmu")
+states/Fox_Jump/position = Vector2(0, 470)
+states/Fox_Jump_InAir/node = SubResource("AnimationNodeAnimation_cw4fb")
+states/Fox_Jump_InAir/position = Vector2(0, 530)
+states/Fox_Jump_Pivot_InPlace/node = SubResource("AnimationNodeAnimation_xf55u")
+states/Fox_Jump_Pivot_InPlace/position = Vector2(0, 590)
+states/Fox_Run/node = SubResource("AnimationNodeAnimation_kgiql")
+states/Fox_Run/position = Vector2(0, 650)
+states/Fox_Run_InPlace/node = SubResource("AnimationNodeAnimation_xhe7s")
+states/Fox_Run_InPlace/position = Vector2(0, 770)
+states/Fox_Run_Left/node = SubResource("AnimationNodeAnimation_32ggd")
+states/Fox_Run_Left/position = Vector2(300, 170)
+states/Fox_Run_Left_InPlace/node = SubResource("AnimationNodeAnimation_cbte3")
+states/Fox_Run_Left_InPlace/position = Vector2(300, 230)
+states/Fox_Run_Right/node = SubResource("AnimationNodeAnimation_enurt")
+states/Fox_Run_Right/position = Vector2(300, 290)
+states/Fox_Run_Right_InPlace/node = SubResource("AnimationNodeAnimation_ibq3t")
+states/Fox_Run_Right_InPlace/position = Vector2(300, 350)
+states/Fox_Sit1/node = SubResource("AnimationNodeAnimation_t7ag6")
+states/Fox_Sit1/position = Vector2(300, 410)
+states/Fox_Sit2_Idle/node = SubResource("AnimationNodeAnimation_gtbrl")
+states/Fox_Sit2_Idle/position = Vector2(300, 470)
+states/Fox_Sit3_StandUp/node = SubResource("AnimationNodeAnimation_o6auf")
+states/Fox_Sit3_StandUp/position = Vector2(300, 710)
+states/Fox_Sit_Idle_Break/node = SubResource("AnimationNodeAnimation_adn5g")
+states/Fox_Sit_Idle_Break/position = Vector2(300, 530)
+states/Fox_Sit_No/node = SubResource("AnimationNodeAnimation_wstee")
+states/Fox_Sit_No/position = Vector2(300, 650)
+states/Fox_Sit_Yes/node = SubResource("AnimationNodeAnimation_c7w6n")
+states/Fox_Sit_Yes/position = Vector2(300, 590)
+states/Fox_Somersault/node = SubResource("AnimationNodeAnimation_xdmd7")
+states/Fox_Somersault/position = Vector2(0, 710)
+states/Fox_Somersault_InPlace/node = SubResource("AnimationNodeAnimation_x1akm")
+states/Fox_Somersault_InPlace/position = Vector2(0, 830)
+states/Fox_Walk/node = SubResource("AnimationNodeAnimation_n7vs6")
+states/Fox_Walk/position = Vector2(300, 770)
+states/Fox_Walk_Back/node = SubResource("AnimationNodeAnimation_q6rcq")
+states/Fox_Walk_Back/position = Vector2(560, 170)
+states/Fox_Walk_Back_InPlace/node = SubResource("AnimationNodeAnimation_yvvd2")
+states/Fox_Walk_Back_InPlace/position = Vector2(560, 230)
+states/Fox_Walk_InPlace/node = SubResource("AnimationNodeAnimation_oo0vc")
+states/Fox_Walk_InPlace/position = Vector2(300, 830)
+states/Fox_Walk_Left/node = SubResource("AnimationNodeAnimation_swbko")
+states/Fox_Walk_Left/position = Vector2(560, 290)
+states/Fox_Walk_Left_InPlace/node = SubResource("AnimationNodeAnimation_40ihm")
+states/Fox_Walk_Left_InPlace/position = Vector2(560, 350)
+states/Fox_Walk_Right/node = SubResource("AnimationNodeAnimation_ouu6t")
+states/Fox_Walk_Right/position = Vector2(560, 410)
+states/Fox_Walk_Right_InPlace/node = SubResource("AnimationNodeAnimation_8o3bw")
+states/Fox_Walk_Right_InPlace/position = Vector2(560, 470)
+states/Start/position = Vector2(300, 100)
+transitions = ["Fox_Attack_Paws", "Fox_Attack_Tail", SubResource("AnimationNodeStateMachineTransition_h2bvo"), "Fox_Attack_Tail", "Fox_Falling", SubResource("AnimationNodeStateMachineTransition_gqt0n"), "Fox_Falling", "Fox_Falling_Left", SubResource("AnimationNodeStateMachineTransition_relqt"), "Fox_Falling_Left", "Fox_Idle", SubResource("AnimationNodeStateMachineTransition_bukeb"), "Fox_Idle", "Fox_Jump", SubResource("AnimationNodeStateMachineTransition_4mfq1"), "Fox_Jump", "Fox_Jump_InAir", SubResource("AnimationNodeStateMachineTransition_lqota"), "Fox_Jump_InAir", "Fox_Jump_Pivot_InPlace", SubResource("AnimationNodeStateMachineTransition_spi4x"), "Fox_Jump_Pivot_InPlace", "Fox_Run", SubResource("AnimationNodeStateMachineTransition_6dr4v"), "Fox_Run", "Fox_Somersault", SubResource("AnimationNodeStateMachineTransition_esrr5"), "Fox_Run_InPlace", "Fox_Somersault_InPlace", SubResource("AnimationNodeStateMachineTransition_jqlob"), "Fox_Run_Left", "Fox_Run_Left_InPlace", SubResource("AnimationNodeStateMachineTransition_c8b14"), "Fox_Run_Left_InPlace", "Fox_Run_Right", SubResource("AnimationNodeStateMachineTransition_7ecch"), "Fox_Run_Right", "Fox_Run_Right_InPlace", SubResource("AnimationNodeStateMachineTransition_70iu8"), "Fox_Run_Right_InPlace", "Fox_Sit1", SubResource("AnimationNodeStateMachineTransition_bnu5l"), "Fox_Sit1", "Fox_Sit2_Idle", SubResource("AnimationNodeStateMachineTransition_7w0c8"), "Fox_Sit2_Idle", "Fox_Sit_Idle_Break", SubResource("AnimationNodeStateMachineTransition_o5cfd"), "Fox_Sit3_StandUp", "Fox_Walk", SubResource("AnimationNodeStateMachineTransition_7b78m"), "Fox_Sit_Idle_Break", "Fox_Sit_Yes", SubResource("AnimationNodeStateMachineTransition_gikyl"), "Fox_Sit_No", "Fox_Sit3_StandUp", SubResource("AnimationNodeStateMachineTransition_odewm"), "Fox_Sit_Yes", "Fox_Sit_No", SubResource("AnimationNodeStateMachineTransition_dgw77"), "Fox_Somersault", "Fox_Run_InPlace", SubResource("AnimationNodeStateMachineTransition_v84ql"), "Fox_Somersault_InPlace", "Fox_Run_Left", SubResource("AnimationNodeStateMachineTransition_hk3bm"), "Fox_Walk", "Fox_Walk_InPlace", SubResource("AnimationNodeStateMachineTransition_pdyul"), "Fox_Walk_Back", "Fox_Walk_Back_InPlace", SubResource("AnimationNodeStateMachineTransition_hvwpl"), "Fox_Walk_Back_InPlace", "Fox_Walk_Left", SubResource("AnimationNodeStateMachineTransition_cbrp5"), "Fox_Walk_InPlace", "Fox_Walk_Back", SubResource("AnimationNodeStateMachineTransition_yoryn"), "Fox_Walk_Left", "Fox_Walk_Left_InPlace", SubResource("AnimationNodeStateMachineTransition_cphp7"), "Fox_Walk_Left_InPlace", "Fox_Walk_Right", SubResource("AnimationNodeStateMachineTransition_botpg"), "Fox_Walk_Right", "Fox_Walk_Right_InPlace", SubResource("AnimationNodeStateMachineTransition_7b78o"), "Start", "Fox_Attack_Paws", SubResource("AnimationNodeStateMachineTransition_8wjj7")]
+
+[resource]
+"nodes/Base Layer/node" = SubResource("AnimationNodeStateMachine_nb15k")
+"nodes/Base Layer/position" = Vector2(100, 200)
+nodes/output/position = Vector2(600, 350)
+node_connections = [&"output", 0, &"Base Layer"]
+metadata/guid_fileid_to_animation_name = {
+"02d99976b4a0880419ef0381cb525dfe:1827226128182048838": "Fox_Sit3_StandUp",
+"0473e26d90c4a994ead38f256c99c5b9:1827226128182048838": "Fox_Somersault_InPlace",
+"09884bf878afb4549bea8fb4f77e5ea0:1827226128182048838": "Fox_Idle",
+"13236cf41befc77498c6245c317911ae:1827226128182048838": "Fox_Sit_No",
+"236b1614aa86e0f4db0792352a73d455:1827226128182048838": "Fox_Walk_InPlace",
+"2d694cd30f631174093a1111c4ed8895:1827226128182048838": "Fox_Jump_Pivot_InPlace",
+"34bb4f81661abcd4fae58c9a9d6bdbe3:1827226128182048838": "Fox_Walk_Back",
+"490c9560e31fae748af6de79fbaecb10:1827226128182048838": "Fox_Run_Right_InPlace",
+"5ae8ff9eadf8f554688979fee65f0aef:1827226128182048838": "Fox_Run_Left",
+"70c4ef9204c08ce429fd08a494bb1033:1827226128182048838": "Fox_Run",
+"8ca578f25a346e248800bad0f5224350:1827226128182048838": "Fox_Jump",
+"8f0cf4218cd736142a75f73f2ce615ba:1827226128182048838": "Fox_Walk_Right",
+"90c44eee7e281954292e37471017ab8e:1827226128182048838": "Fox_Walk_Back_InPlace",
+"93da703632b047d43b8f3a2b0f902424:1827226128182048838": "Fox_Run_InPlace",
+"9eb4afe5321a98247a4a1b7f9e0e5ee6:1827226128182048838": "Fox_Falling_Left",
+"a07c42bf9096a064880415fc6125d716:1827226128182048838": "Fox_Falling",
+"a2e546d7d9c06c5438e2982ef4737ce3:1827226128182048838": "Fox_Sit2_Idle",
+"b19a75272a0f3534fb0ab2cc67456a74:1827226128182048838": "Fox_Attack_Tail",
+"b2adcf57d666f76469d4ca24956e82b7:1827226128182048838": "Fox_Walk_Left_InPlace",
+"ba2500356de6e014d9477dc115771f94:1827226128182048838": "Fox_Run_Left_InPlace",
+"baae981a03a70004b9188fe1ac277200:1827226128182048838": "Fox_Attack_Paws",
+"bc0cfd164a2579d41851505ba8332e40:1827226128182048838": "Fox_Walk_Left",
+"bdbaf568193ceb44eb952bb2af5f3837:1827226128182048838": "Fox_Walk_Right_InPlace",
+"c59a20e486f80ba4e859d4ef9574f9bb:1827226128182048838": "Fox_Sit1",
+"cc3accffe68d76c4fba0db9dc9cf4a4a:1827226128182048838": "Fox_Run_Right",
+"ce33bd1fdecb0de4dba1419f7763a5b0:1827226128182048838": "Fox_Somersault",
+"d606362d2cd19554aaf474b16d557924:1827226128182048838": "Fox_Sit_Idle_Break",
+"e004cd5a03acf764d911027f6ca2b528:1827226128182048838": "Fox_Jump_InAir",
+"e73c2dbc3de029f41bbdd4fd33d9fef8:1827226128182048838": "Fox_Sit_Yes",
+"f56a614af49e8f74fb38d336d6b77e35:1827226128182048838": "Fox_Walk"
+}

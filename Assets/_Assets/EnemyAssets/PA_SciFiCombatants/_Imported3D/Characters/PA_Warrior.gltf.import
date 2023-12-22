@@ -1,0 +1,136 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://et1o4myx4qy1"
+path="res://.godot/imported/PA_Warrior.gltf-94e32fe465e715124574f79e3d760b2d.scn"
+
+[deps]
+
+source_file="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/PA_Warrior.gltf"
+dest_files=["res://.godot/imported/PA_Warrior.gltf-94e32fe465e715124574f79e3d760b2d.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name="Root Scene"
+nodes/apply_root_scale=true
+nodes/root_scale=100.0
+meshes/ensure_tangents=false
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=24.0
+animation/trimming=false
+animation/remove_immutable_tracks=false
+import_script/path="res://addons/unidot_importer/post_import_unity_model.gd"
+_subresources={
+"animations": {
+"Take 001": {
+"settings/loop_mode": 0,
+"slice_1/end_frame": 20.0,
+"slice_1/loop_mode": 0,
+"slice_1/name": "PA_WarriorForward_Clip",
+"slice_1/save_to_file/enabled": false,
+"slice_1/save_to_file/keep_custom_tracks": false,
+"slice_1/save_to_file/path": "",
+"slice_1/start_frame": 1.0,
+"slice_10/end_frame": 270.0,
+"slice_10/loop_mode": 0,
+"slice_10/name": "PA_WarriorDeath_Clip",
+"slice_10/save_to_file/enabled": false,
+"slice_10/save_to_file/keep_custom_tracks": false,
+"slice_10/save_to_file/path": "",
+"slice_10/start_frame": 250.0,
+"slice_2/end_frame": 40.0,
+"slice_2/loop_mode": 0,
+"slice_2/name": "PA_WarriorBackward_Clip",
+"slice_2/save_to_file/enabled": false,
+"slice_2/save_to_file/keep_custom_tracks": false,
+"slice_2/save_to_file/path": "",
+"slice_2/start_frame": 20.0,
+"slice_3/end_frame": 60.0,
+"slice_3/loop_mode": 0,
+"slice_3/name": "PA_WarriorLeft_Clip",
+"slice_3/save_to_file/enabled": false,
+"slice_3/save_to_file/keep_custom_tracks": false,
+"slice_3/save_to_file/path": "",
+"slice_3/start_frame": 40.0,
+"slice_4/end_frame": 80.0,
+"slice_4/loop_mode": 0,
+"slice_4/name": "PA_WarriorRight_Clip",
+"slice_4/save_to_file/enabled": false,
+"slice_4/save_to_file/keep_custom_tracks": false,
+"slice_4/save_to_file/path": "",
+"slice_4/start_frame": 60.0,
+"slice_5/end_frame": 100.0,
+"slice_5/loop_mode": 0,
+"slice_5/name": "PA_WarriorStop_Clip",
+"slice_5/save_to_file/enabled": false,
+"slice_5/save_to_file/keep_custom_tracks": false,
+"slice_5/save_to_file/path": "",
+"slice_5/start_frame": 80.0,
+"slice_6/end_frame": 140.0,
+"slice_6/loop_mode": 0,
+"slice_6/name": "PA_WarriorIdle_Clip",
+"slice_6/save_to_file/enabled": false,
+"slice_6/save_to_file/keep_custom_tracks": false,
+"slice_6/save_to_file/path": "",
+"slice_6/start_frame": 100.0,
+"slice_7/end_frame": 210.0,
+"slice_7/loop_mode": 0,
+"slice_7/name": "PA_WarriorAttack_Clip",
+"slice_7/save_to_file/enabled": false,
+"slice_7/save_to_file/keep_custom_tracks": false,
+"slice_7/save_to_file/path": "",
+"slice_7/start_frame": 140.0,
+"slice_8/end_frame": 220.0,
+"slice_8/loop_mode": 0,
+"slice_8/name": "PA_WarriorCollapse_Clip",
+"slice_8/save_to_file/enabled": false,
+"slice_8/save_to_file/keep_custom_tracks": false,
+"slice_8/save_to_file/path": "",
+"slice_8/start_frame": 210.0,
+"slice_9/end_frame": 250.0,
+"slice_9/loop_mode": 0,
+"slice_9/name": "PA_WarriorRecover_Clip",
+"slice_9/save_to_file/enabled": false,
+"slice_9/save_to_file/keep_custom_tracks": false,
+"slice_9/save_to_file/path": "",
+"slice_9/start_frame": 220.0,
+"slices/amount": 10
+}
+},
+"materials": {
+"PA_WarriorMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/Materials/PA_WarriorMat.mat.tres"
+}
+},
+"meshes": {
+"PA_Warrior": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/extracted/PA_Warrior.PA_Warrior.mesh"
+},
+"Root Scene_PA_Warrior": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/extracted/PA_Warrior.PA_Warrior.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+gltf/naming_version=0
+gltf/embedded_image_handling=1

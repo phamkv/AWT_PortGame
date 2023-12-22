@@ -1,0 +1,117 @@
+[gd_scene load_steps=4 format=3 uid="uid://b63fgac2mqtcw"]
+
+[ext_resource type="Script" path="res://addons/unidot_importer/runtime/anim_tree.gd" id="1_g8m8e"]
+[ext_resource type="ArrayMesh" uid="uid://daty600uyqxgy" path="res://Assets/_Assets/Tools/sword_a/extracted/sword_a.blade_low.mesh" id="2_hdbpc"]
+[ext_resource type="ArrayMesh" uid="uid://bj0518t243w5" path="res://Assets/_Assets/Tools/sword_a/extracted/sword_a.handle_low.mesh" id="3_5htsn"]
+
+[node name="sword_a" type="Node3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 3.8)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+deterministic = false
+root_motion_track = NodePath("%GeneralSkeleton:Root")
+anim_player = NodePath("../AnimationPlayer")
+script = ExtResource("1_g8m8e")
+
+[node name="Main Camera" type="Node3D" parent="."]
+transform = Transform3D(0.821746, 0.12476, -0.556029, -3.72529e-09, 0.97574, 0.218934, 0.569854, -0.179908, 0.80181, -68.8858, 27.0592, 96.567)
+
+[node name="Render" type="Node3D" parent="."]
+
+[node name="Sky" type="Node3D" parent="."]
+
+[node name="sword_a" type="Node3D" parent="."]
+
+[node name="blade_low" type="Node3D" parent="sword_a"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="sword_a/blade_low"]
+editor_description = "[MeshRenderer 23::fd855b9ef3fb75e4fbbd46803c24ee95:23247193416292826]"
+gi_mode = 2
+mesh = ExtResource("2_hdbpc")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1528554062031124, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "5b96bc94f4c394e27ce9f8a4cb26592d", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default" type="Node3D" parent="sword_a/blade_low"]
+
+[node name="handle_low" type="Node3D" parent="sword_a"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="sword_a/handle_low"]
+editor_description = "[MeshRenderer 23::fd855b9ef3fb75e4fbbd46803c24ee95:23346779245099842]"
+gi_mode = 2
+mesh = ExtResource("3_5htsn")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1749499627368512, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "5b96bc94f4c394e27ce9f8a4cb26592d", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 1" type="Node3D" parent="sword_a/handle_low"]

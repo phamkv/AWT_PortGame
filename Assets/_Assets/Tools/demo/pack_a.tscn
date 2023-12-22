@@ -1,0 +1,108 @@
+[gd_scene load_steps=9 format=3 uid="uid://bhp7iqssiefk1"]
+
+[ext_resource type="PackedScene" uid="uid://b63fgac2mqtcw" path="res://Assets/_Assets/Tools/sword_a/prefab/sword_a.prefab.tscn" id="1_8w8t5"]
+[ext_resource type="PackedScene" uid="uid://mlwph2jncuin" path="res://Assets/_Assets/Tools/lantern_a/prefab/lantern_a.prefab.tscn" id="2_s7a4e"]
+[ext_resource type="PackedScene" uid="uid://djg6hnvaojugc" path="res://Assets/_Assets/Tools/house_a/prefab/house_a.prefab.tscn" id="3_4nlaj"]
+[ext_resource type="PackedScene" uid="uid://b1rqum2ouyj5m" path="res://Assets/_Assets/Tools/axe_a/prefab/axe_a.prefab.tscn" id="4_5kwcj"]
+[ext_resource type="PackedScene" uid="uid://cgca2ti6yqfrh" path="res://Assets/_Assets/Tools/flask_a/prefab/flask_a.prefab.tscn" id="5_3ql67"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_n7asf"]
+resource_name = "Default-Skybox"
+sky_top_color = Color(0.454902, 0.678431, 0.87451, 1)
+sky_horizon_color = Color(0.894118, 0.952941, 1, 1)
+sky_curve = 0.0731028
+ground_bottom_color = Color(0.454902, 0.470588, 0.490196, 1)
+ground_horizon_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Sky" id="Sky_861ux"]
+sky_material = SubResource("ProceduralSkyMaterial_n7asf")
+
+[sub_resource type="Environment" id="Environment_0247g"]
+background_mode = 2
+sky = SubResource("Sky_861ux")
+fog_light_color = Color(0.5, 0.5, 0.5, 1)
+
+[node name="RootNode3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_0247g")
+
+[node name="sword_a" parent="." instance=ExtResource("1_8w8t5")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 3.8)
+
+[node name="lantern_a" parent="." instance=ExtResource("2_s7a4e")]
+
+[node name="house_a" parent="." instance=ExtResource("3_4nlaj")]
+transform = Transform3D(0.03, 0, 0, 0, 0.03, 0, 0, 0, 0.03, 0, 0, -14.2)
+
+[node name="axe_a" parent="." instance=ExtResource("4_5kwcj")]
+
+[node name="Main Camera" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -10)
+
+[node name="Camera" type="Camera3D" parent="Main Camera"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+cull_mask = 4294967295
+fov = 60.0
+near = 0.3
+far = 1000.0
+metadata/unidot_keys = {
+"far clip plane": 1000,
+"field of view": 60,
+"m_AllowDynamicResolution": 0,
+"m_AllowMSAA": 1,
+"m_BackGroundColor": Color(0.192157, 0.301961, 0.47451, 0),
+"m_ClearFlags": 1,
+"m_CullingMask": {
+"m_Bits": 4294967295,
+"serializedVersion": 2
+},
+"m_Depth": -1,
+"m_Enabled": 1,
+"m_ForceIntoRT": 0,
+"m_GameObject": [null, 1637516661, null, null],
+"m_HDR": 1,
+"m_Layer": 0,
+"m_NormalizedViewPortRect": {
+"height": 1,
+"serializedVersion": 2,
+"width": 1,
+"x": 0,
+"y": 0
+},
+"m_ObjectHideFlags": 0,
+"m_OcclusionCulling": 1,
+"m_PrefabInternal": [null, 0, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_RenderingPath": -1,
+"m_StaticEditorFlags": 0,
+"m_StereoConvergence": 10,
+"m_StereoSeparation": 0.022,
+"m_TagString": "MainCamera",
+"m_TargetDisplay": 0,
+"m_TargetEye": 3,
+"m_TargetTexture": [null, 0, null, null],
+"near clip plane": 0.3,
+"orthographic": 0,
+"orthographic size": 5,
+"serializedVersion": 2
+}
+
+[node name="flask_a" parent="." instance=ExtResource("5_3ql67")]
+
+[node name="Directional Light" type="Node3D" parent="."]
+transform = Transform3D(0.866025, 0.383022, 0.321394, 0, 0.642788, -0.766044, -0.5, 0.663414, 0.55667, 0, 3, 0)
+
+[node name="Light" type="DirectionalLight3D" parent="Directional Light"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+light_color = Color(1, 0.956863, 0.839216, 1)
+light_bake_mode = 0
+shadow_enabled = true
+shadow_bias = 0.05
+shadow_normal_bias = 0.4
+
+[editable path="sword_a"]
+[editable path="lantern_a"]
+[editable path="house_a"]
+[editable path="axe_a"]
+[editable path="flask_a"]

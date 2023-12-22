@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dnnb820g8msmu"
+path="res://.godot/imported/Snowrunning3.wav-b3e84ff2d0c58abf42b8b4d2f61c33fb.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Footstep(Snow and Grass)/StepsLoop/snow/running/Snowrunning3.wav"
+dest_files=["res://.godot/imported/Snowrunning3.wav-b3e84ff2d0c58abf42b8b4d2f61c33fb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

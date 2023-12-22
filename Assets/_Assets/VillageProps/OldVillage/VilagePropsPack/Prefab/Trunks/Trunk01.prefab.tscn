@@ -1,0 +1,231 @@
+[gd_scene load_steps=8 format=3 uid="uid://bka21xqc275t5"]
+
+[ext_resource type="ArrayMesh" uid="uid://dklg4madk2nl4" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Trunk01.Trunk01_Lod01.mesh" id="1_5qpwj"]
+[ext_resource type="Material" uid="uid://cmv7if42ejm72" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/WoodBark03.mat.tres" id="2_jp61y"]
+[ext_resource type="Material" uid="uid://w2dbnwhyr6am" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/Wood_Bark01.mat.tres" id="3_vsnu7"]
+[ext_resource type="Material" uid="uid://dqkx6hegqcnx4" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/WoodBark02.mat.tres" id="4_f716v"]
+[ext_resource type="ArrayMesh" uid="uid://cvdp52tfp8lne" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Trunk01.Trunk01_Lod02.mesh" id="5_snevq"]
+[ext_resource type="ArrayMesh" uid="uid://dcpqrsv4ekfvm" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Trunk01.Trunk_Lod0.mesh" id="6_7loxt"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_s6xsm"]
+data = PackedVector3Array(0.025, 0, 0.065, 0.0217, 0.0125, 0.065, 0.025, 0, 0, 0.0217, 0.0125, 0.065, 0.0125, 0.0216, 0.065, 0.0217, 0.0125, 0, 0.0217, 0.0125, 0.065, 0.0217, 0.0125, 0, 0.025, 0, 0, 0.0125, 0.0216, 0.065, 0, 0.025, 0.065, 0.0125, 0.0216, 0, 0.0125, 0.0216, 0.065, 0.0125, 0.0216, 0, 0.0217, 0.0125, 0, 0, 0.025, 0.065, -0.0125, 0.0216, 0.065, 0, 0.025, 0, 0, 0.025, 0.065, 0, 0.025, 0, 0.0125, 0.0216, 0, -0.0125, 0.0216, 0.065, -0.0125, 0.0216, 0, 0, 0.025, 0, -0.0125, 0.0216, 0.065, -0.0217, 0.0125, 0.065, -0.0125, 0.0216, 0, -0.0217, 0.0125, 0.065, -0.025, 0, 0.065, -0.0217, 0.0125, 0, -0.0217, 0.0125, 0.065, -0.0217, 0.0125, 0, -0.0125, 0.0216, 0, -0.025, 0, 0.065, -0.0217, -0.0125, 0.065, -0.025, 0, 0, -0.025, 0, 0.065, -0.025, 0, 0, -0.0217, 0.0125, 0, -0.0217, -0.0125, 0.065, -0.0125, -0.0217, 0.065, -0.0217, -0.0125, 0, -0.0217, -0.0125, 0.065, -0.0217, -0.0125, 0, -0.025, 0, 0, -0.0125, -0.0217, 0.065, 0, -0.025, 0.065, -0.0125, -0.0217, 0, -0.0125, -0.0217, 0.065, -0.0125, -0.0217, 0, -0.0217, -0.0125, 0, 0, -0.025, 0.065, 0.0125, -0.0217, 0.065, 0, -0.025, 0, 0, -0.025, 0.065, 0, -0.025, 0, -0.0125, -0.0217, 0, 0.0125, -0.0217, 0.065, 0.0217, -0.0125, 0.065, 0.0125, -0.0217, 0, 0.0125, -0.0217, 0.065, 0.0125, -0.0217, 0, 0, -0.025, 0, 0.0217, -0.0125, 0.065, 0.0217, -0.0125, 0, 0.0125, -0.0217, 0, 0.0217, -0.0125, 0.065, 0.025, 0, 0.065, 0.0217, -0.0125, 0, 0.025, 0, 0.065, 0.025, 0, 0, 0.0217, -0.0125, 0, 0.0216, 0.0125, 0, 0.0125, 0.0216, 0, 0, 0.025, 0, 0.0216, 0.0125, 0, 0, 0.025, 0, -0.0125, 0.0216, 0, -0.0125, 0.0216, 0, -0.0217, 0.0125, 0, -0.0125, -0.0217, 0, -0.0125, -0.0217, 0, 0, -0.025, 0, 0.0216, -0.0125, 0, -0.0125, -0.0217, 0, 0.0216, 0.0125, 0, -0.0125, 0.0216, 0, -0.0217, 0.0125, 0, -0.025, 0, 0, -0.0125, -0.0217, 0, 0.0216, -0.0125, 0, 0.025, 0, 0, 0.0216, 0.0125, 0, 0.0216, -0.0125, 0, 0.0216, 0.0125, 0, -0.0125, -0.0217, 0, 0, -0.025, 0, 0.0125, -0.0217, 0, 0.0216, -0.0125, 0, -0.025, 0, 0, -0.0217, -0.0125, 0, -0.0125, -0.0217, 0, 0.0216, 0.0125, 0.065, 0.025, 0, 0.065, 0.0216, -0.0125, 0.065, 0.0216, -0.0125, 0.065, -0.0125, -0.0217, 0.065, 0.0216, 0.0125, 0.065, 0.0216, -0.0125, 0.065, 0.0125, -0.0217, 0.065, 0, -0.025, 0.065, -0.0125, -0.0217, 0.065, -0.0217, -0.0125, 0.065, -0.025, 0, 0.065, -0.0125, -0.0217, 0.065, -0.025, 0, 0.065, -0.0217, 0.0125, 0.065, -0.0125, -0.0217, 0.065, -0.0217, 0.0125, 0.065, -0.0125, 0.0216, 0.065, -0.0125, 0.0216, 0.065, 0.0216, 0.0125, 0.065, -0.0125, -0.0217, 0.065, -0.0125, 0.0216, 0.065, 0, 0.025, 0.065, 0.0216, 0.0125, 0.065, 0, 0.025, 0.065, 0.0125, 0.0216, 0.065, 0.0216, 0.0125, 0.065, 0, -0.025, 0.065, -0.0125, -0.0217, 0.065, 0.0216, -0.0125, 0.065, 0.0225, 0.013, 0.001, 0.026, 0, 0.001, 0.026, 0, 0.0491, 0.026, 0, 0.0491, 0.0225, 0.013, 0.0604, 0.0225, 0.013, 0.001, 0.026, 0, 0.0491, 0.026, 0, 0.001, 0.0225, -0.013, 0.0089, 0.0225, 0.013, 0.0604, 0.013, 0.0225, 0.0618, 0.013, 0.0225, 0.001, 0.013, 0.0225, 0.001, 0.0225, 0.013, 0.001, 0.0225, 0.013, 0.0604, 0.013, 0.0225, 0.0618, 0, 0.026, 0.0592, 0, 0.026, 0.0074, 0, 0.026, 0.0074, 0.013, 0.0225, 0.001, 0.013, 0.0225, 0.0618, 0, 0.026, 0.0592, -0.013, 0.0225, 0.0547, 0, 0.026, 0.0074, -0.013, 0.0225, 0.0547, -0.0225, 0.013, 0.0545, -0.0225, 0.013, 0.0047, -0.013, 0.0225, 0.0547, -0.013, 0.0225, 0.0031, 0, 0.026, 0.0074, -0.0225, 0.013, 0.0047, -0.013, 0.0225, 0.0031, -0.013, 0.0225, 0.0547, -0.0225, 0.013, 0.0545, -0.026, 0, 0.0618, -0.026, 0, 0.0047, -0.026, 0, 0.0047, -0.0225, 0.013, 0.0047, -0.0225, 0.013, 0.0545, -0.026, 0, 0.0618, -0.0225, -0.013, 0.0638, -0.026, 0, 0.0047, -0.0225, -0.013, 0.0638, -0.0225, -0.013, 0.001, -0.026, 0, 0.0047, -0.0225, -0.013, 0.0638, -0.013, -0.0225, 0.0638, -0.0225, -0.013, 0.001, -0.013, -0.0225, 0.0638, -0.013, -0.0225, 0.001, -0.0225, -0.013, 0.001, -0.013, -0.0225, 0.0638, 0, -0.026, 0.0611, 0, -0.026, 0.0057, 0, -0.026, 0.0057, -0.013, -0.0225, 0.001, -0.013, -0.0225, 0.0638, 0, -0.026, 0.0611, 0.013, -0.0225, 0.0591, 0.013, -0.0225, 0.0308, 0.013, -0.0225, 0.0308, 0, -0.026, 0.0057, 0, -0.026, 0.0611, 0.013, -0.0225, 0.0591, 0.0225, -0.013, 0.0585, 0.013, -0.0225, 0.0308, 0.0225, -0.013, 0.0089, 0.013, -0.0225, 0.0308, 0.0225, -0.013, 0.0585, 0.0225, -0.013, 0.0585, 0.026, 0, 0.0491, 0.0225, -0.013, 0.0089, 0.0251, 0, 0.0495, 0.0217, 0.0125, 0.0604, 0.0225, 0.013, 0.0604, 0.0225, 0.013, 0.0604, 0.026, 0, 0.0491, 0.0251, 0, 0.0495, 0.0125, 0.0217, 0.0617, 0.0225, 0.013, 0.0604, 0.0217, 0.0125, 0.0604, 0.0225, 0.013, 0.0604, 0.0125, 0.0217, 0.0617, 0.013, 0.0225, 0.0618, 0.0125, 0.0217, 0.0617, 0, 0.0251, 0.0592, 0, 0.026, 0.0592, 0, 0.026, 0.0592, 0.013, 0.0225, 0.0618, 0.0125, 0.0217, 0.0617, -0.013, 0.0225, 0.0547, 0, 0.026, 0.0592, 0, 0.0251, 0.0592, 0, 0.0251, 0.0592, -0.0125, 0.0217, 0.0548, -0.013, 0.0225, 0.0547, -0.013, 0.0225, 0.0547, -0.0125, 0.0217, 0.0548, -0.0217, 0.0125, 0.0547, -0.0217, 0.0125, 0.0547, -0.0225, 0.013, 0.0545, -0.013, 0.0225, 0.0547, -0.0251, 0, 0.0617, -0.0225, 0.013, 0.0545, -0.0217, 0.0125, 0.0547, -0.0225, 0.013, 0.0545, -0.0251, 0, 0.0617, -0.026, 0, 0.0618, -0.0217, -0.0125, 0.0637, -0.026, 0, 0.0618, -0.0251, 0, 0.0617, -0.026, 0, 0.0618, -0.0217, -0.0125, 0.0637, -0.0225, -0.013, 0.0638, -0.013, -0.0225, 0.0638, -0.0225, -0.013, 0.0638, -0.0217, -0.0125, 0.0637, -0.0217, -0.0125, 0.0637, -0.0125, -0.0217, 0.0637, -0.013, -0.0225, 0.0638, -0.0125, -0.0217, 0.0637, 0, -0.0251, 0.061, 0, -0.026, 0.0611, 0, -0.026, 0.0611, -0.013, -0.0225, 0.0638, -0.0125, -0.0217, 0.0637, 0.0125, -0.0217, 0.059, 0, -0.026, 0.0611, 0, -0.0251, 0.061, 0, -0.026, 0.0611, 0.0125, -0.0217, 0.059, 0.013, -0.0225, 0.0591, 0.0217, -0.0125, 0.0585, 0.013, -0.0225, 0.0591, 0.0125, -0.0217, 0.059, 0.013, -0.0225, 0.0591, 0.0217, -0.0125, 0.0585, 0.0225, -0.013, 0.0585, 0.026, 0, 0.0491, 0.0225, -0.013, 0.0585, 0.0217, -0.0125, 0.0585, 0.0217, -0.0125, 0.0585, 0.0251, 0, 0.0495, 0.026, 0, 0.0491, 0.0244, 0, 0.0013, 0.026, 0, 0.001, 0.0225, 0.013, 0.001, 0.0225, 0.013, 0.001, 0.0211, 0.0122, 0.0013, 0.0244, 0, 0.0013, 0.0122, 0.0211, 0.0013, 0.0211, 0.0122, 0.0013, 0.0225, 0.013, 0.001, 0.0225, 0.013, 0.001, 0.013, 0.0225, 0.001, 0.0122, 0.0211, 0.0013, 0, 0.0244, 0.0073, 0.0122, 0.0211, 0.0013, 0.013, 0.0225, 0.001, 0.013, 0.0225, 0.001, 0, 0.026, 0.0074, 0, 0.0244, 0.0073, -0.013, 0.0225, 0.0031, -0.0122, 0.0211, 0.0033, 0, 0.0244, 0.0073, 0, 0.0244, 0.0073, 0, 0.026, 0.0074, -0.013, 0.0225, 0.0031, -0.0122, 0.0211, 0.0033, -0.013, 0.0225, 0.0031, -0.0225, 0.013, 0.0047, -0.0225, 0.013, 0.0047, -0.0211, 0.0122, 0.0047, -0.0122, 0.0211, 0.0033, -0.0244, 0, 0.0047, -0.0211, 0.0122, 0.0047, -0.0225, 0.013, 0.0047, -0.0225, 0.013, 0.0047, -0.026, 0, 0.0047, -0.0244, 0, 0.0047, -0.0211, -0.0122, 0.0013, -0.0244, 0, 0.0047, -0.026, 0, 0.0047, -0.026, 0, 0.0047, -0.0225, -0.013, 0.001, -0.0211, -0.0122, 0.0013, -0.013, -0.0225, 0.001, -0.0122, -0.0211, 0.0013, -0.0211, -0.0122, 0.0013, -0.0211, -0.0122, 0.0013, -0.0225, -0.013, 0.001, -0.013, -0.0225, 0.001, -0.013, -0.0225, 0.001, 0, -0.026, 0.0057, 0, -0.0244, 0.0057, 0, -0.0244, 0.0057, -0.0122, -0.0211, 0.0013, -0.013, -0.0225, 0.001, 0, -0.026, 0.0057, 0.013, -0.0225, 0.0308, 0.0122, -0.0211, 0.0293, 0.0122, -0.0211, 0.0293, 0, -0.0244, 0.0057, 0, -0.026, 0.0057, 0.0225, -0.013, 0.0089, 0.0122, -0.0211, 0.0293, 0.013, -0.0225, 0.0308, 0.0225, -0.013, 0.0089, 0.0211, -0.0122, 0.0087, 0.0122, -0.0211, 0.0293, 0.0244, 0, 0.0013, 0.0211, -0.0122, 0.0087, 0.0225, -0.013, 0.0089, 0.0225, -0.013, 0.0089, 0.026, 0, 0.001, 0.0244, 0, 0.0013)
+
+[node name="Trunk01" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -16.866, 0.325, -15.3264)
+
+[node name="LODGroup" type="Node" parent="."]
+editor_description = "[LODGroup 205::f232b9f36d6f11d4b965d8b39a5776bb:20555352]"
+metadata/unidot_keys = {
+"m_AnimateCrossFading": 0,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_Enabled": 1,
+"m_FadeMode": 0,
+"m_GameObject": [null, 182760, null, null],
+"m_LODs": [{
+"fadeTransitionWidth": 0,
+"renderers": [{
+"renderer": [null, 2395494, null, null]
+}],
+"screenRelativeHeight": 0.204652
+}, {
+"fadeTransitionWidth": 0,
+"renderers": [{
+"renderer": [null, 2353090, null, null]
+}],
+"screenRelativeHeight": 0.0624728
+}, {
+"fadeTransitionWidth": 0,
+"renderers": [{
+"renderer": [null, 2331966, null, null]
+}],
+"screenRelativeHeight": 0.0112663
+}],
+"m_LastLODIsBillboard": 0,
+"m_Layer": 0,
+"m_LocalReferencePoint": Vector3(0, 0, 5.96046e-08),
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Size": 0.65,
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"serializedVersion": 2
+}
+
+[node name="Trunk01_Lod01" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.325)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Trunk01_Lod01"]
+editor_description = "[MeshRenderer 23::f232b9f36d6f11d4b965d8b39a5776bb:2353090]"
+gi_mode = 2
+visibility_range_begin = 4.12897
+visibility_range_end = 13.5259
+mesh = ExtResource("1_5qpwj")
+surface_material_override/0 = ExtResource("2_jp61y")
+surface_material_override/1 = ExtResource("3_vsnu7")
+surface_material_override/2 = ExtResource("4_f716v")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 137036, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "014150c6ade3b1340b696255604095ad", 2], [null, 2100000, "d6425f15177796044bd3ad0c26c16ec5", 2], [null, 2100000, "56f784e4b3ef58840ad2d1e4bfabd1c9", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1,
+"m_TagString": "Untagged"
+}
+
+[node name="Trunk01_Lod02" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.325)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Trunk01_Lod02"]
+editor_description = "[MeshRenderer 23::f232b9f36d6f11d4b965d8b39a5776bb:2331966]"
+gi_mode = 2
+visibility_range_begin = 13.5259
+visibility_range_end = 75.0024
+mesh = ExtResource("5_snevq")
+surface_material_override/0 = ExtResource("2_jp61y")
+surface_material_override/1 = ExtResource("3_vsnu7")
+surface_material_override/2 = ExtResource("4_f716v")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 134120, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "014150c6ade3b1340b696255604095ad", 2], [null, 2100000, "d6425f15177796044bd3ad0c26c16ec5", 2], [null, 2100000, "56f784e4b3ef58840ad2d1e4bfabd1c9", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1,
+"m_TagString": "Untagged"
+}
+
+[node name="Trunk_Lod0" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.325)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="Trunk_Lod0"]
+editor_description = "[MeshRenderer 23::f232b9f36d6f11d4b965d8b39a5776bb:2395494]"
+gi_mode = 2
+visibility_range_end = 4.12897
+mesh = ExtResource("6_7loxt")
+surface_material_override/0 = ExtResource("2_jp61y")
+surface_material_override/1 = ExtResource("3_vsnu7")
+surface_material_override/2 = ExtResource("4_f716v")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 127916, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "014150c6ade3b1340b696255604095ad", 2], [null, 2100000, "d6425f15177796044bd3ad0c26c16ec5", 2], [null, 2100000, "56f784e4b3ef58840ad2d1e4bfabd1c9", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1,
+"m_TagString": "Untagged"
+}
+
+[node name="MeshCollider" type="StaticBody3D" parent="Trunk_Lod0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Trunk_Lod0/MeshCollider"]
+shape = SubResource("ConcavePolygonShape3D_s6xsm")

@@ -1,0 +1,428 @@
+[gd_scene load_steps=10 format=3 uid="uid://cn8qedeijuqrn"]
+
+[ext_resource type="PackedScene" uid="uid://b1jfi6ctc20if" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Rock1.prefab.tscn" id="1_sybla"]
+[ext_resource type="PackedScene" uid="uid://cmrhbqoxo6fop" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Mushroom.prefab.tscn" id="2_814sj"]
+[ext_resource type="PackedScene" uid="uid://cabjv0lowv2gn" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Grass1.prefab.tscn" id="3_0yuap"]
+[ext_resource type="PackedScene" uid="uid://6xgqj8objvo1" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Flower2.prefab.tscn" id="4_mvwkx"]
+[ext_resource type="PackedScene" uid="uid://h7a2kwcb2vq3" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Flower1.prefab.tscn" id="5_jnga6"]
+[ext_resource type="PackedScene" uid="uid://qhrmt5b303gj" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree2.prefab.tscn" id="6_d80ue"]
+[ext_resource type="PackedScene" uid="uid://dqoolq5xt4jdu" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree1.prefab.tscn" id="7_5a6yq"]
+[ext_resource type="PackedScene" uid="uid://c5ry72yumh6ow" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Deciduous_tree1.prefab.tscn" id="8_uhsik"]
+[ext_resource type="PackedScene" uid="uid://deiko1p27il0k" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Oak_tree1.prefab.tscn" id="9_8qmo5"]
+
+[node name="TreeRocksMapTest" type="Node3D"]
+
+[node name="Rocks" type="Node3D" parent="."]
+
+[node name="Rock1" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -699.528, 93.128, 674.231)
+
+[node name="Rock1 (1)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -728.856, 95.6241, 652.957)
+
+[node name="Rock1 (4)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -679, 86.4387, 609.741)
+
+[node name="Rock1 (5)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -651.189, 92.9155, 664.625)
+
+[node name="Rock1 (6)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -626.084, 80.1028, 603.934)
+
+[node name="Rock2" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -649.841, 75.3691, 573.199)
+
+[node name="Rock1 (1)2" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -720.861, 85.3362, 600.198)
+
+[node name="Rock1 (2)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -622.942, 87.3687, 628.05)
+
+[node name="Rock1 (5)2" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -735.066, 91.2283, 631.793)
+
+[node name="Rock1 (3)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -699.437, 74.9069, 533.524)
+
+[node name="Rock1 (4)2" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -777.138, 85.631, 535.55)
+
+[node name="Rock1 (6)2" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -822.009, 95.4343, 570.407)
+
+[node name="Rock1 (7)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -840.403, 97.1521, 629.762)
+
+[node name="Rock1 (8)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -816.435, 111.776, 696.773)
+
+[node name="Rock1 (9)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -776.313, 118.845, 752.249)
+
+[node name="Rock1 (10)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -700.27, 111.231, 779.372)
+
+[node name="Rock1 (11)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -613.07, 86.8781, 765.896)
+
+[node name="Rock1 (12)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -532.62, 74.2214, 714.825)
+
+[node name="Rock1 (13)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -483.441, 88.2289, 641.043)
+
+[node name="Rock1 (14)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -483.662, 69.4754, 555.309)
+
+[node name="Rock1 (15)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -528.856, 85.1169, 475.178)
+
+[node name="Rock1 (16)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -584.264, 83.1539, 412.096)
+
+[node name="Rock1 (17)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -678.574, 75.7802, 378.177)
+
+[node name="Rock1 (18)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -807.577, 95.6425, 423.403)
+
+[node name="Rock1 (19)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -927.27, 107.564, 518.561)
+
+[node name="Rock1 (20)" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -960.829, 131.559, 644.794)
+
+[node name="Rock3" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -898.069, 155.541, 822.048)
+
+[node name="Rock1 (1)3" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -751.015, 163.275, 901.706)
+
+[node name="Rock1 (2)2" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -644.539, 131.03, 913.714)
+
+[node name="Rock1 (3)2" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -512.573, 79.3906, 859.893)
+
+[node name="Rock1 (4)3" parent="Rocks" instance=ExtResource("1_sybla")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -422.089, 62.0221, 725.341)
+
+[node name="Plants" type="Node3D" parent="."]
+
+[node name="Mushroom1" parent="Plants" instance=ExtResource("2_814sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -693.343, 90.5808, 653.608)
+
+[node name="Mushroom1 (1)" parent="Plants" instance=ExtResource("2_814sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -686.167, 90.5076, 652.181)
+
+[node name="Mushroom1 (2)" parent="Plants" instance=ExtResource("2_814sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -686.965, 90.1281, 646.581)
+
+[node name="Mushroom1 (3)" parent="Plants" instance=ExtResource("2_814sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -697.378, 91.0129, 647.247)
+
+[node name="Mushroom1 (4)" parent="Plants" instance=ExtResource("2_814sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -698.071, 90.8535, 641.386)
+
+[node name="Mushroom1 (5)" parent="Plants" instance=ExtResource("2_814sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -694.435, 89.7717, 634.48)
+
+[node name="Mushroom1 (6)" parent="Plants" instance=ExtResource("2_814sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -684.806, 89.3603, 637.087)
+
+[node name="Mushroom1 (7)" parent="Plants" instance=ExtResource("2_814sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -678.583, 90.2745, 642.947)
+
+[node name="Mushroom1 (8)" parent="Plants" instance=ExtResource("2_814sj")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -690.383, 90.4255, 643.808)
+
+[node name="Grass1" parent="Plants" instance=ExtResource("3_0yuap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -683.293, 90.7372, 651.684)
+
+[node name="Grass1 (1)" parent="Plants" instance=ExtResource("3_0yuap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -684.12, 90.1027, 645.699)
+
+[node name="Grass1 (2)" parent="Plants" instance=ExtResource("3_0yuap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -693.362, 90.3641, 650.687)
+
+[node name="Grass1 (3)" parent="Plants" instance=ExtResource("3_0yuap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -698.534, 91.0257, 643.563)
+
+[node name="Flower2" parent="Plants" instance=ExtResource("4_mvwkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -687.286, 90.4507, 652.97)
+
+[node name="Flower2 (1)" parent="Plants" instance=ExtResource("4_mvwkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -683.513, 90.2373, 647.361)
+
+[node name="Flower2 (2)" parent="Plants" instance=ExtResource("4_mvwkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -695.689, 90.6765, 651.095)
+
+[node name="Flower2 (3)" parent="Plants" instance=ExtResource("4_mvwkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -686.675, 90.1246, 642.29)
+
+[node name="Flower1" parent="Plants" instance=ExtResource("5_jnga6")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -685.527, 90.6585, 654.105)
+
+[node name="Flower1 (1)" parent="Plants" instance=ExtResource("5_jnga6")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -685.733, 90.2887, 649.34)
+
+[node name="Flower1 (2)" parent="Plants" instance=ExtResource("5_jnga6")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -695.929, 90.7167, 649.653)
+
+[node name="Flower1 (3)" parent="Plants" instance=ExtResource("5_jnga6")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -682.392, 89.6807, 640.123)
+
+[node name="Grass1 (4)" parent="Plants" instance=ExtResource("3_0yuap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -679.103, 91.3542, 651.916)
+
+[node name="Flower2 (4)" parent="Plants" instance=ExtResource("4_mvwkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -676.653, 90.9806, 647.511)
+
+[node name="Grass1 (5)" parent="Plants" instance=ExtResource("3_0yuap")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -680.993, 90.2213, 644.614)
+
+[node name="Flower2 (5)" parent="Plants" instance=ExtResource("4_mvwkx")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -679.579, 89.2578, 634.333)
+
+[node name="Trees" type="Node3D" parent="."]
+
+[node name="Birch_tree2 (2)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -703.172, 95.3509, 685.773)
+
+[node name="Birch_tree2 (3)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -717.651, 96.6413, 668.377)
+
+[node name="Birch_tree2 (4)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -752.1, 96.406, 660.284)
+
+[node name="Birch_tree2 (5)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -779.992, 95.5434, 591.69)
+
+[node name="Birch_tree2 (6)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -739.669, 81.6602, 567.169)
+
+[node name="Birch_tree2 (7)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -593.345, 71.0219, 584.98)
+
+[node name="Birch_tree2 (8)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -618.375, 68.6049, 555.778)
+
+[node name="Birch_tree2 (9)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -670.137, 91.645, 662.913)
+
+[node name="Birch_tree2 (10)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -644.447, 69.1882, 498.415)
+
+[node name="Birch_tree2 (11)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -744.029, 80.5508, 522.917)
+
+[node name="Birch_tree2 (12)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -615.983, 70.8108, 467.483)
+
+[node name="Birch_tree2 (13)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -580.625, 69.4124, 484.246)
+
+[node name="Birch_tree1 (1)" parent="Trees" instance=ExtResource("7_5a6yq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -715.828, 94.9218, 653.877)
+
+[node name="Birch_tree1 (2)" parent="Trees" instance=ExtResource("7_5a6yq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -681.793, 92.3924, 679.054)
+
+[node name="Birch_tree1 (3)" parent="Trees" instance=ExtResource("7_5a6yq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -685.444, 89.8127, 627.025)
+
+[node name="Birch_tree1 (4)" parent="Trees" instance=ExtResource("7_5a6yq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -735.422, 88.1922, 607.993)
+
+[node name="Birch_tree1 (5)" parent="Trees" instance=ExtResource("7_5a6yq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -766.846, 90.6575, 584.387)
+
+[node name="Birch_tree1 (6)" parent="Trees" instance=ExtResource("7_5a6yq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -615.451, 79.2338, 606.312)
+
+[node name="Birch_tree1 (7)" parent="Trees" instance=ExtResource("7_5a6yq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -684.539, 76.7489, 564.252)
+
+[node name="Birch_tree1 (8)" parent="Trees" instance=ExtResource("7_5a6yq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -603.132, 68.1369, 494.851)
+
+[node name="Birch_tree1 (9)" parent="Trees" instance=ExtResource("7_5a6yq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -695.463, 76.1193, 459.39)
+
+[node name="Birch_tree1 (10)" parent="Trees" instance=ExtResource("7_5a6yq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -802.413, 87.3193, 527.367)
+
+[node name="Deciduous_tree1 (2)" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -648.003, 86.2252, 621.358)
+
+[node name="Deciduous_tree1 (3)" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -708.906, 96.3483, 701.781)
+
+[node name="Deciduous_tree1 (4)" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -774.145, 97.6059, 653.646)
+
+[node name="Deciduous_tree1 (5)" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -666.349, 91.5878, 682.163)
+
+[node name="Deciduous_tree1 (6)" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -618.645, 89.3276, 643.269)
+
+[node name="Deciduous_tree1 (7)" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -639.602, 89.1183, 642.017)
+
+[node name="Deciduous_tree1 (8)" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -815.977, 97.4594, 608.889)
+
+[node name="Deciduous_tree1 (9)" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -745.181, 91.538, 621.176)
+
+[node name="Deciduous_tree1 (10)" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -631.82, 68.7428, 550.98)
+
+[node name="Deciduous_tree1 (11)" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -697.622, 86.6716, 601.869)
+
+[node name="Oak_tree1 (2)" parent="Trees" instance=ExtResource("9_8qmo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -726.54, 98.3858, 685.405)
+
+[node name="Oak_tree1 (3)" parent="Trees" instance=ExtResource("9_8qmo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -762.153, 94.7446, 628.904)
+
+[node name="Oak_tree1 (4)" parent="Trees" instance=ExtResource("9_8qmo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -772.672, 84.569, 528.658)
+
+[node name="Oak_tree1 (5)" parent="Trees" instance=ExtResource("9_8qmo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -682.126, 94.4366, 696.481)
+
+[node name="Oak_tree1 (6)" parent="Trees" instance=ExtResource("9_8qmo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -636.578, 92.1987, 667.863)
+
+[node name="Oak_tree1 (7)" parent="Trees" instance=ExtResource("9_8qmo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -597.613, 66.1468, 544.173)
+
+[node name="Oak_tree1 (9)" parent="Trees" instance=ExtResource("9_8qmo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -744.835, 85.4698, 483.435)
+
+[node name="Oak_tree1" parent="Trees" instance=ExtResource("9_8qmo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -707.275, 89.3933, 626.48)
+
+[node name="Birch_tree1" parent="Trees" instance=ExtResource("7_5a6yq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -664.398, 89.1895, 626.227)
+
+[node name="Birch_tree2" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -665.941, 90.9983, 646.677)
+
+[node name="Birch_tree2 (1)" parent="Trees" instance=ExtResource("6_d80ue")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -714.781, 76.9585, 553.837)
+
+[node name="Deciduous_tree1" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -656.779, 73.6251, 560.341)
+
+[node name="Oak_tree1 (1)" parent="Trees" instance=ExtResource("9_8qmo5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -684.424, 72.7985, 527.325)
+
+[node name="Deciduous_tree1 (1)" parent="Trees" instance=ExtResource("8_uhsik")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -701.665, 92.1962, 653.679)
+
+[editable path="Rocks/Rock1"]
+[editable path="Rocks/Rock1 (1)"]
+[editable path="Rocks/Rock1 (4)"]
+[editable path="Rocks/Rock1 (5)"]
+[editable path="Rocks/Rock1 (6)"]
+[editable path="Rocks/Rock2"]
+[editable path="Rocks/Rock1 (1)2"]
+[editable path="Rocks/Rock1 (2)"]
+[editable path="Rocks/Rock1 (5)2"]
+[editable path="Rocks/Rock1 (3)"]
+[editable path="Rocks/Rock1 (4)2"]
+[editable path="Rocks/Rock1 (6)2"]
+[editable path="Rocks/Rock1 (7)"]
+[editable path="Rocks/Rock1 (8)"]
+[editable path="Rocks/Rock1 (9)"]
+[editable path="Rocks/Rock1 (10)"]
+[editable path="Rocks/Rock1 (11)"]
+[editable path="Rocks/Rock1 (12)"]
+[editable path="Rocks/Rock1 (13)"]
+[editable path="Rocks/Rock1 (14)"]
+[editable path="Rocks/Rock1 (15)"]
+[editable path="Rocks/Rock1 (16)"]
+[editable path="Rocks/Rock1 (17)"]
+[editable path="Rocks/Rock1 (18)"]
+[editable path="Rocks/Rock1 (19)"]
+[editable path="Rocks/Rock1 (20)"]
+[editable path="Rocks/Rock3"]
+[editable path="Rocks/Rock1 (1)3"]
+[editable path="Rocks/Rock1 (2)2"]
+[editable path="Rocks/Rock1 (3)2"]
+[editable path="Rocks/Rock1 (4)3"]
+[editable path="Plants/Mushroom1"]
+[editable path="Plants/Mushroom1 (1)"]
+[editable path="Plants/Mushroom1 (2)"]
+[editable path="Plants/Mushroom1 (3)"]
+[editable path="Plants/Mushroom1 (4)"]
+[editable path="Plants/Mushroom1 (5)"]
+[editable path="Plants/Mushroom1 (6)"]
+[editable path="Plants/Mushroom1 (7)"]
+[editable path="Plants/Mushroom1 (8)"]
+[editable path="Plants/Grass1"]
+[editable path="Plants/Grass1 (1)"]
+[editable path="Plants/Grass1 (2)"]
+[editable path="Plants/Grass1 (3)"]
+[editable path="Plants/Flower2"]
+[editable path="Plants/Flower2 (1)"]
+[editable path="Plants/Flower2 (2)"]
+[editable path="Plants/Flower2 (3)"]
+[editable path="Plants/Flower1"]
+[editable path="Plants/Flower1 (1)"]
+[editable path="Plants/Flower1 (2)"]
+[editable path="Plants/Flower1 (3)"]
+[editable path="Plants/Grass1 (4)"]
+[editable path="Plants/Flower2 (4)"]
+[editable path="Plants/Grass1 (5)"]
+[editable path="Plants/Flower2 (5)"]
+[editable path="Trees/Birch_tree2 (2)"]
+[editable path="Trees/Birch_tree2 (3)"]
+[editable path="Trees/Birch_tree2 (4)"]
+[editable path="Trees/Birch_tree2 (5)"]
+[editable path="Trees/Birch_tree2 (6)"]
+[editable path="Trees/Birch_tree2 (7)"]
+[editable path="Trees/Birch_tree2 (8)"]
+[editable path="Trees/Birch_tree2 (9)"]
+[editable path="Trees/Birch_tree2 (10)"]
+[editable path="Trees/Birch_tree2 (11)"]
+[editable path="Trees/Birch_tree2 (12)"]
+[editable path="Trees/Birch_tree2 (13)"]
+[editable path="Trees/Birch_tree1 (1)"]
+[editable path="Trees/Birch_tree1 (2)"]
+[editable path="Trees/Birch_tree1 (3)"]
+[editable path="Trees/Birch_tree1 (4)"]
+[editable path="Trees/Birch_tree1 (5)"]
+[editable path="Trees/Birch_tree1 (6)"]
+[editable path="Trees/Birch_tree1 (7)"]
+[editable path="Trees/Birch_tree1 (8)"]
+[editable path="Trees/Birch_tree1 (9)"]
+[editable path="Trees/Birch_tree1 (10)"]
+[editable path="Trees/Deciduous_tree1 (2)"]
+[editable path="Trees/Deciduous_tree1 (3)"]
+[editable path="Trees/Deciduous_tree1 (4)"]
+[editable path="Trees/Deciduous_tree1 (5)"]
+[editable path="Trees/Deciduous_tree1 (6)"]
+[editable path="Trees/Deciduous_tree1 (7)"]
+[editable path="Trees/Deciduous_tree1 (8)"]
+[editable path="Trees/Deciduous_tree1 (9)"]
+[editable path="Trees/Deciduous_tree1 (10)"]
+[editable path="Trees/Deciduous_tree1 (11)"]
+[editable path="Trees/Oak_tree1 (2)"]
+[editable path="Trees/Oak_tree1 (3)"]
+[editable path="Trees/Oak_tree1 (4)"]
+[editable path="Trees/Oak_tree1 (5)"]
+[editable path="Trees/Oak_tree1 (6)"]
+[editable path="Trees/Oak_tree1 (7)"]
+[editable path="Trees/Oak_tree1 (9)"]
+[editable path="Trees/Oak_tree1"]
+[editable path="Trees/Birch_tree1"]
+[editable path="Trees/Birch_tree2"]
+[editable path="Trees/Birch_tree2 (1)"]
+[editable path="Trees/Deciduous_tree1"]
+[editable path="Trees/Oak_tree1 (1)"]
+[editable path="Trees/Deciduous_tree1 (1)"]

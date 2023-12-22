@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdkabra5s4p7k"]
+
+[ext_resource type="ArrayMesh" uid="uid://cv64hkvcdgaxp" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/extracted/SM_Env_FloorTile_01.SM_Env_FloorTile_01.mesh" id="1_dqocj"]
+[ext_resource type="Material" uid="uid://bo8x8h4ttc6ts" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Materials/PolyAdventureMaterial_Water_01.mat.tres" id="2_n6g4o"]
+
+[node name="SM_Env_Water" type="Node3D"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::fb4e0b01a8eccf24c9e5ca4c30a9b2be:2358284]"
+gi_mode = 2
+mesh = ExtResource("1_dqocj")
+surface_material_override/0 = ExtResource("2_n6g4o")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 104214, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "9045494f93452344d811e0d183904816", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}

@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://bbjmfx0gnqjdo"]
+
+[ext_resource type="ArrayMesh" uid="uid://besdydv43tc4j" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/extracted/SM_Env_Tree_05.SM_Env_Tree_05.mesh" id="1_mjwhr"]
+[ext_resource type="Material" uid="uid://ciwmhcp0p0al" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Materials/PolyAdventureMaterial_01.mat.tres" id="2_8xsx2"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1s0bq"]
+points = PackedVector3Array(0.502181, 5.76926, 0.0218151, 0.322929, 5.65211, 0.190472, 0.758549, 5.1632, 1.05188, 1.83543, 4.92496, -0.59449, 1.13659, 5.28278, -1.30589, -0.267265, 5.23071, -0.991962, -1.66598, 4.65432, 0.0218151, -1.36814, 4.80932, 0.867987, 1.43991, 3.79035, 0.877182, -0.706311, 2.92122, 1.3201, 0.914151, 3.62597, -0.906583, -0.533572, 4.04645, -1.36369, -1.20397, 4.04827, -1.0826, -1.4833, 3.61416, 1.05819, -1.12102, 2.77046, -0.829348, 0.242386, 2.67662, -0.320489)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_oirxd"]
+points = PackedVector3Array(-0.850065, -0.046435, 0.393443, -0.664343, -0.046435, -0.163722, -0.47853, -0.046435, 0.672108, -0.47853, 1.62513, 0.579165, -0.571528, 1.62513, 0.486304, -0.757249, 0.696559, 0.300582, -0.664343, 0.789264, -0.0707796, -0.107178, 0.325062, -0.163722, -0.107178, -0.046435, -0.163722, -0.107178, -0.046435, 0.579165, -0.199993, 1.62513, 0.579165, -0.0873601, 1.68496, 0.303855, -0.47853, 1.62513, 0.114942, -0.199993, 1.62513, 0.114942, 0.078635, -0.046435, 0.207803, 0.078635, -0.046435, 0.393443)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dhb0w"]
+points = PackedVector3Array(-0.292799, 2.36818, 0.486277, -0.292799, 2.36818, 0.114879, -0.5714, 2.36818, 0.486277, -0.292799, 2.08936, 0.579238, 1.1002, 2.0895, 0.114942, -0.664325, 2.36818, 0.114879, 1.1002, 2.0895, -0.0707887, -0.5714, 1.62522, 0.486277, -0.200048, 1.62522, 0.579238, 1.1002, 1.9967, 0.114942, 0.17165, 2.0895, -0.0707887, 0.17165, 1.81111, -0.0707887, -0.478648, 1.71824, 0.114879, 0.914356, 1.90376, -0.0707887, -0.200048, 1.62522, 0.114879, 0.0788987, 1.62522, 0.207776)
+
+[node name="SM_Env_Tree_05" type="Node3D"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::00ed5f0c12fd8d5499f54fb0096adab9:2345482]"
+gi_mode = 2
+mesh = ExtResource("1_mjwhr")
+surface_material_override/0 = ExtResource("2_8xsx2")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 108714, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "fa8eda4ec55ee1a4e99ca991c5828dbf", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MeshCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider"]
+shape = SubResource("ConvexPolygonShape3D_1s0bq")
+
+[node name="MeshCollider2" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider2"]
+shape = SubResource("ConvexPolygonShape3D_oirxd")
+
+[node name="MeshCollider3" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider3"]
+shape = SubResource("ConvexPolygonShape3D_dhb0w")

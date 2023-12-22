@@ -1,0 +1,917 @@
+[gd_scene load_steps=21 format=3 uid="uid://djg6hnvaojugc"]
+
+[ext_resource type="Script" path="res://addons/unidot_importer/runtime/anim_tree.gd" id="1_cajv2"]
+[ext_resource type="ArrayMesh" uid="uid://ys4pfdlbivwk" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house00_low.mesh" id="2_cet00"]
+[ext_resource type="ArrayMesh" uid="uid://b3vh0m50pnijm" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house01_low.mesh" id="3_oxw22"]
+[ext_resource type="ArrayMesh" uid="uid://ceeng2ygfo6xq" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house02_low.mesh" id="4_e6148"]
+[ext_resource type="ArrayMesh" uid="uid://d3g8jjjag3sk0" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house03_low.mesh" id="5_dbv87"]
+[ext_resource type="ArrayMesh" uid="uid://2i2afj8krlp7" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house04_low.mesh" id="6_7g7sm"]
+[ext_resource type="ArrayMesh" uid="uid://bmlf1jt5wlsy8" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house05_low.mesh" id="7_mqdow"]
+[ext_resource type="ArrayMesh" uid="uid://drbd8e18qaghr" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house06_low.mesh" id="8_x7yom"]
+[ext_resource type="ArrayMesh" uid="uid://cjt7yk7au2cp4" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house07_low.mesh" id="9_binsw"]
+[ext_resource type="ArrayMesh" uid="uid://1usk0i5sy0lm" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house08_low.mesh" id="10_k7jhd"]
+[ext_resource type="ArrayMesh" uid="uid://uywtoegtjm36" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house09_low.mesh" id="11_4i8eh"]
+[ext_resource type="ArrayMesh" uid="uid://3x77othe12mr" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house10_low.mesh" id="12_fcb8m"]
+[ext_resource type="ArrayMesh" uid="uid://t7rvjxf4wkrd" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house11_low.mesh" id="13_8y0uc"]
+[ext_resource type="ArrayMesh" uid="uid://4nbrjh3gr1mv" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house12_low.mesh" id="14_7w6tv"]
+[ext_resource type="ArrayMesh" uid="uid://bw1g8jq70c7xh" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house13_low.mesh" id="15_qo8y4"]
+[ext_resource type="ArrayMesh" uid="uid://c2yl4v26t8uds" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house14_low.mesh" id="16_x35n2"]
+[ext_resource type="ArrayMesh" uid="uid://2i4jd2qdpvh0" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house15_low.mesh" id="17_0kmhn"]
+[ext_resource type="ArrayMesh" uid="uid://c5nifbq2r0dm5" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house16_low.mesh" id="18_cblbp"]
+[ext_resource type="ArrayMesh" uid="uid://ugu75aui0pm1" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house17_low.mesh" id="19_3jpn2"]
+[ext_resource type="ArrayMesh" uid="uid://boib7rik5kctl" path="res://Assets/_Assets/Tools/house_a/extracted/house_a.house18_low.mesh" id="20_cyud1"]
+
+[node name="house_a" type="Node3D"]
+transform = Transform3D(0.08, 0, 0, 0, 0.08, 0, 0, 0, 0.08, 0, 5.7, -40.5)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+deterministic = false
+root_motion_track = NodePath("%GeneralSkeleton:Root")
+anim_player = NodePath("../AnimationPlayer")
+script = ExtResource("1_cajv2")
+
+[node name="house_a_low_01" type="Node3D" parent="."]
+
+[node name="house00_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house00_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23153109233738938]"
+gi_mode = 2
+mesh = ExtResource("2_cet00")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1652497098160472, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default" type="Node3D" parent="house_a_low_01/house00_low"]
+
+[node name="house01_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house01_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23238230029313894]"
+gi_mode = 2
+mesh = ExtResource("3_oxw22")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1696850982877150, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 1" type="Node3D" parent="house_a_low_01/house01_low"]
+
+[node name="house02_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house02_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23217727219165086]"
+gi_mode = 2
+mesh = ExtResource("4_e6148")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1038284800962972, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 2" type="Node3D" parent="house_a_low_01/house02_low"]
+
+[node name="house03_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house03_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23433976697343332]"
+gi_mode = 2
+mesh = ExtResource("5_dbv87")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1972723656977964, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 3" type="Node3D" parent="house_a_low_01/house03_low"]
+
+[node name="house04_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house04_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23314586781006690]"
+gi_mode = 2
+mesh = ExtResource("6_7g7sm")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1856621922172320, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 4" type="Node3D" parent="house_a_low_01/house04_low"]
+
+[node name="house05_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house05_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23731878839211288]"
+gi_mode = 2
+mesh = ExtResource("7_mqdow")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1430796360079348, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 5" type="Node3D" parent="house_a_low_01/house05_low"]
+
+[node name="house06_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house06_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23198021871878212]"
+gi_mode = 2
+mesh = ExtResource("8_x7yom")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1491965861328284, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 6" type="Node3D" parent="house_a_low_01/house06_low"]
+
+[node name="house07_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house07_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23397473708146940]"
+gi_mode = 2
+mesh = ExtResource("9_binsw")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1438009762333538, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 7" type="Node3D" parent="house_a_low_01/house07_low"]
+
+[node name="house08_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house08_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23263147728056278]"
+gi_mode = 2
+mesh = ExtResource("10_k7jhd")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1287955326685356, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 8" type="Node3D" parent="house_a_low_01/house08_low"]
+
+[node name="house09_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house09_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23520224413077916]"
+gi_mode = 2
+mesh = ExtResource("11_4i8eh")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1834939725005924, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 9" type="Node3D" parent="house_a_low_01/house09_low"]
+
+[node name="house10_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house10_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23602022770226334]"
+gi_mode = 2
+mesh = ExtResource("12_fcb8m")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1702750040147146, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 10" type="Node3D" parent="house_a_low_01/house10_low"]
+
+[node name="house11_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house11_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23439630651584054]"
+gi_mode = 2
+mesh = ExtResource("13_8y0uc")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1036275881035088, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 11" type="Node3D" parent="house_a_low_01/house11_low"]
+
+[node name="house12_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house12_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23961402599025796]"
+gi_mode = 2
+mesh = ExtResource("14_7w6tv")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1433730325718854, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 12" type="Node3D" parent="house_a_low_01/house12_low"]
+
+[node name="house13_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house13_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23016008816206624]"
+gi_mode = 2
+mesh = ExtResource("15_qo8y4")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1267521021997904, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 13" type="Node3D" parent="house_a_low_01/house13_low"]
+
+[node name="house14_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house14_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23437699411793030]"
+gi_mode = 2
+mesh = ExtResource("16_x35n2")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1241990168390808, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 14" type="Node3D" parent="house_a_low_01/house14_low"]
+
+[node name="house15_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house15_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23750482747976256]"
+gi_mode = 2
+mesh = ExtResource("17_0kmhn")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1495722872136190, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 15" type="Node3D" parent="house_a_low_01/house15_low"]
+
+[node name="house16_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house16_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23128651159463110]"
+gi_mode = 2
+mesh = ExtResource("18_cblbp")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1541358921247358, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 16" type="Node3D" parent="house_a_low_01/house16_low"]
+
+[node name="house17_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house17_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23259123821151092]"
+gi_mode = 2
+mesh = ExtResource("19_3jpn2")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1018856733336642, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 17" type="Node3D" parent="house_a_low_01/house17_low"]
+
+[node name="house18_low" type="Node3D" parent="house_a_low_01"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="house_a_low_01/house18_low"]
+editor_description = "[MeshRenderer 23::2b0a6ba63ef96654cbbf1e82f2da52ef:23510409746126202]"
+gi_mode = 2
+mesh = ExtResource("20_cyud1")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1577797228075778, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "b311b0bc58c000ee14c0c802c283430b", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="Default 18" type="Node3D" parent="house_a_low_01/house18_low"]
+
+[node name="Main Camera" type="Node3D" parent="."]
+transform = Transform3D(0.720065, 0.223101, -0.657064, 0, 0.946905, 0.321514, 0.693907, -0.231511, 0.681833, -928.234, 538.956, 995.587)
+
+[node name="Render" type="Node3D" parent="."]
+
+[node name="Sky" type="Node3D" parent="."]
+transform = Transform3D(0.580703, 0, -0.814116, 0, 1, 0, 0.814116, 0, 0.580703, 0, 0, 0)

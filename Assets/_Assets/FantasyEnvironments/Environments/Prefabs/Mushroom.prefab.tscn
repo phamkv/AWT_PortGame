@@ -1,0 +1,96 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmrhbqoxo6fop"]
+
+[ext_resource type="ArrayMesh" uid="uid://dcenxl37x0do" path="res://Assets/_Assets/FantasyEnvironments/Environments/FBX/extracted/Mushroom1.Mushroom1.mesh" id="1_aaufb"]
+[ext_resource type="Material" uid="uid://cj6s6d3ivbio1" path="res://Assets/_Assets/FantasyEnvironments/Environments/Materials/Plant.mat.tres" id="2_w2hvr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_15ac2"]
+size = Vector3(0.339458, 0.414413, 0.505543)
+
+[node name="Mushroom" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, 0, 0, 0)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::dea84a3662be77b4bad1db42d2b32262:23264161567117498]"
+layers = 8
+gi_mode = 2
+mesh = ExtResource("1_aaufb")
+surface_material_override/0 = ExtResource("2_w2hvr")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1596872523515200, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 3,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "7805f02cde847fa488989988fbc3d7eb", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 4294967295,
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1,
+"m_TagString": "Untagged"
+}
+
+[node name="MonoBehaviour" type="Node" parent="."]
+editor_description = "[MonoBehaviour 114::dea84a3662be77b4bad1db42d2b32262:7898743525056822416]"
+metadata/unidot_keys = {
+"breakCount": 10,
+"canBePickedUp": 1,
+"displayName": "Mushroom",
+"dropItemsOnDestroy": 0,
+"droppedInventoryIcon": [null, 0, null, null],
+"droppedPrefab": [null, 1596872523515200, null, null],
+"initialObject": 1,
+"interactionDistance": 3,
+"interactionSound": [null, 8300000, "19f89c6e740e7447f9e12a8310d3e973", 3],
+"inventoryIcon": [null, 21300000, "b0bb506cd8a5d464baed1ad871605678", 3],
+"itemcount": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 1596872523515200, null, null],
+"m_Layer": 3,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "146e9fe48b2f3df40b914fb573c52a5b", 3],
+"m_StaticEditorFlags": 4294967295,
+"m_TagString": "Untagged",
+"useRigidbody": 0
+}
+
+[node name="BoxCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0137324, 0.187243, 0.0210764)
+shape = SubResource("BoxShape3D_15ac2")

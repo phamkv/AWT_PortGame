@@ -1,0 +1,71 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dewbtqbg3176n"
+path="res://.godot/imported/sword_a.gltf-e619a781007a55b091bb16c8b41e3b40.scn"
+
+[deps]
+
+source_file="res://Assets/_Assets/Tools/sword_a/sword_a.gltf"
+dest_files=["res://.godot/imported/sword_a.gltf-e619a781007a55b091bb16c8b41e3b40.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name="Root Scene"
+nodes/apply_root_scale=true
+nodes/root_scale=100.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=30.0
+animation/trimming=false
+animation/remove_immutable_tracks=false
+import_script/path=""
+_subresources={
+"animations": {},
+"materials": {
+"Default": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/_Assets/Tools/sword_a/Materials/Default.mat.tres"
+}
+},
+"meshes": {
+"Root Scene_blade_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/Tools/sword_a/extracted/sword_a.blade_low.mesh"
+},
+"Root Scene_handle_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/Tools/sword_a/extracted/sword_a.handle_low.mesh"
+},
+"blade_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/Tools/sword_a/extracted/sword_a.blade_low.mesh"
+},
+"handle_low": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/Tools/sword_a/extracted/sword_a.handle_low.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": false,
+"optimizer/max_angular_error": 0.0,
+"optimizer/max_linear_error": 0.0
+}
+}
+}
+gltf/naming_version=0
+gltf/embedded_image_handling=1

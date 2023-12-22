@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c1mom72n2b8u3"
+path="res://.godot/imported/Snowslowsteps5.wav-8e48ff560e378316276aec01e91fb402.sample"
+
+[deps]
+
+source_file="res://Assets/Audio/Footstep(Snow and Grass)/StepsLoop/snow/slow steps/Snowslowsteps5.wav"
+dest_files=["res://.godot/imported/Snowslowsteps5.wav-8e48ff560e378316276aec01e91fb402.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

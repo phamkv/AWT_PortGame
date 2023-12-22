@@ -1,0 +1,81 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://dogs4mpp08f7g"
+path="res://.godot/imported/PA_ArchlightBomber.gltf-5366852c0c59448549a0621a3716e38f.scn"
+
+[deps]
+
+source_file="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/PA_ArchlightBomber.gltf"
+dest_files=["res://.godot/imported/PA_ArchlightBomber.gltf-5366852c0c59448549a0621a3716e38f.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name="Root Scene"
+nodes/apply_root_scale=true
+nodes/root_scale=100.0
+meshes/ensure_tangents=false
+meshes/generate_lods=true
+meshes/create_shadow_meshes=false
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=false
+animation/fps=24.0
+animation/trimming=false
+animation/remove_immutable_tracks=false
+import_script/path="res://addons/unidot_importer/post_import_unity_model.gd"
+_subresources={
+"animations": {},
+"materials": {
+"PA_ArchlightBomberMat": {
+"use_external/enabled": true,
+"use_external/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/Materials/PA_ArchlightBomberMat.mat.tres"
+}
+},
+"meshes": {
+"PA_ArchLightBomber": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchlightBomber.PA_ArchLightBomber.mesh"
+},
+"PA_ArchLightLeftBomb": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchlightBomber.PA_ArchLightLeftBomb.mesh"
+},
+"PA_ArchLightRightBomb": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchlightBomber.PA_ArchLightRightBomb.mesh"
+},
+"Root Scene_PA_ArchLightBomber": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchlightBomber.PA_ArchLightBomber.mesh"
+},
+"Root Scene_PA_ArchLightLeftBomb": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchlightBomber.PA_ArchLightLeftBomb.mesh"
+},
+"Root Scene_PA_ArchLightRightBomb": {
+"save_to_file/enabled": true,
+"save_to_file/make_streamable": "",
+"save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchlightBomber.PA_ArchLightRightBomb.mesh"
+}
+},
+"nodes": {
+"PATH:AnimationPlayer": {
+"optimizer/enabled": true,
+"optimizer/max_angular_error": 0.00277778,
+"optimizer/max_linear_error": 0.5
+}
+}
+}
+gltf/naming_version=0
+gltf/embedded_image_handling=1

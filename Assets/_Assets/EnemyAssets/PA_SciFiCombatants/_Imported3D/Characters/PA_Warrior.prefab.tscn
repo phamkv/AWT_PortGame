@@ -1,0 +1,55 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6635b7gwv822"]
+
+[ext_resource type="PackedScene" uid="uid://et1o4myx4qy1" path="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/PA_Warrior.gltf" id="1_bkfe8"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_68l0n"]
+size = Vector3(0.8, 0.5, 1)
+
+[node name="PA_Warrior" instance=ExtResource("1_bkfe8")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -722.849, 85.7301, 607.596)
+
+[node name="BoxCollider" type="StaticBody3D" parent="." index="2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, -0.2)
+shape = SubResource("BoxShape3D_68l0n")
+
+[node name="MonoBehaviour" type="Node" parent="." index="3"]
+editor_description = "[MonoBehaviour 114::a1f19e97be28d494ca89a2de6c0f0bfa:2383735762324640141]"
+metadata/unidot_keys = {
+"detectionRadius": 20,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 7685502308853536631, null, null],
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "b8160e67d649afc4697ef12bbab0c1b3", 3],
+"moveSpeed": 3
+}
+
+[node name="MonoBehaviour2" type="Node" parent="." index="4"]
+editor_description = "[MonoBehaviour 114::a1f19e97be28d494ca89a2de6c0f0bfa:8986030127652237904]"
+metadata/unidot_keys = {
+"breakCount": 10,
+"canBePickedUp": 0,
+"displayName": "Enemy",
+"dropItemsOnDestroy": 0,
+"droppedInventoryIcon": [null, 0, null, null],
+"droppedPrefab": [null, 0, null, null],
+"initialObject": 1,
+"interactionDistance": 5,
+"interactionSound": [null, 0, null, null],
+"inventoryIcon": [null, 0, null, null],
+"itemcount": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 7685502308853536631, null, null],
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "146e9fe48b2f3df40b914fb573c52a5b", 3],
+"useRigidbody": 1
+}

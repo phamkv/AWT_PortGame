@@ -1,0 +1,84 @@
+[gd_resource type="AnimationNodeBlendTree" load_steps=15 format=3 uid="uid://v5vter36mcs"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_k3jb6"]
+animation = &"New State 0"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4wsh3"]
+animation = &"New State 1"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_thavo"]
+animation = &"New State 2"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_kvoot"]
+animation = &"New State 3"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rwbwv"]
+animation = &"New State 4"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_h5sim"]
+animation = &"New State"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_uxeev"]
+xfade_time = 0.2
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ituhv"]
+xfade_time = 0.193548
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_egipx"]
+xfade_time = 0.241935
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_s5igj"]
+xfade_time = 0.1875
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3m7v2"]
+xfade_time = 0.1
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3rb0s"]
+xfade_time = 0.1
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_ukfvr"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_texr7"]
+resource_name = "Character"
+states/End/position = Vector2(300, 100)
+"states/New State/node" = SubResource("AnimationNodeAnimation_h5sim")
+"states/New State/position" = Vector2(600, 316)
+"states/New State 0/node" = SubResource("AnimationNodeAnimation_k3jb6")
+"states/New State 0/position" = Vector2(480, 496)
+"states/New State 1/node" = SubResource("AnimationNodeAnimation_4wsh3")
+"states/New State 1/position" = Vector2(900, 472)
+"states/New State 2/node" = SubResource("AnimationNodeAnimation_thavo")
+"states/New State 2/position" = Vector2(588, 640)
+"states/New State 3/node" = SubResource("AnimationNodeAnimation_kvoot")
+"states/New State 3/position" = Vector2(910, 623)
+"states/New State 4/node" = SubResource("AnimationNodeAnimation_rwbwv")
+"states/New State 4/position" = Vector2(864, 352)
+states/Start/position = Vector2(300, 100)
+transitions = ["New State", "New State 0", SubResource("AnimationNodeStateMachineTransition_uxeev"), "New State 0", "New State 2", SubResource("AnimationNodeStateMachineTransition_ituhv"), "New State 1", "New State 4", SubResource("AnimationNodeStateMachineTransition_egipx"), "New State 2", "New State 3", SubResource("AnimationNodeStateMachineTransition_s5igj"), "New State 3", "New State 1", SubResource("AnimationNodeStateMachineTransition_3m7v2"), "New State 4", "New State", SubResource("AnimationNodeStateMachineTransition_3rb0s"), "Start", "New State", SubResource("AnimationNodeStateMachineTransition_ukfvr")]
+
+[resource]
+"nodes/Base Layer/node" = SubResource("AnimationNodeStateMachine_texr7")
+"nodes/Base Layer/position" = Vector2(100, 200)
+nodes/output/position = Vector2(600, 350)
+node_connections = [&"output", 0, &"Base Layer"]
+metadata/guid_fileid_to_animation_name = {
+"0d824c56560e9d64c8d684bfb001b21b:7400008": "New State 2",
+"1a674a6a653db9b47b6f4f002d1209c1:7400040": "New State 3",
+"24ccccff584023e4b9383be48c8d35e7:7400058": "New State 4",
+"ccab854d037c24d49b28dcdc350ddab2:7400028": "New State 0",
+"de297362b101f9348a36b02f83044ba4:7400020": "New State 1",
+"f627a82535eb00b4cb9c402e49ac9d14:7400114": "New State"
+}

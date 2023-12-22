@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdhvonjthwq30"]
+
+[ext_resource type="ArrayMesh" uid="uid://38hon763qnex" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/extracted/SM_Env_Tree_04.SM_Env_Tree_04.mesh" id="1_1xtvo"]
+[ext_resource type="Material" uid="uid://ciwmhcp0p0al" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Materials/PolyAdventureMaterial_01.mat.tres" id="2_0g6hr"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_lbsl4"]
+points = PackedVector3Array(-0.215099, 5.51763, 0.172623, -1.02116, 4.99226, 0.655411, 0.269471, 5.04843, 0.878872, 1.54105, 4.38038, -0.43583, 0.612345, 5.01364, -0.820823, -0.212091, 5.49338, -0.156892, -1.08097, 4.81255, -0.231722, -1.64475, 3.49592, 0.979765, 0.116413, 4.02034, 1.32966, 1.68107, 3.11481, 0.253389, 1.3245, 2.96958, -0.477632, -0.54093, 3.93831, -1.30645, -1.73297, 2.43367, 0.0949533, -0.294301, 2.70689, 1.15575, 0.479005, 2.25684, 0.183202, -1.01547, 2.80967, -0.880171)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_q5l7d"]
+points = PackedVector3Array(-0.671153, -0.0441651, 0.360422, -0.494036, -0.0441651, -0.170357, -0.140218, -0.0441651, 0.714506, -0.494036, 0.221388, 0.537377, -0.405582, 2.25684, 0.360422, -0.405582, 2.25684, 0.18364, -0.494036, 0.309905, -0.170357, 0.125146, -0.0441651, -0.170357, 0.213704, -0.0441651, 0.448943, 0.302159, 2.25684, 0.272075, -0.140218, 2.25684, 0.537551, -0.228569, 2.25684, 0.537551, -0.0518674, 2.25684, 0.00651175, 0.390717, 2.1681, 0.00651175, 0.213704, -0.0441651, 0.0951193, 0.390717, 2.1681, 0.18364)
+
+[node name="SM_Env_Tree_04" type="Node3D"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::247e09e89c199dd46b07af0a0a46b8ac:2307200]"
+gi_mode = 2
+mesh = ExtResource("1_1xtvo")
+surface_material_override/0 = ExtResource("2_0g6hr")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 177546, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "fa8eda4ec55ee1a4e99ca991c5828dbf", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MeshCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider"]
+shape = SubResource("ConvexPolygonShape3D_lbsl4")
+
+[node name="MeshCollider2" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider2"]
+shape = SubResource("ConvexPolygonShape3D_q5l7d")

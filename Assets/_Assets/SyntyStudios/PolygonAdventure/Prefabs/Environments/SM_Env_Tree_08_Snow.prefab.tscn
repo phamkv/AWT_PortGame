@@ -1,0 +1,79 @@
+[gd_scene load_steps=7 format=3 uid="uid://2tiuvg237gdp"]
+
+[ext_resource type="ArrayMesh" uid="uid://c3xgcmpweiafs" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/extracted/SM_Env_Tree_08_Snow.SM_Env_Tree_08_Snow.mesh" id="1_smw27"]
+[ext_resource type="Material" uid="uid://ciwmhcp0p0al" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Materials/PolyAdventureMaterial_01.mat.tres" id="2_i0jcg"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_26gig"]
+points = PackedVector3Array(-0.391073, -0.0517861, -0.218439, 0.333861, -0.0517861, -0.321971, -0.391073, -0.0517861, 0.40267, -0.28742, 0.569383, 0.195606, -0.183858, 0.983936, -0.114907, 0.023266, 0.569383, -0.321971, 0.230208, 0.983936, -0.114907, 0.541076, 0.155439, -0.0114568, 0.541076, -0.0517861, -0.0114568, 0.230208, -0.0517861, 0.506282, -0.0802961, 0.155439, 0.506282, -0.183858, 0.983936, 0.299138, 0.230208, 0.983936, 0.195606, 0.541076, 0.0517253, 0.195606, 0.230208, 0.258849, 0.506282, 0.126646, 0.983936, 0.299138)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_u6s2x"]
+points = PackedVector3Array(0.00768349, 2.13898, -0.340753, -0.183929, 0.983936, -0.115069, -0.183929, 2.12316, 0.19573, 0.541157, 2.12316, 0.920617, 1.05866, 2.12316, 1.02431, 1.26594, 2.12316, 0.19573, 0.437747, 2.12316, -0.32218, 0.437747, 2.01948, -0.32218, 0.126909, 0.983936, -0.115069, -0.183929, 0.983936, 0.299419, 0.334185, 1.50176, 1.02431, 0.851691, 1.29463, 1.02431, 1.36965, 1.70889, 0.713506, 1.26594, 1.29463, 0.402707, 1.05866, 1.60522, 0.0921748, 0.334185, 0.983936, 0.299419)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_1bn0w"]
+points = PackedVector3Array(0.309022, 3.75563, -1.45925, 0.792617, 4.62585, -0.688039, 0.865817, 2.80554, -0.95363, -0.855567, 2.68819, -1.17897, -0.832468, 4.60012, -0.95745, -1.61786, 4.62217, 0.37374, 0.384321, 4.56509, 0.814434, 1.44691, 4.3223, 0.463935, 1.36921, 2.12323, 0.402826, -0.353672, 2.25651, -0.568758, -0.910167, 2.53605, 0.266798, -1.51016, 3.37025, 0.275024, -1.59116, 4.41221, 0.0828818, -0.183874, 3.98739, 1.54217, 1.05841, 2.12323, 1.0242, -0.168574, 2.71783, 1.10852)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wg8yb"]
+points = PackedVector3Array(-0.908978, 4.71248, -1.04714, -1.32884, 4.70772, -0.0114162, -0.908978, 5.33399, -0.840115, -0.701929, 5.33399, -1.04714, -0.0807817, 5.43754, -1.04714, -0.0084213, 4.825, -0.922235, 0.851579, 4.71248, -0.736503, 0.851579, 4.71248, 0.713265, -0.390928, 4.71248, 1.02431, -0.598191, 5.33399, 0.816877, -0.287617, 6.57683, 0.713265, -0.494666, 6.36936, 0.298814, -0.0807817, 6.47291, 0.091791, 0.748055, 5.12688, -0.529277, 0.437268, 6.16225, 0.505836, -0.287617, 5.74803, 0.920287)
+
+[node name="SM_Env_Tree_08_Snow" type="Node3D"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::0137417f88902f24aad8a1c974a235dc:2322548]"
+gi_mode = 2
+mesh = ExtResource("1_smw27")
+surface_material_override/0 = ExtResource("2_i0jcg")
+metadata/unidot_keys = {
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 117356, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "fa8eda4ec55ee1a4e99ca991c5828dbf", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 1,
+"m_PrefabInternal": [null, 100100000, null, null],
+"m_PrefabParentObject": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="MeshCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider"]
+shape = SubResource("ConvexPolygonShape3D_26gig")
+
+[node name="MeshCollider2" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider2"]
+shape = SubResource("ConvexPolygonShape3D_u6s2x")
+
+[node name="MeshCollider3" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider3"]
+shape = SubResource("ConvexPolygonShape3D_1bn0w")
+
+[node name="MeshCollider4" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider4"]
+shape = SubResource("ConvexPolygonShape3D_wg8yb")

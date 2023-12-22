@@ -1,0 +1,209 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqoolq5xt4jdu"]
+
+[ext_resource type="ArrayMesh" uid="uid://cu6o154xn7st3" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/FBX/extracted/Birch_tree1.Birch_tree1.mesh" id="1_r7l5g"]
+[ext_resource type="Material" uid="uid://c505io10qc6py" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_bark.mat.tres" id="2_8bgxp"]
+[ext_resource type="Material" uid="uid://dun1p1f0cn31n" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_leaves.mat.tres" id="3_4qpi8"]
+[ext_resource type="AudioStream" uid="uid://1bro18c8m6o6" path="res://Assets/Audio/CasualGameSounds/DM-CGS-22.wav" id="4_hb1k4"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_6vdmg"]
+radius = 0.64
+height = 12.2739
+
+[node name="Birch_tree1" type="Node3D"]
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::47356d574ebc3a545bfaef26eb02a2ea:23320235798237312]"
+gi_mode = 2
+mesh = ExtResource("1_r7l5g")
+surface_material_override/0 = ExtResource("2_8bgxp")
+surface_material_override/1 = ExtResource("3_4qpi8")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1216688828669844, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "7ed001e11f025264c8b5dfc5b0702319", 2], [null, 2100000, "6b7cbd10b1b54624aad174204ed5e57d", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 4294967295,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 4294967295,
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 0,
+"m_TagString": "Untagged"
+}
+
+[node name="CapsuleCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CapsuleCollider"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.01, 5.69, 0.02)
+shape = SubResource("CapsuleShape3D_6vdmg")
+
+[node name="MonoBehaviour" type="Node" parent="."]
+editor_description = "[MonoBehaviour 114::47356d574ebc3a545bfaef26eb02a2ea:2530182775565053976]"
+metadata/unidot_keys = {
+"breakCount": 4,
+"canBePickedUp": 0,
+"displayName": "Birch Tree",
+"dropItemsOnDestroy": 1,
+"droppedInventoryIcon": [null, 0, null, null],
+"droppedPrefab": [null, 8830229297879083243, "20540db286ca29e49a31f0e63c4aec75", 3],
+"initialObject": 1,
+"interactionDistance": 3,
+"interactionSound": [null, 8300000, "d8d04c6f80a1140db85ede568dab1f51", 3],
+"inventoryIcon": [null, 0, null, null],
+"itemcount": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_EditorHideFlags": 0,
+"m_Enabled": 1,
+"m_GameObject": [null, 1216688828669844, null, null],
+"m_Layer": 0,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_Script": [null, 11500000, "146e9fe48b2f3df40b914fb573c52a5b", 3],
+"m_StaticEditorFlags": 4294967295,
+"m_TagString": "Untagged",
+"useRigidbody": 0
+}
+
+[node name="AudioSource" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_hb1k4")
+metadata/unidot_keys = {
+"BypassEffects": 0,
+"BypassListenerEffects": 0,
+"BypassReverbZones": 0,
+"DopplerLevel": 1,
+"Loop": 0,
+"MaxDistance": 500,
+"MinDistance": 1,
+"Mute": 0,
+"OutputAudioMixerGroup": [null, 0, null, null],
+"Pan2D": 0,
+"Priority": 128,
+"Spatialize": 0,
+"SpatializePostEffects": 0,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_Enabled": 1,
+"m_GameObject": [null, 1216688828669844, null, null],
+"m_Layer": 0,
+"m_ObjectHideFlags": 0,
+"m_Pitch": 1,
+"m_PlayOnAwake": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 4294967295,
+"m_TagString": "Untagged",
+"m_Volume": 1,
+"m_audioClip": [null, 8300000, "d8d04c6f80a1140db85ede568dab1f51", 3],
+"panLevelCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"reverbZoneMixCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "1",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"rolloffCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "1",
+"weightedMode": 0
+}, {
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 1,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"rolloffMode": 0,
+"serializedVersion": 4,
+"spreadCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+}
+}
