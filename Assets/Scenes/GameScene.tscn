@@ -1,16 +1,24 @@
-[gd_scene load_steps=18 format=3 uid="uid://dubn7u8ja2gke"]
+[gd_scene load_steps=30 format=3 uid="uid://dubn7u8ja2gke"]
 
+[ext_resource type="Script" path="res://Assets/Scripts/GameManager.gd" id="1_in0hn"]
 [ext_resource type="AudioStream" uid="uid://brming4bs4fe6" path="res://Assets/Audio/Music Tracks/Zephyr.wav" id="3_dteuw"]
 [ext_resource type="PackedScene" uid="uid://cmrhbqoxo6fop" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Mushroom.prefab.tscn" id="9_wkacr"]
 [ext_resource type="PackedScene" uid="uid://b1jfi6ctc20if" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Rock1.prefab.tscn" id="14_e8uwc"]
 [ext_resource type="PackedScene" uid="uid://b3xcrw8iv6po2" path="res://Assets/_Assets/Terrain/Environment/Terrain/Terrains/terrainGodot.tscn" id="14_mx62s"]
+[ext_resource type="PackedScene" uid="uid://8kuosvusb47f" path="res://Assets/Subscenes/UIButton.tscn" id="15_2xe26"]
+[ext_resource type="Script" path="res://Assets/Scripts/UI/PlayerDeath.gd" id="15_or11w"]
+[ext_resource type="FontFile" uid="uid://bt75hb45ej8mq" path="res://Assets/_Assets/Font/LiberationSans-Bold.ttf" id="15_rdenq"]
 [ext_resource type="PackedScene" uid="uid://cabjv0lowv2gn" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Grass1.prefab.tscn" id="15_xs6fk"]
 [ext_resource type="PackedScene" uid="uid://6xgqj8objvo1" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Flower2.prefab.tscn" id="16_b5k7r"]
 [ext_resource type="PackedScene" uid="uid://h7a2kwcb2vq3" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Flower1.prefab.tscn" id="17_iaugm"]
 [ext_resource type="PackedScene" uid="uid://qhrmt5b303gj" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree2.prefab.tscn" id="18_dhxs3"]
+[ext_resource type="Script" path="res://Assets/Scripts/UI/GamePause.gd" id="18_f10i1"]
 [ext_resource type="PackedScene" uid="uid://ktnas1kj50" path="res://Assets/Subscenes/Player.tscn" id="19_7xedu"]
 [ext_resource type="PackedScene" uid="uid://dqoolq5xt4jdu" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree1.prefab.tscn" id="19_yhdff"]
+[ext_resource type="Script" path="res://Assets/Scripts/UI/PlayerInventory.gd" id="20_6s3kg"]
 [ext_resource type="PackedScene" uid="uid://c5ry72yumh6ow" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Deciduous_tree1.prefab.tscn" id="20_lupru"]
+[ext_resource type="PackedScene" uid="uid://c63gupufuhf5a" path="res://Assets/Subscenes/InventorySlot.tscn" id="20_tmecl"]
+[ext_resource type="Texture2D" uid="uid://d11gydeyw0d1y" path="res://Assets/_Assets/Items/empty_slot.png" id="21_5be7b"]
 [ext_resource type="PackedScene" uid="uid://deiko1p27il0k" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Oak_tree1.prefab.tscn" id="21_8hftc"]
 [ext_resource type="PackedScene" uid="uid://c6635b7gwv822" path="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/PA_Warrior.prefab.tscn" id="22_j20d7"]
 [ext_resource type="AudioStream" uid="uid://fsnn7bqgv8sa" path="res://Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/walking/walking-3.wav" id="23_kvkxj"]
@@ -36,7 +44,26 @@ fog_light_color = Color(0.47451, 0.560784, 0.823529, 1)
 fog_density = 0.0205
 fog_height = 64.68
 
+[sub_resource type="LabelSettings" id="LabelSettings_46klq"]
+font = ExtResource("15_rdenq")
+font_size = 96
+
+[sub_resource type="LabelSettings" id="LabelSettings_y758e"]
+font = ExtResource("15_rdenq")
+font_size = 96
+
+[sub_resource type="LabelSettings" id="LabelSettings_0axh8"]
+font = ExtResource("15_rdenq")
+font_size = 34
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oyb0d"]
+font = ExtResource("15_rdenq")
+
 [node name="GameScene" type="Node3D"]
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_in0hn")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.937182, 0.21483, -0.27484, 0.347826, -0.515449, 0.783153, 0.026579, -0.829554, -0.557793, 0, 124.078, -55.8813)
@@ -672,6 +699,480 @@ metadata/unidot_keys = {
 
 [node name="Player" parent="." instance=ExtResource("19_7xedu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -688.87, 93, 650.013)
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayerDeath" type="Control" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("15_or11w")
+
+[node name="Background" type="ColorRect" parent="UI/PlayerDeath"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.921569)
+
+[node name="DeathText" type="Label" parent="UI/PlayerDeath"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -205.0
+offset_top = -204.0
+offset_right = 205.0
+offset_bottom = -96.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "You Died"
+label_settings = SubResource("LabelSettings_46klq")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RestartButton" parent="UI/PlayerDeath" instance=ExtResource("15_2xe26")]
+layout_mode = 1
+offset_top = -14.0
+offset_bottom = 76.0
+text = "Try Again!"
+
+[node name="MainMenuButton" parent="UI/PlayerDeath" instance=ExtResource("15_2xe26")]
+layout_mode = 1
+offset_top = 136.0
+offset_bottom = 226.0
+text = "Main Menu"
+
+[node name="GamePause" type="Control" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("18_f10i1")
+
+[node name="Background" type="ColorRect" parent="UI/GamePause"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.921569)
+
+[node name="PauseText" type="Label" parent="UI/GamePause"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.0
+offset_top = -204.0
+offset_right = 196.0
+offset_bottom = -96.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "PAUSED"
+label_settings = SubResource("LabelSettings_y758e")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResumeButton" parent="UI/GamePause" instance=ExtResource("15_2xe26")]
+layout_mode = 1
+offset_top = -74.0
+offset_bottom = 16.0
+text = "Resume
+"
+
+[node name="OptionsButton" parent="UI/GamePause" instance=ExtResource("15_2xe26")]
+layout_mode = 1
+offset_top = 46.0
+offset_bottom = 136.0
+text = "Options
+"
+
+[node name="MainMenuButton" parent="UI/GamePause" instance=ExtResource("15_2xe26")]
+layout_mode = 1
+offset_top = 166.0
+offset_bottom = 256.0
+text = "Main Menu"
+
+[node name="Player" type="Control" parent="UI"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Inventory" type="Control" parent="UI/Player"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("20_6s3kg")
+
+[node name="Storage" type="GridContainer" parent="UI/Player/Inventory"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -433.0
+offset_top = -125.0
+offset_right = 194.0
+offset_bottom = 124.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 3
+columns = 10
+
+[node name="InventorySlot" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot2" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot3" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot4" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot5" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot6" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot7" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot8" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot9" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot10" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot11" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot12" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot13" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot14" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot15" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot16" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot17" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot18" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot19" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot20" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot21" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot22" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot23" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot24" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot25" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot26" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot27" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot28" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot29" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot30" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot31" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot32" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot33" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot34" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot35" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot36" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot37" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot38" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot39" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="InventorySlot40" parent="UI/Player/Inventory/Storage" instance=ExtResource("20_tmecl")]
+layout_mode = 2
+
+[node name="MainHand" type="Control" parent="UI/Player/Inventory"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 250.0
+offset_top = 40.0
+offset_right = 310.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventorySlot" type="Button" parent="UI/Player/Inventory/MainHand"]
+custom_minimum_size = Vector2(96, 96)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -48.0
+offset_right = 48.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+icon_alignment = 1
+
+[node name="Image" type="TextureRect" parent="UI/Player/Inventory/MainHand/InventorySlot"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -48.0
+offset_right = 48.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("21_5be7b")
+expand_mode = 1
+
+[node name="ItemCount" type="Label" parent="UI/Player/Inventory/MainHand/InventorySlot"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 48.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_0axh8")
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Crafting" type="Control" parent="UI/Player/Inventory"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 250.0
+offset_top = -90.0
+offset_right = 310.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventorySlot" parent="UI/Player/Inventory/Crafting" instance=ExtResource("20_tmecl")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.0
+offset_top = -65.0
+offset_right = -5.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventorySlot2" parent="UI/Player/Inventory/Crafting" instance=ExtResource("20_tmecl")]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 5.0
+offset_top = -65.0
+offset_right = 65.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventorySlot3" parent="UI/Player/Inventory/Crafting" instance=ExtResource("20_tmecl")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 65.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InventorySlot4" parent="UI/Player/Inventory/Crafting" instance=ExtResource("20_tmecl")]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 35.0
+offset_bottom = 35.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="InventorySlot5" parent="UI/Player/Inventory/Crafting" instance=ExtResource("20_tmecl")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 90.0
+offset_top = -30.0
+offset_right = 150.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthBar" type="Control" parent="UI/Player"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthBarBackground" type="ColorRect" parent="UI/Player/HealthBar"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = 300.0
+offset_right = 300.0
+offset_bottom = 312.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.396078, 0.396078, 0.396078, 1)
+
+[node name="HealthBar" type="ColorRect" parent="UI/Player/HealthBar"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = 300.0
+offset_right = 300.0
+offset_bottom = 312.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.811765, 0.109804, 0.109804, 1)
+
+[node name="ItemNameDisplay" type="Label" parent="UI/Player"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -12.0
+offset_right = 50.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_oyb0d")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [editable path="Terrain/Rocks/Rock1"]
 [editable path="Terrain/Rocks/Rock1 (1)"]
