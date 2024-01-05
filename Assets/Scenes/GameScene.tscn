@@ -36,7 +36,7 @@ fog_light_color = Color(0.47451, 0.560784, 0.823529, 1)
 fog_density = 0.0205
 fog_height = 64.68
 
-[node name="RootNode3D" type="Node3D"]
+[node name="GameScene" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.937182, 0.21483, -0.27484, 0.347826, -0.515449, 0.783153, 0.026579, -0.829554, -0.557793, 0, 124.078, -55.8813)

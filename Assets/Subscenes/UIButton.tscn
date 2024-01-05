@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://8kuosvusb47f"]
+
+[ext_resource type="FontFile" uid="uid://bt75hb45ej8mq" path="res://Assets/_Assets/Font/LiberationSans-Bold.ttf" id="1_lwo2v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rmtp3"]
+bg_color = Color(0.207843, 0.207843, 0.207843, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 0.501961)
+shadow_size = 1
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nvckq"]
+bg_color = Color(0.192157, 0.192157, 0.192157, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 0.501961)
+shadow_size = 1
+shadow_offset = Vector2(3, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ru4hu"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 0.501961)
+shadow_size = 1
+shadow_offset = Vector2(3, 3)
+
+[node name="UIButton" type="Button"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -135.0
+offset_top = -45.0
+offset_right = 135.0
+offset_bottom = 45.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/icon_normal_color = Color(0.219608, 0.219608, 0.219608, 1)
+theme_override_fonts/font = ExtResource("1_lwo2v")
+theme_override_font_sizes/font_size = 42
+theme_override_styles/normal = SubResource("StyleBoxFlat_rmtp3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nvckq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ru4hu")
+text = "Text"

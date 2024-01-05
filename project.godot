@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="AWT_PortGame"
-run/main_scene="res://Assets/Scenes/GameScene.tscn"
+run/main_scene="res://Assets/Scenes/MainMenuScene.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+AudioAndOptionsManager="*res://Assets/Autoloads/AudioAndOptionsManager.tscn"
 
 [editor_plugins]
 
