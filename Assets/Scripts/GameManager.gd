@@ -1,11 +1,72 @@
 extends Node
 
+signal playerDeath
+signal inventoryToggle
+signal itemDropped
+signal gamePaused
 
-# Called when the node enters the scene tree for the first time.
+var isInventoryOpen: bool = false
+var isGamePaused: bool = false
+var isPlayerDead: bool = false
+
+var playerHealth: int = 100
+var playerMaxHealth: int = 100
+
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
 	pass
+	
+func TogglePause():
+	if (isPlayerDead):
+		return
+	if (isInventoryOpen):
+		isInventoryOpen = false
+		inventoryToggle.emit()
+	isGamePaused = !isGamePaused
+	gamePaused.emit()
+
+func _input(event):
+	if event.is_action_pressed("pause"):
+		TogglePause()
+	if event.is_action_pressed("dropItem"):
+		itemDropped.emit()
+	if event.is_action_pressed("toggleInventory"):
+		if (isGamePaused || isPlayerDead):
+			return
+		isInventoryOpen = !isInventoryOpen
+		inventoryToggle.emit()
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and playerHealth < playerMaxHealth:
+			HealPlayer(10)
+			
+func PlayerDeath():
+	if (isInventoryOpen):
+		isInventoryOpen = !isInventoryOpen
+		inventoryToggle.emit()
+	if (isGamePaused):
+		isGamePaused = !isGamePaused
+		gamePaused.emit()
+	get_node("%HealthBar").hide()
+	get_node("%HealthBarBackground").hide()
+	isPlayerDead = true
+	playerDeath.emit()
+
+func DamagePlayer(amount: int):
+	if (amount < 0):
+		return
+	playerHealth -= amount
+	if (playerHealth <= 0):
+		playerHealth = 0
+		PlayerDeath()
+	UpdateHealthBar()
+		
+		
+func HealPlayer(amount: int):
+	if (amount < 0 || playerHealth > playerMaxHealth):
+		return
+	playerHealth += amount
+	if (playerHealth > playerMaxHealth):
+		playerHealth = playerMaxHealth
+	UpdateHealthBar()
+	
+func UpdateHealthBar():
+	get_node("%HealthBar").set_scale(Vector2(float(playerHealth)/float(playerMaxHealth),1))

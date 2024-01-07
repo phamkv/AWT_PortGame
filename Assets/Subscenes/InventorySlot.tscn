@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c63gupufuhf5a"]
+[gd_scene load_steps=5 format=3 uid="uid://c63gupufuhf5a"]
 
 [ext_resource type="FontFile" uid="uid://bt75hb45ej8mq" path="res://Assets/_Assets/Font/LiberationSans-Bold.ttf" id="1_4iy0x"]
 [ext_resource type="Texture2D" uid="uid://d11gydeyw0d1y" path="res://Assets/_Assets/Items/empty_slot.png" id="1_47vyc"]
+[ext_resource type="Script" path="res://Assets/Scripts/UI/InventorySlot.gd" id="1_ex5gp"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_frmwf"]
 font = ExtResource("1_4iy0x")
@@ -13,6 +14,7 @@ custom_minimum_size = Vector2(60, 60)
 offset_right = 60.0
 offset_bottom = 60.0
 icon_alignment = 1
+script = ExtResource("1_ex5gp")
 
 [node name="Image" type="TextureRect" parent="."]
 layout_mode = 1

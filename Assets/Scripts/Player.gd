@@ -6,24 +6,25 @@ const JUMP_VELOCITY = 10.5
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
+var GameManager: Node
 
 var look_dir: Vector2
 @onready var camera = $PlayerCamera
 var camera_sens = 20
 
-var capMouse = true
-
 func _ready():
-	if capMouse:
-		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	GameManager = get_node("/root/GameScene/GameManager")
 
 func _physics_process(delta):
+	if (GameManager.isPlayerDead || GameManager.isGamePaused):
+		return
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
@@ -36,14 +37,9 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
-		
-	if Input.is_action_just_pressed("pause"):
-		capMouse = !capMouse
-		if capMouse:
-			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-		else:
-			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	_rotate_camera(delta)
+	
+	if (!GameManager.isInventoryOpen):
+		_rotate_camera(delta)
 	move_and_slide()
 
 func _input(event: InputEvent):

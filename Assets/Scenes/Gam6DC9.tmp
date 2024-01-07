@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://dubn7u8ja2gke"]
+[gd_scene load_steps=30 format=3 uid="uid://dubn7u8ja2gke"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/GameManager.gd" id="1_in0hn"]
 [ext_resource type="AudioStream" uid="uid://brming4bs4fe6" path="res://Assets/Audio/Music Tracks/Zephyr.wav" id="3_dteuw"]
@@ -21,7 +21,6 @@
 [ext_resource type="Texture2D" uid="uid://d11gydeyw0d1y" path="res://Assets/_Assets/Items/empty_slot.png" id="21_5be7b"]
 [ext_resource type="PackedScene" uid="uid://deiko1p27il0k" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Oak_tree1.prefab.tscn" id="21_8hftc"]
 [ext_resource type="PackedScene" uid="uid://c6635b7gwv822" path="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/PA_Warrior.prefab.tscn" id="22_j20d7"]
-[ext_resource type="Script" path="res://Assets/Scripts/UI/InventorySlot.gd" id="22_lfxcs"]
 [ext_resource type="AudioStream" uid="uid://fsnn7bqgv8sa" path="res://Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/walking/walking-3.wav" id="23_kvkxj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nwpca"]
@@ -1002,7 +1001,6 @@ offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
 icon_alignment = 1
-script = ExtResource("22_lfxcs")
 
 [node name="Image" type="TextureRect" parent="UI/Player/Inventory/MainHand/InventorySlot"]
 layout_mode = 1
