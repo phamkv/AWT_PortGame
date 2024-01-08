@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c4t7wwtm5t5hc"]
 
-[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Drova/Wood.prefab.tscn" id="1_b3tqy"]
+[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/Subscenes/Wood.tscn" id="1_b3tqy"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2q1sc"]
 size = Vector3(1.3, 1.1, 0.7)

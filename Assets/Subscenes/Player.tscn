@@ -1,6 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ktnas1kj50"]
+[gd_scene load_steps=8 format=3 uid="uid://ktnas1kj50"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/Player.gd" id="1_q4buu"]
+[ext_resource type="PackedScene" uid="uid://cmrhbqoxo6fop" path="res://Assets/Subscenes/Mushroom.tscn" id="2_fycm8"]
+[ext_resource type="PackedScene" uid="uid://bxisjcqrti8f4" path="res://Assets/Subscenes/Stone.tscn" id="3_t86dg"]
+[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/Subscenes/Wood.tscn" id="4_ox6bc"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_xvrqd"]
 
@@ -30,3 +33,14 @@ mesh = SubResource("BoxMesh_vutp8")
 [node name="LeftArmMesh" type="MeshInstance3D" parent="Player"]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 1, -0.573034, 0, -0.559133)
 mesh = SubResource("BoxMesh_vutp8")
+
+[node name="MainHand" type="Node3D" parent="Player"]
+
+[node name="Mushroom" parent="Player/MainHand" instance=ExtResource("2_fycm8")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, 0.52, 0.1, -0.85)
+
+[node name="Stone" parent="Player/MainHand" instance=ExtResource("3_t86dg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52, 0.1, -0.85)
+
+[node name="Wood" parent="Player/MainHand" instance=ExtResource("4_ox6bc")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.52, 0.28, -1.1)

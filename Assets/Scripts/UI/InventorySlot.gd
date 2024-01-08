@@ -22,6 +22,9 @@ func Select():
 func Deselect():
 	pass
 	
+func GetItemCount():
+	return int(ItemCount.get_text())
+	
 func IsSlotEmpty():
 	return itemName == ""
 
@@ -41,4 +44,4 @@ func ModifyItemCount(value: int):
 	if (int(ItemCount.get_text())-value <= 0):
 		ClearSlot()
 		return
-	ItemCount.set_text(str(int(ItemCount.get_text())+value))
+	ItemCount.set_text(str(GetItemCount()+value))

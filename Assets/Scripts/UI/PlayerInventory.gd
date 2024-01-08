@@ -3,6 +3,7 @@ extends Control
 class_name PlayerInventory
 
 var GameManager: Node
+var Player: Node
 
 enum SlotType {
 	Storage,
@@ -11,15 +12,26 @@ enum SlotType {
 	CraftingResult
 }
 
+enum Recipes {
+	sword,
+	pickaxe,
+	none
+}
+
 var storageSlots: Array[Node]
 var mainHandSlot: Node
 var craftingSlots: Array[Node]
 var craftingResultSlot: Node
 
 var selectedInventorySlot: Node = null
+var currentRecipe: Recipes = Recipes.none
+
+var swordRecipe: Array[String] = ["Stone", "", "Wood", ""]
+var pickaxeRecipe: Array[String] = ["Stone", "Stone", "Wood", ""]
 
 func _ready():
 	self.hide()
+	Player = get_node("/root/GameScene/Player/Player")
 	GameManager = get_node("%GameManager")
 	GameManager.inventoryToggle.connect(func():
 		if (GameManager.isInventoryOpen):
@@ -31,9 +43,11 @@ func _ready():
 	)
 	GameManager.itemDropped.connect(func():
 		if (!mainHandSlot.IsSlotEmpty()):
-			#Add: Drop Items
+			for i in mainHandSlot.getItemCount():
+				#Add: spawn Items
+				pass
 			mainHandSlot.ClearSlot()
-			#Add: Update MainHand
+			Player.UpdateMainHand("")
 	)
 	
 	storageSlots = $Storage.get_children()
@@ -53,8 +67,20 @@ func _ready():
 		count += 1
 	mainHandSlot.slotType = SlotType.Mainhand
 	craftingResultSlot.slotType = SlotType.CraftingResult
+	
+func AddItemToInventory(itemName: String, texture: Texture2D, itemCount: int):
+	if (itemName == null || itemName == "" || texture == null || itemCount == 0):
+		return
+	for inventorySlot in storageSlots:
+		if (inventorySlot.itemName == itemName):
+			inventorySlot.ModifyCount(itemCount)
+			return
+	for inventorySlot in storageSlots:
+		if (inventorySlot.IsSlotEmpty()):
+			inventorySlot.UpdateSlot(texture, itemCount, itemName)
 
 func SelectSlot(inventorySlot: Node):
+	checkForValidRecipe()
 	if (selectedInventorySlot != null):
 		if (inventorySlot == selectedInventorySlot):
 			inventorySlot.Deselect()
@@ -62,8 +88,62 @@ func SelectSlot(inventorySlot: Node):
 			return
 		if (inventorySlot.IsSlotEmpty() and selectedInventorySlot.IsSlotEmpty()):
 			return
+		if (inventorySlot.slotType == SlotType.CraftingResult || selectedInventorySlot.slotType == SlotType.CraftingResult):
+			if ((inventorySlot.slotType == SlotType.CraftingResult && selectedInventorySlot.IsSlotEmpty) || (selectedInventorySlot.slotType == SlotType.CraftingResult && inventorySlot.IsSlotEmpty())):
+				match currentRecipe:
+					Recipes.sword:
+						for i in swordRecipe.size():
+							if (swordRecipe[i] != ""):
+								craftingSlots[i].ModifyItemCount(-1)
+						swapInventorySlotContent(selectedInventorySlot, inventorySlot)
+					Recipes.pickaxe:
+						for i in pickaxeRecipe.size():
+							if (pickaxeRecipe[i] != ""):
+								craftingSlots[i].ModifyItemCount(-1)
+						swapInventorySlotContent(selectedInventorySlot, inventorySlot)
+					Recipes.none:
+						pass
+				currentRecipe = Recipes.none
+		elif (inventorySlot.slotType == SlotType.Crafting && (inventorySlot.itemName == selectedInventorySlot.itemName || selectedInventorySlot.IsSlotEmpty()) && !inventorySlot.IsSlotEmpty() && inventorySlot.GetItemCount() > 1):
+			inventorySlot.ModifyItemCount(1)
+			selectedInventorySlot.ModifyItemCount(-1)
+		elif (selectedInventorySlot.slotType == SlotType.Crafting && (inventorySlot.itemName == selectedInventorySlot.itemName || inventorySlot.IsSlotEmpty()) && !selectedInventorySlot.IsSlotEmpty() && selectedInventorySlot.GetItemCount() > 1):
+			inventorySlot.ModifyItemCount(-1)
+			selectedInventorySlot.ModifyItemCount(1)
+		elif (selectedInventorySlot.itemName == inventorySlot.itemName && inventorySlot.IsNotEmpty()):
+			inventorySlot.UpdateSlot(selectedInventorySlot.SlotImage.get_texture(),selectedInventorySlot.ItemCount.get_text(),selectedInventorySlot.itemName)
+			selectedInventorySlot.ClearSlot()
+		else:
+			swapInventorySlotContent(selectedInventorySlot, inventorySlot)
 		
-		#Add: Crafting and SlotSwapping
+		if (inventorySlot.slotType == SlotType.Mainhand || selectedInventorySlot.slotType == SlotType.Mainhand):
+			Player.UpdateMainhand(mainHandSlot.itemName)
+			pass
+		
+		selectedInventorySlot.Deselect()
+		selectedInventorySlot = null
 	else:
 		inventorySlot.Select()
 		selectedInventorySlot = inventorySlot
+	checkForValidRecipe()
+		
+func swapInventorySlotContent(inventorySlot1: Node, inventorySlot2: Node):
+	var slotImage: Texture2D = inventorySlot2.SlotImage.get_texture()
+	var itemCount: String = inventorySlot2.ItemCount.get_text()
+	var itemName: String = inventorySlot2.itemName
+	inventorySlot2.UpdateSlot(inventorySlot1.SlotImage.get_texture(), inventorySlot1.ItemCount.get_text(), inventorySlot1.itemName)
+	inventorySlot1.UpdateSlot(slotImage, itemCount, itemName)
+
+func checkForValidRecipe():
+	craftingResultSlot.ClearSlot()
+	var slotContent: Array[String] = ["","","",""]
+	for itemSlot in craftingSlots:
+		slotContent = itemSlot.itemName
+	if (slotContent[0] == pickaxeRecipe[0] && slotContent[1] == pickaxeRecipe[1] && slotContent[2] == pickaxeRecipe[2] && slotContent[3] == pickaxeRecipe[4]):
+		craftingResultSlot.UpdateSlot(load("res://Assets/_Assets/Items/Axe.png"),1,"Axe")
+		currentRecipe = Recipes.pickaxe
+	elif (slotContent[0] == swordRecipe[0] && slotContent[1] == swordRecipe[1] && slotContent[2] == swordRecipe[2] && slotContent[3] == swordRecipe[4]):
+		craftingResultSlot.UpdateSlot(load("res://Assets/_Assets/Items/Sword.png"),1,"Sword")
+		currentRecipe = Recipes.sword
+	else:
+		currentRecipe = Recipes.none

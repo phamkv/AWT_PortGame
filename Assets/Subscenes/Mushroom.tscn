@@ -61,36 +61,9 @@ metadata/unidot_keys = {
 "m_TagString": "Untagged"
 }
 
-[node name="MonoBehaviour" type="Node" parent="."]
-editor_description = "[MonoBehaviour 114::dea84a3662be77b4bad1db42d2b32262:7898743525056822416]"
-metadata/unidot_keys = {
-"breakCount": 10,
-"canBePickedUp": 1,
-"displayName": "Mushroom",
-"dropItemsOnDestroy": 0,
-"droppedInventoryIcon": [null, 0, null, null],
-"droppedPrefab": [null, 1596872523515200, null, null],
-"initialObject": 1,
-"interactionDistance": 3,
-"interactionSound": [null, 8300000, "19f89c6e740e7447f9e12a8310d3e973", 3],
-"inventoryIcon": [null, 21300000, "b0bb506cd8a5d464baed1ad871605678", 3],
-"itemcount": 1,
-"m_CorrespondingSourceObject": [null, 0, null, null],
-"m_EditorHideFlags": 0,
-"m_Enabled": 1,
-"m_GameObject": [null, 1596872523515200, null, null],
-"m_Layer": 3,
-"m_ObjectHideFlags": 0,
-"m_PrefabAsset": [null, 0, null, null],
-"m_PrefabInstance": [null, 0, null, null],
-"m_Script": [null, 11500000, "146e9fe48b2f3df40b914fb573c52a5b", 3],
-"m_StaticEditorFlags": 4294967295,
-"m_TagString": "Untagged",
-"useRigidbody": 0
-}
-
 [node name="BoxCollider" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BoxCollider"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0137324, 0.187243, 0.0210764)
 shape = SubResource("BoxShape3D_15ac2")
+disabled = true

@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://dmpvfyog8hkeh"]
+
+[ext_resource type="ArrayMesh" uid="uid://civbdv2u5ejqr" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Drova.Drova02.mesh" id="1_4hldb"]
+[ext_resource type="Material" uid="uid://w2dbnwhyr6am" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/Wood_Bark01.mat.tres" id="2_kr8fk"]
+[ext_resource type="Material" uid="uid://cmv7if42ejm72" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/WoodBark03.mat.tres" id="3_6eitf"]
+[ext_resource type="Material" uid="uid://dqkx6hegqcnx4" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/WoodBark02.mat.tres" id="4_3bacw"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_t5hbl"]
+data = PackedVector3Array(0.0172, -0.0186, 0, 0.0107, 0.0105, 0, 0.0029, 0.0105, 0, 0.0172, -0.0186, 0, 0.0029, 0.0105, 0, -0.0107, -0.0031, 0, 0.0029, 0.0105, 0, -0.0046, 0.009, 0, -0.0092, 0.0045, 0, -0.0107, -0.0031, 0, -0.0107, -0.0105, 0, 0.0172, -0.0186, 0, -0.0092, 0.0045, 0, -0.0107, -0.0031, 0, 0.0029, 0.0105, 0, -0.0107, -0.0031, 0.0577, 0.0029, 0.0105, 0.0577, 0.0172, -0.0186, 0.0577, -0.0107, -0.0031, 0.0577, -0.0092, 0.0045, 0.0577, 0.0029, 0.0105, 0.0577, 0.0172, -0.0186, 0.0577, -0.0107, -0.0105, 0.0577, -0.0107, -0.0031, 0.0577, 0.0029, 0.0105, 0.0577, 0.0107, 0.0105, 0.0577, 0.0172, -0.0186, 0.0577, -0.0092, 0.0045, 0.0577, -0.0046, 0.009, 0.0577, 0.0029, 0.0105, 0.0577, -0.0107, -0.0105, 0.0577, 0.0172, -0.0186, 0.0577, -0.0107, -0.0105, 0, 0.0172, -0.0186, 0.0577, 0.0172, -0.0186, 0, -0.0107, -0.0105, 0, 0.0172, -0.0186, 0.0577, 0.0107, 0.0105, 0.0577, 0.0172, -0.0186, 0, 0.0107, 0.0105, 0.0577, 0.0107, 0.0105, 0, 0.0172, -0.0186, 0, 0.0107, 0.0105, 0.0577, 0.0029, 0.0105, 0.0577, 0.0107, 0.0105, 0, 0.0029, 0.0105, 0.0577, -0.0046, 0.009, 0.0577, 0.0029, 0.0105, 0, 0.0029, 0.0105, 0.0577, 0.0029, 0.0105, 0, 0.0107, 0.0105, 0, -0.0107, -0.0031, 0.0577, -0.0107, -0.0031, 0, -0.0092, 0.0045, 0, -0.0107, -0.0031, 0.0577, -0.0107, -0.0105, 0.0577, -0.0107, -0.0031, 0, -0.0107, -0.0105, 0.0577, -0.0107, -0.0105, 0, -0.0107, -0.0031, 0, -0.0046, 0.009, 0.0577, -0.0046, 0.009, 0, 0.0029, 0.0105, 0, -0.0046, 0.009, 0.0577, -0.0092, 0.0045, 0.0577, -0.0046, 0.009, 0, -0.0092, 0.0045, 0.0577, -0.0107, -0.0031, 0.0577, -0.0092, 0.0045, 0, -0.0092, 0.0045, 0.0577, -0.0092, 0.0045, 0, -0.0046, 0.009, 0)
+
+[node name="Wood" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="."]
+editor_description = "[MeshRenderer 23::92028abf4453dd444abfa92bedf0449c:2363632]"
+gi_mode = 2
+mesh = ExtResource("1_4hldb")
+surface_material_override/0 = ExtResource("2_kr8fk")
+surface_material_override/1 = ExtResource("3_6eitf")
+surface_material_override/2 = ExtResource("4_3bacw")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 118898, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "d6425f15177796044bd3ad0c26c16ec5", 2], [null, 2100000, "014150c6ade3b1340b696255604095ad", 2], [null, 2100000, "56f784e4b3ef58840ad2d1e4bfabd1c9", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1,
+"m_TagString": "Untagged"
+}
+
+[node name="MeshCollider" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider"]
+shape = SubResource("ConcavePolygonShape3D_t5hbl")
+disabled = true

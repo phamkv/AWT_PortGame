@@ -7,6 +7,7 @@ const JUMP_VELOCITY = 10.5
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var GameManager: Node
+var mainHandItems: Array[Node]
 
 var look_dir: Vector2
 @onready var camera = $PlayerCamera
@@ -15,6 +16,8 @@ var camera_sens = 20
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	GameManager = get_node("/root/GameScene/GameManager")
+	mainHandItems = $MainHand.get_children()
+	UpdateMainHand("")
 
 func _physics_process(delta):
 	if (GameManager.isPlayerDead || GameManager.isGamePaused):
@@ -52,3 +55,9 @@ func _rotate_camera(delta: float, sens_mod: float = 1.0):
 	camera.rotation.x = clamp(camera.rotation.x - look_dir.y * camera_sens * sens_mod * delta, deg_to_rad(-40), deg_to_rad(90))
 	look_dir = Vector2.ZERO
 	
+func UpdateMainHand(itemName: String):
+	for item in mainHandItems:
+		if (item.name == itemName):
+			item.show()
+		else:
+			item.hide()

@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://cn8qedeijuqrn"]
 
 [ext_resource type="PackedScene" uid="uid://b1jfi6ctc20if" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Rock1.prefab.tscn" id="1_sybla"]
-[ext_resource type="PackedScene" uid="uid://cmrhbqoxo6fop" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Mushroom.prefab.tscn" id="2_814sj"]
+[ext_resource type="PackedScene" uid="uid://cmrhbqoxo6fop" path="res://Assets/Subscenes/Mushroom.tscn" id="2_814sj"]
 [ext_resource type="PackedScene" uid="uid://cabjv0lowv2gn" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Grass1.prefab.tscn" id="3_0yuap"]
 [ext_resource type="PackedScene" uid="uid://6xgqj8objvo1" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Flower2.prefab.tscn" id="4_mvwkx"]
 [ext_resource type="PackedScene" uid="uid://h7a2kwcb2vq3" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Flower1.prefab.tscn" id="5_jnga6"]

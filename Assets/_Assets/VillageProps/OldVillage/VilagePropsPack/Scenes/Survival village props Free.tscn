@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://ddfqiut2f8kbx" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/bucket01.prefab.tscn" id="6_dcgbj"]
 [ext_resource type="PackedScene" uid="uid://ser51tx5osmu" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Logs/log01.prefab.tscn" id="7_52e8a"]
 [ext_resource type="PackedScene" uid="uid://bhgelo14laplj" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Ladder/ladder_01.prefab.tscn" id="8_meaby"]
-[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Drova/Wood.prefab.tscn" id="9_xlhib"]
+[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/Subscenes/Wood.tscn" id="9_xlhib"]
 [ext_resource type="PackedScene" uid="uid://bka21xqc275t5" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Trunks/Trunk01.prefab.tscn" id="10_0bly2"]
 [ext_resource type="PackedScene" uid="uid://d2lej0at7lxw2" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Topor_props.prefab.tscn" id="11_vrbw5"]
 [ext_resource type="PackedScene" uid="uid://wk7tvvbnrpph" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Wrata01Wood.prefab.tscn" id="12_s6rlm"]

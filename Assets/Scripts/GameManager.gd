@@ -11,9 +11,6 @@ var isPlayerDead: bool = false
 
 var playerHealth: int = 100
 var playerMaxHealth: int = 100
-
-func _ready():
-	pass
 	
 func TogglePause():
 	if (isPlayerDead):
