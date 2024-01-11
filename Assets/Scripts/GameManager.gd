@@ -1,5 +1,7 @@
 extends Node
 
+class_name GameManager
+
 signal playerDeath
 signal inventoryToggle
 signal itemDropped

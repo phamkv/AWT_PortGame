@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://dubn7u8ja2gke"]
+[gd_scene load_steps=43 format=3 uid="uid://dubn7u8ja2gke"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/GameManager.gd" id="1_in0hn"]
 [ext_resource type="AudioStream" uid="uid://brming4bs4fe6" path="res://Assets/Audio/Music Tracks/Zephyr.wav" id="3_dteuw"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://c6635b7gwv822" path="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/PA_Warrior.prefab.tscn" id="22_j20d7"]
 [ext_resource type="Script" path="res://Assets/Scripts/UI/InventorySlot.gd" id="22_lfxcs"]
 [ext_resource type="AudioStream" uid="uid://fsnn7bqgv8sa" path="res://Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/walking/walking-3.wav" id="23_kvkxj"]
+[ext_resource type="Script" path="res://Assets/Scripts/Enemy.gd" id="24_vmu66"]
 [ext_resource type="ArrayMesh" uid="uid://pumyngjyaah8" path="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/extracted/PA_Warrior.PA_Warrior.mesh" id="24_wrdds"]
 [ext_resource type="Skin" uid="uid://mtxu71kk58jm" path="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/extracted/PA_Warrior.PA_Warrior.skin.tres" id="25_uroc5"]
 
@@ -1190,43 +1191,49 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Player" parent="." instance=ExtResource("15_js1yv")]
-transform = Transform3D(0.251674, 0, 0, 0, 0.251674, 0, 0, 0, 0.251674, -576.183, 74.7213, 521.689)
+transform = Transform3D(0.251674, 0, 0, 0, 0.251674, 0, 0, 0, 0.251674, -576.183, 74.7213, 525.469)
+WALKING_SPEED = null
+SPRINTING_SPEED = null
+JUMP_VELOCITY = null
+MOUSE_SENSIBILITY = null
+LERP_SPEED = null
+BOB_FREQ = null
+BOB_AMP = null
 
-[node name="Node3D" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -574.744, 74.721, 516.287)
+[node name="Enemy1" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -573.588, 74.721, 513.972)
+script = ExtResource("24_vmu66")
 
-[node name="RigidBody3D" type="RigidBody3D" parent="Node3D"]
-
-[node name="PA_Warrior" type="MeshInstance3D" parent="Node3D/RigidBody3D"]
+[node name="PA_Warrior" type="MeshInstance3D" parent="Enemy1"]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 mesh = ExtResource("24_wrdds")
 skin = ExtResource("25_uroc5")
 
-[node name="@CollisionShape3D@30172" type="CollisionShape3D" parent="Node3D/RigidBody3D"]
+[node name="@CollisionShape3D@30172" type="CollisionShape3D" parent="Enemy1"]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_f6qpa")
 
-[node name="@CollisionShape3D@30171" type="CollisionShape3D" parent="Node3D/RigidBody3D"]
+[node name="@CollisionShape3D@30171" type="CollisionShape3D" parent="Enemy1"]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_mget5")
 
-[node name="@CollisionShape3D@30170" type="CollisionShape3D" parent="Node3D/RigidBody3D"]
+[node name="@CollisionShape3D@30170" type="CollisionShape3D" parent="Enemy1"]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_twwq8")
 
-[node name="@CollisionShape3D@30169" type="CollisionShape3D" parent="Node3D/RigidBody3D"]
+[node name="@CollisionShape3D@30169" type="CollisionShape3D" parent="Enemy1"]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_oaull")
 
-[node name="@CollisionShape3D@30168" type="CollisionShape3D" parent="Node3D/RigidBody3D"]
+[node name="@CollisionShape3D@30168" type="CollisionShape3D" parent="Enemy1"]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_1gup7")
 
-[node name="@CollisionShape3D@30167" type="CollisionShape3D" parent="Node3D/RigidBody3D"]
+[node name="@CollisionShape3D@30167" type="CollisionShape3D" parent="Enemy1"]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_7ya25")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D/RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enemy1"]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_kyuul")
 

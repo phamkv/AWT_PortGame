@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+class_name Player
+
 enum State {IDLE, WALKING, JUMPING, SPRINTING}
 
 @onready var head: Node3D = $Head
