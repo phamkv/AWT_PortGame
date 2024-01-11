@@ -1,10 +1,23 @@
-[gd_scene load_steps=6 format=3 uid="uid://b1rqum2ouyj5m"]
+[gd_scene load_steps=11 format=3 uid="uid://b1rqum2ouyj5m"]
 
 [ext_resource type="Script" path="res://addons/unidot_importer/runtime/anim_tree.gd" id="1_ka1qa"]
+[ext_resource type="Texture2D" uid="uid://c6e1ld58thj4d" path="res://Assets/_Assets/Tools/axe_a/Materials/axe_a_Textures/axe_a_low_DefaultMaterial_BaseColor.png" id="2_8ht6j"]
 [ext_resource type="ArrayMesh" uid="uid://cl0l8habkwvg2" path="res://Assets/_Assets/Tools/axe_a/extracted/axe_a.axe00_low.mesh" id="2_54hms"]
 [ext_resource type="ArrayMesh" uid="uid://bhe3qpw22dsgx" path="res://Assets/_Assets/Tools/axe_a/extracted/axe_a.axe01_low.mesh" id="3_8yxq3"]
 [ext_resource type="ArrayMesh" uid="uid://ds2637pe1k338" path="res://Assets/_Assets/Tools/axe_a/extracted/axe_a.axe02_low.mesh" id="4_lvapx"]
 [ext_resource type="ArrayMesh" uid="uid://l52igdpf218f" path="res://Assets/_Assets/Tools/axe_a/extracted/axe_a.axe03_low.mesh" id="5_pvqms"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_irskb"]
+albedo_texture = ExtResource("2_8ht6j")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xgxtj"]
+albedo_texture = ExtResource("2_8ht6j")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p8qie"]
+albedo_texture = ExtResource("2_8ht6j")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vm7lj"]
+albedo_texture = ExtResource("2_8ht6j")
 
 [node name="axe_a" type="Node3D"]
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 6.79)
@@ -23,6 +36,7 @@ script = ExtResource("1_ka1qa")
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="axe_a/axe00_low"]
 editor_description = "[MeshRenderer 23::e153b9aae371cd34bb2a01a512cee2c2:23630635192811154]"
+material_override = SubResource("StandardMaterial3D_irskb")
 gi_mode = 2
 mesh = ExtResource("2_54hms")
 metadata/unidot_keys = {
@@ -69,6 +83,7 @@ metadata/unidot_keys = {
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="axe_a/axe01_low"]
 editor_description = "[MeshRenderer 23::e153b9aae371cd34bb2a01a512cee2c2:23948771942977380]"
+material_override = SubResource("StandardMaterial3D_xgxtj")
 gi_mode = 2
 mesh = ExtResource("3_8yxq3")
 metadata/unidot_keys = {
@@ -115,6 +130,7 @@ metadata/unidot_keys = {
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="axe_a/axe02_low"]
 editor_description = "[MeshRenderer 23::e153b9aae371cd34bb2a01a512cee2c2:23129952099660646]"
+material_override = SubResource("StandardMaterial3D_p8qie")
 gi_mode = 2
 mesh = ExtResource("4_lvapx")
 metadata/unidot_keys = {
@@ -161,6 +177,7 @@ metadata/unidot_keys = {
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="axe_a/axe03_low"]
 editor_description = "[MeshRenderer 23::e153b9aae371cd34bb2a01a512cee2c2:23746070078900636]"
+material_override = SubResource("StandardMaterial3D_vm7lj")
 gi_mode = 2
 mesh = ExtResource("5_pvqms")
 metadata/unidot_keys = {

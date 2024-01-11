@@ -1,8 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://b63fgac2mqtcw"]
+[gd_scene load_steps=7 format=3 uid="uid://b63fgac2mqtcw"]
 
 [ext_resource type="Script" path="res://addons/unidot_importer/runtime/anim_tree.gd" id="1_g8m8e"]
+[ext_resource type="Texture2D" uid="uid://n543gr7ma8b0" path="res://Assets/_Assets/Tools/sword_a/Materials/sword_a_Textures/sword_a_low_DefaultMaterial_BaseColor_03.png" id="2_cywfg"]
 [ext_resource type="ArrayMesh" uid="uid://daty600uyqxgy" path="res://Assets/_Assets/Tools/sword_a/extracted/sword_a.blade_low.mesh" id="2_hdbpc"]
 [ext_resource type="ArrayMesh" uid="uid://bj0518t243w5" path="res://Assets/_Assets/Tools/sword_a/extracted/sword_a.handle_low.mesh" id="3_5htsn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oxlfo"]
+albedo_texture = ExtResource("2_cywfg")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1g8sc"]
+albedo_texture = ExtResource("2_cywfg")
 
 [node name="sword_a" type="Node3D"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 3.8)
@@ -28,6 +35,7 @@ transform = Transform3D(0.821746, 0.12476, -0.556029, -3.72529e-09, 0.97574, 0.2
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="sword_a/blade_low"]
 editor_description = "[MeshRenderer 23::fd855b9ef3fb75e4fbbd46803c24ee95:23247193416292826]"
+material_override = SubResource("StandardMaterial3D_oxlfo")
 gi_mode = 2
 mesh = ExtResource("2_hdbpc")
 metadata/unidot_keys = {
@@ -74,6 +82,7 @@ metadata/unidot_keys = {
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="sword_a/handle_low"]
 editor_description = "[MeshRenderer 23::fd855b9ef3fb75e4fbbd46803c24ee95:23346779245099842]"
+material_override = SubResource("StandardMaterial3D_1g8sc")
 gi_mode = 2
 mesh = ExtResource("3_5htsn")
 metadata/unidot_keys = {

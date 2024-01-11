@@ -1,5 +1,30 @@
-[gd_scene load_steps=2 format=3 uid="uid://liia60pqnvld"]
+[gd_scene load_steps=7 format=3 uid="uid://liia60pqnvld"]
 
 [ext_resource type="PackedScene" uid="uid://dwmlfl2qupfo5" path="res://Assets/_Assets/Tools/axe_a/axe_a.gltf" id="1_n1rna"]
+[ext_resource type="Texture2D" uid="uid://c6e1ld58thj4d" path="res://Assets/_Assets/Tools/axe_a/Materials/axe_a_Textures/axe_a_low_DefaultMaterial_BaseColor.png" id="2_uysvy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_io1x5"]
+albedo_texture = ExtResource("2_uysvy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mxenk"]
+albedo_texture = ExtResource("2_uysvy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_serl5"]
+albedo_texture = ExtResource("2_uysvy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ggg5r"]
+albedo_texture = ExtResource("2_uysvy")
 
 [node name="axe_a" instance=ExtResource("1_n1rna")]
+
+[node name="axe02_low" parent="axe_a" index="0"]
+material_override = SubResource("StandardMaterial3D_io1x5")
+
+[node name="axe03_low" parent="axe_a" index="1"]
+material_override = SubResource("StandardMaterial3D_mxenk")
+
+[node name="axe01_low" parent="axe_a" index="2"]
+material_override = SubResource("StandardMaterial3D_serl5")
+
+[node name="axe00_low" parent="axe_a" index="3"]
+material_override = SubResource("StandardMaterial3D_ggg5r")
