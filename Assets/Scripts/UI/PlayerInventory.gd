@@ -137,8 +137,10 @@ func swapInventorySlotContent(inventorySlot1: Node, inventorySlot2: Node):
 func checkForValidRecipe():
 	craftingResultSlot.ClearSlot()
 	var slotContent: Array[String] = ["","","",""]
+	var count: int = 0
 	for itemSlot in craftingSlots:
-		slotContent = itemSlot.itemName
+		slotContent[count] = itemSlot.itemName
+		count +=1
 	if (slotContent[0] == pickaxeRecipe[0] && slotContent[1] == pickaxeRecipe[1] && slotContent[2] == pickaxeRecipe[2] && slotContent[3] == pickaxeRecipe[4]):
 		craftingResultSlot.UpdateSlot(load("res://Assets/_Assets/Items/Axe.png"),1,"Axe")
 		currentRecipe = Recipes.pickaxe
