@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b1jfi6ctc20if" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Rock1.prefab.tscn" id="14_e8uwc"]
 [ext_resource type="PackedScene" uid="uid://b3xcrw8iv6po2" path="res://Assets/_Assets/Terrain/Environment/Terrain/Terrains/terrainGodot.tscn" id="14_mx62s"]
 [ext_resource type="PackedScene" uid="uid://8kuosvusb47f" path="res://Assets/Subscenes/UIButton.tscn" id="15_2xe26"]
+[ext_resource type="PackedScene" uid="uid://bd3t6uyem3m88" path="res://Assets/Subscenes/FPSController.tscn" id="15_js1yv"]
 [ext_resource type="Script" path="res://Assets/Scripts/UI/PlayerDeath.gd" id="15_or11w"]
 [ext_resource type="FontFile" uid="uid://bt75hb45ej8mq" path="res://Assets/_Assets/Font/LiberationSans-Bold.ttf" id="15_rdenq"]
 [ext_resource type="PackedScene" uid="uid://cabjv0lowv2gn" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Grass1.prefab.tscn" id="15_xs6fk"]
@@ -13,7 +14,6 @@
 [ext_resource type="PackedScene" uid="uid://h7a2kwcb2vq3" path="res://Assets/_Assets/FantasyEnvironments/Environments/Prefabs/Flower1.prefab.tscn" id="17_iaugm"]
 [ext_resource type="PackedScene" uid="uid://qhrmt5b303gj" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree2.prefab.tscn" id="18_dhxs3"]
 [ext_resource type="Script" path="res://Assets/Scripts/UI/GamePause.gd" id="18_f10i1"]
-[ext_resource type="PackedScene" uid="uid://ktnas1kj50" path="res://Assets/Subscenes/Player.tscn" id="19_7xedu"]
 [ext_resource type="PackedScene" uid="uid://dqoolq5xt4jdu" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree1.prefab.tscn" id="19_yhdff"]
 [ext_resource type="Script" path="res://Assets/Scripts/UI/PlayerInventory.gd" id="20_6s3kg"]
 [ext_resource type="PackedScene" uid="uid://c5ry72yumh6ow" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Deciduous_tree1.prefab.tscn" id="20_lupru"]
@@ -206,6 +206,7 @@ shadow_bias = 0.05
 shadow_normal_bias = 0.4
 
 [node name="Terrain" type="Node3D" parent="."]
+transform = Transform3D(0.266013, 0, 0, 0, 0.266013, 0, 0, 0, 0.266013, -394.179, 50.5553, 348.251)
 
 [node name="TerrainGodot" parent="Terrain" instance=ExtResource("14_mx62s")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -732.551, -243.99, 899.544)
@@ -524,7 +525,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -684.424, 72.7985, 527.325)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -701.665, 92.1962, 653.679)
 
 [node name="Enemies" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -766.798, 93.6851, 606.369)
+transform = Transform3D(0.266013, 0, 0, 0, 0.266013, 0, 0, 0, 0.266013, -598.158, 75.4767, 509.554)
 
 [node name="PA_Warrior" parent="Enemies" instance=ExtResource("22_j20d7")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 44.02, -7.9774, 0.78418)
@@ -684,9 +685,6 @@ metadata/unidot_keys = {
 "serializedVersion": 2
 }
 }
-
-[node name="Player" parent="." instance=ExtResource("19_7xedu")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -688.87, 93, 650.013)
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3
@@ -1167,6 +1165,9 @@ grow_vertical = 2
 label_settings = SubResource("LabelSettings_oyb0d")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Player" parent="." instance=ExtResource("15_js1yv")]
+transform = Transform3D(0.251674, 0, 0, 0, 0.251674, 0, 0, 0, 0.251674, -576.183, 74.7213, 521.689)
 
 [editable path="Terrain/Rocks/Rock1"]
 [editable path="Terrain/Rocks/Rock1 (1)"]

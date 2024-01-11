@@ -18,6 +18,9 @@ func _ready():
 	GameManager = get_node("/root/GameScene/GameManager")
 	mainHandItems = $MainHand.get_children()
 	UpdateMainHand("")
+	
+func _input(event: InputEvent):
+	if event is InputEventMouseMotion: look_dir = event.relative * 0.01
 
 func _physics_process(delta):
 	if (GameManager.isPlayerDead || GameManager.isGamePaused):
@@ -44,9 +47,6 @@ func _physics_process(delta):
 	if (!GameManager.isInventoryOpen):
 		_rotate_camera(delta)
 	move_and_slide()
-
-func _input(event: InputEvent):
-	if event is InputEventMouseMotion: look_dir = event.relative * 0.01
 	
 func _rotate_camera(delta: float, sens_mod: float = 1.0):
 	# var input = Input.get_vector("look_left", "look_right", "look_down", "look_up")

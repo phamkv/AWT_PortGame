@@ -31,7 +31,7 @@ var pickaxeRecipe: Array[String] = ["Stone", "Stone", "Wood", ""]
 
 func _ready():
 	self.hide()
-	Player = get_node("/root/GameScene/Player/Player")
+	Player = get_node("/root/GameScene/Player")
 	GameManager = get_node("%GameManager")
 	GameManager.inventoryToggle.connect(func():
 		if (GameManager.isInventoryOpen):

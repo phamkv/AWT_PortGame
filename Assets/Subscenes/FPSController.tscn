@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://bd3t6uyem3m88"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/player/head_raycast.gd" id="1_8x3y5"]
+[ext_resource type="Script" path="res://Assets/Scripts/player/player.gd" id="1_e80kd"]
+[ext_resource type="Script" path="res://Assets/Scripts/player/crosshair.gd" id="1_rnf1l"]
+[ext_resource type="PackedScene" uid="uid://cmrhbqoxo6fop" path="res://Assets/Subscenes/Mushroom.tscn" id="3_lr56x"]
+[ext_resource type="PackedScene" uid="uid://bxisjcqrti8f4" path="res://Assets/Subscenes/Stone.tscn" id="4_x4op4"]
+[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/Subscenes/Wood.tscn" id="5_4fa0q"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hnq1i"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_frc8v"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ljhwu"]
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_e80kd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_hnq1i")
+
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+
+[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D"]
+transform = Transform3D(1, 0, 0, 0, -1.09278e-07, -1, 0, 2.5, -4.37114e-08, 0, 0, 0)
+collision_mask = 2
+collide_with_areas = true
+script = ExtResource("1_8x3y5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Crosshair" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_rnf1l")
+
+[node name="PlayerMesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_frc8v")
+
+[node name="RightArmMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 1, 0.540088, 0, -0.559133)
+mesh = SubResource("BoxMesh_ljhwu")
+
+[node name="LeftArmMesh" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 1, -0.573034, 0, -0.559133)
+mesh = SubResource("BoxMesh_ljhwu")
+
+[node name="MainHand" type="Node3D" parent="."]
+
+[node name="Mushroom" parent="MainHand" instance=ExtResource("3_lr56x")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, 0.52, 0.1, -0.85)
+
+[node name="Stone" parent="MainHand" instance=ExtResource("4_x4op4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52, 0.1, -0.85)
+
+[node name="Wood" parent="MainHand" instance=ExtResource("5_4fa0q")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.52, 0.28, -1.1)
