@@ -54,16 +54,31 @@ _subresources={
 "save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchlightBomber.PA_ArchLightRightBomb.mesh"
 },
 "Root Scene_PA_ArchLightBomber": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchlightBomber.PA_ArchLightBomber.mesh"
 },
 "Root Scene_PA_ArchLightLeftBomb": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchlightBomber.PA_ArchLightLeftBomb.mesh"
 },
 "Root Scene_PA_ArchLightRightBomb": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchlightBomber.PA_ArchLightRightBomb.mesh"

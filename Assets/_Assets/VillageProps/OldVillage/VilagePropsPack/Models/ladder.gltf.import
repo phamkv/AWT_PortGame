@@ -34,11 +34,21 @@ _subresources={
 "materials": {},
 "meshes": {
 "Root Scene_ladder_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/ladder.ladder_01.mesh"
 },
 "Root Scene_ladder_02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/ladder.ladder_02.mesh"

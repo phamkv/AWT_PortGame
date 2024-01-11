@@ -54,16 +54,31 @@ _subresources={
 "save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchfireTank.PA_ArchfireRightRing.mesh"
 },
 "Root Scene_PA_ArchfireBody": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchfireTank.PA_ArchfireBody.mesh"
 },
 "Root Scene_PA_ArchfireLeftRing": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchfireTank.PA_ArchfireLeftRing.mesh"
 },
 "Root Scene_PA_ArchfireRightRing": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/extracted/PA_ArchfireTank.PA_ArchfireRightRing.mesh"

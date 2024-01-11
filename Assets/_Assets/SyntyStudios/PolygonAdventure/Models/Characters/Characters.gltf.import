@@ -109,76 +109,151 @@ _subresources={
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WaterCanteen.mesh"
 },
 "Root Scene_Character_Knight": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Knight.mesh"
 },
 "Root Scene_Character_Peasant": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Peasant.mesh"
 },
 "Root Scene_Character_Shopkeeper": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Shopkeeper.mesh"
 },
 "Root Scene_Character_Viking": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Viking.mesh"
 },
 "Root Scene_Character_Warrior": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Character_Warrior.mesh"
 },
 "Root Scene_Item_CoinBag": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_CoinBag.mesh"
 },
 "Root Scene_Item_Dagger": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_Dagger.mesh"
 },
 "Root Scene_Item_Pouch": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_Pouch.mesh"
 },
 "Root Scene_Item_Sword": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_Sword.mesh"
 },
 "Root Scene_Item_SwordHolder": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_SwordHolder.mesh"
 },
 "Root Scene_Item_SwordSheath": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_SwordSheath.mesh"
 },
 "Root Scene_Item_WarriorSholderArmor": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WarriorSholderArmor.mesh"
 },
 "Root Scene_Item_WarriorSholderArmor 1": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WarriorSholderArmor 1.mesh"
 },
 "Root Scene_Item_WaterBladder_01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WaterBladder_01.mesh"
 },
 "Root Scene_Item_WaterCanteen": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/extracted/Characters.Item_WaterCanteen.mesh"

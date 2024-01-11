@@ -59,26 +59,51 @@ _subresources={
 "save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Drova.Drova05.mesh"
 },
 "Root Scene_Drova01": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Drova.Drova01.mesh"
 },
 "Root Scene_Drova02": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Drova.Drova02.mesh"
 },
 "Root Scene_Drova03": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Drova.Drova03.mesh"
 },
 "Root Scene_Drova04": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Drova.Drova04.mesh"
 },
 "Root Scene_Drova05": {
+"generate/lightmap_uv": 0,
+"generate/lods": 0,
+"generate/shadow_meshes": 0,
+"lods/normal_merge_angle": 60.0,
+"lods/normal_split_angle": 25.0,
 "save_to_file/enabled": true,
 "save_to_file/make_streamable": "",
 "save_to_file/path": "res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Drova.Drova05.mesh"
