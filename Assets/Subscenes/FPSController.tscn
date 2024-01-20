@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cmrhbqoxo6fop" path="res://Assets/Subscenes/Mushroom.tscn" id="3_lr56x"]
 [ext_resource type="PackedScene" uid="uid://bxisjcqrti8f4" path="res://Assets/Subscenes/Stone.tscn" id="4_x4op4"]
 [ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/Subscenes/Wood.tscn" id="5_4fa0q"]
-[ext_resource type="Script" path="res://Assets/Scenes/RayCast3D.gd" id="7_uo6br"]
+[ext_resource type="Script" path="res://Assets/Scripts/RayCast3D.gd" id="6_e58vi"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hnq1i"]
 
@@ -60,4 +60,4 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.52, 0.28, -1.1)
 
 [node name="RayCast3D" type="RayCast3D" parent="."]
 transform = Transform3D(7, 0, 0, 0, -3.0598e-07, -7, 0, 7, -3.0598e-07, 0.00366211, 0.500061, -0.00683594)
-script = ExtResource("7_uo6br")
+script = ExtResource("6_e58vi")

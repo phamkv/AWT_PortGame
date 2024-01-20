@@ -53,8 +53,3 @@ func attack_enemy():
 
 func interaction() -> void:
 	attack_enemy()
-
-func _input(event: InputEvent) -> void:
-	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-			pass

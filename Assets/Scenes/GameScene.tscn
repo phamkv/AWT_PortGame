@@ -22,7 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://deiko1p27il0k" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Oak_tree1.prefab.tscn" id="21_8hftc"]
 [ext_resource type="Script" path="res://Assets/Scripts/UI/InventorySlot.gd" id="22_lfxcs"]
 [ext_resource type="AudioStream" uid="uid://fsnn7bqgv8sa" path="res://Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/walking/walking-3.wav" id="23_kvkxj"]
-[ext_resource type="PackedScene" uid="uid://c41sbsojredno" path="res://Assets/Scenes/warrior.tscn" id="24_84g0w"]
+[ext_resource type="PackedScene" uid="uid://c41sbsojredno" path="res://Assets/Subscenes/warrior.tscn" id="24_84g0w"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nwpca"]
 sky_top_color = Color(0.407843, 0.611765, 0.792157, 1)

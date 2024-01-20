@@ -1,6 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://deiko1p27il0k"]
+[gd_scene load_steps=8 format=3 uid="uid://deiko1p27il0k"]
 
 [ext_resource type="ArrayMesh" uid="uid://bqfetfm034i7t" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/FBX/extracted/Oak_tree1.Oak_tree1.mesh" id="1_3iw0n"]
+[ext_resource type="Script" path="res://Assets/Scripts/Interactable.gd" id="1_e3hl1"]
+[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/Subscenes/Wood.tscn" id="2_3digk"]
 [ext_resource type="Material" uid="uid://brhwc5k6fp0j6" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Oak_bark.mat.tres" id="2_dxfut"]
 [ext_resource type="Material" uid="uid://clv8ce3p07g63" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Oak_leaves.mat.tres" id="3_uhspf"]
 [ext_resource type="AudioStream" uid="uid://1bro18c8m6o6" path="res://Assets/Audio/CasualGameSounds/DM-CGS-22.wav" id="4_2qqew"]
@@ -10,6 +12,8 @@ radius = 1.93
 height = 4.29
 
 [node name="Oak_tree1" type="Node3D"]
+script = ExtResource("1_e3hl1")
+replacementObject = ExtResource("2_3digk")
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="."]
 editor_description = "[MeshRenderer 23::783807170dc366141aaaeb44eec96c04:23693811526290372]"

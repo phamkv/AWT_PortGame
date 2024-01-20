@@ -1,6 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://c5ry72yumh6ow"]
+[gd_scene load_steps=8 format=3 uid="uid://c5ry72yumh6ow"]
 
 [ext_resource type="ArrayMesh" uid="uid://gwk51xds5xol" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/FBX/extracted/Deciduous_tree1.Deciduous_tree1.mesh" id="1_a14vt"]
+[ext_resource type="Script" path="res://Assets/Scripts/Interactable.gd" id="1_rmu7k"]
+[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/Subscenes/Wood.tscn" id="2_ebtjl"]
 [ext_resource type="Material" uid="uid://dsn45mbumc2qc" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Tree_bark1.mat.tres" id="2_p8wca"]
 [ext_resource type="Material" uid="uid://cvbrdgb2n7li7" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Tree_leaves1.mat.tres" id="3_t66ew"]
 [ext_resource type="AudioStream" uid="uid://1bro18c8m6o6" path="res://Assets/Audio/CasualGameSounds/DM-CGS-22.wav" id="4_jnmed"]
@@ -10,6 +12,8 @@ radius = 1.33
 height = 2.66
 
 [node name="Deciduous_tree1" type="Node3D"]
+script = ExtResource("1_rmu7k")
+replacementObject = ExtResource("2_ebtjl")
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="."]
 editor_description = "[MeshRenderer 23::dc20bf501e8161b40859eb66568d49f6:2795318547081664924]"

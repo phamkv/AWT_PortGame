@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://qhrmt5b303gj"]
+[gd_scene load_steps=8 format=3 uid="uid://qhrmt5b303gj"]
 
 [ext_resource type="ArrayMesh" uid="uid://cu6o154xn7st3" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/FBX/extracted/Birch_tree1.Birch_tree1.mesh" id="1_de0j4"]
+[ext_resource type="Script" path="res://Assets/Scripts/Interactable.gd" id="1_jl8rp"]
 [ext_resource type="Material" uid="uid://c505io10qc6py" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_bark.mat.tres" id="2_e1ffr"]
+[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/Subscenes/Wood.tscn" id="2_pihlm"]
 [ext_resource type="Material" uid="uid://dcys4r8nxjpcw" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/Birch_leaves 1.mat.tres" id="3_e42kj"]
 [ext_resource type="AudioStream" uid="uid://1bro18c8m6o6" path="res://Assets/Audio/CasualGameSounds/DM-CGS-22.wav" id="4_2dpjd"]
 
@@ -10,6 +12,8 @@ radius = 0.64
 height = 12.2739
 
 [node name="Birch_tree2" type="Node3D"]
+script = ExtResource("1_jl8rp")
+replacementObject = ExtResource("2_pihlm")
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="."]
 editor_description = "[MeshRenderer 23::d0fef57aa8c0772448a3a57390d3c153:23320235798237312]"
