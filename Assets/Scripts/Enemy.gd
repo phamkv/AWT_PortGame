@@ -13,9 +13,12 @@ var time_since_last_attack : float = 0.0
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
+
+
 func _ready():
 	player = get_node("/root/GameScene/Player")
 	game_manager = get_node("/root/GameScene/GameManager")
+
 	
 	if player == null:
 		printerr("Player not found.")
@@ -45,7 +48,11 @@ func attack_player(delta):
 	else:
 		time_since_last_attack += delta
 		
+func attack_enemy():
+	queue_free()
 
+func interaction() -> void:
+	attack_enemy()
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
