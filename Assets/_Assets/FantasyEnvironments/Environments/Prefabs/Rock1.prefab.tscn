@@ -11,6 +11,7 @@ data = PackedVector3Array(-0.0588, 5.3192, -0.0142, -0.5921, 5.0581, -0.5966, 0.
 [node name="Rock1" type="Node3D"]
 script = ExtResource("1_v0vpo")
 replacementObject = ExtResource("2_6bs8s")
+dropCount = 5
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="."]
 editor_description = "[MeshRenderer 23::c07f24e35f07ce74ba43afa35d48adf7:23733905104197934]"

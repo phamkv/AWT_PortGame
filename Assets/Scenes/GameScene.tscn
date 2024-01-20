@@ -1170,7 +1170,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Player" parent="." instance=ExtResource("15_js1yv")]
-transform = Transform3D(0.251674, 0, 0, 0, 0.251674, 0, 0, 0, 0.251674, -576.206, 74.2144, 525.45)
+transform = Transform3D(0.251674, 0, 0, 0, 0.251674, 0, 0, 0, 0.251674, -576.206, 74.5114, 525.45)
 WALKING_SPEED = null
 SPRINTING_SPEED = null
 JUMP_VELOCITY = null

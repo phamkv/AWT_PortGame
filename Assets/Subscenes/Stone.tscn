@@ -3,10 +3,10 @@
 [ext_resource type="ArrayMesh" uid="uid://pyc3nsm2anvq" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/extracted/SM_Env_Rock_014.SM_Env_Rock_014.mesh" id="1_hlvgo"]
 [ext_resource type="Material" uid="uid://ciwmhcp0p0al" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Materials/PolyAdventureMaterial_01.mat.tres" id="2_f12hs"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gt1kl"]
-points = PackedVector3Array(0.223324, -0.0121854, 0.0866638, 0.134335, 0.23737, 0.119426, 0.0757745, -0.0120777, 0.251198, -0.0277446, -0.0615721, -0.0341533, -0.0367097, 0.00541418, -0.276718, 0.148909, 0.0676234, -0.0922881, 0.105673, 0.167726, -0.132698, -0.04435, 0.168552, 0.236471, -0.121415, 0.305362, -0.0852086, -0.138992, 0.29746, 0.0341616, -0.148487, -0.0198359, 0.223707, -0.183244, -0.011503, -0.146599, -0.0365772, 0.178142, -0.223905, -0.172866, 0.194664, -0.153627, -0.227407, 0.169773, 0.0432048, -0.227849, 0.152497, 0.0433081)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o7sty"]
+points = PackedVector3Array(0.22895, -0.015707, 0.06689, 0.0194997, -0.0676248, 0.095948, -0.0209292, -0.0681114, -0.0073196, 0.130433, -0.0136108, -0.147636, 0.213532, 0.145736, 0.0426936, 0.20022, 0.141693, 0.156467, 0.19771, -0.0028679, 0.176975, 0.0665622, -0.0161187, 0.25722, -0.0686191, -0.0215838, 0.285439, -0.169422, -0.0408237, 0.134115, -0.224822, -0.0227067, 0.0319645, -0.179328, -0.0103168, -0.164568, -0.0145197, -0.0240543, -0.231569, -0.0258147, 0.0039821, -0.285438, 0.106319, 0.162842, -0.139422, 0.138456, 0.238005, 0.054708, 0.134646, 0.237369, 0.120647, 0.0551328, 0.275961, -0.0638709, -0.0358995, 0.160709, 0.251464, -0.151404, -0.0187764, 0.224865, -0.228945, 0.168906, 0.0422466, -0.174263, 0.190991, -0.156856, -0.0355409, 0.178826, -0.224193, -0.121777, 0.314291, -0.0777293, -0.144591, 0.299468, 0.028947, -0.00600363, 0.248935, 0.172952)
 
-[node name="Stone" type="Node3D"]
+[node name="Node3D" type="Node3D"]
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="."]
 editor_description = "[MeshRenderer 23::fe78b30f7a980d748a46c587a31099fc:2300578]"
@@ -59,8 +59,5 @@ metadata/unidot_keys = {
 "m_TagString": "Untagged"
 }
 
-[node name="MeshCollider" type="StaticBody3D" parent="."]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshCollider"]
-shape = SubResource("ConvexPolygonShape3D_gt1kl")
-disabled = true
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_o7sty")
