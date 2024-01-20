@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://bae3uipa04rvp"]
+
+[ext_resource type="Script" path="res://Assets/Scenes/Camera3D.gd" id="1_msuhr"]
+[ext_resource type="PackedScene" uid="uid://bd3t6uyem3m88" path="res://Assets/Subscenes/FPSController.tscn" id="2_y673i"]
+[ext_resource type="Script" path="res://Assets/Scripts/GameManager.gd" id="3_qjcrn"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_0s3yu"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nfbme"]
+points = PackedVector3Array(0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5)
+
+[node name="GameScene" type="Node3D"]
+
+[node name="Node3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37862, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]
+mesh = SubResource("BoxMesh_0s3yu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D"]
+shape = SubResource("ConvexPolygonShape3D_nfbme")
+
+[node name="Node3D2" type="StaticBody3D" parent="."]
+transform = Transform3D(9.14317, 0, 0, 0, 0.550352, 0, 0, 0, 8.19746, 0, -1.30329, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D2"]
+mesh = SubResource("BoxMesh_0s3yu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node3D2"]
+shape = SubResource("ConvexPolygonShape3D_nfbme")
+
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("3_qjcrn")
+
+[node name="Player" parent="." instance=ExtResource("2_y673i")]
+transform = Transform3D(0.251674, 0, 0, 0, 0.251674, 0, 0, 0, 0.251674, 2.29418, 4.76837e-07, 2.19803)
+
+[node name="RayCast3D" type="RayCast3D" parent="Player"]
+transform = Transform3D(3.015, 0, 0, 0, -1.21613e-06, -3.015, 0, 27.8218, -1.3179e-07, 0.207118, 0.487303, -0.340017)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.78876)
+visible = false
+script = ExtResource("1_msuhr")
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, -2.17792e-07, -1, 0, 4.9825, -4.37114e-08, 0, 0, 0)
