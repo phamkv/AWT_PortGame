@@ -7,8 +7,8 @@ var attack_radius : float = 2.0
 var attack_damage : int = 20
 var attack_cooldown : float = 3.0
 
-var game_manager : GameManager
-var player : Player
+var game_manager : Node
+var player : Node
 var time_since_last_attack : float = 0.0
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")

@@ -105,14 +105,19 @@ func SelectSlot(inventorySlot: Node):
 					Recipes.none:
 						pass
 				currentRecipe = Recipes.none
-		elif (inventorySlot.slotType == SlotType.Crafting && (inventorySlot.itemName == selectedInventorySlot.itemName || selectedInventorySlot.IsSlotEmpty()) && !inventorySlot.IsSlotEmpty() && inventorySlot.GetItemCount() > 1):
+		elif (inventorySlot.slotType == SlotType.Crafting && (inventorySlot.itemName == selectedInventorySlot.itemName || inventorySlot.IsSlotEmpty()) && !selectedInventorySlot.IsSlotEmpty() && selectedInventorySlot.GetItemCount() > 1):
+			if (inventorySlot.IsSlotEmpty()):
+				inventorySlot.UpdateSlot(selectedInventorySlot.SlotImage.get_texture(),"0",selectedInventorySlot.itemName)
 			inventorySlot.ModifyItemCount(1)
 			selectedInventorySlot.ModifyItemCount(-1)
-		elif (selectedInventorySlot.slotType == SlotType.Crafting && (inventorySlot.itemName == selectedInventorySlot.itemName || inventorySlot.IsSlotEmpty()) && !selectedInventorySlot.IsSlotEmpty() && selectedInventorySlot.GetItemCount() > 1):
+		elif (selectedInventorySlot.slotType == SlotType.Crafting && (inventorySlot.itemName == selectedInventorySlot.itemName || selectedInventorySlot.IsSlotEmpty()) && !inventorySlot.IsSlotEmpty() && inventorySlot.GetItemCount() > 1):
+			if (selectedInventorySlot.IsSlotEmpty()):
+				selectedInventorySlot.UpdateSlot(inventorySlot.SlotImage.get_texture(),"0",inventorySlot.itemName)
 			inventorySlot.ModifyItemCount(-1)
 			selectedInventorySlot.ModifyItemCount(1)
-		elif (selectedInventorySlot.itemName == inventorySlot.itemName && inventorySlot.IsNotEmpty()):
-			inventorySlot.UpdateSlot(selectedInventorySlot.SlotImage.get_texture(),selectedInventorySlot.ItemCount.get_text(),selectedInventorySlot.itemName)
+		elif (selectedInventorySlot.itemName == inventorySlot.itemName && !selectedInventorySlot.IsSlotEmpty()):
+			inventorySlot.UpdateSlot(selectedInventorySlot.SlotImage.get_texture(),inventorySlot.ItemCount.get_text(),selectedInventorySlot.itemName)
+			inventorySlot.ModifyItemCount(selectedInventorySlot.GetItemCount())
 			selectedInventorySlot.ClearSlot()
 		else:
 			swapInventorySlotContent(selectedInventorySlot, inventorySlot)

@@ -15,7 +15,6 @@ func _ready():
 			masterVolume = value/100
 			get_node("SoundSetting/VolumeNumber").text = str(value)
 			)
-	var soundValue = db_to_linear(AudioServer.get_bus_volume_db(busIndex))
-	masterVolume = soundValue
-	get_node("SoundSetting/VolumeSlider").value = int(soundValue*100)
-	get_node("SoundSetting/VolumeNumber").text = str(int(soundValue*100))
+	masterVolume = db_to_linear(AudioServer.get_bus_volume_db(busIndex))
+	get_node("SoundSetting/VolumeSlider").value = int(masterVolume*100)
+	get_node("SoundSetting/VolumeNumber").text = str(int(masterVolume*100))
