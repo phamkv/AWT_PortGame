@@ -1,16 +1,22 @@
-[gd_scene load_steps=16 format=3 uid="uid://bd3t6uyem3m88"]
+[gd_scene load_steps=24 format=3 uid="uid://bd3t6uyem3m88"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/player/player.gd" id="1_e80kd"]
 [ext_resource type="Script" path="res://Assets/Scripts/player/crosshair.gd" id="1_rnf1l"]
-[ext_resource type="PackedScene" uid="uid://cmrhbqoxo6fop" path="res://Assets/Subscenes/Mushroom.tscn" id="3_lr56x"]
 [ext_resource type="Script" path="res://Assets/Scripts/Interactable.gd" id="4_6r7p2"]
 [ext_resource type="ArrayMesh" uid="uid://pyc3nsm2anvq" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/extracted/SM_Env_Rock_014.SM_Env_Rock_014.mesh" id="4_7tvlk"]
-[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/Subscenes/Wood.tscn" id="5_4fa0q"]
 [ext_resource type="Texture2D" uid="uid://cc7eu2pvfew40" path="res://Assets/_Assets/Items/stone.png" id="5_b7oit"]
+[ext_resource type="Texture2D" uid="uid://m10syg7veunn" path="res://Assets/_Assets/Items/mushy.png" id="5_pe0ls"]
 [ext_resource type="Material" uid="uid://ciwmhcp0p0al" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Materials/PolyAdventureMaterial_01.mat.tres" id="5_t7fho"]
 [ext_resource type="PackedScene" uid="uid://b63fgac2mqtcw" path="res://Assets/Subscenes/Sword.tscn" id="6_4f52s"]
+[ext_resource type="ArrayMesh" uid="uid://dcenxl37x0do" path="res://Assets/_Assets/FantasyEnvironments/Environments/FBX/extracted/Mushroom1.Mushroom1.mesh" id="6_7qaci"]
 [ext_resource type="Script" path="res://Assets/Scripts/RayCast3D.gd" id="6_e58vi"]
 [ext_resource type="PackedScene" uid="uid://liia60pqnvld" path="res://Assets/Subscenes/Axe.tscn" id="7_a7wfq"]
+[ext_resource type="Material" uid="uid://cj6s6d3ivbio1" path="res://Assets/_Assets/FantasyEnvironments/Environments/Materials/Plant.mat.tres" id="7_w0r8e"]
+[ext_resource type="Texture2D" uid="uid://4xqeucw84f8l" path="res://Assets/_Assets/Items/dova.png" id="11_w3t1i"]
+[ext_resource type="ArrayMesh" uid="uid://civbdv2u5ejqr" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Drova.Drova02.mesh" id="12_ngghp"]
+[ext_resource type="Material" uid="uid://w2dbnwhyr6am" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/Wood_Bark01.mat.tres" id="13_3fq83"]
+[ext_resource type="Material" uid="uid://cmv7if42ejm72" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/WoodBark03.mat.tres" id="14_kkui3"]
+[ext_resource type="Material" uid="uid://dqkx6hegqcnx4" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/WoodBark02.mat.tres" id="15_luvdy"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hnq1i"]
 
@@ -18,8 +24,14 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_ljhwu"]
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dkdxh"]
+points = PackedVector3Array(0.00459462, -0.0199638, -0.14011, -0.0285337, -0.0197204, -0.175838, 0.116507, -0.016962, -0.105075, 0.033503, -0.0180979, 0.0253167, -0.00314751, -0.0195988, -0.0919619, -0.0647191, -0.0182601, 0.122752, -0.0792065, -0.0182195, -0.160548, -0.0309926, 0.0243736, -0.197067, 0.124481, 0.0206822, -0.114923, 0.139667, -0.0161102, -0.0817185, 0.0923499, -0.0159885, 0.0846488, 0.0669637, -0.0156234, 0.157292, -0.00590543, -0.0161507, 0.182084, -0.0924645, 0.043723, 0.141853, -0.0869487, -0.0178545, -0.112399, -0.0890088, 0.0274971, -0.179797, -0.110707, 0.0319592, -0.135063, -0.0707998, 0.192272, -0.227698, -0.0291651, 0.188661, -0.231756, 0.010908, 0.185335, -0.219583, 0.140796, 0.0748363, -0.121504, 0.149901, 0.0226698, -0.0892402, 0.15226, 0.0239274, -0.0559865, 0.116972, 0.0547567, 0.143733, 0.0529415, 0.0543916, 0.207173, -0.02551, 0.0481446, 0.209993, -0.106886, 0.279851, 0.223849, -0.143403, 0.274821, 0.168773, -0.155997, 0.270116, 0.103849, -0.107749, 0.195557, -0.207904, -0.134299, 0.198032, -0.175442, -0.14646, 0.19937, -0.135261, -0.0875468, 0.2173, -0.212457, -0.0125843, 0.21085, -0.218247, 0.049087, 0.205942, -0.17089, 0.0432721, 0.182739, -0.192911, 0.139035, 0.0879387, -0.11903, 0.164986, 0.0786494, -0.085034, 0.183461, 0.284192, 0.104591, 0.170203, 0.287802, 0.169465, 0.133121, 0.28979, 0.224393, 0.0778957, 0.289871, 0.261012, 0.0128684, 0.288005, 0.273779, -0.052026, 0.284476, 0.260715, -0.0733252, 0.315102, 0.235923, -0.136824, 0.306016, 0.135667, -0.116356, 0.299079, 0.014628, -0.134963, 0.221803, -0.15164, -0.0789075, 0.25535, -0.170395, 0.00735256, 0.248048, -0.161438, 0.102551, 0.305366, -0.0278793, 0.134317, 0.274415, -0.0153596, 0.160667, 0.0914679, -0.0848361, 0.170835, 0.279486, 0.0397168, 0.16605, 0.314453, 0.0723766, 0.145581, 0.32139, 0.193416, 0.0465617, 0.32139, 0.257103, -0.0210242, 0.368607, 0.192773, -0.0722951, 0.358344, 0.0658446, 0.0169222, 0.394447, 0.103453, 0.0531076, 0.36021, 0.0145291, 0.104378, 0.370473, 0.141457)
+
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o7sty"]
 points = PackedVector3Array(0.22895, -0.015707, 0.06689, 0.0194997, -0.0676248, 0.095948, -0.0209292, -0.0681114, -0.0073196, 0.130433, -0.0136108, -0.147636, 0.213532, 0.145736, 0.0426936, 0.20022, 0.141693, 0.156467, 0.19771, -0.0028679, 0.176975, 0.0665622, -0.0161187, 0.25722, -0.0686191, -0.0215838, 0.285439, -0.169422, -0.0408237, 0.134115, -0.224822, -0.0227067, 0.0319645, -0.179328, -0.0103168, -0.164568, -0.0145197, -0.0240543, -0.231569, -0.0258147, 0.0039821, -0.285438, 0.106319, 0.162842, -0.139422, 0.138456, 0.238005, 0.054708, 0.134646, 0.237369, 0.120647, 0.0551328, 0.275961, -0.0638709, -0.0358995, 0.160709, 0.251464, -0.151404, -0.0187764, 0.224865, -0.228945, 0.168906, 0.0422466, -0.174263, 0.190991, -0.156856, -0.0355409, 0.178826, -0.224193, -0.121777, 0.314291, -0.0777293, -0.144591, 0.299468, 0.028947, -0.00600363, 0.248935, 0.172952)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_t3bfi"]
+points = PackedVector3Array(0.0171597, -0.0186128, 0, 0.0171624, -0.0186128, 0, 0.0171597, -0.0186128, 0.0577476, -0.0106877, -0.0105288, 0, 0.0106851, 0.0105281, 0, 0.0171624, -0.0186128, 0.057742, 0.0106851, 0.0105281, 0.0577476, -0.0106877, -0.0105288, 0.0577476, -0.0106877, -0.00307247, 0, 0.0029102, 0.0105281, 0, 0.0029102, 0.0105281, 0.0577476, -0.0106877, -0.00307247, 0.0577476, -0.00917744, 0.00448373, 0, -0.00464662, 0.00901632, 0, -0.00464662, 0.00901632, 0.0577476, -0.00917744, 0.00448373, 0.0577476)
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_e80kd")
@@ -61,10 +73,69 @@ mesh = SubResource("BoxMesh_ljhwu")
 
 [node name="MainHand" type="Node3D" parent="."]
 
-[node name="Mushroom" parent="MainHand" instance=ExtResource("3_lr56x")]
+[node name="Mushroom" type="Node3D" parent="MainHand"]
 transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, 0.52, 0.1, -0.85)
+script = ExtResource("4_6r7p2")
+canBePickedUp = true
+itemPicture = ExtResource("5_pe0ls")
+displayName = "Mushroom"
 
-[node name="Stone" type="StaticBody3D" parent="MainHand"]
+[node name="MeshRenderer" type="MeshInstance3D" parent="MainHand/Mushroom"]
+editor_description = "[MeshRenderer 23::dea84a3662be77b4bad1db42d2b32262:23264161567117498]"
+layers = 8
+gi_mode = 2
+mesh = ExtResource("6_7qaci")
+surface_material_override/0 = ExtResource("7_w0r8e")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 1596872523515200, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 3,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "7805f02cde847fa488989988fbc3d7eb", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 4294967295,
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1,
+"m_TagString": "Untagged"
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MainHand/Mushroom"]
+shape = SubResource("ConvexPolygonShape3D_dkdxh")
+
+[node name="Stone" type="Node3D" parent="MainHand"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52, 0.1, -0.85)
 script = ExtResource("4_6r7p2")
 canBePickedUp = true
@@ -127,8 +198,68 @@ metadata/unidot_keys = {
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
 shape = SubResource("ConvexPolygonShape3D_o7sty")
 
-[node name="Wood" parent="MainHand" instance=ExtResource("5_4fa0q")]
+[node name="Wood" type="Node3D" parent="MainHand"]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.52, 0.28, -1.1)
+script = ExtResource("4_6r7p2")
+canBePickedUp = true
+itemPicture = ExtResource("11_w3t1i")
+displayName = "Wood"
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="MainHand/Wood"]
+editor_description = "[MeshRenderer 23::92028abf4453dd444abfa92bedf0449c:2363632]"
+gi_mode = 2
+mesh = ExtResource("12_ngghp")
+surface_material_override/0 = ExtResource("13_3fq83")
+surface_material_override/1 = ExtResource("14_kkui3")
+surface_material_override/2 = ExtResource("15_luvdy")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 118898, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "d6425f15177796044bd3ad0c26c16ec5", 2], [null, 2100000, "014150c6ade3b1340b696255604095ad", 2], [null, 2100000, "56f784e4b3ef58840ad2d1e4bfabd1c9", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1,
+"m_TagString": "Untagged"
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MainHand/Wood"]
+shape = SubResource("ConvexPolygonShape3D_t3bfi")
 
 [node name="Sword" parent="MainHand" instance=ExtResource("6_4f52s")]
 transform = Transform3D(-0.03, 2.29282e-16, 2.62268e-09, 0, -0.03, 2.62268e-09, 2.62268e-09, 2.62268e-09, 0.03, 0.52, 1, -0.85)

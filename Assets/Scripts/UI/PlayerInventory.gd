@@ -142,11 +142,11 @@ func checkForValidRecipe():
 	for itemSlot in craftingSlots:
 		slotContent[count] = itemSlot.itemName
 		count +=1
-	if (slotContent[0] == pickaxeRecipe[0] && slotContent[1] == pickaxeRecipe[1] && slotContent[2] == pickaxeRecipe[2] && slotContent[3] == pickaxeRecipe[4]):
+	if (slotContent[0] == pickaxeRecipe[0] && slotContent[1] == pickaxeRecipe[1] && slotContent[2] == pickaxeRecipe[2] && slotContent[3] == pickaxeRecipe[3]):
 		craftingResultSlot.UpdateSlot(load("res://Assets/_Assets/Items/Axe.png"),1,"Axe")
 		currentRecipe = Recipes.pickaxe
-	elif (slotContent[0] == swordRecipe[0] && slotContent[1] == swordRecipe[1] && slotContent[2] == swordRecipe[2] && slotContent[3] == swordRecipe[4]):
-		craftingResultSlot.UpdateSlot(load("res://Assets/_Assets/Items/Sword.png"),1,"Sword")
+	elif (slotContent[0] == swordRecipe[0] && slotContent[1] == swordRecipe[1] && slotContent[2] == swordRecipe[2] && slotContent[3] == swordRecipe[3]):
+		craftingResultSlot.UpdateSlot(load("res://Assets/_Assets/Items/Sword.png"),str(1),"Sword")
 		currentRecipe = Recipes.sword
 	else:
 		currentRecipe = Recipes.none
