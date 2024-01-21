@@ -43,7 +43,7 @@ func _ready():
 	)
 	GameManager.itemDropped.connect(func():
 		if (!mainHandSlot.IsSlotEmpty()):
-			for i in mainHandSlot.getItemCount():
+			for i in mainHandSlot.GetItemCount():
 				#Add: spawn Items
 				pass
 			mainHandSlot.ClearSlot()
