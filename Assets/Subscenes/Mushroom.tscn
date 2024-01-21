@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmrhbqoxo6fop"]
+[gd_scene load_steps=6 format=3 uid="uid://cmrhbqoxo6fop"]
 
+[ext_resource type="Script" path="res://Assets/Scripts/Interactable.gd" id="1_2wd50"]
 [ext_resource type="ArrayMesh" uid="uid://dcenxl37x0do" path="res://Assets/_Assets/FantasyEnvironments/Environments/FBX/extracted/Mushroom1.Mushroom1.mesh" id="1_aaufb"]
+[ext_resource type="Texture2D" uid="uid://m10syg7veunn" path="res://Assets/_Assets/Items/mushy.png" id="2_nvnc8"]
 [ext_resource type="Material" uid="uid://cj6s6d3ivbio1" path="res://Assets/_Assets/FantasyEnvironments/Environments/Materials/Plant.mat.tres" id="2_w2hvr"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_15ac2"]
@@ -8,6 +10,9 @@ size = Vector3(0.339458, 0.414413, 0.505543)
 
 [node name="Mushroom" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, 0, 0, 0)
+script = ExtResource("1_2wd50")
+canBePickedUp = true
+itemPicture = ExtResource("2_nvnc8")
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="."]
 editor_description = "[MeshRenderer 23::dea84a3662be77b4bad1db42d2b32262:23264161567117498]"

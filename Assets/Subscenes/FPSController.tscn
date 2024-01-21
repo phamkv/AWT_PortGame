@@ -1,10 +1,13 @@
-[gd_scene load_steps=12 format=3 uid="uid://bd3t6uyem3m88"]
+[gd_scene load_steps=16 format=3 uid="uid://bd3t6uyem3m88"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/player/player.gd" id="1_e80kd"]
 [ext_resource type="Script" path="res://Assets/Scripts/player/crosshair.gd" id="1_rnf1l"]
 [ext_resource type="PackedScene" uid="uid://cmrhbqoxo6fop" path="res://Assets/Subscenes/Mushroom.tscn" id="3_lr56x"]
-[ext_resource type="PackedScene" uid="uid://bxisjcqrti8f4" path="res://Assets/Subscenes/Stone.tscn" id="4_x4op4"]
+[ext_resource type="Script" path="res://Assets/Scripts/Interactable.gd" id="4_6r7p2"]
+[ext_resource type="ArrayMesh" uid="uid://pyc3nsm2anvq" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Models/extracted/SM_Env_Rock_014.SM_Env_Rock_014.mesh" id="4_7tvlk"]
 [ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/Subscenes/Wood.tscn" id="5_4fa0q"]
+[ext_resource type="Texture2D" uid="uid://cc7eu2pvfew40" path="res://Assets/_Assets/Items/stone.png" id="5_b7oit"]
+[ext_resource type="Material" uid="uid://ciwmhcp0p0al" path="res://Assets/_Assets/SyntyStudios/PolygonAdventure/Materials/PolyAdventureMaterial_01.mat.tres" id="5_t7fho"]
 [ext_resource type="PackedScene" uid="uid://b63fgac2mqtcw" path="res://Assets/Subscenes/Sword.tscn" id="6_4f52s"]
 [ext_resource type="Script" path="res://Assets/Scripts/RayCast3D.gd" id="6_e58vi"]
 [ext_resource type="PackedScene" uid="uid://liia60pqnvld" path="res://Assets/Subscenes/Axe.tscn" id="7_a7wfq"]
@@ -14,6 +17,9 @@
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_frc8v"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_ljhwu"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o7sty"]
+points = PackedVector3Array(0.22895, -0.015707, 0.06689, 0.0194997, -0.0676248, 0.095948, -0.0209292, -0.0681114, -0.0073196, 0.130433, -0.0136108, -0.147636, 0.213532, 0.145736, 0.0426936, 0.20022, 0.141693, 0.156467, 0.19771, -0.0028679, 0.176975, 0.0665622, -0.0161187, 0.25722, -0.0686191, -0.0215838, 0.285439, -0.169422, -0.0408237, 0.134115, -0.224822, -0.0227067, 0.0319645, -0.179328, -0.0103168, -0.164568, -0.0145197, -0.0240543, -0.231569, -0.0258147, 0.0039821, -0.285438, 0.106319, 0.162842, -0.139422, 0.138456, 0.238005, 0.054708, 0.134646, 0.237369, 0.120647, 0.0551328, 0.275961, -0.0638709, -0.0358995, 0.160709, 0.251464, -0.151404, -0.0187764, 0.224865, -0.228945, 0.168906, 0.0422466, -0.174263, 0.190991, -0.156856, -0.0355409, 0.178826, -0.224193, -0.121777, 0.314291, -0.0777293, -0.144591, 0.299468, 0.028947, -0.00600363, 0.248935, 0.172952)
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_e80kd")
@@ -54,8 +60,67 @@ mesh = SubResource("BoxMesh_ljhwu")
 [node name="Mushroom" parent="MainHand" instance=ExtResource("3_lr56x")]
 transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, 0.52, 0.1, -0.85)
 
-[node name="Stone" parent="MainHand" instance=ExtResource("4_x4op4")]
+[node name="Stone" type="StaticBody3D" parent="MainHand"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.52, 0.1, -0.85)
+script = ExtResource("4_6r7p2")
+canBePickedUp = true
+itemPicture = ExtResource("5_b7oit")
+
+[node name="MeshRenderer" type="MeshInstance3D" parent="MainHand/Stone"]
+editor_description = "[MeshRenderer 23::fe78b30f7a980d748a46c587a31099fc:2300578]"
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+gi_mode = 2
+mesh = ExtResource("4_7tvlk")
+surface_material_override/0 = ExtResource("5_t7fho")
+metadata/unidot_keys = {
+"m_AdditionalVertexStreams": [null, 0, null, null],
+"m_AutoUVMaxAngle": 89,
+"m_AutoUVMaxDistance": 0.5,
+"m_CastShadows": 1,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_DynamicOccludee": 1,
+"m_Enabled": 1,
+"m_GameObject": [null, 185840, null, null],
+"m_IgnoreNormalsForChartDetection": 0,
+"m_ImportantGI": 0,
+"m_Layer": 0,
+"m_LightProbeUsage": 1,
+"m_LightProbeVolumeOverride": [null, 0, null, null],
+"m_LightmapParameters": [null, 0, null, null],
+"m_Materials": [[null, 2100000, "fa8eda4ec55ee1a4e99ca991c5828dbf", 2]],
+"m_MinimumChartSize": 4,
+"m_MotionVectors": 1,
+"m_ObjectHideFlags": 0,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_PreserveUVs": 0,
+"m_ProbeAnchor": [null, 0, null, null],
+"m_RayTraceProcedural": 0,
+"m_RayTracingMode": 2,
+"m_ReceiveGI": 1,
+"m_ReceiveShadows": 1,
+"m_ReflectionProbeUsage": 1,
+"m_RendererPriority": 0,
+"m_RenderingLayerMask": 1,
+"m_ScaleInLightmap": 1,
+"m_SelectedEditorRenderState": 3,
+"m_SortingLayer": 0,
+"m_SortingLayerID": 0,
+"m_SortingOrder": 0,
+"m_StaticBatchInfo": {
+"firstSubMesh": 0,
+"subMeshCount": 0
+},
+"m_StaticBatchRoot": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_StaticShadowCaster": 0,
+"m_StitchLightmapSeams": 1,
+"m_TagString": "Untagged"
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MainHand/Stone"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_o7sty")
 
 [node name="Wood" parent="MainHand" instance=ExtResource("5_4fa0q")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.52, 0.28, -1.1)

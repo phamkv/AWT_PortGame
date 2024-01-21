@@ -3,17 +3,17 @@ extends Node3D
 @export var replacementObject: PackedScene
 @export var dropCount: int = 1
 
-var health: int = 5
+@export var canBePickedUp: bool = false
+@export var itemPicture: Texture
 
+
+var health: int = 5
 
 func _ready():
 	pass
 
-
-
 func _process(delta):
 	pass
-	
 
 func destroy_object():
 	for i in range(dropCount):
@@ -28,8 +28,14 @@ func destroy_object():
 		replacementInstance.transform.origin = transform.origin + randomPosition
 	queue_free()
 
+func pickUp():
+	queue_free()
+
 func interaction() -> void:
-	if health > 0:
-		health -= 1
+	if canBePickedUp:
+		pickUp()
 	else:
-		destroy_object()
+		if health > 0:
+			health -= 1
+		else:
+			destroy_object()

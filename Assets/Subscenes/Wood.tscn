@@ -1,6 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dmpvfyog8hkeh"]
+[gd_scene load_steps=8 format=3 uid="uid://dmpvfyog8hkeh"]
 
 [ext_resource type="ArrayMesh" uid="uid://civbdv2u5ejqr" path="res://Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/extracted/Drova.Drova02.mesh" id="1_4hldb"]
+[ext_resource type="Script" path="res://Assets/Scripts/Interactable.gd" id="1_ioxwm"]
+[ext_resource type="Texture2D" uid="uid://4xqeucw84f8l" path="res://Assets/_Assets/Items/dova.png" id="2_gxnxr"]
 [ext_resource type="Material" uid="uid://w2dbnwhyr6am" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/Wood_Bark01.mat.tres" id="2_kr8fk"]
 [ext_resource type="Material" uid="uid://cmv7if42ejm72" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/WoodBark03.mat.tres" id="3_6eitf"]
 [ext_resource type="Material" uid="uid://dqkx6hegqcnx4" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/WoodBark02.mat.tres" id="4_3bacw"]
@@ -10,6 +12,9 @@ data = PackedVector3Array(0.0172, -0.0186, 0, 0.0107, 0.0105, 0, 0.0029, 0.0105,
 
 [node name="Wood" type="Node3D"]
 transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
+script = ExtResource("1_ioxwm")
+canBePickedUp = true
+itemPicture = ExtResource("2_gxnxr")
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="."]
 editor_description = "[MeshRenderer 23::92028abf4453dd444abfa92bedf0449c:2363632]"

@@ -11,7 +11,7 @@ enum State {IDLE, WALKING, JUMPING, SPRINTING}
 @export_range(1, 10, 0.1) var WALKING_SPEED: float = 3.0
 @export_range(1, 10, 0.1) var SPRINTING_SPEED: float = 5.5
 @export_range(1, 10, 0.1) var JUMP_VELOCITY: float = 4
-@export_range(0, 1, 0.1) var MOUSE_SENSIBILITY: float = 0.1
+@export_range(0, 1, 0.1) var MOUSE_SENSIBILITY: float = 0.2
 @export_range(0, 20, 0.1) var LERP_SPEED: float = 10.0
 @export_range(1, 10, 0.1) var BOB_FREQ: float = 2.0
 @export_range(0, 1, 0.01) var BOB_AMP: float = 0.05

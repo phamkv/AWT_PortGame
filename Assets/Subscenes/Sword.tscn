@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://b63fgac2mqtcw"]
+[gd_scene load_steps=9 format=3 uid="uid://b63fgac2mqtcw"]
 
 [ext_resource type="Script" path="res://addons/unidot_importer/runtime/anim_tree.gd" id="1_g8m8e"]
+[ext_resource type="Script" path="res://Assets/Scripts/Interactable.gd" id="1_x5fhw"]
 [ext_resource type="Texture2D" uid="uid://n543gr7ma8b0" path="res://Assets/_Assets/Tools/sword_a/Materials/sword_a_Textures/sword_a_low_DefaultMaterial_BaseColor_03.png" id="2_cywfg"]
 [ext_resource type="ArrayMesh" uid="uid://daty600uyqxgy" path="res://Assets/_Assets/Tools/sword_a/extracted/sword_a.blade_low.mesh" id="2_hdbpc"]
+[ext_resource type="Texture2D" uid="uid://m5s0qt0fjld2" path="res://Assets/_Assets/Items/Sword.png" id="2_xhph1"]
 [ext_resource type="ArrayMesh" uid="uid://bj0518t243w5" path="res://Assets/_Assets/Tools/sword_a/extracted/sword_a.handle_low.mesh" id="3_5htsn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oxlfo"]
@@ -13,6 +15,9 @@ albedo_texture = ExtResource("2_cywfg")
 
 [node name="sword_a" type="Node3D"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 3.8)
+script = ExtResource("1_x5fhw")
+canBePickedUp = true
+itemPicture = ExtResource("2_xhph1")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
