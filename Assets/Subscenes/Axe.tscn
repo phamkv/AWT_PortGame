@@ -21,6 +21,7 @@ albedo_texture = ExtResource("2_uysvy")
 script = ExtResource("2_fjpic")
 canBePickedUp = true
 itemPicture = ExtResource("3_h70fp")
+displayName = "Axe"
 
 [node name="axe02_low" parent="axe_a" index="0"]
 material_override = SubResource("StandardMaterial3D_io1x5")

@@ -15,6 +15,7 @@ transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
 script = ExtResource("1_ioxwm")
 canBePickedUp = true
 itemPicture = ExtResource("2_gxnxr")
+displayName = "Wood"
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="."]
 editor_description = "[MeshRenderer 23::92028abf4453dd444abfa92bedf0449c:2363632]"

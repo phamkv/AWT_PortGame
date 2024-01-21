@@ -1,6 +1,6 @@
 extends Control
 
-@onready var head_raycast: RayCast3D = $"../../RayCast3D"
+@onready var head_raycast: RayCast3D = $"../../Head/RayCast3D"
 
 @export var DOT_RADIUS: float = 2.0
 @export var DOT_DEFAULT_COLOR: Color = Color.WHITE

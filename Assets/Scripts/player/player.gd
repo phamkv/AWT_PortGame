@@ -92,11 +92,34 @@ func move(delta: float, movement_speed: float) -> void:
 	else:
 		velocity.x = lerp(velocity.x, direction.x * JUMP_VELOCITY, delta * 2.0)
 		velocity.z = lerp(velocity.z, direction.z * JUMP_VELOCITY, delta * 2.0)
-		
+
+func _updateRayCast() -> void:
+	var raycast = $RayCast3D  # Adjust the path according to your scene structure
+
+	# Set the initial ray direction
+	var initial_ray_dir = Vector3(0, 0, -1)
+
+	# Apply rotation to the ray direction using rotate method
+	var rotated_ray_dir = initial_ray_dir.rotated(Vector3(1, 0, 0), head.rotation.x)
+	rotated_ray_dir = rotated_ray_dir.rotated(Vector3(0, 1, 0), rotation.y)
+
+	# Set the ray's direction directly
+	raycast.cast_to = rotated_ray_dir
+
+	# Set the ray's origin to the head's position
+	raycast.translation = head.global_transform.origin
+
+
+
+
+
 func _rotate_camera(_delta: float, _sens_mod: float = 1.0):
 	rotate_y(deg_to_rad(-look_dir.x * MOUSE_SENSIBILITY))
 	head.rotate_x(deg_to_rad(-look_dir.y * MOUSE_SENSIBILITY))
 	head.rotation.x = clamp(head.rotation.x, deg_to_rad(-40), deg_to_rad(60))
+	#$RayCast3D.rotate_x(deg_to_rad(-look_dir.y * MOUSE_SENSIBILITY))
+	#$RayCast3D.rotation.x = clamp(head.rotation.x, deg_to_rad(-40), deg_to_rad(60))
+	#_updateRayCast()  # Call the method to update RayCast3D
 	look_dir = Vector2.ZERO
 
 func headbob(time: float, freq: float, amp: float) -> Vector3:

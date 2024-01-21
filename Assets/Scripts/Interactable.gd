@@ -4,7 +4,9 @@ extends Node3D
 @export var dropCount: int = 1
 
 @export var canBePickedUp: bool = false
-@export var itemPicture: Texture
+@export var itemPicture: Texture2D
+@export var displayName: String = ""
+@export var itemCount: int = 1
 
 
 var health: int = 5
@@ -29,6 +31,11 @@ func destroy_object():
 	queue_free()
 
 func pickUp():
+	var inventory_node = get_node("/root/GameScene/UI/Player/Inventory")
+	if inventory_node:
+		inventory_node.AddItemToInventory(displayName, itemPicture, itemCount)
+	else:
+		print("PlayerInventory not found.")
 	queue_free()
 
 func interaction() -> void:

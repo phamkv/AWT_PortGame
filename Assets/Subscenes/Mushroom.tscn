@@ -13,6 +13,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, 0, 0, 0)
 script = ExtResource("1_2wd50")
 canBePickedUp = true
 itemPicture = ExtResource("2_nvnc8")
+displayName = "Mushroom"
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="."]
 editor_description = "[MeshRenderer 23::dea84a3662be77b4bad1db42d2b32262:23264161567117498]"

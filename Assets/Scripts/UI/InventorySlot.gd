@@ -41,7 +41,7 @@ func UpdateSlot(texture: Texture2D, itemCount: String, newItemName: String):
 	ItemCount.set_text(itemCount)
 
 func ModifyItemCount(value: int):
-	if (int(ItemCount.get_text())-value <= 0):
+	if (int(ItemCount.get_text())+value <= 0):
 		ClearSlot()
 		return
 	ItemCount.set_text(str(GetItemCount()+value))

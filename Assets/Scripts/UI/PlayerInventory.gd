@@ -73,11 +73,12 @@ func AddItemToInventory(itemName: String, texture: Texture2D, itemCount: int):
 		return
 	for inventorySlot in storageSlots:
 		if (inventorySlot.itemName == itemName):
-			inventorySlot.ModifyCount(itemCount)
+			inventorySlot.ModifyItemCount(itemCount)
 			return
 	for inventorySlot in storageSlots:
 		if (inventorySlot.IsSlotEmpty()):
-			inventorySlot.UpdateSlot(texture, itemCount, itemName)
+			inventorySlot.UpdateSlot(texture, str(itemCount), itemName)
+			return
 
 func SelectSlot(inventorySlot: Node):
 	checkForValidRecipe()
@@ -117,7 +118,7 @@ func SelectSlot(inventorySlot: Node):
 			swapInventorySlotContent(selectedInventorySlot, inventorySlot)
 		
 		if (inventorySlot.slotType == SlotType.Mainhand || selectedInventorySlot.slotType == SlotType.Mainhand):
-			Player.UpdateMainhand(mainHandSlot.itemName)
+			Player.UpdateMainHand(mainHandSlot.itemName)
 			pass
 		
 		selectedInventorySlot.Deselect()

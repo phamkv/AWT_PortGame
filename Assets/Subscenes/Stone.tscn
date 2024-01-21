@@ -12,6 +12,7 @@ points = PackedVector3Array(0.22895, -0.015707, 0.06689, 0.0194997, -0.0676248, 
 script = ExtResource("1_od24o")
 canBePickedUp = true
 itemPicture = ExtResource("2_we5xr")
+displayName = "Stone"
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="."]
 editor_description = "[MeshRenderer 23::fe78b30f7a980d748a46c587a31099fc:2300578]"
