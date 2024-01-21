@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://bhp7iqssiefk1"]
 
-[ext_resource type="PackedScene" uid="uid://b63fgac2mqtcw" path="res://Assets/_Assets/Tools/sword_a/prefab/sword_a.prefab.tscn" id="1_8w8t5"]
+[ext_resource type="PackedScene" uid="uid://b63fgac2mqtcw" path="res://Assets/Subscenes/Sword.tscn" id="1_8w8t5"]
 [ext_resource type="PackedScene" uid="uid://mlwph2jncuin" path="res://Assets/_Assets/Tools/lantern_a/prefab/lantern_a.prefab.tscn" id="2_s7a4e"]
 [ext_resource type="PackedScene" uid="uid://djg6hnvaojugc" path="res://Assets/_Assets/Tools/house_a/prefab/house_a.prefab.tscn" id="3_4nlaj"]
 [ext_resource type="PackedScene" uid="uid://b1rqum2ouyj5m" path="res://Assets/_Assets/Tools/axe_a/prefab/axe_a.prefab.tscn" id="4_5kwcj"]
