@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://dubn7u8ja2gke"]
+[gd_scene load_steps=32 format=3 uid="uid://dubn7u8ja2gke"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/GameManager.gd" id="1_in0hn"]
 [ext_resource type="AudioStream" uid="uid://brming4bs4fe6" path="res://Assets/Audio/Music Tracks/Zephyr.wav" id="3_dteuw"]
@@ -54,8 +54,6 @@ font = ExtResource("15_rdenq")
 font_size = 96
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_86mej"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ldf35"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_0axh8"]
 font = ExtResource("15_rdenq")
@@ -989,7 +987,7 @@ offset_bottom = 48.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/normal = SubResource("StyleBoxFlat_86mej")
-theme_override_styles/focus = SubResource("StyleBoxFlat_ldf35")
+theme_override_styles/focus = SubResource("StyleBoxFlat_86mej")
 icon_alignment = 1
 script = ExtResource("22_lfxcs")
 

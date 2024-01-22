@@ -18,9 +18,9 @@ func _ready():
 	)
 	
 func Select():
-	pass
+	SlotImage.modulate = Color.WHITE.lerp(Color.GRAY,0.3)
 func Deselect():
-	pass
+	SlotImage.modulate = Color.WHITE
 	
 func GetItemCount():
 	return int(ItemCount.get_text())

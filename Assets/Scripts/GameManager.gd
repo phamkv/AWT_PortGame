@@ -32,8 +32,11 @@ func _input(event):
 		isInventoryOpen = !isInventoryOpen
 		inventoryToggle.emit()
 	if event is InputEventMouseButton:
-		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and playerHealth < playerMaxHealth:
+		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and playerHealth < playerMaxHealth and get_node("/root/GameScene/UI/Player/Inventory").mainHandSlot.itemName == "Mushroom":
 			HealPlayer(10)
+			get_node("/root/GameScene/UI/Player/Inventory").mainHandSlot.ModifyItemCount(-1)
+			if (get_node("/root/GameScene/UI/Player/Inventory").mainHandSlot.IsSlotEmpty()):
+				get_node("/root/GameScene/Player").UpdateMainHand("")
 			
 func PlayerDeath():
 	if (isInventoryOpen):
