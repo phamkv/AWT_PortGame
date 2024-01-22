@@ -39,7 +39,6 @@ func pickUp():
 	queue_free()
 
 func interaction(mainHandSlot: Node) -> void:
-	print(mainHandSlot.GetItemName())
 	if canBePickedUp:
 		pickUp()
 	else:

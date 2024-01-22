@@ -29,6 +29,23 @@ var currentRecipe: Recipes = Recipes.none
 var swordRecipe: Array[String] = ["Stone", "", "Wood", ""]
 var pickaxeRecipe: Array[String] = ["Stone", "Stone", "Wood", ""]
 
+@export var AxeScene : PackedScene
+@export var SwordScene : PackedScene
+@export var WoodScene : PackedScene
+@export var MushroomScene : PackedScene
+@export var StoneScene : PackedScene
+
+func instantiate_item(scene: PackedScene) -> void:
+	var itemInstance = scene.instantiate()
+	
+	var playerPosition = Player.global_transform.origin
+	var playerForward = Player.global_transform.basis.z.normalized()
+	var spawnPosition = playerPosition - playerForward * 1.0
+	
+	itemInstance.global_transform.origin = spawnPosition
+	
+	get_tree().get_root().add_child(itemInstance)
+
 func _ready():
 	self.hide()
 	Player = get_node("/root/GameScene/Player")
@@ -44,8 +61,18 @@ func _ready():
 	GameManager.itemDropped.connect(func():
 		if (!mainHandSlot.IsSlotEmpty()):
 			for i in mainHandSlot.GetItemCount():
-				#Add: spawn Items
-				pass
+				var itemName = mainHandSlot.GetItemName()
+				match itemName:
+					"Sword":
+						instantiate_item(SwordScene)
+					"Axe":
+						instantiate_item(AxeScene)
+					"Wood":
+						instantiate_item(WoodScene)
+					"Mushroom":
+						instantiate_item(MushroomScene)
+					"Stone":
+						instantiate_item(StoneScene)
 			mainHandSlot.ClearSlot()
 			Player.UpdateMainHand("")
 	)

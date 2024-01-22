@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://dubn7u8ja2gke"]
+[gd_scene load_steps=36 format=3 uid="uid://dubn7u8ja2gke"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/GameManager.gd" id="1_in0hn"]
 [ext_resource type="AudioStream" uid="uid://brming4bs4fe6" path="res://Assets/Audio/Music Tracks/Zephyr.wav" id="3_dteuw"]
@@ -16,11 +16,15 @@
 [ext_resource type="Script" path="res://Assets/Scripts/UI/GamePause.gd" id="18_f10i1"]
 [ext_resource type="PackedScene" uid="uid://dqoolq5xt4jdu" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree1.prefab.tscn" id="19_yhdff"]
 [ext_resource type="Script" path="res://Assets/Scripts/UI/PlayerInventory.gd" id="20_6s3kg"]
+[ext_resource type="PackedScene" uid="uid://liia60pqnvld" path="res://Assets/Subscenes/Axe.tscn" id="20_26wqx"]
 [ext_resource type="PackedScene" uid="uid://c5ry72yumh6ow" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Deciduous_tree1.prefab.tscn" id="20_lupru"]
 [ext_resource type="PackedScene" uid="uid://c63gupufuhf5a" path="res://Assets/Subscenes/InventorySlot.tscn" id="20_tmecl"]
 [ext_resource type="Texture2D" uid="uid://d11gydeyw0d1y" path="res://Assets/_Assets/Items/empty_slot.png" id="21_5be7b"]
 [ext_resource type="PackedScene" uid="uid://deiko1p27il0k" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Oak_tree1.prefab.tscn" id="21_8hftc"]
+[ext_resource type="PackedScene" uid="uid://b63fgac2mqtcw" path="res://Assets/Subscenes/Sword.tscn" id="21_a6jhn"]
+[ext_resource type="PackedScene" uid="uid://dmpvfyog8hkeh" path="res://Assets/Subscenes/Wood.tscn" id="22_i01d2"]
 [ext_resource type="Script" path="res://Assets/Scripts/UI/InventorySlot.gd" id="22_lfxcs"]
+[ext_resource type="PackedScene" uid="uid://bxisjcqrti8f4" path="res://Assets/Subscenes/Stone.tscn" id="23_374m1"]
 [ext_resource type="AudioStream" uid="uid://fsnn7bqgv8sa" path="res://Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/walking/walking-3.wav" id="23_kvkxj"]
 [ext_resource type="PackedScene" uid="uid://c41sbsojredno" path="res://Assets/Subscenes/warrior.tscn" id="24_84g0w"]
 
@@ -820,6 +824,11 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("20_6s3kg")
+AxeScene = ExtResource("20_26wqx")
+SwordScene = ExtResource("21_a6jhn")
+WoodScene = ExtResource("22_i01d2")
+MushroomScene = ExtResource("9_wkacr")
+StoneScene = ExtResource("23_374m1")
 
 [node name="Storage" type="GridContainer" parent="UI/Player/Inventory"]
 layout_mode = 1
