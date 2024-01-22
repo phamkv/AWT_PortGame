@@ -7,11 +7,10 @@
 [ext_resource type="Material" uid="uid://cmv7if42ejm72" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/WoodBark03.mat.tres" id="3_6eitf"]
 [ext_resource type="Material" uid="uid://dqkx6hegqcnx4" path="res://Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/WoodBark02.mat.tres" id="4_3bacw"]
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_t3bfi"]
-points = PackedVector3Array(0.0171597, -0.0186128, 0, 0.0171624, -0.0186128, 0, 0.0171597, -0.0186128, 0.0577476, -0.0106877, -0.0105288, 0, 0.0106851, 0.0105281, 0, 0.0171624, -0.0186128, 0.057742, 0.0106851, 0.0105281, 0.0577476, -0.0106877, -0.0105288, 0.0577476, -0.0106877, -0.00307247, 0, 0.0029102, 0.0105281, 0, 0.0029102, 0.0105281, 0.0577476, -0.0106877, -0.00307247, 0.0577476, -0.00917744, 0.00448373, 0, -0.00464662, 0.00901632, 0, -0.00464662, 0.00901632, 0.0577476, -0.00917744, 0.00448373, 0.0577476)
+[sub_resource type="BoxShape3D" id="BoxShape3D_c6hj8"]
+size = Vector3(0.331482, 0.259144, 0.614014)
 
-[node name="Wood" type="StaticBody3D"]
-transform = Transform3D(15, 0, 0, 0, 15, 0, 0, 0, 15, 0, 0, 0)
+[node name="Wood" type="RigidBody3D"]
 script = ExtResource("1_ioxwm")
 canBePickedUp = true
 itemPicture = ExtResource("2_gxnxr")
@@ -19,6 +18,7 @@ displayName = "Wood"
 
 [node name="MeshRenderer" type="MeshInstance3D" parent="."]
 editor_description = "[MeshRenderer 23::92028abf4453dd444abfa92bedf0449c:2363632]"
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -0.11793, 0.0284868, -0.423182)
 gi_mode = 2
 mesh = ExtResource("1_4hldb")
 surface_material_override/0 = ExtResource("2_kr8fk")
@@ -71,4 +71,5 @@ metadata/unidot_keys = {
 }
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("ConvexPolygonShape3D_t3bfi")
+transform = Transform3D(0.969651, 0.244495, 0, -0.244495, 0.969651, 0, 0, 0, 1, -0.0637976, 0.00948586, -0.134962)
+shape = SubResource("BoxShape3D_c6hj8")

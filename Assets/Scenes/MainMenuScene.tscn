@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c34ufxbl2oui1"]
+[gd_scene load_steps=6 format=3 uid="uid://c34ufxbl2oui1"]
 
 [ext_resource type="FontFile" uid="uid://bt75hb45ej8mq" path="res://Assets/_Assets/Font/LiberationSans-Bold.ttf" id="1_0nyxc"]
 [ext_resource type="Script" path="res://Assets/Scripts/UI/MainMenu.gd" id="1_e4uaq"]
 [ext_resource type="PackedScene" uid="uid://8kuosvusb47f" path="res://Assets/Subscenes/UIButton.tscn" id="1_fwms8"]
 [ext_resource type="PackedScene" uid="uid://b4dilxj708x2v" path="res://Assets/Autoloads/SceneManager.tscn" id="3_toa8w"]
+[ext_resource type="AudioStream" uid="uid://bo8v1tw8fjl42" path="res://Assets/Audio/Music Tracks/SunnyDay.wav" id="5_r4lx2"]
 
 [node name="MainMenuScene" type="Control"]
 layout_mode = 3
@@ -63,3 +64,118 @@ text = "Quit
 "
 
 [node name="AudioAndOptionsManager" parent="." instance=ExtResource("3_toa8w")]
+
+[node name="BackgroundMusic" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -703.326, 100.033, 683.463)
+
+[node name="AudioSource" type="AudioStreamPlayer" parent="BackgroundMusic"]
+stream = ExtResource("5_r4lx2")
+autoplay = true
+metadata/unidot_keys = {
+"BypassEffects": 0,
+"BypassListenerEffects": 0,
+"BypassReverbZones": 0,
+"DopplerLevel": 1,
+"Loop": 1,
+"MaxDistance": 500,
+"MinDistance": 1,
+"Mute": 0,
+"OutputAudioMixerGroup": [null, 0, null, null],
+"Pan2D": 0,
+"Priority": 128,
+"Spatialize": 0,
+"SpatializePostEffects": 0,
+"m_CorrespondingSourceObject": [null, 0, null, null],
+"m_Enabled": 1,
+"m_GameObject": [null, 759819033, null, null],
+"m_Layer": 0,
+"m_ObjectHideFlags": 0,
+"m_Pitch": 1,
+"m_PlayOnAwake": 1,
+"m_PrefabAsset": [null, 0, null, null],
+"m_PrefabInstance": [null, 0, null, null],
+"m_StaticEditorFlags": 0,
+"m_TagString": "Untagged",
+"m_Volume": 1,
+"m_audioClip": [null, 8300000, "07f391589664f4e85904fa28802b4aa8", 3],
+"panLevelCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"reverbZoneMixCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "1",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"rolloffCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "1",
+"weightedMode": 0
+}, {
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 1,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+},
+"rolloffMode": 0,
+"serializedVersion": 4,
+"spreadCustomCurve": {
+"m_Curve": [{
+"inSlope": 0,
+"inWeight": 0.333333,
+"outSlope": 0,
+"outWeight": 0.333333,
+"serializedVersion": 3,
+"tangentMode": 0,
+"time": 0,
+"value": "0",
+"weightedMode": 0
+}],
+"m_PostInfinity": 2,
+"m_PreInfinity": 2,
+"m_RotationOrder": 4,
+"serializedVersion": 2
+}
+}
