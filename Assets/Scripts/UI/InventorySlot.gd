@@ -25,6 +25,9 @@ func Deselect():
 func GetItemCount():
 	return int(ItemCount.get_text())
 	
+func GetItemName():
+	return itemName
+	
 func IsSlotEmpty():
 	return itemName == ""
 

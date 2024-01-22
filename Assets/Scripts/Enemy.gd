@@ -6,6 +6,7 @@ var detection_radius : float = 5.0
 var attack_radius : float = 2.0
 var attack_damage : int = 20
 var attack_cooldown : float = 3.0
+var health : int = 5
 
 var game_manager : Node
 var player : Node
@@ -39,7 +40,13 @@ func _process(delta):
 
 func move_towards_player():
 	look_at(player.global_transform.origin, Vector3(0, 1, 0))
+	#rotate(Vector3(0, 1, 0), deg_to_rad(180))
 	translate(Vector3.FORWARD * move_speed)
+	
+	#var direction_to_player = (player.global_transform.origin - global_transform.origin).normalized()
+	#look_at(player.global_transform.origin, Vector3(0, 1, 0))
+	
+	#translate(direction_to_player * move_speed)
 
 func attack_player(delta):
 	if time_since_last_attack >= attack_cooldown:
@@ -48,8 +55,16 @@ func attack_player(delta):
 	else:
 		time_since_last_attack += delta
 		
-func attack_enemy():
-	queue_free()
+func attack_enemy(damage: int = 1):
+	if health < damage:
+		queue_free()
+	else:
+		health -= damage
 
-func interaction() -> void:
-	attack_enemy()
+func interaction(mainHandSlot: Node) -> void:
+	if mainHandSlot.GetItemName() == "Sword":
+		attack_enemy(3)
+	elif mainHandSlot.GetItemName() == "Axe":
+		attack_enemy(2)
+	else:
+		attack_enemy(1)

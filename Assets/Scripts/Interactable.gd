@@ -38,11 +38,14 @@ func pickUp():
 		print("PlayerInventory not found.")
 	queue_free()
 
-func interaction() -> void:
+func interaction(mainHandSlot: Node) -> void:
+	print(mainHandSlot.GetItemName())
 	if canBePickedUp:
 		pickUp()
 	else:
-		if health > 0:
-			health -= 1
+		if mainHandSlot.GetItemName() == "Axe":
+			health -= 3
 		else:
+			health -= 1
+		if health < 0:
 			destroy_object()
