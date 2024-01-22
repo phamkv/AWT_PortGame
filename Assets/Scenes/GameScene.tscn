@@ -16,9 +16,9 @@
 [ext_resource type="Script" path="res://Assets/Scripts/UI/GamePause.gd" id="18_f10i1"]
 [ext_resource type="PackedScene" uid="uid://dqoolq5xt4jdu" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Birch_tree1.prefab.tscn" id="19_yhdff"]
 [ext_resource type="Script" path="res://Assets/Scripts/UI/PlayerInventory.gd" id="20_6s3kg"]
-[ext_resource type="PackedScene" uid="uid://liia60pqnvld" path="res://Assets/Subscenes/Axe.tscn" id="20_26wqx"]
 [ext_resource type="PackedScene" uid="uid://c5ry72yumh6ow" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Deciduous_tree1.prefab.tscn" id="20_lupru"]
 [ext_resource type="PackedScene" uid="uid://c63gupufuhf5a" path="res://Assets/Subscenes/InventorySlot.tscn" id="20_tmecl"]
+[ext_resource type="PackedScene" uid="uid://cukkmjka2t1dj" path="res://Assets/Subscenes/Axe.tscn" id="20_y5bxt"]
 [ext_resource type="Texture2D" uid="uid://d11gydeyw0d1y" path="res://Assets/_Assets/Items/empty_slot.png" id="21_5be7b"]
 [ext_resource type="PackedScene" uid="uid://deiko1p27il0k" path="res://Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/Oak_tree1.prefab.tscn" id="21_8hftc"]
 [ext_resource type="PackedScene" uid="uid://b63fgac2mqtcw" path="res://Assets/Subscenes/Sword.tscn" id="21_a6jhn"]
@@ -824,7 +824,7 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("20_6s3kg")
-AxeScene = ExtResource("20_26wqx")
+AxeScene = ExtResource("20_y5bxt")
 SwordScene = ExtResource("21_a6jhn")
 WoodScene = ExtResource("22_i01d2")
 MushroomScene = ExtResource("9_wkacr")
