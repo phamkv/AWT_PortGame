@@ -11,5 +11,5 @@ In order to play the game in the browser, run the following command in this fold
 
 npx local-web-server --https --cors.embedder-policy "require-corp" --cors.opener-policy "same-origin" --directory "."
 
-Go to the url shown in the console. Press TAB to lock the mouse ingame.
-It may not work in the first attempt. Holding left click and pressing TAB multiple times ingame may solve this.
+Go to the on of the urls shown in the console. Ignore the security concerns for HTTPS in localhost. HTTPS and CORS need to be enabled in order to run Godot in WebGL.
+Press TAB to lock the mouse ingame. It may not work in the first attempt. Holding left click and pressing TAB multiple times ingame may solve this.
