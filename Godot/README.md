@@ -1,28 +1,30 @@
 # Godot Port
 
+This is the Godot version.
+
 ## Installation
 
 #### Godot Editor
 
-Run Godot 4.2 and click on "Import". Select the folder "AWT_PortGame" and click on "Select & Edit".
+Run Godot 4.2 and click on `Import`. Select the folder `AWT_PortGame` and click on `Select & Edit`.
 
 #### Build
 
-Inside Godot Editor, go to Project -> Export...
+Inside Godot Editor, go to `Project -> Export...`
 
-If the preset is missing, click on Add -> Web
+If the preset is missing, click on `Add -> Web`
 
 _(Optional or if preset is missing)_
-Set Export Path to index.html inside an empty folder (folder must be created beforehand and should be outside the Godot Project, example: ../GodotBuild/index.html)
-_Default is set to ../build/index.html_
+Set Export Path to `index.html` inside an empty folder (folder must be created beforehand and should be outside the Godot Project, example: `../GodotBuild/index.html`)
+_Default is set to `../build/index.html`_
 
-Click on "Export All..." and select "Release"
+Click on `Export All...` and select `Release`
 
 ## Usage
 
 #### Godot Editor
 
-Click on the Play button on the top right or press F5.
+Click on the Play button on the top right or press `F5`.
 
 #### WebGL
 
@@ -38,12 +40,12 @@ Press TAB to lock the mouse ingame. It may not work in the first attempt. Holdin
 
 #### Controls
 
-TAB or Esc: Open options menu ingame (TAB is recommended for WebGL)
+`TAB` or `Esc` to open options menu ingame (`TAB` is recommended for WebGL)
 
-Move with WASD and jump with Space
+Move with `WASD` and jump with `Space`
 
-Left click to attack
+`Left click` to attack
 
-Hold Shift to run
+Hold `Shift` to run
 
-Open inventory with E
+Open inventory with `E`
