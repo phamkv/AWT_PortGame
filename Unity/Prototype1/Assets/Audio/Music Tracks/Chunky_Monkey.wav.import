@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b6lk0wk6dy1sa"
+path="res://.godot/imported/Chunky_Monkey.wav-3567272f562216279a64bb30777f90ff.sample"
+
+[deps]
+
+source_file="res://Unity/Prototype1/Assets/Audio/Music Tracks/Chunky_Monkey.wav"
+dest_files=["res://.godot/imported/Chunky_Monkey.wav-3567272f562216279a64bb30777f90ff.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

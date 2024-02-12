@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://lo4maixwp8ht"
+path="res://.godot/imported/Grass1 2-Audio.wav-9061ba688af140d8629d2fc8152ab8bc.sample"
+
+[deps]
+
+source_file="res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/Stepssingle sound/grass/Grass1 2-Audio.wav"
+dest_files=["res://.godot/imported/Grass1 2-Audio.wav-9061ba688af140d8629d2fc8152ab8bc.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

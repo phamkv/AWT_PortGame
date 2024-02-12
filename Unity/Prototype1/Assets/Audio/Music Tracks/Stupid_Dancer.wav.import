@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ic3j8klsyli8"
+path="res://.godot/imported/Stupid_Dancer.wav-10c5186f4ca18d8ac71d51544f97150e.sample"
+
+[deps]
+
+source_file="res://Unity/Prototype1/Assets/Audio/Music Tracks/Stupid_Dancer.wav"
+dest_files=["res://.godot/imported/Stupid_Dancer.wav-10c5186f4ca18d8ac71d51544f97150e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

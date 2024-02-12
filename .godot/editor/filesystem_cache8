@@ -1,0 +1,459 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1707706278
+README.md::TextFile::-1::1707705905::0::1::::<><>::
+::res://Godot/::1707705905
+README.md::TextFile::-1::1707705905::0::1::::<><>::
+::res://Godot/build/::1707705905
+::res://Unity/::1707705912
+README.md::TextFile::-1::1707705912::0::1::::<><>::
+::res://Unity/Prototype1/::1707705912
+::res://Unity/Prototype1/Assets/::1707705907
+::res://Unity/Prototype1/Assets/Audio/::1707705905
+::res://Unity/Prototype1/Assets/Audio/CasualGameSounds/::1707706036
+DM-CGS-01.wav::AudioStreamWAV::3517286899880501369::1707705905::1707706036::1::::<><>::
+DM-CGS-02.wav::AudioStreamWAV::6681527748096658006::1707705905::1707706036::1::::<><>::
+DM-CGS-03.wav::AudioStreamWAV::5624039900388529590::1707705905::1707706036::1::::<><>::
+DM-CGS-04.wav::AudioStreamWAV::2787355472668085508::1707705905::1707706036::1::::<><>::
+DM-CGS-05.wav::AudioStreamWAV::7857452097258889509::1707705905::1707706036::1::::<><>::
+DM-CGS-06.wav::AudioStreamWAV::1208264217354870637::1707705905::1707706036::1::::<><>::
+DM-CGS-07.wav::AudioStreamWAV::5456950535840711156::1707705905::1707706036::1::::<><>::
+DM-CGS-08.wav::AudioStreamWAV::965441859942914494::1707705905::1707706036::1::::<><>::
+DM-CGS-09.wav::AudioStreamWAV::4185998873422727796::1707705905::1707706036::1::::<><>::
+DM-CGS-10.wav::AudioStreamWAV::3988221001102315638::1707705905::1707706036::1::::<><>::
+DM-CGS-11.wav::AudioStreamWAV::4108677605824452547::1707705905::1707706036::1::::<><>::
+DM-CGS-12.wav::AudioStreamWAV::1257657068683888182::1707705905::1707706036::1::::<><>::
+DM-CGS-13.wav::AudioStreamWAV::7463135011974995821::1707705905::1707706036::1::::<><>::
+DM-CGS-14.wav::AudioStreamWAV::7064130684570217828::1707705905::1707706036::1::::<><>::
+DM-CGS-15.wav::AudioStreamWAV::8088951871784318675::1707705905::1707706036::1::::<><>::
+DM-CGS-16.wav::AudioStreamWAV::6046753970158327635::1707705905::1707706036::1::::<><>::
+DM-CGS-17.wav::AudioStreamWAV::75127386447783401::1707705905::1707706036::1::::<><>::
+DM-CGS-18.wav::AudioStreamWAV::8692584265533604624::1707705905::1707706036::1::::<><>::
+DM-CGS-19.wav::AudioStreamWAV::1107345393784894016::1707705905::1707706036::1::::<><>::
+DM-CGS-20.wav::AudioStreamWAV::5736147812545602065::1707705905::1707706036::1::::<><>::
+DM-CGS-21.wav::AudioStreamWAV::8082993074588388021::1707705905::1707706036::1::::<><>::
+DM-CGS-22.wav::AudioStreamWAV::1625226409507835189::1707705905::1707706036::1::::<><>::
+DM-CGS-23.wav::AudioStreamWAV::4463946441745153959::1707705905::1707706036::1::::<><>::
+DM-CGS-24.wav::AudioStreamWAV::3433088508861023393::1707705905::1707706036::1::::<><>::
+DM-CGS-25.wav::AudioStreamWAV::4870555556102468451::1707705905::1707706036::1::::<><>::
+DM-CGS-26.wav::AudioStreamWAV::1526403291824111622::1707705905::1707706036::1::::<><>::
+DM-CGS-27.wav::AudioStreamWAV::446645196325715472::1707705905::1707706036::1::::<><>::
+DM-CGS-28.wav::AudioStreamWAV::4797783734433816801::1707705905::1707706036::1::::<><>::
+DM-CGS-29.wav::AudioStreamWAV::2646255754987228690::1707705905::1707706036::1::::<><>::
+DM-CGS-30.wav::AudioStreamWAV::5310331025615555527::1707705905::1707706036::1::::<><>::
+DM-CGS-31.wav::AudioStreamWAV::1214737758323254363::1707705905::1707706036::1::::<><>::
+DM-CGS-32.wav::AudioStreamWAV::2783130054465708667::1707705905::1707706036::1::::<><>::
+DM-CGS-33.wav::AudioStreamWAV::6247878557144467265::1707705905::1707706036::1::::<><>::
+DM-CGS-34.wav::AudioStreamWAV::6688870230301066827::1707705905::1707706036::1::::<><>::
+DM-CGS-35.wav::AudioStreamWAV::1254651384873841579::1707705905::1707706036::1::::<><>::
+DM-CGS-36.wav::AudioStreamWAV::8315370947896585219::1707705905::1707706036::1::::<><>::
+DM-CGS-37.wav::AudioStreamWAV::8315235783931838549::1707705905::1707706036::1::::<><>::
+DM-CGS-38.wav::AudioStreamWAV::8493934569019241069::1707705905::1707706036::1::::<><>::
+DM-CGS-39.wav::AudioStreamWAV::3582111053841722617::1707705905::1707706036::1::::<><>::
+DM-CGS-40.wav::AudioStreamWAV::386328024955151249::1707705905::1707706036::1::::<><>::
+DM-CGS-41.wav::AudioStreamWAV::9049422438423798839::1707705905::1707706036::1::::<><>::
+DM-CGS-42.wav::AudioStreamWAV::4160349570579711743::1707705905::1707706036::1::::<><>::
+DM-CGS-43.wav::AudioStreamWAV::8883931530209783905::1707705905::1707706036::1::::<><>::
+DM-CGS-44.wav::AudioStreamWAV::4456341980209498265::1707705905::1707706036::1::::<><>::
+DM-CGS-45.wav::AudioStreamWAV::2613855692909724518::1707705905::1707706036::1::::<><>::
+DM-CGS-46.wav::AudioStreamWAV::45686485160953982::1707705905::1707706036::1::::<><>::
+DM-CGS-47.wav::AudioStreamWAV::1229773655946171450::1707705905::1707706036::1::::<><>::
+DM-CGS-48.wav::AudioStreamWAV::5265718199132781655::1707705905::1707706036::1::::<><>::
+DM-CGS-49.wav::AudioStreamWAV::195909316291807283::1707705905::1707706036::1::::<><>::
+DM-CGS-50.wav::AudioStreamWAV::3532874247712857609::1707705905::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/::1707705905
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/StepsLoop/::1707705905
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/::1707705905
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/running/::1707706036
+Running-1.wav::AudioStreamWAV::4802890079943491192::1707705905::1707706036::1::::<><>::
+Running-2.wav::AudioStreamWAV::1372206422705041449::1707705905::1707706036::1::::<><>::
+Running-3.wav::AudioStreamWAV::2417069888150201117::1707705905::1707706036::1::::<><>::
+Running-4.wav::AudioStreamWAV::8509214741336088169::1707705905::1707706036::1::::<><>::
+Running-5.wav::AudioStreamWAV::8796535611426344549::1707705905::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/slowsteps/::1707706036
+Slowsteps-1.wav::AudioStreamWAV::7254771496302866473::1707705905::1707706036::1::::<><>::
+Slowsteps-2.wav::AudioStreamWAV::6612721342887671940::1707705905::1707706036::1::::<><>::
+Slowsteps-3.wav::AudioStreamWAV::7695765819508577710::1707705905::1707706036::1::::<><>::
+Slowsteps-4.wav::AudioStreamWAV::3172030958725401685::1707705905::1707706036::1::::<><>::
+Slowsteps-5.wav::AudioStreamWAV::8432514698157715201::1707705905::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/walking/::1707706036
+walking-1.wav::AudioStreamWAV::4279484198576203847::1707705905::1707706036::1::::<><>::
+walking-2.wav::AudioStreamWAV::5393442289896472799::1707705905::1707706036::1::::<><>::
+walking-3.wav::AudioStreamWAV::3562202830820069105::1707705905::1707706036::1::::<><>::
+walking-4.wav::AudioStreamWAV::5299395365331684153::1707705905::1707706036::1::::<><>::
+walking-5.wav::AudioStreamWAV::2256422392782202660::1707705905::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/StepsLoop/snow/::1707705905
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/StepsLoop/snow/running/::1707706036
+Snowrunning1.wav::AudioStreamWAV::6361558273823304589::1707705905::1707706036::1::::<><>::
+Snowrunning2.wav::AudioStreamWAV::6266879220370380502::1707705905::1707706036::1::::<><>::
+Snowrunning3.wav::AudioStreamWAV::3319420120399892619::1707705905::1707706036::1::::<><>::
+Snowrunning4.wav::AudioStreamWAV::65322301294278983::1707705905::1707706036::1::::<><>::
+Snowrunning5.wav::AudioStreamWAV::21690256977602422::1707705905::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/StepsLoop/snow/slow steps/::1707706036
+Snowslowsteps1.wav::AudioStreamWAV::9205119894492245602::1707705905::1707706036::1::::<><>::
+Snowslowsteps2.wav::AudioStreamWAV::5540328940770324856::1707705905::1707706036::1::::<><>::
+Snowslowsteps3.wav::AudioStreamWAV::5073507344811203031::1707705905::1707706036::1::::<><>::
+Snowslowsteps4.wav::AudioStreamWAV::4651303212104396500::1707705905::1707706036::1::::<><>::
+Snowslowsteps5.wav::AudioStreamWAV::5153895496842080087::1707705905::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/StepsLoop/snow/walking/::1707706036
+Snowwalking1.wav::AudioStreamWAV::4289768193079071362::1707705905::1707706036::1::::<><>::
+Snowwalking2.wav::AudioStreamWAV::6651522206025297619::1707705905::1707706036::1::::<><>::
+Snowwalking3.wav::AudioStreamWAV::6427158106577728158::1707705905::1707706036::1::::<><>::
+Snowwalking4.wav::AudioStreamWAV::3713620314998530784::1707705905::1707706036::1::::<><>::
+Snowwalking5.wav::AudioStreamWAV::8052536513358456787::1707705905::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/Stepssingle sound/::1707705905
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/Stepssingle sound/grass/::1707706036
+Grass1 1-Audio.wav::AudioStreamWAV::2412596377286097359::1707705905::1707706036::1::::<><>::
+Grass1 2-Audio.wav::AudioStreamWAV::802760804325756733::1707705905::1707706036::1::::<><>::
+Grass1 3-Audio.wav::AudioStreamWAV::5770786755286412278::1707705905::1707706036::1::::<><>::
+Grass1 4-Audio.wav::AudioStreamWAV::4815766365216439633::1707705905::1707706036::1::::<><>::
+Grass1 5-Audio.wav::AudioStreamWAV::5760426435122222133::1707705905::1707706036::1::::<><>::
+Grass1 6-Audio.wav::AudioStreamWAV::8724205262185422152::1707705905::1707706036::1::::<><>::
+Grass1 7-Audio.wav::AudioStreamWAV::2912164576526812073::1707705905::1707706036::1::::<><>::
+Grass1 8-Audio.wav::AudioStreamWAV::8999990484337564104::1707705905::1707706036::1::::<><>::
+Grass1 9-Audio.wav::AudioStreamWAV::4374962880564333346::1707705905::1707706036::1::::<><>::
+Grass1 10-Audio.wav::AudioStreamWAV::5059318784839679530::1707705905::1707706036::1::::<><>::
+Grass1 11-Audio.wav::AudioStreamWAV::6601210399362480896::1707705905::1707706036::1::::<><>::
+Grass1 12-Audio.wav::AudioStreamWAV::1507383521177479655::1707705905::1707706036::1::::<><>::
+Grass1 13-Audio.wav::AudioStreamWAV::1981983185699419958::1707705905::1707706036::1::::<><>::
+Grass1 14-Audio.wav::AudioStreamWAV::5393392994912001684::1707705905::1707706036::1::::<><>::
+Grass1 15-Audio.wav::AudioStreamWAV::1378760693090741482::1707705905::1707706036::1::::<><>::
+Grass1 16-Audio.wav::AudioStreamWAV::8442499678540485525::1707705905::1707706036::1::::<><>::
+Grass1 17-Audio.wav::AudioStreamWAV::2101135400313351868::1707705905::1707706036::1::::<><>::
+Grass1 18-Audio.wav::AudioStreamWAV::1239919274038216535::1707705905::1707706036::1::::<><>::
+Grass1 19-Audio.wav::AudioStreamWAV::7757908123938803530::1707705905::1707706036::1::::<><>::
+Grass1 20-Audio.wav::AudioStreamWAV::9090744268260179372::1707705905::1707706036::1::::<><>::
+Grass1 21-Audio.wav::AudioStreamWAV::2901400881118352198::1707705905::1707706036::1::::<><>::
+Grass1 22-Audio.wav::AudioStreamWAV::4965016210302557621::1707705905::1707706036::1::::<><>::
+Grass1 23-Audio.wav::AudioStreamWAV::5038295493090451434::1707705905::1707706036::1::::<><>::
+Grass1 24-Audio.wav::AudioStreamWAV::4879656972752887817::1707705905::1707706036::1::::<><>::
+Grass1 25-Audio.wav::AudioStreamWAV::275648408924135931::1707705905::1707706036::1::::<><>::
+Grass1 26-Audio.wav::AudioStreamWAV::4121528659214455624::1707705905::1707706036::1::::<><>::
+Grass1 27-Audio.wav::AudioStreamWAV::2898223312463812190::1707705905::1707706036::1::::<><>::
+Grass1 28-Audio.wav::AudioStreamWAV::4312358539994222099::1707705905::1707706036::1::::<><>::
+Grass1 29-Audio.wav::AudioStreamWAV::9042347688504195823::1707705905::1707706036::1::::<><>::
+Grass1 30-Audio.wav::AudioStreamWAV::7835050846892104334::1707705905::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/Stepssingle sound/snow/::1707706036
+Snow1 1-Audio.wav::AudioStreamWAV::8805322109013744176::1707705905::1707706036::1::::<><>::
+Snow1 2-Audio.wav::AudioStreamWAV::4505409867437745264::1707705905::1707706036::1::::<><>::
+Snow1 3-Audio.wav::AudioStreamWAV::2647434424155872093::1707705905::1707706036::1::::<><>::
+Snow1 4-Audio.wav::AudioStreamWAV::2048658234334290514::1707705905::1707706036::1::::<><>::
+Snow1 5-Audio.wav::AudioStreamWAV::5516162717583647104::1707705905::1707706036::1::::<><>::
+Snow1 6-Audio.wav::AudioStreamWAV::4137310248172049545::1707705905::1707706036::1::::<><>::
+Snow1 7-Audio.wav::AudioStreamWAV::7978478745825315894::1707705905::1707706036::1::::<><>::
+Snow1 8-Audio.wav::AudioStreamWAV::6803957249645932109::1707705905::1707706036::1::::<><>::
+Snow1 9-Audio.wav::AudioStreamWAV::2518746090571681014::1707705905::1707706036::1::::<><>::
+Snow1 10-Audio.wav::AudioStreamWAV::5516465344239377872::1707705905::1707706036::1::::<><>::
+Snow1 11-Audio.wav::AudioStreamWAV::8725732996398475358::1707705905::1707706036::1::::<><>::
+Snow1 12-Audio.wav::AudioStreamWAV::6324703689793563873::1707705905::1707706036::1::::<><>::
+Snow1 13-Audio.wav::AudioStreamWAV::88629040485313539::1707705905::1707706036::1::::<><>::
+Snow1 14-Audio.wav::AudioStreamWAV::4552570417383450361::1707705905::1707706036::1::::<><>::
+Snow1 15-Audio.wav::AudioStreamWAV::6884646447759888207::1707705905::1707706036::1::::<><>::
+Snow1 16-Audio.wav::AudioStreamWAV::4904991296767782493::1707705905::1707706036::1::::<><>::
+Snow1 17-Audio.wav::AudioStreamWAV::4768035292975030547::1707705905::1707706036::1::::<><>::
+Snow1 18-Audio.wav::AudioStreamWAV::7256809898990010216::1707705905::1707706036::1::::<><>::
+Snow1 19-Audio.wav::AudioStreamWAV::3604468060915071796::1707705905::1707706036::1::::<><>::
+Snow1 20-Audio.wav::AudioStreamWAV::8112307449925833076::1707705905::1707706036::1::::<><>::
+Snow1 21-Audio.wav::AudioStreamWAV::8001835892060556587::1707705905::1707706036::1::::<><>::
+Snow1 22-Audio.wav::AudioStreamWAV::2694153859920271980::1707705905::1707706036::1::::<><>::
+Snow1 23-Audio.wav::AudioStreamWAV::8498045197447571930::1707705905::1707706036::1::::<><>::
+Snow1 24-Audio.wav::AudioStreamWAV::8469270471205781363::1707705905::1707706036::1::::<><>::
+Snow1 25-Audio.wav::AudioStreamWAV::1294145502294287071::1707705905::1707706036::1::::<><>::
+Snow1 26-Audio.wav::AudioStreamWAV::6191187699353059550::1707705905::1707706036::1::::<><>::
+Snow1 27-Audio.wav::AudioStreamWAV::5404221420457735340::1707705905::1707706036::1::::<><>::
+Snow1 28-Audio.wav::AudioStreamWAV::8435328522465357172::1707705905::1707706036::1::::<><>::
+Snow1 29-Audio.wav::AudioStreamWAV::5393454973195417411::1707705905::1707706036::1::::<><>::
+Snow1 30-Audio.wav::AudioStreamWAV::1276522531029037221::1707705905::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/Audio/Music Tracks/::1707706037
+Chunky_Monkey.wav::AudioStreamWAV::4585635978917277980::1707705905::1707706037::1::::<><>::
+InfiniteDoors.wav::AudioStreamWAV::8726066155470928146::1707705906::1707706037::1::::<><>::
+JumpyGame.wav::AudioStreamWAV::2921775071047023733::1707705906::1707706037::1::::<><>::
+Potato.wav::AudioStreamWAV::1423799532598364007::1707705906::1707706036::1::::<><>::
+StreetLove.wav::AudioStreamWAV::1797995419000256609::1707705906::1707706037::1::::<><>::
+Stupid_Dancer.wav::AudioStreamWAV::567357401798382621::1707705906::1707706037::1::::<><>::
+SunnyDay.wav::AudioStreamWAV::3916200220661843695::1707705907::1707706037::1::::<><>::
+Tiny_Blocks.wav::AudioStreamWAV::6464644226957917423::1707705907::1707706037::1::::<><>::
+Zephyr.wav::AudioStreamWAV::4320291082271103005::1707705907::1707706037::1::::<><>::
+::res://Unity/Prototype1/Assets/Prefabs/::1707705907
+::res://Unity/Prototype1/Assets/Scenes/::1707705907
+::res://Unity/Prototype1/Assets/Scripts/::1707705907
+::res://Unity/Prototype1/Assets/Scripts/UI/::1707705907
+::res://Unity/Prototype1/Assets/Settings/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/::1707705912
+::res://Unity/Prototype1/Assets/_Assets/EnemyAssets/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/EnemyAssets/PA_CubeMaps/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/EnemyAssets/PA_SciFiCombatants/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/EnemyAssets/PA_SciFiCombatants/Textures/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/EnemyAssets/PA_SciFiCombatants/Textures/Characters/::1707706029
+PA_DroneNorm.png::CompressedTexture2D::418169362035137488::1707705907::1707706029::1::::<><>::
+PA_WarriorNorm.png::CompressedTexture2D::2448171878780889618::1707705907::1707706029::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/EnemyAssets/PA_SciFiCombatants/Textures/Vehicles/::1707706030
+PA_ArchfireTankNorm.png::CompressedTexture2D::3538118434970620894::1707705907::1707706029::1::::<><>::
+PA_ArchlightBomberNorm.png::CompressedTexture2D::2598521947389560755::1707705907::1707706030::1::::<><>::
+Pa_DropPodNorm.png::CompressedTexture2D::4882302040643457697::1707705907::1707706030::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/Materials/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Vehicles/Materials/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/::1707705907
+README.txt::TextFile::-1::1707705907::0::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/FBX/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Materials/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Prefabs/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/Ambient-Occlusion-Trees/Textures/::1707706031
+Birch_bark.tga::CompressedTexture2D::6718637133871613673::1707705907::1707706029::1::::<><>::
+Birch_leaves.tga::CompressedTexture2D::5937360113881943961::1707705907::1707706029::1::::<><>::
+Oak_bark.png::CompressedTexture2D::8206690195035461680::1707705907::1707706030::1::::<><>::
+oak_leaves.tga::CompressedTexture2D::5902492332295583551::1707705907::1707706030::1::::<><>::
+Tree_bark1.png::CompressedTexture2D::2536377268648935353::1707705907::1707706031::1::::<><>::
+Tree_leaves1.tga::CompressedTexture2D::1298664628850498815::1707705907::1707706030::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/FBX/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/Materials/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/Prefabs/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/Scenes/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/Textures/::1707706030
+ground_grass.tga::CompressedTexture2D::8610041503172018746::1707705907::1707706029::1::::<><>::
+ground_road.tga::CompressedTexture2D::8357038112793456021::1707705907::1707706029::1::::<><>::
+Plant.tga::CompressedTexture2D::8062948643897527254::1707705907::1707706029::1::::<><>::
+Rock1.tga::CompressedTexture2D::6713899822725281413::1707705907::1707706030::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/FantasyEnvironments/Environments/Textures/_TerrainAutoUpgrade/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/Fox/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/Fox/Animations/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/Fox/FBXs/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/Fox/Materials/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/Fox/Prefabs/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/Fox/Scenes/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/Fox/Textures/::1707706032
+T_Fox_AO.png::CompressedTexture2D::3292270586296134041::1707705907::1707706030::1::::<><>::
+T_Fox_BC.png::CompressedTexture2D::6218943400129449354::1707705907::1707706032::1::::<><>::
+T_Fox_Normal.png::CompressedTexture2D::9089126576601119602::1707705907::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Items/::1707706030
+Axe.png::CompressedTexture2D::6970730474022441291::1707705907::1707706029::1::::<><>::
+dova.png::CompressedTexture2D::3078142081068838295::1707705907::1707706030::1::::<><>::
+empty_slot.png::CompressedTexture2D::5905932089974279370::1707705907::1707706030::1::::<><>::
+mushy.png::CompressedTexture2D::1102311060083292363::1707705907::1707706030::1::::<><>::
+stone.png::CompressedTexture2D::8022984651323173335::1707705907::1707706030::1::::<><>::
+Sword.png::CompressedTexture2D::4707767514659569291::1707705907::1707706030::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/PlayerController/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/PlayerController/DemoScene/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/PlayerController/DemoScene/Gridbox Prototype Materials/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/PlayerController/DemoScene/Gridbox Prototype Materials/Resources/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/PlayerController/DemoScene/Gridbox Prototype Materials/Resources/Materials/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/PlayerController/DemoScene/Gridbox Prototype Materials/Resources/Materials/Prototype Grid/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/PlayerController/DemoScene/Gridbox Prototype Materials/Resources/ProBuilder Data/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/PlayerController/DemoScene/Gridbox Prototype Materials/Resources/Textures/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/PlayerController/DemoScene/Gridbox Prototype Materials/Resources/Textures/Prototype Grid/::1707706030
+prototype_512x512_blue1.png::CompressedTexture2D::5754735768107810414::1707705907::1707706030::1::::<><>::
+prototype_512x512_blue2.png::CompressedTexture2D::3525527207093102903::1707705907::1707706030::1::::<><>::
+prototype_512x512_blue3.png::CompressedTexture2D::6824923233306638148::1707705907::1707706030::1::::<><>::
+prototype_512x512_brown.png::CompressedTexture2D::7685858415199108111::1707705907::1707706030::1::::<><>::
+prototype_512x512_cyan.png::CompressedTexture2D::5208936675233987092::1707705907::1707706030::1::::<><>::
+prototype_512x512_green1.png::CompressedTexture2D::473094418831364483::1707705907::1707706030::1::::<><>::
+prototype_512x512_green2.png::CompressedTexture2D::4190345253850727557::1707705907::1707706030::1::::<><>::
+prototype_512x512_grey1.png::CompressedTexture2D::1518053871695833330::1707705907::1707706029::1::::<><>::
+prototype_512x512_grey2.png::CompressedTexture2D::5320892999129504031::1707705907::1707706029::1::::<><>::
+prototype_512x512_grey3.png::CompressedTexture2D::2392266124565029207::1707705907::1707706029::1::::<><>::
+prototype_512x512_grey4.png::CompressedTexture2D::1272392961596583631::1707705907::1707706029::1::::<><>::
+prototype_512x512_orange.png::CompressedTexture2D::1963470516466285250::1707705907::1707706029::1::::<><>::
+prototype_512x512_purple.png::CompressedTexture2D::8765921734381157659::1707705907::1707706029::1::::<><>::
+prototype_512x512_red.png::CompressedTexture2D::3086870758670347289::1707705907::1707706029::1::::<><>::
+prototype_512x512_white.png::CompressedTexture2D::3448169524007989718::1707705907::1707706029::1::::<><>::
+prototype_512x512_yellow.png::CompressedTexture2D::3580429514892921259::1707705907::1707706029::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/PlayerController/FirstPersonController/::1707706029
+CircleReticle.png::CompressedTexture2D::9144719000188192331::1707705907::1707706029::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/::1707705908
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/DemoScene/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Materials/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Models/::1707705908
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Characters/::1707705907
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Models/Collision/::1707705908
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Prefabs/::1707705908
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Prefabs/Buildings/::1707705908
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Prefabs/Characters/::1707705908
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Prefabs/Environments/::1707705908
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Prefabs/Items/::1707705908
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Prefabs/Props/::1707705908
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Prefabs/Weapons/::1707705908
+::res://Unity/Prototype1/Assets/_Assets/SyntyStudios/PolygonAdventure/Textures/::1707706029
+Characters_Black.png::CompressedTexture2D::297378522476575327::1707705908::1707706029::1::::<><>::
+Characters_Brown.png::CompressedTexture2D::4508400252328698951::1707705908::1707706029::1::::<><>::
+Characters_White.png::CompressedTexture2D::6138808382362629931::1707705908::1707706029::1::::<><>::
+PolyAdventureTexture_01.png::CompressedTexture2D::4640021255284554761::1707705908::1707706029::1::::<><>::
+PolyAdventureTexture_02.png::CompressedTexture2D::2346932746521678277::1707705908::1707706029::1::::<><>::
+PolyAdventureTexture_Dark_01.png::CompressedTexture2D::7177617519905126832::1707705908::1707706029::1::::<><>::
+PolyAdventureTexture_Dark_02.png::CompressedTexture2D::6858222305266788589::1707705908::1707706029::1::::<><>::
+PolyAdventureTexture_Snow_01.png::CompressedTexture2D::2512694031181993155::1707705908::1707706029::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Terrain/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/::1707705908
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Grass/::1707706031
+Grass_A.png::CompressedTexture2D::8317541483143800979::1707705908::1707706031::1::::<><>::
+Grass_B.png::CompressedTexture2D::44329649383352710::1707705908::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Skies/::1707706031
+Sky.jpg::CompressedTexture2D::5461026269456714134::1707705908::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Terrain/::1707705909
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Terrain/Terrains/::1707705909
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Terrain/Textures/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Terrain/Textures/Cliff_1/::1707706031
+Cliff_1_Normal.png::CompressedTexture2D::7805429272508013388::1707705909::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Terrain/Textures/Cliff_2/::1707706031
+Cliff_2_Normal.png::CompressedTexture2D::7005828418416351790::1707705910::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Terrain/Textures/Dirt_1/::1707706031
+Dirt_1_Normal.png::CompressedTexture2D::6414290815867393638::1707705910::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Terrain/Textures/Dirt_2/::1707706031
+Dirt_2_Normal.png::CompressedTexture2D::3945279722551896977::1707705910::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Terrain/Textures/Grass_1/::1707706031
+Grass_1_Normal.png::CompressedTexture2D::8431121072676420682::1707705910::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Terrain/Textures/Grass_2/::1707706031
+Grass_2_Normal.png::CompressedTexture2D::7324077637931603298::1707705910::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Terrain/Textures/Mossy_Rock/::1707706031
+Mossy_Rock_Normal.png::CompressedTexture2D::6265254919420681477::1707705910::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Environment/Terrain/Textures/Sand/::1707706031
+Sand_Normal.png::CompressedTexture2D::6383755049376880758::1707705910::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Post Processing/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/Terrain/Scenes/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/TextMesh Pro/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/TextMesh Pro/Documentation/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/TextMesh Pro/Fonts/::1707706029
+LiberationSans - OFL.txt::TextFile::-1::1707705910::0::1::::<><>::
+LiberationSans.ttf::FontFile::6982648631453168217::1707705910::1707706029::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/TextMesh Pro/Resources/::1707705910
+LineBreaking Following Characters.txt::TextFile::-1::1707705910::0::1::::<><>::
+LineBreaking Leading Characters.txt::TextFile::-1::1707705910::0::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/TextMesh Pro/Resources/Fonts & Materials/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/TextMesh Pro/Resources/Sprite Assets/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/TextMesh Pro/Resources/Style Sheets/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/TextMesh Pro/Shaders/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/TextMesh Pro/Sprites/::1707706031
+EmojiOne Attribution.txt::TextFile::-1::1707705910::0::1::::<><>::
+EmojiOne.json::JSON::-1::1707705910::0::1::::<><>::
+EmojiOne.png::CompressedTexture2D::2416325676248862330::1707705910::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Tools/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/Tools/axe_a/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/Tools/axe_a/Materials/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/Tools/axe_a/Materials/axe_a_Textures/::1707706036
+axe_a_low_DefaultMaterial_AO.png::CompressedTexture2D::5427230962954456863::1707705910::1707706031::1::::<><>::
+axe_a_low_DefaultMaterial_BaseColor.png::CompressedTexture2D::5121121736327343615::1707705910::1707706032::1::::<><>::
+axe_a_low_DefaultMaterial_Emissive.png::CompressedTexture2D::7392574607465319752::1707705910::1707706031::1::::<><>::
+axe_a_low_DefaultMaterial_Metallic.png::CompressedTexture2D::6428121039051183240::1707705910::1707706031::1::::<><>::
+axe_a_low_DefaultMaterial_Roughness.png::CompressedTexture2D::738616558797211052::1707705910::1707706031::1::::<><>::
+axe_a_normal.png::CompressedTexture2D::5737932990723264873::1707705910::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Tools/axe_a/prefab/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/Tools/demo/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/Tools/flask_a/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/Tools/flask_a/Materials/::1707705910
+::res://Unity/Prototype1/Assets/_Assets/Tools/flask_a/Materials/flask_a_Textures/::1707706034
+flask_a_low_smoothing_groups_DefaultMaterial_AO.png::CompressedTexture2D::8792149967140654797::1707705910::1707706031::1::::<><>::
+flask_a_low_smoothing_groups_DefaultMaterial_BaseColor.png::CompressedTexture2D::8013293168168271749::1707705910::1707706032::1::::<><>::
+flask_a_low_smoothing_groups_DefaultMaterial_Metallic.png::CompressedTexture2D::7814925835023564999::1707705910::1707706031::1::::<><>::
+flask_a_low_smoothing_groups_DefaultMaterial_Roughness.png::CompressedTexture2D::276576884668120563::1707705910::1707706032::1::::<><>::
+flask_a_normal.png::CompressedTexture2D::4777815782041564999::1707705910::1707706034::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Tools/flask_a/prefab/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/Tools/house_a/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/Tools/house_a/Materials/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/Tools/house_a/Materials/house_a_Textures/::1707706036
+house_a_low_01_DefaultMaterial_AO.png::CompressedTexture2D::1667200958773081516::1707705911::1707706032::1::::<><>::
+house_a_low_01_DefaultMaterial_BaseColor.png::CompressedTexture2D::7267655308334625445::1707705911::1707706033::1::::<><>::
+house_a_low_01_DefaultMaterial_Emissive.png::CompressedTexture2D::2012175328941445169::1707705911::1707706032::1::::<><>::
+house_a_low_01_DefaultMaterial_Metallic.png::CompressedTexture2D::3243037656028550837::1707705911::1707706032::1::::<><>::
+house_a_low_01_DefaultMaterial_Roughness.png::CompressedTexture2D::2614858392512232709::1707705911::1707706032::1::::<><>::
+house_a_normal.png::CompressedTexture2D::6892619840047021171::1707705911::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Tools/house_a/prefab/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/Tools/lantern_a/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/Tools/lantern_a/Materials/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/Tools/lantern_a/Materials/lantern_a_Textures/::1707706036
+lantern_a_low_SG_lantern_a_AO.png::CompressedTexture2D::3398289853747170170::1707705911::1707706032::1::::<><>::
+lantern_a_low_SG_lantern_a_BaseColor.png::CompressedTexture2D::8172225203480882844::1707705911::1707706033::1::::<><>::
+lantern_a_low_SG_lantern_a_Emissive.png::CompressedTexture2D::3628109970631204452::1707705911::1707706032::1::::<><>::
+lantern_a_low_SG_lantern_a_Metallic.png::CompressedTexture2D::2995369059143019774::1707705911::1707706032::1::::<><>::
+lantern_a_low_SG_lantern_a_Roughness.png::CompressedTexture2D::2498157834224965615::1707705911::1707706032::1::::<><>::
+lantern_a_normal.png::CompressedTexture2D::4620771980368507217::1707705911::1707706036::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Tools/lantern_a/prefab/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/Tools/prefab/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/Tools/sword_a/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/Tools/sword_a/Materials/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/Tools/sword_a/Materials/sword_a_Textures/::1707706034
+sword_a_low_DefaultMaterial_AO.png::CompressedTexture2D::2782965963368079277::1707705911::1707706032::1::::<><>::
+sword_a_low_DefaultMaterial_BaseColor_03.png::CompressedTexture2D::2147085746154579939::1707705911::1707706032::1::::<><>::
+sword_a_low_DefaultMaterial_Emissive.png::CompressedTexture2D::1494603934870089291::1707705911::1707706032::1::::<><>::
+sword_a_low_DefaultMaterial_Metallic.png::CompressedTexture2D::6496006954226000546::1707705911::1707706032::1::::<><>::
+sword_a_low_DefaultMaterial_Normal.png::CompressedTexture2D::5556582749862000090::1707705911::1707706034::1::::<><>::
+sword_a_low_DefaultMaterial_Roughness.png::CompressedTexture2D::4360567074148402928::1707705911::1707706032::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/Tools/sword_a/prefab/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Models/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Boards/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Drova/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Fense/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Ladder/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Logs/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Pallets/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Prefab/Trunks/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/OldVillage/VilagePropsPack/Scenes/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/MaterialsPBR/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/Textures/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/Textures/Metall/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/Textures/Metall/Rust/::1707706032
+plane_3_3_DefaultMaterial_AlbedoTransparency.tga::CompressedTexture2D::3533860486816083008::1707705911::1707706032::1::::<><>::
+plane_3_3_DefaultMaterial_MetallicSmoothness.tga::CompressedTexture2D::8208943586471271329::1707705911::1707706031::1::::<><>::
+plane_3_3_DefaultMaterial_Normal.tga::CompressedTexture2D::227871076367484738::1707705911::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/Textures/Roof/::1707705911
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/Textures/Roof/Roof_metall01/::1707706031
+plane_3_3_DefaultMaterial_AlbedoTransparency.tga::CompressedTexture2D::1828945312693394152::1707705911::1707706031::1::::<><>::
+plane_3_3_DefaultMaterial_MetallicSmoothness.tga::CompressedTexture2D::5250747214563983298::1707705911::1707706031::1::::<><>::
+plane_3_3_DefaultMaterial_Normal.tga::CompressedTexture2D::1129420627321677654::1707705911::1707706030::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/Textures/Wood/::1707705912
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/Textures/Wood/WoodBark02/::1707706031
+plane_3_3_DefaultMaterial_AlbedoTransparency.tga::CompressedTexture2D::1919238596721872473::1707705911::1707706031::1::::<><>::
+plane_3_3_DefaultMaterial_MetallicSmoothness.tga::CompressedTexture2D::9088713441198037247::1707705911::1707706030::1::::<><>::
+plane_3_3_DefaultMaterial_Normal.tga::CompressedTexture2D::395521723589218230::1707705911::1707706030::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/Textures/Wood/WoodBark03/::1707706031
+plane_3_3_DefaultMaterial_AlbedoTransparency.tga::CompressedTexture2D::2477928356983603061::1707705911::1707706031::1::::<><>::
+plane_3_3_DefaultMaterial_MetallicSmoothness.tga::CompressedTexture2D::7081306466263954111::1707705911::1707706030::1::::<><>::
+plane_3_3_DefaultMaterial_Normal.tga::CompressedTexture2D::4799849879059523535::1707705911::1707706030::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/Textures/Wood/WoodPlanks05/::1707706031
+plane_3_3_DefaultMaterial_AlbedoTransparency.tga::CompressedTexture2D::723291713028971494::1707705911::1707706031::1::::<><>::
+plane_3_3_DefaultMaterial_MetallicSmoothness.tga::CompressedTexture2D::5570507785397949841::1707705911::1707706031::1::::<><>::
+plane_3_3_DefaultMaterial_Normal.tga::CompressedTexture2D::918042825648653266::1707705911::1707706030::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/Textures/Wood/WoodPlanks08/::1707706032
+plane_3_3_DefaultMaterial_AlbedoTransparency.tga::CompressedTexture2D::1537456488950584418::1707705911::1707706031::1::::<><>::
+plane_3_3_DefaultMaterial_MetallicSmoothness.tga::CompressedTexture2D::3905237631409529056::1707705912::1707706031::1::::<><>::
+plane_3_3_DefaultMaterial_Normal.tga::CompressedTexture2D::7090302688907996079::1707705912::1707706032::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/VillageProps/PBR_Tiled/Textures/Wood/Wood_Bark01/::1707706031
+plane_3_3_DefaultMaterial_AlbedoTransparency.tga::CompressedTexture2D::8570932297078954653::1707705912::1707706031::1::::<><>::
+plane_3_3_DefaultMaterial_MetallicSmoothness.tga::CompressedTexture2D::6842411697240737153::1707705912::1707706031::1::::<><>::
+plane_3_3_DefaultMaterial_Normal.tga::CompressedTexture2D::6098434838879273648::1707705912::1707706031::1::::<><>::
+::res://Unity/Prototype1/Assets/_Assets/_TerrainAutoUpgrade/::1707705912
+::res://Unity/Prototype1/Packages/::1707705912
+manifest.json::JSON::-1::1707705912::0::1::::<><>::
+packages-lock.json::JSON::-1::1707705912::0::1::::<><>::
+::res://Unity/Prototype1/ProjectSettings/::1707705912
+ProjectVersion.txt::TextFile::-1::1707705912::0::1::::<><>::
+SceneTemplateSettings.json::JSON::-1::1707705912::0::1::::<><>::
+::res://Unity/Prototype1/ProjectSettings/Packages/::1707705912
+::res://Unity/Prototype1/ProjectSettings/Packages/com.unity.connect.share/::1707705912
+Settings.json::JSON::-1::1707705912::0::1::::<><>::
+::res://Unity/Prototype1/ProjectSettings/Packages/com.unity.testtools.codecoverage/::1707705912
+Settings.json::JSON::-1::1707705912::0::1::::<><>::
+::res://Unity/Prototype1/WebGL Builds/::1707705912
+dependencies.txt::TextFile::-1::1707705912::0::1::::<><>::
+GUID.txt::TextFile::-1::1707705912::0::1::::<><>::
+ProjectVersion.txt::TextFile::-1::1707705912::0::1::::<><>::
+::res://Unity/Prototype1/WebGL Builds/Build/::1707705912
+::res://Unity/Prototype1/WebGL Builds/TemplateData/::1707706031
+fullscreen-button.png::CompressedTexture2D::2826446524540917647::1707705912::1707706031::1::::<><>::
+MemoryProfiler.png::CompressedTexture2D::4307221622495100009::1707705912::1707706031::1::::<><>::
+progress-bar-empty-dark.png::CompressedTexture2D::742454521626295600::1707705912::1707706031::1::::<><>::
+progress-bar-empty-light.png::CompressedTexture2D::3975545451320233447::1707705912::1707706031::1::::<><>::
+progress-bar-full-dark.png::CompressedTexture2D::6811795936495664577::1707705912::1707706031::1::::<><>::
+progress-bar-full-light.png::CompressedTexture2D::6470236704941371273::1707705912::1707706031::1::::<><>::
+unity-logo-dark.png::CompressedTexture2D::8327576900133421278::1707705912::1707706031::1::::<><>::
+unity-logo-light.png::CompressedTexture2D::4584462354307561575::1707705912::1707706031::1::::<><>::
+webgl-logo.png::CompressedTexture2D::302832163651923759::1707705912::1707706031::1::::<><>::
+webmemd-icon.png::CompressedTexture2D::4170397420537628830::1707705912::1707706031::1::::<><>::

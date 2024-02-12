@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cydr0mjx7wt0b"
+path="res://.godot/imported/Tiny_Blocks.wav-03652dc75225131182ab6098d6beb858.sample"
+
+[deps]
+
+source_file="res://Unity/Prototype1/Assets/Audio/Music Tracks/Tiny_Blocks.wav"
+dest_files=["res://.godot/imported/Tiny_Blocks.wav-03652dc75225131182ab6098d6beb858.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
