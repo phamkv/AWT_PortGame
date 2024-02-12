@@ -371,9 +371,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -685.733
 [node name="Flower1 (2)" parent="Terrain/Plants" instance=ExtResource("17_iaugm")]
 transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -695.928, 88.5342, 649.653)
 
-[node name="MeshRenderer" parent="Terrain/Plants/Flower1 (2)" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-
 [node name="Flower1 (3)" parent="Terrain/Plants" instance=ExtResource("17_iaugm")]
 transform = Transform3D(1, 0, 0, 0, 1, 1.74846e-07, 0, -1.74846e-07, 1, -682.392, 89.1533, 640.123)
 
