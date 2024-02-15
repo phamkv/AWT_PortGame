@@ -1,8 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://c41sbsojredno"]
+[gd_scene load_steps=13 format=3 uid="uid://c41sbsojredno"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/Enemy.gd" id="1_8jwdc"]
+[ext_resource type="Texture2D" uid="uid://cqkibr4cmxcbn" path="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/Textures/Characters/PA_WarriorDiff.png" id="2_144ar"]
 [ext_resource type="ArrayMesh" uid="uid://pumyngjyaah8" path="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/extracted/PA_Warrior.PA_Warrior.mesh" id="2_gwvh4"]
 [ext_resource type="Skin" uid="uid://mtxu71kk58jm" path="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/extracted/PA_Warrior.PA_Warrior.skin.tres" id="3_qhimp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4xl4p"]
+albedo_texture = ExtResource("2_144ar")
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_f6qpa"]
 points = PackedVector3Array(3.41885, 32.4158, 26.3042, -7.65056, 26.0957, 12.0717, -6.06855, 22.9326, 12.0717, 6.58132, 35.5789, 12.0717, 4.99931, 19.7695, 24.7202, -6.06855, 29.2528, 26.3042, -2.90609, 38.742, 12.0717, 8.16333, 26.0957, 12.0717, -4.48655, 19.7695, 24.7202, 1.83684, 19.7695, 15.2369, 6.58132, 29.2528, 26.3042, -7.65056, 33.9974, 15.2369, -2.90609, 38.742, 15.2369, 3.41885, 38.742, 15.2369, -1.32408, 18.186, 21.5591, -2.90609, 32.4158, 26.3042, -6.06855, 21.3511, 24.7202, 3.41885, 21.3511, 12.0717, 8.16333, 32.4158, 15.2369, 6.58132, 26.0957, 26.3042, -4.48655, 21.3511, 12.0717, 6.58132, 21.3511, 21.5591, -7.65056, 33.9974, 12.0717, 4.99931, 37.1605, 16.8168, 4.99931, 19.7695, 19.9779, -6.06855, 26.0957, 26.3042, -4.48655, 37.1605, 16.8168, 3.41885, 38.742, 12.0717, -6.06855, 21.3511, 18.398, 6.58132, 21.3511, 24.7202, 4.99931, 21.3511, 13.6557, 0.256383, 18.186, 23.1389)
@@ -31,6 +35,7 @@ script = ExtResource("1_8jwdc")
 
 [node name="PA_Warrior" type="MeshInstance3D" parent="."]
 transform = Transform3D(-0.01, 0, -8.74228e-10, 0, 0.01, 0, 8.74228e-10, 0, -0.01, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_4xl4p")
 mesh = ExtResource("2_gwvh4")
 skin = ExtResource("3_qhimp")
 

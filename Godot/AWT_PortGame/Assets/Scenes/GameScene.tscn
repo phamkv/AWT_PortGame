@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://dubn7u8ja2gke"]
+[gd_scene load_steps=37 format=3 uid="uid://dubn7u8ja2gke"]
 
 [ext_resource type="Script" path="res://Assets/Scripts/GameManager.gd" id="1_in0hn"]
 [ext_resource type="AudioStream" uid="uid://brming4bs4fe6" path="res://Assets/Audio/Music Tracks/Zephyr.wav" id="3_dteuw"]
@@ -27,6 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://bxisjcqrti8f4" path="res://Assets/Subscenes/Stone.tscn" id="23_374m1"]
 [ext_resource type="AudioStream" uid="uid://fsnn7bqgv8sa" path="res://Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/walking/walking-3.wav" id="23_kvkxj"]
 [ext_resource type="PackedScene" uid="uid://c41sbsojredno" path="res://Assets/Subscenes/warrior.tscn" id="24_84g0w"]
+[ext_resource type="PackedScene" uid="uid://c6635b7gwv822" path="res://Assets/_Assets/EnemyAssets/PA_SciFiCombatants/_Imported3D/Characters/PA_Warrior.prefab.tscn" id="28_ry1e6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nwpca"]
 sky_top_color = Color(0.407843, 0.611765, 0.792157, 1)
@@ -1178,6 +1179,9 @@ vertical_alignment = 1
 
 [node name="Player" parent="." instance=ExtResource("15_js1yv")]
 transform = Transform3D(0.251674, 0, 0, 0, 0.251674, 0, 0, 0, 0.251674, -576.206, 74.5114, 525.45)
+
+[node name="PA_Warrior" parent="." instance=ExtResource("28_ry1e6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -627.964, 75.2943, 460.404)
 
 [editable path="Terrain/Rocks/Rock1"]
 [editable path="Terrain/Rocks/Rock1 (1)"]
