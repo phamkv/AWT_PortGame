@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dxldwkyn0oeun"
+path="res://.godot/imported/Running-5.wav-4ab9d579dfbacbb2b037e7839ef3dd35.sample"
+
+[deps]
+
+source_file="res://Unity/Prototype1/Assets/Audio/Footstep(Snow and Grass)/StepsLoop/grass/running/Running-5.wav"
+dest_files=["res://.godot/imported/Running-5.wav-4ab9d579dfbacbb2b037e7839ef3dd35.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
