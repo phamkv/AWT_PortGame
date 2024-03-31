@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// Makes sure that the audio always plays with the correct volume, especially after changing a scene
 public class AudioAndOptionsManager : MonoBehaviour
 {
     public static AudioAndOptionsManager Instance { get; private set; }

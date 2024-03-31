@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Main Controller that handles various tasks such as player health, player death and updates of the item held in the players hand
 public class MainGameManager : MonoBehaviour
 {
     public static MainGameManager Instance { get; private set; }
@@ -132,7 +133,6 @@ public class MainGameManager : MonoBehaviour
         }
     }
 
-    //temporary solution
     private void PlayerDeathEvent()
     {
         if (isInventoryOpen)

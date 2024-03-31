@@ -1,3 +1,6 @@
+## Manages an enemy
+## This includes movement towards the player, attacking the player, and receiving damage from them
+
 extends RigidBody3D
 
 # variables

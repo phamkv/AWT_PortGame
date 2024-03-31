@@ -148,6 +148,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   detectionRadius: 20
+  attackRadius: 5
+  attackDamage: 20
+  attackCooldown: 3
 --- !u!114 &8986030127652237904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,6 +172,7 @@ MonoBehaviour:
   inventoryIcon: {fileID: 0}
   droppedInventoryIcon: {fileID: 0}
   droppedPrefab: {fileID: 0}
+  droppedName: 
   useRigidbody: 1
   displayName: Enemy
   initialObject: 1

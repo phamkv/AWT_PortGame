@@ -1,3 +1,6 @@
+## The main controller
+## Handles events like the players health, the players death, and input events
+
 extends Node
 
 signal playerDeath

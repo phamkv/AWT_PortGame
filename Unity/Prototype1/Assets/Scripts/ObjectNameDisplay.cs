@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Displays the name of an object, when the player looks at it
 public class ObjectNameDisplay : MonoBehaviour
 {
     [SerializeField] private Text objectNameText;

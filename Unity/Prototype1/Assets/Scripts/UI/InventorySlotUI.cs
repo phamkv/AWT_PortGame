@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using System;
 
-
+// Manages an inventory slot, including filling the slot, adding more items to it, and resetting the slot
 public class InventorySlotUI : MonoBehaviour
 {
     private Image itemImage = null;

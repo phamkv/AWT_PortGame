@@ -1,3 +1,6 @@
+## Manages the inventory
+## Calls the scripts of the inventory slot when necessary
+
 extends Control
 
 class_name PlayerInventory

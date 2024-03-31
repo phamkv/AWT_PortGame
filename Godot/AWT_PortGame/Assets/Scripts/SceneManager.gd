@@ -1,4 +1,7 @@
+## Loads a new scene when necessary
+
 extends Node
+
 
 var currentScene: String = ""
 var previousScene: String = ""

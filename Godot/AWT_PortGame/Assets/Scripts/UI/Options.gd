@@ -1,3 +1,5 @@
+## Manages the options menu
+
 extends Control
 
 var busIndex: int

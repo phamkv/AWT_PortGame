@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// Informs the MainGameManager when the player is dead
 public class PlayerDeathUI : MonoBehaviour
 {
     [SerializeField] private Button resumeButton;

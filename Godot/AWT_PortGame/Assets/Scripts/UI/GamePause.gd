@@ -1,3 +1,5 @@
+## Manages the pause menu
+
 extends Control
 
 func _ready():

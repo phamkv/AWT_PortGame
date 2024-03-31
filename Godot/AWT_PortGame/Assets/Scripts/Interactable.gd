@@ -1,3 +1,6 @@
+## Manages the interactions of certain objects
+## Some items can be picked up into the inventory, some have to be destroyed, and some drop other items afterwards
+
 extends Node3D
 
 @export var replacementObject: PackedScene

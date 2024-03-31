@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// Provides the functionality of the pause meny
 public class GamePauseUI : MonoBehaviour
 {
     [SerializeField] private Button resumeButton;

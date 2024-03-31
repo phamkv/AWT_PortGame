@@ -1,3 +1,5 @@
+## Manages the raycast attached to the player camera to determine what object the player looks at
+
 extends RayCast3D
 
 signal colliding

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// Manages the main menu
 public class MainMenuUI : MonoBehaviour
 {
     [SerializeField] private Button playButton;

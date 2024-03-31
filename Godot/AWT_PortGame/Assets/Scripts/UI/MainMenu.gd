@@ -1,3 +1,5 @@
+## Manages the main menu
+
 extends Control
 
 func _ready():

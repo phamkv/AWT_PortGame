@@ -1,3 +1,5 @@
+## Manages the players movements
+
 extends CharacterBody3D
 
 enum State {IDLE, WALKING, JUMPING, SPRINTING}

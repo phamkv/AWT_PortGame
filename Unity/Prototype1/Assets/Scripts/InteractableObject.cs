@@ -1,6 +1,10 @@
 using System.Collections;
 using UnityEngine;
 
+// Handles the interactions of the player with an object that can be interacted with
+// This includes objects like rocks, stones, mushrooms, trees, and wood
+// The object is supposed to break after its health hits zero and possibly drop items when destroyed
+// If the object can be picked up, then the corresponding item should be placed into the players inventory
 public class InteractableObject : MonoBehaviour
 {
     private int clickCount = 0;
@@ -18,7 +22,6 @@ public class InteractableObject : MonoBehaviour
     [SerializeField] private bool useRigidbody = true;
     public string displayName = "";
 
-    //public PlayerInventoryUI playerInventoryUI;
     [SerializeField] private bool initialObject = true;
 
 
@@ -26,7 +29,6 @@ public class InteractableObject : MonoBehaviour
     {
         if (initialObject)
         {
-            //playerInventoryUI = FindObjectOfType<PlayerInventoryUI>();
 
             // Check if the reference is null, and if so, print a warning
             if (PlayerInventoryUI.Instance == null)
@@ -34,7 +36,6 @@ public class InteractableObject : MonoBehaviour
                 Debug.LogWarning("PlayerInventoryUI component not found in the scene.");
             }
         }
-        // Attempt to find the PlayerInventoryUI component in the scene
 
     }
 
@@ -80,12 +81,9 @@ public class InteractableObject : MonoBehaviour
 
     private void PickUpObject()
     {
-        // Implement logic for picking up the object or placing it in the inventory
-        // This can include spawning an inventory item, updating UI, etc.
         if (inventoryIcon != null)
         {
-            // Instantiate inventory icon or add it to the player's inventory
-            // Example: Instantiate(inventoryIcon, playerInventory.transform);
+            // add item to the player's inventory
             if (droppedName != "")
             {
                 PlayerInventoryUI.Instance.SetImageAndCountOnSlot(droppedName, inventoryIcon, itemcount, null);
@@ -120,12 +118,11 @@ public class InteractableObject : MonoBehaviour
 
                     GameObject spawnedObject = Instantiate(droppedPrefab, transform.position + randomPosition, transform.rotation);
                     InteractableObject spawnedObjectScript = spawnedObject.GetComponent<InteractableObject>();
-                    //spawnedObjectScript.playerInventoryUI = playerInventoryUI;
                     spawnedObjectScript.inventoryIcon = droppedInventoryIcon;
 
                     if (useRigidbody && spawnedObject.GetComponent<Rigidbody>() == null)
                     {
-                        // Attach a Rigidbody if needed
+                        // Attach a Rigidbody
                         spawnedObject.AddComponent<Rigidbody>();
                     }
                 }
@@ -134,7 +131,6 @@ public class InteractableObject : MonoBehaviour
             {
                 GameObject spawnedObject = Instantiate(droppedPrefab, transform.position, transform.rotation);
                 InteractableObject spawnedObjectScript = spawnedObject.GetComponent<InteractableObject>();
-                //spawnedObjectScript.playerInventoryUI = playerInventoryUI;
             }
 
 

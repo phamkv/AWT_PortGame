@@ -1,3 +1,5 @@
+## Informs the GameManager about the players death
+
 extends Control
 
 func _ready():

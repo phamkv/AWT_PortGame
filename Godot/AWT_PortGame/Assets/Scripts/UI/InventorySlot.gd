@@ -1,3 +1,6 @@
+## Manages a single inventory slot
+## This includes updating and clearing the slot
+
 extends Button
 
 var Inventory: Node

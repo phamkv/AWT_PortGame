@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Handles the interactions of an enemy with the player.
+// This includes movement towards the player, 
 public class Enemy : MonoBehaviour
 {
     public float moveSpeed = 3f;
@@ -22,6 +24,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    // Updates the postition of the entity and checks whether the player is in its radius, acts accordingly
     void Update()
     {
         if (player != null && Vector3.Distance(transform.position, player.position) <= detectionRadius)

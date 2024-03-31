@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Manages the inventory and calls the scripts of an inventory slot if necessary
 public class PlayerInventoryUI : MonoBehaviour
 {
     public static PlayerInventoryUI Instance { get; private set; }
@@ -81,8 +82,6 @@ public class PlayerInventoryUI : MonoBehaviour
                 // Spawn the object at the calculated position
                 
                 GameObject spawnedObject = Instantiate(MainGameManager.Instance.GetGameObject(mainHandSlot.GetID()), FirstPersonController.instance.GetTransform().position + randomPosition, transform.rotation);
-                //InteractableObject spawnedObjectScript = spawnedObject.GetComponent<InteractableObject>();
-                //spawnedObjectScript.inventoryIcon = droppedInventoryIcon;
             }
             mainHandSlot.ResetSlot();
             MainGameManager.Instance.UpdateMainHand("");

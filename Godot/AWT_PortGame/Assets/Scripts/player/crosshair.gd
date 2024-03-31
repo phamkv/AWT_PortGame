@@ -1,3 +1,5 @@
+## controls the visibility of the crosshair in the middle of the screen
+
 extends Control
 
 @onready var head_raycast: RayCast3D = $"../../Head/RayCast3D"

@@ -13,6 +13,7 @@ using UnityEngine.UI;
     using System.Net;
 #endif
 
+// Controls the behavior of the player based on the mouse and keyboard inputs
 public class FirstPersonController : MonoBehaviour
 {
 

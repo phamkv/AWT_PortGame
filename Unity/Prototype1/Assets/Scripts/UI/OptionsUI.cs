@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+// Manages the options menu
 public class OptionsUI : MonoBehaviour
 {
 
